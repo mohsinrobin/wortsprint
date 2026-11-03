@@ -86,7 +86,6 @@ export function selectWeak(words: Word[], progress: Record<string, WordProgress>
 
 export interface BadgeDef {
   id: string;
-  icon: string;
   test: (ctx: BadgeContext) => boolean;
 }
 
@@ -99,18 +98,18 @@ export interface BadgeContext {
 }
 
 export const BADGES: BadgeDef[] = [
-  { id: 'first-session', icon: '🚀', test: (c) => c.profile.sessions >= 1 },
-  { id: 'first-level', icon: '🏁', test: (c) => c.levelsPassed >= 1 },
-  { id: 'five-levels', icon: '🏆', test: (c) => c.levelsPassed >= 5 },
-  { id: 'streak-3', icon: '🔥', test: (c) => c.streak >= 3 },
-  { id: 'streak-7', icon: '🌋', test: (c) => c.streak >= 7 },
-  { id: 'streak-30', icon: '☄️', test: (c) => c.streak >= 30 },
-  { id: 'mastered-25', icon: '🧠', test: (c) => c.mastered >= 25 },
-  { id: 'mastered-100', icon: '💎', test: (c) => c.mastered >= 100 },
-  { id: 'perfect', icon: '🎯', test: (c) => !!c.lastSession && c.lastSession.answered >= 10 && c.lastSession.accuracy === 1 },
-  { id: 'combo-15', icon: '⚡', test: (c) => (c.lastSession?.maxCombo ?? 0) >= 15 },
-  { id: 'xp-1000', icon: '⭐', test: (c) => c.profile.xp >= 1000 },
-  { id: 'xp-10000', icon: '🌟', test: (c) => c.profile.xp >= 10000 },
+  { id: 'first-session', test: (c) => c.profile.sessions >= 1 },
+  { id: 'first-level', test: (c) => c.levelsPassed >= 1 },
+  { id: 'five-levels', test: (c) => c.levelsPassed >= 5 },
+  { id: 'streak-3', test: (c) => c.streak >= 3 },
+  { id: 'streak-7', test: (c) => c.streak >= 7 },
+  { id: 'streak-30', test: (c) => c.streak >= 30 },
+  { id: 'mastered-25', test: (c) => c.mastered >= 25 },
+  { id: 'mastered-100', test: (c) => c.mastered >= 100 },
+  { id: 'perfect', test: (c) => !!c.lastSession && c.lastSession.answered >= 10 && c.lastSession.accuracy === 1 },
+  { id: 'combo-15', test: (c) => (c.lastSession?.maxCombo ?? 0) >= 15 },
+  { id: 'xp-1000', test: (c) => c.profile.xp >= 1000 },
+  { id: 'xp-10000', test: (c) => c.profile.xp >= 10000 },
 ];
 
 export function newBadges(ctx: BadgeContext): string[] {

@@ -166,6 +166,16 @@ export const useStore = create<State>((set, get) => {
         }
         await db.saveCollections(collections);
       } else {
+        // A bundled list the user no longer has (deleting was possible in
+        // early test builds) comes back, with its progress untouched.
+        for (const b of bundles) {
+          if (collections.some((c) => c.id === b.id)) continue;
+          words[b.id] = words[b.id]?.length ? words[b.id] : await db.fetchBundle(b.id);
+          versions[b.id] = b.version;
+          collections = [...collections, { id: b.id, name: b.name, description: b.description, createdAt: Date.now(), bundled: true }];
+          await db.saveWords(b.id, words[b.id]);
+          await db.saveCollections(collections);
+        }
         // Newer bundle (e.g. more situations): merge without touching edits.
         for (const b of bundles) {
           if (!words[b.id] || versions[b.id] === b.version) continue;
@@ -175,8 +185,25 @@ export const useStore = create<State>((set, get) => {
         }
       }
       await db.saveBundleVersions(versions);
-      collections = [...collections];
+      // Bundled descriptions can't be edited by the user, so keep them current.
+      let renamed = false;
+      collections = collections.map((c) => {
+        const d = c.bundled ? bundles.find((b) => b.id === c.id)?.description : undefined;
+        if (d === undefined || d === c.description) return c;
+        renamed = true;
+        return { ...c, description: d };
+      });
+      if (renamed) await db.saveCollections(collections);
       const settings = { ...DEFAULT_SETTINGS, ...snap.settings, timers: { ...DEFAULT_SETTINGS.timers, ...snap.settings?.timers } };
+      // English only for now; other interface and meaning languages come later.
+      settings.uiLang = 'en';
+      settings.meaningLang = 'en';
+      // Older saves kept normal timers and scaled them by difficulty at play time;
+      // write the difficulty's own timers so play time stays the same.
+      const normal = DIFFICULTY_TIMERS.normal;
+      if (settings.difficulty !== 'normal' && (Object.keys(normal) as QuestionKind[]).every((k) => settings.timers[k] === normal[k])) {
+        settings.timers = { ...DIFFICULTY_TIMERS[settings.difficulty] };
+      }
       set({
         ready: true,
         collections,
@@ -380,12 +407,16 @@ export const useStore = create<State>((set, get) => {
 
 // --- derived helpers used by screens ------------------------------------
 
-export function difficultyFactor(d: Settings['difficulty']): number {
-  return d === 'easy' ? 1.5 : d === 'hard' ? 0.75 : d === 'extreme' ? 0.55 : 1;
-}
+/** Timer seconds each difficulty sets; the user can fine-tune them afterwards. */
+export const DIFFICULTY_TIMERS: Record<Settings['difficulty'], Settings['timers']> = {
+  easy: { meaning: 12, reverse: 11, typing: 18, situation: 23, speed: 8 },
+  normal: { meaning: 8, reverse: 7, typing: 12, situation: 15, speed: 5 },
+  hard: { meaning: 6, reverse: 5, typing: 9, situation: 11, speed: 4 },
+  extreme: { meaning: 4, reverse: 4, typing: 7, situation: 8, speed: 3 },
+};
 
 export function timeLimitMs(settings: Settings, kind: QuestionKind, boss = false): number {
-  const base = settings.timers[kind] * 1000 * difficultyFactor(settings.difficulty);
+  const base = settings.timers[kind] * 1000;
   return Math.round(boss ? base * 0.85 : base);
 }
 

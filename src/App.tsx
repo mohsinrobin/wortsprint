@@ -1,4 +1,8 @@
 import { useEffect } from 'react';
+import { domAnimation, LazyMotion, MotionConfig } from 'motion/react';
+import { BookOpenText, Flame, GearSix, House, Moon, Sun } from '@phosphor-icons/react';
+import { setThemePref, useTheme } from './lib/theme';
+import { useLook } from './lib/look';
 import { useStore } from './store/useStore';
 import { navigate, useRoute } from './lib/router';
 import { useT } from './lib/i18n';
@@ -40,9 +44,13 @@ export default function App() {
 
   if (section === 'play') {
     return (
-      <div className="min-h-dvh px-4 py-4 sm:px-6">
-        <Play />
-      </div>
+      <LazyMotion features={domAnimation} strict>
+      <MotionConfig reducedMotion="user">
+        <div className="min-h-dvh px-4 py-4 sm:px-6">
+          <Play />
+        </div>
+      </MotionConfig>
+      </LazyMotion>
     );
   }
 
@@ -54,29 +62,35 @@ export default function App() {
   else screen = <Dashboard />;
 
   return (
-    <div className="min-h-dvh pb-24 sm:pb-10">
-      <TopBar active={section ?? ''} />
-      <main className="mx-auto max-w-5xl px-4 pt-5 sm:px-6">{screen}</main>
-      <BottomNav active={section ?? ''} />
-    </div>
+    <LazyMotion features={domAnimation} strict>
+      <MotionConfig reducedMotion="user">
+      <div className="min-h-dvh pb-24 sm:pb-12">
+        <TopBar active={section ?? ''} />
+        <main key={route.join('/')} className="mx-auto max-w-5xl animate-pop px-4 pt-6 sm:px-6 sm:pt-8">
+          {screen}
+        </main>
+        <BottomNav active={section ?? ''} />
+      </div>
+    </MotionConfig>
+      </LazyMotion>
   );
 }
 
 function Logo() {
+  const look = useLook();
+  if (look === 'bahn')
+    return <span className="rounded-[4px] bg-board px-2 py-0.5 text-[19px] font-semibold tracking-tight text-boardink">WortSprint</span>;
   return (
-    <div className="flex items-center gap-2">
-      <div className="grid h-8 w-8 place-items-center rounded-lg bg-emerald-400 text-sm font-black text-[#06281c]">W</div>
-      <span className="text-lg font-extrabold tracking-tight">
-        Wort<span className="text-emerald-400">Sprint</span>
-      </span>
-    </div>
+    <span className="flex items-baseline text-xl font-bold tracking-tight text-ink">
+      Wort<span className="hand -ml-px -rotate-2 text-[23px] font-bold text-blue">sprint</span>
+    </span>
   );
 }
 
 const NAV = [
-  { key: '', path: '/', label: 'navHome', icon: '⌂' },
-  { key: 'library', path: '/library', label: 'navLibrary', icon: '▤' },
-  { key: 'settings', path: '/settings', label: 'navSettings', icon: '⚙' },
+  { key: '', path: '/', label: 'navHome', Icon: House },
+  { key: 'library', path: '/library', label: 'navLibrary', Icon: BookOpenText },
+  { key: 'settings', path: '/settings', label: 'navSettings', Icon: GearSix },
 ] as const;
 
 function TopBar({ active }: { active: string }) {
@@ -86,24 +100,28 @@ function TopBar({ active }: { active: string }) {
   const lvl = levelFromXp(profile.xp);
   const current = active === 'c' ? 'library' : active;
   return (
-    <header className="sticky top-0 z-30 border-b border-[var(--line)] bg-[#0b0d12]/85 backdrop-blur">
+    <header className="sticky top-0 z-30 border-b border-line bg-paper/90 backdrop-blur-sm">
       <div className="mx-auto flex h-14 max-w-5xl items-center gap-4 px-4 sm:px-6">
-        <button onClick={() => navigate('/')}>
+        <button onClick={() => navigate('/')} aria-label={t('navHome')}>
           <Logo />
         </button>
-        <nav className="ml-4 hidden gap-1 sm:flex">
+        <nav className="ml-6 hidden gap-1 sm:flex">
           {NAV.map((n) => (
-            <button key={n.key} onClick={() => navigate(n.path)} className={`rounded-lg px-3 py-1.5 text-sm font-medium ${current === n.key ? 'bg-white/5 text-[var(--ink)]' : 'text-[var(--muted)] hover:text-[var(--ink)]'}`}>
+            <button key={n.key} onClick={() => navigate(n.path)} className={`relative px-3 py-1.5 text-[15px] font-semibold transition-colors ${current === n.key ? 'text-ink' : 'text-pencil hover:text-ink'}`}>
               {t(n.label)}
+              {current === n.key && <span className="absolute inset-x-3 -bottom-[11px] h-[3px] rounded-full bg-blue" />}
             </button>
           ))}
         </nav>
-        <div className="ml-auto flex items-center gap-2 text-sm font-semibold">
-          <span className="rounded-lg bg-amber-400/10 px-2.5 py-1 text-amber-300" title={t('streak')}>
-            🔥 {streak}
+        <div className="ml-auto flex items-center gap-4 text-[15px] font-semibold">
+          <ThemeButton />
+          <span className={`flex items-center gap-1 ${streak > 0 ? 'text-pen' : 'text-pencil'}`} title={t('streak')}>
+            <Flame size={18} weight={streak > 0 ? 'fill' : 'regular'} aria-hidden />
+            {streak}
           </span>
-          <span className="rounded-lg bg-violet-400/10 px-2.5 py-1 text-violet-300" title={`${t('xp')} ${profile.xp}`}>
-            ⭐ {t('playerLevel')} {lvl.level}
+          <span className="flex items-baseline gap-1 text-ink" title={`${t('xp')} ${profile.xp}`}>
+            <span className="text-pencil">{t('playerLevel')}</span>
+            <span className="hand text-xl font-bold text-blue">{lvl.level}</span>
           </span>
         </div>
       </div>
@@ -111,15 +129,26 @@ function TopBar({ active }: { active: string }) {
   );
 }
 
+function ThemeButton() {
+  const t = useT();
+  const { theme } = useTheme();
+  const Icon = theme === 'dark' ? Sun : Moon;
+  return (
+    <button onClick={() => setThemePref(theme === 'dark' ? 'light' : 'dark')} className="grid h-9 w-9 place-items-center rounded-full text-pencil transition-colors hover:bg-ink/5 hover:text-ink" aria-label={t('themeToggle')} title={t('themeToggle')}>
+      <Icon size={19} weight="bold" />
+    </button>
+  );
+}
+
 function BottomNav({ active }: { active: string }) {
   const t = useT();
   const current = active === 'c' ? 'library' : active;
   return (
-    <nav className="fixed inset-x-0 bottom-0 z-30 flex border-t border-[var(--line)] bg-[#0b0d12]/95 pb-[env(safe-area-inset-bottom)] backdrop-blur sm:hidden">
-      {NAV.map((n) => (
-        <button key={n.key} onClick={() => navigate(n.path)} className={`flex flex-1 flex-col items-center gap-0.5 py-2.5 text-[11px] font-medium ${current === n.key ? 'text-emerald-400' : 'text-[var(--muted)]'}`}>
-          <span className="text-lg leading-none">{n.icon}</span>
-          {t(n.label)}
+    <nav className="fixed inset-x-0 bottom-0 z-30 flex border-t border-line bg-paper/95 pb-[env(safe-area-inset-bottom)] backdrop-blur-sm sm:hidden">
+      {NAV.map(({ key, path, label, Icon }) => (
+        <button key={key} onClick={() => navigate(path)} className={`flex flex-1 flex-col items-center gap-0.5 py-2.5 text-xs font-semibold ${current === key ? 'text-blue' : 'text-pencil'}`}>
+          <Icon size={22} weight={current === key ? 'fill' : 'regular'} aria-hidden />
+          {t(label)}
         </button>
       ))}
     </nav>

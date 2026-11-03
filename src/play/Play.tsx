@@ -5,17 +5,27 @@ import { useStore } from '../store/useStore';
 import { navigate } from '../lib/router';
 import { useT } from '../lib/i18n';
 import { play as sfx } from '../lib/sfx';
-import { GermanWord, StateBadge } from '../components/ui';
+import confetti from 'canvas-confetti';
+import { ArrowLeft, SpeakerHigh, X } from '@phosphor-icons/react';
+import { GermanWord, gradeFor, StateBadge } from '../components/ui';
+import { BadgeIcon } from '../components/icons';
+import { Ring, Stamp, Tick } from '../components/marks';
 import { SessionRunner, type RunnerResult } from './SessionRunner';
 import { summarize, type AnswerRecord, type SessionSummary } from '../engine/session';
 import { buildLevels, checkMastery, evaluateBoss, PASS_ACCURACY, PASS_TYPING } from '../engine/levels';
 import { memoryState } from '../engine/srs';
 import { fullMeaning } from '../engine/questions';
-import { BADGES } from '../engine/stats';
 import { ladderPlay, nextStage, stagePlay } from './configs';
 import { speak } from './speak';
+import { useLook } from '../lib/look';
 
 const GROUP = 5;
+
+/** Theme colour as hex for canvas-confetti, read from the live CSS variables. */
+function cssColor(name: string): string {
+  const rgb = getComputedStyle(document.documentElement).getPropertyValue(`--c-${name}`).trim().split(/\s+/).map(Number);
+  return '#' + rgb.map((n) => n.toString(16).padStart(2, '0')).join('');
+}
 
 export function Play() {
   const config = useStore((s) => s.play);
@@ -109,6 +119,7 @@ function PlayInner({ onReplay }: { onReplay: () => void }) {
 function LearnCard({ word, index, total, last, onNext, onBack, onQuit }: { word?: Word; index: number; total: number; last: boolean; onNext: () => void; onBack?: () => void; onQuit: () => void }) {
   const t = useT();
   const lang = useStore((s) => s.settings.meaningLang);
+  const look = useLook();
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
       if (e.key === 'Enter' || e.key === 'ArrowRight' || e.key === ' ') {
@@ -127,35 +138,63 @@ function LearnCard({ word, index, total, last, onNext, onBack, onQuit }: { word?
   return (
     <div className="mx-auto flex min-h-[calc(100dvh-2rem)] max-w-xl flex-col">
       <div className="flex items-center gap-3">
-        <button onClick={onQuit} className="btn-ghost h-9 w-9 !p-0" aria-label={t('quit')}>
-          ✕
+        <button onClick={onQuit} className="btn-ghost h-10 w-10 !p-0" aria-label={t('quit')}>
+          <X size={18} weight="bold" />
         </button>
-        <div className="flex-1 text-center text-xs font-medium uppercase tracking-wider text-[var(--muted)]">
-          {t('learnCard')} · {index + 1}/{total}
+        <div className="flex-1 text-center text-sm font-semibold text-pencil">
+          {t('wordOf', { n: index + 1, total })}
         </div>
-        <div className="w-9" />
+        <div className="w-10" />
       </div>
-      <div key={word.id} className="flex flex-1 animate-pop flex-col items-center justify-center py-8 text-center">
-        <div className="card w-full p-8">
-          <div className="muted text-xs uppercase tracking-wider">{t(`pos_${word.pos}`)}</div>
-          <div className="mt-3 flex items-center justify-center gap-3">
-            <GermanWord de={word.de} article={word.article} className="text-4xl font-extrabold tracking-tight sm:text-5xl" />
-            <button onClick={() => speak(word.de)} className="text-xl opacity-60 hover:opacity-100" aria-label="Pronounce">
-              🔊
-            </button>
+      <div key={word.id} className="flex flex-1 animate-pop flex-col items-center justify-center py-8">
+        {look === 'bahn' ? (
+          // Fahrplan: the word on a station sign, the meaning on the timetable below.
+          <div className="w-full overflow-hidden rounded-sheet shadow-lift">
+            <div className="bg-board px-6 pb-5 pt-4 text-center text-boardink">
+              <div className="text-[15px] font-medium text-boardink/70">{t(`pos_${word.pos}`)}</div>
+              <div className="mt-1 flex items-center justify-center gap-2">
+                <span className="text-[40px] font-semibold leading-tight tracking-tight sm:text-5xl">
+                  {word.article && word.de.startsWith(word.article + ' ') ? (
+                    <>
+                      <span className="text-signal">{word.article}</span> {word.de.slice(word.article.length + 1)}
+                    </>
+                  ) : (
+                    word.de
+                  )}
+                </span>
+                <button onClick={() => speak(word.de)} className="grid h-10 w-10 place-items-center rounded-full text-boardink/70 hover:bg-boardink/10 hover:text-boardink" aria-label={t('pronounce')}>
+                  <SpeakerHigh size={22} weight="bold" />
+                </button>
+              </div>
+            </div>
+            <div className="bg-sheet px-6 py-5 text-center text-[21px] font-medium sm:text-2xl">{fullMeaning(word, lang)}</div>
           </div>
-          <div className="mx-auto my-6 h-px w-16 bg-[var(--line)]" />
-          <div className="text-xl font-medium leading-relaxed sm:text-2xl">{fullMeaning(word, lang)}</div>
-        </div>
+        ) : (
+          /* Karteikarte: an index card with the red header rule */
+          <div className="card w-full -rotate-[0.4deg] overflow-hidden">
+            <div className="border-b-2 border-pen/70 px-6 pb-4 pt-6 text-center">
+              <div className="hand text-xl text-pencil">{t(`pos_${word.pos}`)}</div>
+              <div className="mt-1 flex items-center justify-center gap-2">
+                <GermanWord de={word.de} article={word.article} className="text-[40px] font-bold leading-tight tracking-tight sm:text-5xl" />
+                <button onClick={() => speak(word.de)} className="grid h-10 w-10 place-items-center rounded-full text-pencil hover:bg-ink/5 hover:text-ink" aria-label={t('pronounce')}>
+                  <SpeakerHigh size={22} weight="bold" />
+                </button>
+              </div>
+            </div>
+            <div className="bg-[repeating-linear-gradient(to_bottom,transparent_0,transparent_31px,rgb(var(--c-line))_31px,rgb(var(--c-line))_32px)] px-6 pb-6 pt-[6px] text-center text-[21px] font-medium leading-[32px] sm:text-2xl sm:leading-[32px]">
+              {fullMeaning(word, lang)}
+            </div>
+          </div>
+        )}
       </div>
       <div className="flex gap-3 pb-2">
         {onBack && (
-          <button onClick={onBack} className="btn-ghost px-5">
-            ←
+          <button onClick={onBack} className="btn-ghost px-5" aria-label={t('back')}>
+            <ArrowLeft size={18} weight="bold" />
           </button>
         )}
         <button onClick={onNext} className="btn-primary flex-1 py-3 text-base">
-          {last ? t('startCheck') : t('nextCard')} <span className="text-xs opacity-60">↵</span>
+          {last ? t('startCheck') : t('nextCard')}
         </button>
       </div>
     </div>
@@ -193,70 +232,94 @@ function Summary({ result, onReplay }: { result: { summary: SessionSummary; badg
     onReplay();
   };
 
+  const grade = gradeFor(summary.accuracy);
+  const celebrate = boss?.passed || (summary.answered >= 5 && grade.grade === 1);
+  useEffect(() => {
+    if (!celebrate || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    const id = setTimeout(() => {
+      confetti({ particleCount: 90, spread: 75, startVelocity: 38, origin: { y: 0.35 }, shapes: ['square'], scalar: 0.9, colors: ['blue', 'pen', 'marker', 'ok', 'sheet'].map(cssColor), disableForReducedMotion: true });
+    }, 450);
+    return () => clearTimeout(id);
+  }, [celebrate]);
+
   return (
     <div className="mx-auto max-w-2xl animate-pop pb-10">
-      <div className="py-6 text-center">
-        <div className="text-5xl">{boss ? (boss.passed ? '🏆' : '💪') : summary.accuracy >= 0.9 ? '🎉' : summary.accuracy >= 0.7 ? '👏' : '🧠'}</div>
-        <h1 className="mt-3 text-2xl font-bold">{t('sessionComplete')}</h1>
-        <div className="muted mt-1 text-sm">{config.title}</div>
-        {boss && <div className={`mx-auto mt-4 max-w-md rounded-xl border px-4 py-3 text-sm font-medium ${boss.passed ? 'border-emerald-400/40 bg-emerald-400/10 text-emerald-200' : 'border-amber-300/40 bg-amber-300/10 text-amber-100'}`}>{boss.passed ? t('bossPassed') : t('bossFailed')}</div>}
+      <div className="pb-6 pt-8 text-center">
+        <div className="text-[15px] text-pencil">{config.title}</div>
+        <h1 className="mt-1 text-[28px] font-bold tracking-tight">{t('sessionComplete')}</h1>
+        <div className="mt-5 flex items-center justify-center gap-6">
+          <div className="text-center">
+            <Ring>
+              <span className="hand text-6xl font-bold leading-none text-pen">{grade.grade}</span>
+            </Ring>
+            <div className="hand text-xl text-pen">{grade.word}</div>
+          </div>
+          {boss && <Stamp tone={boss.passed ? 'ok' : 'pen'}>{boss.passed ? 'Bestanden!' : 'Nochmal!'}</Stamp>}
+        </div>
+        {boss && <p className="mx-auto mt-5 max-w-md text-[15px] text-pencil">{boss.passed ? t('bossPassed') : t('bossFailed')}</p>}
       </div>
 
-      <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
+      <dl className="card grid grid-cols-2 divide-x divide-y divide-line overflow-hidden sm:grid-cols-4 sm:divide-y-0">
         <SummaryStat label={t('sessionAccuracy')} value={pct(summary.accuracy)} good={summary.accuracy >= PASS_ACCURACY} />
-        <SummaryStat label={t('typingAccuracy')} value={summary.typedAnswered ? pct(summary.typingAccuracy) : '—'} good={summary.typingAccuracy >= PASS_TYPING} />
+        <SummaryStat label={t('typingAccuracy')} value={summary.typedAnswered ? pct(summary.typingAccuracy) : '—'} good={summary.typedAnswered ? summary.typingAccuracy >= PASS_TYPING : undefined} />
         <SummaryStat label={t('avgSpeed')} value={summary.avgMs ? `${(summary.avgMs / 1000).toFixed(1)}s` : '—'} />
-        <SummaryStat label={t('xpEarned')} value={`+${result.xp}`} accent="text-violet-300" />
-        {config.mode.type === 'speed' && (
-          <>
-            <SummaryStat label={t('finalScore')} value={result.score} accent="text-amber-300" />
-            <SummaryStat label={t('maxCombo')} value={`×${result.maxCombo}`} accent="text-violet-300" />
-          </>
-        )}
-      </div>
+        <SummaryStat label={t('xpEarned')} value={<span className="hand text-[26px] text-blue">+{result.xp}</span>} />
+      </dl>
+      {config.mode.type === 'speed' && (
+        <dl className="card mt-3 grid grid-cols-2 divide-x divide-line overflow-hidden">
+          <SummaryStat label={t('finalScore')} value={<span className="hand text-[26px] text-blue">{result.score}</span>} />
+          <SummaryStat label={t('maxCombo')} value={`×${result.maxCombo}`} />
+        </dl>
+      )}
 
       {result.badges.length > 0 && (
-        <div className="card mt-4 flex flex-wrap items-center gap-3 p-4">
-          <span className="text-sm font-semibold text-amber-200">{t('newBadge')}</span>
-          {result.badges.map((b) => (
-            <span key={b} className="rounded-full bg-amber-300/10 px-3 py-1 text-sm">
-              {BADGES.find((x) => x.id === b)?.icon} {t(`badge_${b}` as never)}
+        <div className="mt-5 flex flex-wrap items-center gap-3">
+          <span className="hand text-xl font-bold text-gold">{t('newBadge')}</span>
+          {result.badges.map((b, i) => (
+            <span key={b} className={`flex items-center gap-1.5 rounded-full border border-gold/30 bg-gold-soft px-3 py-1 text-sm font-semibold text-gold ${i % 2 ? 'rotate-2' : '-rotate-2'}`}>
+              <BadgeIcon id={b} size={16} /> {t(`badge_${b}` as never)}
             </span>
           ))}
         </div>
       )}
 
       {mastery && (config.stage === 'boss' || lp?.bossPassed) && (
-        <div className="card mt-4 p-4">
-          <div className="mb-2 text-sm font-semibold">{t('masteryTitle')}</div>
-          <ul className="space-y-1 text-sm">
+        <div className="card mt-5 p-5">
+          <h2 className="mb-3 font-bold">{t('masteryTitle')}</h2>
+          <ul className="space-y-2 text-[15px]">
             {mastery.requirements.map((r) => (
-              <li key={r.id} className="flex items-center gap-2">
-                <span className={r.met ? 'text-emerald-400' : 'text-[var(--muted)]'}>{r.met ? '✓' : '○'}</span>
-                <span className={r.met ? '' : 'muted'}>{t(`req_${r.id}`)}</span>
+              <li key={r.id} className="flex items-center gap-2.5">
+                <span className="relative grid h-5 w-5 shrink-0 place-items-center rounded-[3px] border-[1.5px] border-pencil/50">
+                  {r.met && (
+                    <span className="absolute -top-2 left-0.5">
+                      <Tick size={22} />
+                    </span>
+                  )}
+                </span>
+                <span className={r.met ? '' : 'text-pencil'}>{t(`req_${r.id}`)}</span>
               </li>
             ))}
           </ul>
         </div>
       )}
 
-      <div className="mt-4 grid gap-3 sm:grid-cols-2">
+      <div className="mt-5 grid gap-4 sm:grid-cols-2">
         <WordList title={t('needPractice')} ids={summary.needsPractice} tone="red" />
         <WordList title={t('solidWords')} ids={summary.solid} tone="green" />
       </div>
 
-      <div className="mt-6 flex flex-col gap-2 sm:flex-row sm:flex-wrap">
+      <div className="mt-7 flex flex-col gap-2 sm:flex-row sm:flex-wrap">
         {boss?.passed && level && (() => {
           const nextLevel = buildLevels(level.collectionId, words[level.collectionId] ?? [])[level.index + 1];
           return nextLevel ? (
             <button className="btn-primary flex-1" onClick={() => go(stagePlay(nextLevel, 'learn', collectionName, settings.uiLang))}>
-              {t('level')} {nextLevel.index + 1} → {t('stage_learn')}
+              {t('level')} {nextLevel.index + 1}: {t('stage_learn')}
             </button>
           ) : null;
         })()}
         {next && level && config.stage !== 'boss' && (
           <button className="btn-primary flex-1" onClick={() => go(stagePlay(level, next, collectionName, settings.uiLang))}>
-            {t('nextStage')}: {t(`stage_${next}`)} →
+            {t('nextStage')}: {t(`stage_${next}`)}
           </button>
         )}
         {practice.length > 0 && (
@@ -275,11 +338,11 @@ function Summary({ result, onReplay }: { result: { summary: SessionSummary; badg
   );
 }
 
-function SummaryStat({ label, value, good, accent }: { label: string; value: React.ReactNode; good?: boolean; accent?: string }) {
+function SummaryStat({ label, value, good }: { label: string; value: React.ReactNode; good?: boolean }) {
   return (
-    <div className="card p-3 text-center">
-      <div className="text-[10px] font-medium uppercase tracking-wider text-[var(--muted)]">{label}</div>
-      <div className={`mt-1 text-xl font-bold tabular-nums ${accent ?? (good === undefined ? '' : good ? 'text-emerald-300' : 'text-amber-200')}`}>{value}</div>
+    <div className="px-4 py-3 text-center">
+      <dt className="text-sm text-pencil">{label}</dt>
+      <dd className={`mt-0.5 text-2xl font-bold ${good === undefined ? '' : good ? 'text-ok' : 'text-pen'}`}>{value}</dd>
     </div>
   );
 }
@@ -290,18 +353,18 @@ function WordList({ title, ids, tone }: { title: string; ids: string[]; tone: 'r
   const lang = useStore((s) => s.settings.meaningLang);
   if (!ids.length) return null;
   return (
-    <div className="card p-4">
-      <div className={`mb-2 text-sm font-semibold ${tone === 'red' ? 'text-red-300' : 'text-emerald-300'}`}>
-        {title} · {ids.length}
-      </div>
-      <ul className="max-h-72 space-y-1.5 overflow-auto pr-1">
+    <div className={`min-w-0 rounded-sheet border p-4 shadow-sheet ${tone === 'red' ? 'border-pen/30 bg-pen-soft/60' : 'border-ok/30 bg-ok-soft/60'}`}>
+      <h2 className={`mb-2 font-bold ${tone === 'red' ? 'text-pen' : 'text-ok'}`}>
+        {title} <span className="hand ml-1 text-xl">{ids.length}</span>
+      </h2>
+      <ul className="max-h-72 divide-y divide-dashed divide-line overflow-auto pr-1">
         {ids.map((id) => {
           const w = wordById(id);
           if (!w) return null;
           return (
-            <li key={id} className="flex items-center justify-between gap-2 text-sm">
+            <li key={id} className="flex items-center justify-between gap-2 py-1.5 text-[15px]">
               <span className="min-w-0 truncate">
-                <GermanWord de={w.de} article={w.article} className="font-semibold" /> <span className="muted">— {fullMeaning(w, lang)}</span>
+                <GermanWord de={w.de} article={w.article} className="font-semibold" /> <span className="text-pencil">— {fullMeaning(w, lang)}</span>
               </span>
               <StateBadge state={memoryState(progress[id])} />
             </li>

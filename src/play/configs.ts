@@ -15,7 +15,7 @@ export function levelPath(level: Level) {
 export function stagePlay(level: Level, stage: StageId, collectionName: string, lang: Lang): PlayConfig {
   const kind = STAGES.find((s) => s.id === stage)!.kind;
   return {
-    title: `${collectionName} · ${translate(lang, 'level')} ${level.index + 1} · ${translate(lang, `stage_${stage}`)}`,
+    title: `${collectionName}, ${translate(lang, 'level')} ${level.index + 1}: ${translate(lang, `stage_${stage}`)}`,
     mode: stage === 'boss' ? { type: 'boss' } : { type: 'stage', kind: kind! },
     wordIds: level.words.map((w) => w.id),
     levelKey: level.key,
@@ -33,7 +33,7 @@ export function speedPlay(level: Level, progress: Record<string, WordProgress>, 
     .slice(0, Math.min(10, Math.ceil(level.words.length / 2)))
     .map((w) => w.id);
   return {
-    title: `${collectionName} · ${translate(lang, 'level')} ${level.index + 1} · ${translate(lang, 'speedChallenge')}`,
+    title: `${collectionName}, ${translate(lang, 'level')} ${level.index + 1}: ${translate(lang, 'speedChallenge')}`,
     mode: { type: 'speed' },
     wordIds: level.words.map((w) => w.id),
     extra: hardest,

@@ -2,28 +2,28 @@
   {
     "id": "a1",
     "name": "A1 Vocabulary",
-    "description": "Goethe A1 word list",
+    "description": "Beginner words, level A1",
     "count": 758,
     "version": "a8ab733fd587"
   },
   {
     "id": "a2",
     "name": "A2 Vocabulary",
-    "description": "Goethe A2 word list",
+    "description": "Elementary words, level A2",
     "count": 671,
     "version": "2a17ae7b0fc9"
   },
   {
     "id": "b1",
     "name": "B1 Vocabulary",
-    "description": "Goethe B1 word list",
+    "description": "Intermediate words, level B1",
     "count": 1667,
     "version": "825fa170a494"
   },
   {
     "id": "extra",
     "name": "Extra Vocabulary",
-    "description": "Extended word list",
+    "description": "More words beyond B1",
     "count": 2799,
     "version": "0447bc044531"
   }

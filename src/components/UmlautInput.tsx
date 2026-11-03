@@ -29,8 +29,7 @@ export const UmlautInput = forwardRef<HTMLInputElement, Props>(function UmlautIn
     });
   };
 
-  const ring =
-    state === 'correct' ? 'border-emerald-400 bg-emerald-400/10' : state === 'wrong' ? 'border-red-400 bg-red-400/10 animate-shake' : 'border-[var(--line)] focus:border-emerald-400/70';
+  const line = state === 'correct' ? 'border-ok text-ok' : state === 'wrong' ? 'border-pen animate-shake' : 'border-blue/40 focus:border-blue';
 
   return (
     <div>
@@ -52,9 +51,9 @@ export const UmlautInput = forwardRef<HTMLInputElement, Props>(function UmlautIn
         spellCheck={false}
         enterKeyHint="go"
         lang="de"
-        className={`w-full rounded-2xl border-2 bg-[var(--surface-2)] px-4 py-4 text-center text-2xl font-semibold tracking-wide outline-none transition sm:text-3xl ${ring}`}
+        className={`hand w-full border-0 border-b-2 bg-transparent focus-visible:outline-none px-2 pb-1 pt-3 text-center text-[32px] leading-tight text-blue outline-none transition-colors placeholder:text-pencil/40 sm:text-4xl ${line}`}
       />
-      <div className="mt-3 flex justify-center gap-1.5">
+      <div className="mt-4 flex justify-center gap-1.5">
         {CHARS.map((ch) => (
           <button
             key={ch}
@@ -63,7 +62,7 @@ export const UmlautInput = forwardRef<HTMLInputElement, Props>(function UmlautIn
             onMouseDown={(e) => e.preventDefault()}
             onClick={() => insert(ch)}
             disabled={disabled}
-            className="h-10 w-10 rounded-lg border border-[var(--line)] bg-[var(--surface-2)] text-lg font-semibold text-[var(--ink)] hover:border-emerald-400/60 active:scale-95 disabled:opacity-40"
+            className="h-11 w-10 rounded-sheet border border-line bg-sheet text-lg font-semibold text-ink shadow-sheet transition-transform hover:border-blue/50 active:translate-y-px disabled:opacity-40"
           >
             {ch}
           </button>

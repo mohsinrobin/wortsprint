@@ -7,8 +7,10 @@ import { buildLevels, checkMastery, isLevelUnlocked, isStageUnlocked, STAGES } f
 import { memoryState } from '../engine/srs';
 import { fullMeaning } from '../engine/questions';
 import { ladderPlay, nextStage, speedPlay, stagePlay } from '../play/configs';
+import { Crown, Lightning, Lock } from '@phosphor-icons/react';
+import { STAGE_ICON } from '../components/icons';
+import { Tick } from '../components/marks';
 
-const STAGE_ICON = { learn: '👀', recognize: '🔍', reverse: '🔁', recall: '⌨️', situations: '🎭', boss: '👾' } as const;
 
 export function LevelView({ collectionId, index }: { collectionId: string; index: number }) {
   const t = useT();
@@ -34,7 +36,10 @@ export function LevelView({ collectionId, index }: { collectionId: string; index
     return (
       <div>
         <PageHeader title={`${t('level')} ${index + 1}`} back={back} />
-        <Empty>🔒 {t('locked')}</Empty>
+        <Empty>
+          <Lock size={20} weight="bold" className="mx-auto mb-2" />
+          {t('locked')}
+        </Empty>
       </div>
     );
   }
@@ -49,65 +54,74 @@ export function LevelView({ collectionId, index }: { collectionId: string; index
   const weakWords = level.words.filter((w) => mastery.weakWords.includes(w.id));
 
   return (
-    <div className="space-y-6">
-      <PageHeader title={`${collection.name} · ${t('level')} ${index + 1}`} back={back} right={lp?.mastered ? <span className="text-2xl">👑</span> : null} />
+    <div className="space-y-8">
+      <PageHeader title={`${t('level')} ${index + 1}`} subtitle={collection.name} back={back} right={lp?.mastered ? <Crown size={28} weight="fill" className="text-gold" aria-label={t('levelMastered')} /> : null} />
 
-      <section className="space-y-2">
+      <ol className="card divide-y divide-line">
         {STAGES.map((s, i) => {
           const res = lp?.stages[s.id];
           const unlocked = isStageUnlocked(lp, s.id);
           const isNext = upNext === s.id;
+          const Icon = STAGE_ICON[s.id];
           return (
-            <div key={s.id} className={`card flex items-center gap-4 p-4 ${isNext ? '!border-emerald-400/60' : ''} ${!unlocked ? 'opacity-50' : ''}`}>
-              <div className={`grid h-11 w-11 shrink-0 place-items-center rounded-xl text-xl ${res?.done ? 'bg-emerald-400/15' : 'bg-white/5'}`}>{res?.done ? '✓' : STAGE_ICON[s.id]}</div>
+            <li key={s.id} className={`flex items-center gap-4 px-4 py-4 sm:px-5 ${isNext ? 'bg-blue-soft/50' : ''} ${!unlocked ? 'opacity-50' : ''}`}>
+              <span className="hand w-5 shrink-0 text-center text-2xl font-bold text-pencil">{i + 1}</span>
+              <span className={`relative grid h-10 w-10 shrink-0 place-items-center rounded-full border-[1.5px] ${res?.done ? 'border-ok/50 text-ok' : isNext ? 'border-blue text-blue' : 'border-line text-pencil'}`}>
+                {res?.done ? <Tick size={26} /> : <Icon size={20} weight="bold" />}
+              </span>
               <div className="min-w-0 flex-1">
-                <div className="flex items-center gap-2">
-                  <span className="muted text-xs tabular-nums">{i + 1}</span>
-                  <span className="font-semibold">{t(`stage_${s.id}`)}</span>
-                </div>
-                <div className="muted text-xs">{t(`stageDesc_${s.id}`)}</div>
+                <div className={`font-semibold ${s.id === 'boss' ? 'text-pen' : ''}`}>{t(`stage_${s.id}`)}</div>
+                <div className="text-sm text-pencil">{t(`stageDesc_${s.id}`)}</div>
                 {res && res.attempts > 0 && s.id !== 'learn' && (
-                  <div className="mt-1 text-xs">
-                    <span className="muted">{t('best')}: </span>
-                    <span className={res.bestAccuracy >= 0.85 ? 'text-emerald-300' : 'text-amber-200'}>{Math.round(res.bestAccuracy * 100)}%</span>
+                  <div className="mt-0.5 text-sm">
+                    <span className="text-pencil">{t('best')}: </span>
+                    <span className={`font-semibold ${res.bestAccuracy >= 0.85 ? 'text-ok' : 'text-pen'}`}>{Math.round(res.bestAccuracy * 100)}%</span>
                   </div>
                 )}
               </div>
               <button disabled={!unlocked} onClick={() => play(stagePlay(level, s.id, collection.name, settings.uiLang))} className={isNext ? 'btn-primary' : 'btn-ghost'}>
-                {res?.done ? t('replay') : t('play')}
+                {!unlocked ? <Lock size={16} weight="bold" aria-label={t('locked')} /> : res?.done ? t('replay') : t('play')}
               </button>
-            </div>
+            </li>
           );
         })}
-      </section>
+      </ol>
 
-      <section className="grid gap-3 sm:grid-cols-2">
+      <section className="grid gap-4 sm:grid-cols-2">
         <button
           disabled={!lp?.stages.learn?.done}
           onClick={() => play(speedPlay(level, progress, collection.name, settings.uiLang))}
-          className="card flex items-center gap-4 p-4 text-left transition hover:border-amber-300/50 disabled:opacity-50 disabled:hover:border-[var(--line)]"
+          className="card flex items-center gap-4 p-5 text-left transition-shadow hover:shadow-lift disabled:opacity-50 disabled:hover:shadow-sheet"
         >
-          <div className="grid h-11 w-11 place-items-center rounded-xl bg-amber-300/10 text-xl">⚡</div>
+          <span className="grid h-11 w-11 shrink-0 place-items-center rounded-full bg-marker text-ink">
+            <Lightning size={22} weight="fill" />
+          </span>
           <div>
             <div className="font-semibold">{t('speedChallenge')}</div>
-            <div className="muted text-xs">{t('speedDesc')}</div>
+            <div className="text-sm text-pencil">{t('speedDesc')}</div>
           </div>
         </button>
-        <div className="card p-4">
-          <div className="mb-2 text-sm font-semibold">{t('masteryTitle')}</div>
-          <ul className="space-y-1 text-sm">
+        <div className="card p-5">
+          <h2 className="mb-3 font-bold">{t('masteryTitle')}</h2>
+          <ul className="space-y-2 text-[15px]">
             {mastery.requirements.map((r) => (
-              <li key={r.id} className="flex items-center gap-2">
-                <span className={r.met ? 'text-emerald-400' : 'text-[var(--muted)]'}>{r.met ? '✓' : '○'}</span>
-                <span className={r.met ? '' : 'muted'}>{t(`req_${r.id}`)}</span>
-                {r.id === 'overall' && lp && <span className="muted ml-auto text-xs tabular-nums">{Math.round(mastery.overall * 100)}%</span>}
-                {r.id === 'typing' && lp && <span className="muted ml-auto text-xs tabular-nums">{Math.round(mastery.typing * 100)}%</span>}
-                {r.id === 'recall' && <span className="muted ml-auto text-xs tabular-nums">{lp?.recallTested.filter((id) => level.words.some((w) => w.id === id)).length ?? 0}/{level.words.length}</span>}
+              <li key={r.id} className="flex items-center gap-2.5">
+                <span className="relative grid h-5 w-5 shrink-0 place-items-center rounded-[3px] border-[1.5px] border-pencil/50">
+                  {r.met && (
+                    <span className="absolute -top-2 left-0.5">
+                      <Tick size={22} />
+                    </span>
+                  )}
+                </span>
+                <span className={r.met ? '' : 'text-pencil'}>{t(`req_${r.id}`)}</span>
+                {r.id === 'overall' && lp && <span className="ml-auto text-sm text-pencil">{Math.round(mastery.overall * 100)}%</span>}
+                {r.id === 'typing' && lp && <span className="ml-auto text-sm text-pencil">{Math.round(mastery.typing * 100)}%</span>}
+                {r.id === 'recall' && <span className="ml-auto text-sm text-pencil">{lp?.recallTested.filter((id) => level.words.some((w) => w.id === id)).length ?? 0}/{level.words.length}</span>}
               </li>
             ))}
           </ul>
           {weakWords.length > 0 && (
-            <button className="btn-danger mt-3 w-full" onClick={() => play(ladderPlay(`${t('level')} ${index + 1} · ${t('reviewWeak')}`, weakWords, `/c/${encodeURIComponent(collectionId)}/l/${index}`, level.key))}>
+            <button className="btn-danger mt-4 w-full" onClick={() => play(ladderPlay(`${t('reviewWeak')}: ${t('level')} ${index + 1}`, weakWords, `/c/${encodeURIComponent(collectionId)}/l/${index}`, level.key))}>
               {t('reviewWeak')} ({weakWords.length})
             </button>
           )}
@@ -115,8 +129,8 @@ export function LevelView({ collectionId, index }: { collectionId: string; index
       </section>
 
       <section>
-        <div className="mb-2 text-sm font-semibold">{t('levelWords')}</div>
-        <div className="card divide-y divide-[var(--line)]">
+        <h2 className="mb-3 text-xl font-bold">{t('levelWords')}</h2>
+        <div className="card divide-y divide-line">
           {level.words.map((w) => {
             const p = progress[w.id];
             const reveal = !!lp?.stages.learn?.done || !!p?.encounters;
@@ -124,12 +138,12 @@ export function LevelView({ collectionId, index }: { collectionId: string; index
               <div key={w.id} className="flex items-center gap-3 px-4 py-2.5">
                 <div className="min-w-0 flex-1">
                   <GermanWord de={w.de} article={w.article} className="font-semibold" />
-                  <div className="muted truncate text-xs">{reveal ? fullMeaning(w, settings.meaningLang) : '•••'}</div>
+                  <div className="truncate text-sm text-pencil">{reveal ? fullMeaning(w, settings.meaningLang) : '•••'}</div>
                 </div>
                 {p && p.encounters > 0 && (
-                  <span className="muted hidden text-xs tabular-nums sm:inline">
+                  <span className="hidden text-sm text-pencil sm:inline">
                     {p.correct}/{p.encounters}
-                    {p.avgMs ? ` · ${(p.avgMs / 1000).toFixed(1)}s` : ''}
+                    {p.avgMs ? <span className="ml-2">{(p.avgMs / 1000).toFixed(1)}s</span> : null}
                   </span>
                 )}
                 <StateBadge state={memoryState(p)} />

@@ -2,58 +2,227 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+/* Light: grey-white recycled school paper ("Umweltpapier"). Lower glare than
+   pure white, ink a deep blue-grey rather than black. */
+:root,
+:root[data-theme='light'] {
+  color-scheme: light;
+  --c-paper: 238 239 234;
+  --c-sheet: 249 249 246;
+  --c-grid: 220 225 228;
+  --c-line: 212 217 221;
+  --c-ink: 35 41 58;
+  --c-pencil: 90 97 114;
+  --c-blue: 42 70 176;
+  --c-blue-soft: 226 231 245;
+  --c-onblue: 255 255 255;
+  --c-pen: 180 40 56;
+  --c-pen-soft: 246 228 229;
+  --c-ok: 27 118 73;
+  --c-ok-soft: 224 239 230;
+  --c-gold: 128 92 14;
+  --c-gold-soft: 245 235 203;
+  --c-marker: 244 216 96;
+  --c-der: 32 92 192;
+  --c-die: 166 42 106;
+  --c-das: 15 120 108;
+  --cover-1: 47 79 191;
+  --cover-2: 186 64 62;
+  --cover-3: 35 128 88;
+  --cover-4: 214 170 42;
+  --cover-5: 106 79 176;
+  --cover-6: 212 117 47;
+  --shadow-sheet: 0 1px 2px rgb(35 41 58 / 0.05), 0 10px 24px -16px rgb(35 41 58 / 0.3);
+  --shadow-lift: 0 2px 4px rgb(35 41 58 / 0.06), 0 18px 36px -18px rgb(35 41 58 / 0.4);
+  --shadow-press: inset 0 1px 0 rgb(255 255 255 / 0.18), 0 1px 2px rgb(35 41 58 / 0.2), 0 8px 18px -10px rgb(42 70 176 / 0.7);
+  --radius: 8px;
+  --font-sans: Jost, 'Hind Siliguri', system-ui, sans-serif;
+  --font-hand: Caveat, 'Hind Siliguri', cursive;
+  --page-bg: linear-gradient(rgb(var(--c-grid)) 1px, transparent 1px), linear-gradient(90deg, rgb(var(--c-grid)) 1px, transparent 1px);
+  --page-bg-size: 20px 20px;
+  --c-board: 12 37 86;
+  --c-boardink: 255 255 255;
+  --c-signal: 255 211 0;
+}
+
+/* Dark: the same exercise book at night — deep blue-black paper, ink and
+   pen colours lifted so they glow softly instead of shouting. */
+:root[data-theme='dark'] {
   color-scheme: dark;
-  --bg: #0b0d12;
-  --surface: #12151c;
-  --surface-2: #181c25;
-  --line: #232836;
-  --ink: #e8eaf0;
-  --muted: #8a92a6;
+  --c-paper: 15 18 27;
+  --c-sheet: 23 27 39;
+  --c-grid: 26 31 45;
+  --c-line: 42 49 67;
+  --c-ink: 226 229 236;
+  --c-pencil: 150 158 177;
+  --c-blue: 138 162 255;
+  --c-blue-soft: 30 38 68;
+  --c-onblue: 12 16 31;
+  --c-pen: 255 128 138;
+  --c-pen-soft: 56 29 37;
+  --c-ok: 104 211 157;
+  --c-ok-soft: 21 46 39;
+  --c-gold: 230 194 104;
+  --c-gold-soft: 50 42 22;
+  --c-marker: 104 88 28;
+  --c-der: 130 176 255;
+  --c-die: 238 140 192;
+  --c-das: 96 208 192;
+  --cover-1: 44 64 140;
+  --cover-2: 132 52 54;
+  --cover-3: 30 96 70;
+  --cover-4: 140 114 36;
+  --cover-5: 76 58 128;
+  --cover-6: 140 82 38;
+  --shadow-sheet: inset 0 1px 0 rgb(255 255 255 / 0.03), 0 1px 2px rgb(0 0 0 / 0.4), 0 12px 28px -16px rgb(0 0 0 / 0.7);
+  --shadow-lift: inset 0 1px 0 rgb(255 255 255 / 0.05), 0 2px 4px rgb(0 0 0 / 0.4), 0 20px 40px -18px rgb(0 0 0 / 0.8);
+  --shadow-press: inset 0 1px 0 rgb(255 255 255 / 0.25), 0 1px 2px rgb(0 0 0 / 0.4), 0 8px 20px -10px rgb(138 162 255 / 0.45);
+}
+
+/* ---- Themes (see src/lib/look.ts). Schulheft is the default above. ------ */
+
+/* Fahrplan: a German railway station. Navy departure boards, signal yellow,
+   condensed DIN-style lettering. */
+:root[data-look='bahn'] {
+  --c-paper: 238 241 245;
+  --c-sheet: 255 255 255;
+  --c-grid: 228 232 238;
+  --c-line: 212 218 227;
+  --c-ink: 17 28 54;
+  --c-pencil: 84 95 118;
+  --c-blue: 13 52 120;
+  --c-blue-soft: 224 232 246;
+  --c-onblue: 255 255 255;
+  --c-pen: 196 18 48;
+  --c-pen-soft: 250 229 232;
+  --c-ok: 0 120 76;
+  --c-ok-soft: 221 241 232;
+  --c-gold: 128 94 0;
+  --c-gold-soft: 255 242 190;
+  --c-marker: 255 211 0;
+  --c-der: 13 82 184;
+  --c-die: 176 30 98;
+  --c-das: 0 118 108;
+  --c-board: 12 37 86;
+  --c-boardink: 255 255 255;
+  --c-signal: 255 211 0;
+  --radius: 4px;
+  --font-sans: 'Barlow Semi Condensed', 'Hind Siliguri', system-ui, sans-serif;
+  --font-hand: 'Barlow Semi Condensed', 'Hind Siliguri', sans-serif;
+  --page-bg: none;
+  --shadow-sheet: 0 1px 2px rgb(17 28 54 / 0.08);
+  --shadow-lift: 0 2px 6px rgb(17 28 54 / 0.12), 0 12px 24px -16px rgb(17 28 54 / 0.35);
+  --shadow-press: 0 1px 2px rgb(17 28 54 / 0.25);
+}
+:root[data-look='bahn'][data-theme='dark'] {
+  --c-paper: 8 16 33;
+  --c-sheet: 14 27 52;
+  --c-grid: 20 34 62;
+  --c-line: 33 50 84;
+  --c-ink: 230 235 245;
+  --c-pencil: 150 164 190;
+  --c-blue: 120 168 255;
+  --c-blue-soft: 22 40 80;
+  --c-onblue: 6 14 30;
+  --c-pen: 255 112 122;
+  --c-pen-soft: 60 24 34;
+  --c-ok: 92 210 150;
+  --c-ok-soft: 18 48 40;
+  --c-gold: 240 200 80;
+  --c-gold-soft: 52 44 16;
+  --c-marker: 116 96 12;
+  --c-der: 130 176 255;
+  --c-die: 240 140 192;
+  --c-das: 96 208 192;
+  --c-board: 17 40 88;
+  --c-boardink: 238 243 250;
+  --shadow-sheet: 0 1px 2px rgb(0 0 0 / 0.5);
+  --shadow-lift: 0 2px 6px rgb(0 0 0 / 0.5), 0 14px 28px -16px rgb(0 0 0 / 0.8);
 }
 
 html,
 body {
-  background: var(--bg);
-  color: var(--ink);
+  color: rgb(var(--c-ink));
   -webkit-tap-highlight-color: transparent;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 
+/* 5 mm "Rechenkästchen" squared paper. */
 body {
-  font-family: Inter, 'Hind Siliguri', system-ui, sans-serif;
-  font-feature-settings: 'cv11', 'ss01';
+  background-color: rgb(var(--c-paper));
+  background-image: var(--page-bg);
+  background-size: var(--page-bg-size);
+  background-position: -1px -1px;
+  background-attachment: fixed;
+  font-family: var(--font-sans);
+  font-size: 16px;
+  font-variant-numeric: tabular-nums;
+  caret-color: rgb(var(--c-blue));
 }
 
 :lang(bn) body,
 .bn {
-  font-family: 'Hind Siliguri', Inter, system-ui, sans-serif;
+  font-family: 'Hind Siliguri', Jost, system-ui, sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  letter-spacing: -0.015em;
+  text-wrap: balance;
+}
+
+::selection {
+  background: rgb(var(--c-marker));
+  color: rgb(var(--c-ink));
+}
+
+:focus-visible {
+  outline: 2px solid rgb(var(--c-blue));
+  outline-offset: 2px;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgb(var(--c-line)) transparent;
 }
 
 @layer components {
   .card {
-    @apply rounded-2xl border border-[var(--line)] bg-[var(--surface)];
+    @apply rounded-sheet border border-line/80 bg-sheet shadow-sheet;
   }
   .btn {
-    @apply inline-flex items-center justify-center gap-2 rounded-xl px-4 py-2.5 text-sm font-semibold transition active:scale-[0.98] disabled:cursor-not-allowed disabled:opacity-40;
+    @apply inline-flex items-center justify-center gap-2 rounded-sheet px-4 py-2.5 text-[15px] font-semibold transition-[transform,background-color,border-color,box-shadow] duration-150 ease-out active:scale-[0.98] disabled:cursor-not-allowed disabled:opacity-40 disabled:active:scale-100;
   }
   .btn-primary {
-    @apply btn bg-emerald-400 text-[#06281c] hover:bg-emerald-300;
+    @apply btn bg-blue text-onblue shadow-press hover:bg-blue/90;
   }
   .btn-ghost {
-    @apply btn border border-[var(--line)] bg-[var(--surface-2)] text-[var(--ink)] hover:border-slate-500;
+    @apply btn border border-line bg-sheet text-ink shadow-sm hover:border-pencil/60;
   }
   .btn-danger {
-    @apply btn border border-red-500/40 bg-red-500/10 text-red-300 hover:bg-red-500/20;
+    @apply btn border border-pen/40 bg-pen-soft text-pen hover:border-pen;
   }
   .input {
-    @apply w-full rounded-xl border border-[var(--line)] bg-[var(--surface-2)] px-3 py-2.5 text-[var(--ink)] outline-none placeholder:text-slate-500 focus:border-emerald-400/70;
+    @apply w-full rounded-sheet border border-line bg-sheet px-3 py-2.5 text-ink outline-none transition-colors placeholder:text-pencil/70 focus:border-blue;
   }
   .label {
-    @apply mb-1.5 block text-xs font-medium uppercase tracking-wider text-[var(--muted)];
+    @apply mb-1.5 block text-sm font-medium text-pencil;
   }
   .muted {
-    @apply text-[var(--muted)];
+    @apply text-pencil;
   }
+  .hand {
+    @apply font-hand;
+  }
+}
+
+/* Theme-specific component details. */
+[data-look='bahn'] h1,
+[data-look='bahn'] h2 {
+  letter-spacing: -0.005em;
 }
 
 .no-scrollbar::-webkit-scrollbar {

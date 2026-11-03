@@ -6,10 +6,10 @@ import { createHash } from 'node:crypto';
 import { parseText, slugify } from '../src/data/parse.ts';
 
 const COLLECTIONS = [
-  { id: 'a1', file: 'a1.txt', name: 'A1 Vocabulary', description: 'Goethe A1 word list' },
-  { id: 'a2', file: 'a2.txt', name: 'A2 Vocabulary', description: 'Goethe A2 word list' },
-  { id: 'b1', file: 'b1.txt', name: 'B1 Vocabulary', description: 'Goethe B1 word list' },
-  { id: 'extra', file: 'extra.txt', name: 'Extra Vocabulary', description: 'Extended word list' },
+  { id: 'a1', file: 'a1.txt', name: 'A1 Vocabulary', description: 'Beginner words, level A1' },
+  { id: 'a2', file: 'a2.txt', name: 'A2 Vocabulary', description: 'Elementary words, level A2' },
+  { id: 'b1', file: 'b1.txt', name: 'B1 Vocabulary', description: 'Intermediate words, level B1' },
+  { id: 'extra', file: 'extra.txt', name: 'Extra Vocabulary', description: 'More words beyond B1' },
 ];
 const POS_CODE = { noun: 'n', verb: 'v', adjective: 'adj', adverb: 'adv', pronoun: 'pr', other: 'x' };
 
