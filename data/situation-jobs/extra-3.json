@@ -1,0 +1,2402 @@
+[
+ {
+  "id": "extra-n-fingerabdruck",
+  "de": "der Fingerabdruck",
+  "pos": "noun",
+  "en": "fingerprint"
+ },
+ {
+  "id": "extra-v-beten",
+  "de": "beten",
+  "pos": "verb",
+  "en": "to pray"
+ },
+ {
+  "id": "extra-n-predigt",
+  "de": "die Predigt",
+  "pos": "noun",
+  "en": "sermon"
+ },
+ {
+  "id": "extra-v-spiegeln",
+  "de": "spiegeln",
+  "pos": "verb",
+  "en": "to shine, to gleam, to reflect, to mirror"
+ },
+ {
+  "id": "extra-n-top",
+  "de": "das Top",
+  "pos": "noun",
+  "en": "top"
+ },
+ {
+  "id": "extra-adj-praezise",
+  "de": "präzise",
+  "pos": "adjective",
+  "en": "precise, accurate, concise"
+ },
+ {
+  "id": "extra-n-bindung",
+  "de": "die Bindung",
+  "pos": "noun",
+  "en": "binding, bond, relationship, attachment"
+ },
+ {
+  "id": "extra-v-platzen",
+  "de": "platzen",
+  "pos": "verb",
+  "en": "to burst, to pop, to split, to fall through"
+ },
+ {
+  "id": "extra-n-huhn",
+  "de": "das Huhn",
+  "pos": "noun",
+  "en": "chicken, hen"
+ },
+ {
+  "id": "extra-adj-generell",
+  "de": "generell",
+  "pos": "adjective",
+  "en": "general"
+ },
+ {
+  "id": "extra-n-erkenntnis",
+  "de": "die Erkenntnis",
+  "pos": "noun",
+  "en": "realisation, recognition, discovery, knowledge, insight"
+ },
+ {
+  "id": "extra-v-verdanken",
+  "de": "verdanken",
+  "pos": "verb",
+  "en": "to owe, to due"
+ },
+ {
+  "id": "extra-n-mitteilung",
+  "de": "die Mitteilung",
+  "pos": "noun",
+  "en": "communication, message, notice, note, announcement"
+ },
+ {
+  "id": "extra-n-schlag",
+  "de": "der Schlag",
+  "pos": "noun",
+  "en": "blow, beat, stroke, punch"
+ },
+ {
+  "id": "extra-adv-tausendmal",
+  "de": "tausendmal",
+  "pos": "adverb",
+  "en": "a thousand times"
+ },
+ {
+  "id": "extra-v-abziehen",
+  "de": "abziehen",
+  "pos": "verb",
+  "en": "to take off, to remove, to withdraw, to subtract, to deduct"
+ },
+ {
+  "id": "extra-adj-oberflaechlich",
+  "de": "oberflächlich",
+  "pos": "adjective",
+  "en": "superficial, shallow"
+ },
+ {
+  "id": "extra-n-uhrzeit",
+  "de": "die Uhrzeit",
+  "pos": "noun",
+  "en": "time (of day)"
+ },
+ {
+  "id": "extra-n-zeitraum",
+  "de": "der Zeitraum",
+  "pos": "noun",
+  "en": "period, time period, period of time, time rage"
+ },
+ {
+  "id": "extra-v-haemmern",
+  "de": "hämmern",
+  "pos": "verb",
+  "en": "to hammer, to pound"
+ },
+ {
+  "id": "extra-n-handarbeit",
+  "de": "die Handarbeit",
+  "pos": "noun",
+  "en": "manual work, handwork, craftsmanship, handicraft"
+ },
+ {
+  "id": "extra-adj-optisch",
+  "de": "optisch",
+  "pos": "adjective",
+  "en": "optical, visual"
+ },
+ {
+  "id": "extra-n-stellungnahme",
+  "de": "die Stellungnahme",
+  "pos": "noun",
+  "en": "opinion, statement"
+ },
+ {
+  "id": "extra-v-aufrufen",
+  "de": "aufrufen",
+  "pos": "verb",
+  "en": "to call out, to call up, to call upon"
+ },
+ {
+  "id": "extra-n-akteur",
+  "de": "der Akteur",
+  "pos": "noun",
+  "en": "player, actor"
+ },
+ {
+  "id": "extra-n-erhaltung",
+  "de": "die Erhaltung",
+  "pos": "noun",
+  "en": "preservation, maintenance, conservation"
+ },
+ {
+  "id": "extra-adj-unauffaellig",
+  "de": "unauffällig",
+  "pos": "adjective",
+  "en": "inconspicuous(ly), unobtrusive(ly)"
+ },
+ {
+  "id": "extra-v-abschweifen",
+  "de": "abschweifen",
+  "pos": "verb",
+  "en": "to digress, to deviate"
+ },
+ {
+  "id": "extra-n-eigentum",
+  "de": "das Eigentum",
+  "pos": "noun",
+  "en": "property, ownership"
+ },
+ {
+  "id": "extra-n-begleiter",
+  "de": "der Begleiter",
+  "pos": "noun",
+  "en": "companion, attendant, accompanist"
+ },
+ {
+  "id": "extra-v-antun",
+  "de": "antun",
+  "pos": "verb",
+  "en": "to do sth to sb"
+ },
+ {
+  "id": "extra-adj-trueb",
+  "de": "trüb, trübe",
+  "pos": "adjective",
+  "en": "dull, cloudy, turbid, murky"
+ },
+ {
+  "id": "extra-n-betrueger",
+  "de": "der Betrüger",
+  "pos": "noun",
+  "en": "swindler, fraud, fraudster, cheat, imposter"
+ },
+ {
+  "id": "extra-n-macht",
+  "de": "die Macht",
+  "pos": "noun",
+  "en": "power, strength, might, force"
+ },
+ {
+  "id": "extra-v-verschaffen",
+  "de": "verschaffen",
+  "pos": "verb",
+  "en": "to provide, to give, to get, to gain"
+ },
+ {
+  "id": "extra-adv-absolut",
+  "de": "absolut",
+  "pos": "adverb",
+  "en": "absolutely, completely"
+ },
+ {
+  "id": "extra-n-aktie",
+  "de": "die Aktie",
+  "pos": "noun",
+  "en": "share"
+ },
+ {
+  "id": "extra-adj-diskret",
+  "de": "diskret",
+  "pos": "adjective",
+  "en": "discreet, confidential"
+ },
+ {
+  "id": "extra-v-charakterisieren",
+  "de": "charakterisieren",
+  "pos": "verb",
+  "en": "to characterize"
+ },
+ {
+  "id": "extra-n-konstruktion",
+  "de": "die Konstruktion",
+  "pos": "noun",
+  "en": "construction, design"
+ },
+ {
+  "id": "extra-n-japanisch",
+  "de": "das Japanisch",
+  "pos": "noun",
+  "en": "Japanese"
+ },
+ {
+  "id": "extra-v-locken",
+  "de": "locken",
+  "pos": "verb",
+  "en": "to lure, to tempt, to attract, to lure, to entice"
+ },
+ {
+  "id": "extra-n-marathon",
+  "de": "der Marathon",
+  "pos": "noun",
+  "en": "marathon"
+ },
+ {
+  "id": "extra-adj-parat",
+  "de": "parat",
+  "pos": "adjective",
+  "en": "ready"
+ },
+ {
+  "id": "extra-n-astronaut",
+  "de": "der Astronaut",
+  "pos": "noun",
+  "en": "astronaut"
+ },
+ {
+  "id": "extra-v-wandeln",
+  "de": "wandeln",
+  "pos": "verb",
+  "en": "to change, to convert, to wander"
+ },
+ {
+  "id": "extra-n-polen",
+  "de": "das Polen",
+  "pos": "noun",
+  "en": "Poland"
+ },
+ {
+  "id": "extra-n-grammatik",
+  "de": "die Grammatik",
+  "pos": "noun",
+  "en": "grammar, grammar book"
+ },
+ {
+  "id": "extra-adj-einig",
+  "de": "einig",
+  "pos": "adjective",
+  "en": "agreed, united"
+ },
+ {
+  "id": "extra-v-nicken",
+  "de": "nicken",
+  "pos": "verb",
+  "en": "to nod"
+ },
+ {
+  "id": "extra-n-mindestlohn",
+  "de": "der Mindestlohn",
+  "pos": "noun",
+  "en": "minimum wage"
+ },
+ {
+  "id": "extra-n-bube",
+  "de": "der Bube",
+  "pos": "noun",
+  "en": "boy, jack"
+ },
+ {
+  "id": "extra-v-taeuschen",
+  "de": "täuschen",
+  "pos": "verb",
+  "en": "to deceive, to be mistaken, to fool, to trick, to mislead"
+ },
+ {
+  "id": "extra-adj-zweifelsfrei",
+  "de": "zweifelsfrei",
+  "pos": "adjective",
+  "en": "without doubt, unequivocal, unambiguous"
+ },
+ {
+  "id": "extra-n-umweg",
+  "de": "der Umweg",
+  "pos": "noun",
+  "en": "detour, diversion, long way round"
+ },
+ {
+  "id": "extra-adv-stattdessen",
+  "de": "stattdessen",
+  "pos": "adverb",
+  "en": "instead"
+ },
+ {
+  "id": "extra-n-vorgaenger",
+  "de": "der Vorgänger",
+  "pos": "noun",
+  "en": "predecessor"
+ },
+ {
+  "id": "extra-v-voruebergehen",
+  "de": "vorübergehen",
+  "pos": "verb",
+  "en": "to pass, to go by"
+ },
+ {
+  "id": "extra-n-unsinn",
+  "de": "der Unsinn",
+  "pos": "noun",
+  "en": "nonsense, rubbish"
+ },
+ {
+  "id": "extra-adj-jeweilig",
+  "de": "jeweilig",
+  "pos": "adjective",
+  "en": "particular, respective"
+ },
+ {
+  "id": "extra-n-psychologie",
+  "de": "die Psychologie",
+  "pos": "noun",
+  "en": "psychology"
+ },
+ {
+  "id": "extra-v-verweigern",
+  "de": "verweigern",
+  "pos": "verb",
+  "en": "to refuse, to deny, to reject"
+ },
+ {
+  "id": "extra-n-branche",
+  "de": "die Branche",
+  "pos": "noun",
+  "en": "sector, industry, line of business, field, branch"
+ },
+ {
+  "id": "extra-n-bundesrepublik",
+  "de": "die Bundesrepublik",
+  "pos": "noun",
+  "en": "Federal Republic"
+ },
+ {
+  "id": "extra-v-beabsichtigen",
+  "de": "beabsichtigen",
+  "pos": "verb",
+  "en": "to intend, to plan"
+ },
+ {
+  "id": "extra-adj-emotional",
+  "de": "emotional",
+  "pos": "adjective",
+  "en": "emotional"
+ },
+ {
+  "id": "extra-n-nachfolge",
+  "de": "die Nachfolge",
+  "pos": "noun",
+  "en": "succession"
+ },
+ {
+  "id": "extra-n-banknote",
+  "de": "die Banknote",
+  "pos": "noun",
+  "en": "banknote, bill"
+ },
+ {
+  "id": "extra-v-hauen",
+  "de": "hauen",
+  "pos": "verb",
+  "en": "to hit, to beat, to slap, to bang"
+ },
+ {
+  "id": "extra-n-wlan",
+  "de": "das WLAN",
+  "pos": "noun",
+  "en": "Wi-Fi"
+ },
+ {
+  "id": "extra-adj-kirchlich",
+  "de": "kirchlich",
+  "pos": "adjective",
+  "en": "(in) church, ecclesiastical"
+ },
+ {
+  "id": "extra-v-aufsetzen",
+  "de": "aufsetzen",
+  "pos": "verb",
+  "en": "to put on, to set up, to sit up, to touch down"
+ },
+ {
+  "id": "extra-n-zwilling",
+  "de": "der Zwilling",
+  "pos": "noun",
+  "en": "twin, Gemini"
+ },
+ {
+  "id": "extra-n-verfahren",
+  "de": "das Verfahren",
+  "pos": "noun",
+  "en": "method, process, procedure, technique"
+ },
+ {
+  "id": "extra-adj-griechisch",
+  "de": "griechisch",
+  "pos": "adjective",
+  "en": "Greek"
+ },
+ {
+  "id": "extra-v-vollziehen",
+  "de": "vollziehen",
+  "pos": "verb",
+  "en": "to carry out, to take place, to execute"
+ },
+ {
+  "id": "extra-adv-derzeit",
+  "de": "derzeit",
+  "pos": "adverb",
+  "en": "at the moment, at present, currently"
+ },
+ {
+  "id": "extra-n-einsamkeit",
+  "de": "die Einsamkeit",
+  "pos": "noun",
+  "en": "loneliness, solitude, isolation, seclusion"
+ },
+ {
+  "id": "extra-n-gen",
+  "de": "das Gen",
+  "pos": "noun",
+  "en": "gene"
+ },
+ {
+  "id": "extra-v-koordinieren",
+  "de": "koordinieren",
+  "pos": "verb",
+  "en": "to coordinate"
+ },
+ {
+  "id": "extra-n-taube",
+  "de": "die Taube",
+  "pos": "noun",
+  "en": "dove, pigeon"
+ },
+ {
+  "id": "extra-adj-sachlich",
+  "de": "sachlich",
+  "pos": "adjective",
+  "en": "objective, factual, matter-of-fact"
+ },
+ {
+  "id": "extra-n-jungfrau",
+  "de": "die Jungfrau",
+  "pos": "noun",
+  "en": "virgin, Virgo"
+ },
+ {
+  "id": "extra-v-anstehen",
+  "de": "anstehen",
+  "pos": "verb",
+  "en": "to line up, to queue, to be pending, to be due"
+ },
+ {
+  "id": "extra-n-initiative",
+  "de": "die Initiative",
+  "pos": "noun",
+  "en": "initiative"
+ },
+ {
+  "id": "extra-n-trockenheit",
+  "de": "die Trockenheit",
+  "pos": "noun",
+  "en": "dryness, drought"
+ },
+ {
+  "id": "extra-adj-weise",
+  "de": "weise",
+  "pos": "adjective",
+  "en": "wise, sage"
+ },
+ {
+  "id": "extra-v-angucken",
+  "de": "angucken",
+  "pos": "verb",
+  "en": "to look at"
+ },
+ {
+  "id": "extra-n-kraut",
+  "de": "das Kraut",
+  "pos": "noun",
+  "en": "herb, cabbage"
+ },
+ {
+  "id": "extra-n-portraet",
+  "de": "das Porträt",
+  "pos": "noun",
+  "en": "portrait"
+ },
+ {
+  "id": "extra-v-auflegen",
+  "de": "auflegen",
+  "pos": "verb",
+  "en": "to publish, to put on, to hang up"
+ },
+ {
+  "id": "extra-adj-unbekannt",
+  "de": "unbekannt",
+  "pos": "adjective",
+  "en": "unknown"
+ },
+ {
+  "id": "extra-n-regime",
+  "de": "das Regime",
+  "pos": "noun",
+  "en": "regime"
+ },
+ {
+  "id": "extra-n-veilchen",
+  "de": "das Veilchen",
+  "pos": "noun",
+  "en": "violet, black eye, shiner"
+ },
+ {
+  "id": "extra-v-erwirtschaften",
+  "de": "erwirtschaften",
+  "pos": "verb",
+  "en": "to generate, to earn, to make"
+ },
+ {
+  "id": "extra-adv-lediglich",
+  "de": "lediglich",
+  "pos": "adverb",
+  "en": "merely, simply, only, just"
+ },
+ {
+  "id": "extra-n-tierarzt",
+  "de": "der Tierarzt",
+  "pos": "noun",
+  "en": "vet, veterinarian"
+ },
+ {
+  "id": "extra-adj-tragbar",
+  "de": "tragbar",
+  "pos": "adjective",
+  "en": "portable, wearable, sustainable, acceptable"
+ },
+ {
+  "id": "extra-n-motiv",
+  "de": "das Motiv",
+  "pos": "noun",
+  "en": "motive, motif, subject, reason"
+ },
+ {
+  "id": "extra-v-anfassen",
+  "de": "anfassen",
+  "pos": "verb",
+  "en": "to touch"
+ },
+ {
+  "id": "extra-n-weltraum",
+  "de": "der Weltraum",
+  "pos": "noun",
+  "en": "space, outer space"
+ },
+ {
+  "id": "extra-n-raubtier",
+  "de": "das Raubtier",
+  "pos": "noun",
+  "en": "predator"
+ },
+ {
+  "id": "extra-v-ausrollen",
+  "de": "ausrollen",
+  "pos": "verb",
+  "en": "to roll, to roll out, to coast"
+ },
+ {
+  "id": "extra-adj-aufgeregt",
+  "de": "aufgeregt",
+  "pos": "adjective",
+  "en": "excited, nervous"
+ },
+ {
+  "id": "extra-n-aufbau",
+  "de": "der Aufbau",
+  "pos": "noun",
+  "en": "construction, structure, building, assembly, development"
+ },
+ {
+  "id": "extra-v-dulden",
+  "de": "dulden",
+  "pos": "verb",
+  "en": "to tolerate, to condone"
+ },
+ {
+  "id": "extra-n-landwirt",
+  "de": "der Landwirt",
+  "pos": "noun",
+  "en": "farmer"
+ },
+ {
+  "id": "extra-n-schande",
+  "de": "die Schande",
+  "pos": "noun",
+  "en": "shame, disgrace"
+ },
+ {
+  "id": "extra-adj-maechtig",
+  "de": "mächtig",
+  "pos": "adjective",
+  "en": "powerful, mighty"
+ },
+ {
+  "id": "extra-v-hervorheben",
+  "de": "hervorheben",
+  "pos": "verb",
+  "en": "to emphasize, to highlight, to stress, to point out, to accentuate"
+ },
+ {
+  "id": "extra-n-mama",
+  "de": "die Mama",
+  "pos": "noun",
+  "en": "mum, mummy, mamma"
+ },
+ {
+  "id": "extra-n-ruhm",
+  "de": "der Ruhm",
+  "pos": "noun",
+  "en": "fame, glory"
+ },
+ {
+  "id": "extra-v-erlassen",
+  "de": "erlassen",
+  "pos": "verb",
+  "en": "to enact, to issue, to remit"
+ },
+ {
+  "id": "extra-adj-widerlich",
+  "de": "widerlich",
+  "pos": "adjective",
+  "en": "disgusting, repugnant"
+ },
+ {
+  "id": "extra-n-kolonie",
+  "de": "die Kolonie",
+  "pos": "noun",
+  "en": "colony"
+ },
+ {
+  "id": "extra-n-taktik",
+  "de": "die Taktik",
+  "pos": "noun",
+  "en": "tactic"
+ },
+ {
+  "id": "extra-adv-beiseite",
+  "de": "beiseite",
+  "pos": "adverb",
+  "en": "aside"
+ },
+ {
+  "id": "extra-v-grossziehen",
+  "de": "großziehen",
+  "pos": "verb",
+  "en": "to raise, to bring up, to rear"
+ },
+ {
+  "id": "extra-n-verpackung",
+  "de": "die Verpackung",
+  "pos": "noun",
+  "en": "packaging, packing, wrapping"
+ },
+ {
+  "id": "extra-adj-verabredet",
+  "de": "verabredet",
+  "pos": "adjective",
+  "en": "appointed, fixed, arranged"
+ },
+ {
+  "id": "extra-n-differenz",
+  "de": "die Differenz",
+  "pos": "noun",
+  "en": "difference, disagreement"
+ },
+ {
+  "id": "extra-v-befuerworten",
+  "de": "befürworten",
+  "pos": "verb",
+  "en": "to support, to endorse, to favour, to favor, to approve"
+ },
+ {
+  "id": "extra-n-einzelfall",
+  "de": "der Einzelfall",
+  "pos": "noun",
+  "en": "individual case, single case, specific case, particular case, isolated case"
+ },
+ {
+  "id": "extra-n-zeigefinger",
+  "de": "der Zeigefinger",
+  "pos": "noun",
+  "en": "index finger, forefinger"
+ },
+ {
+  "id": "extra-adj-formal",
+  "de": "formal",
+  "pos": "adjective",
+  "en": "formal"
+ },
+ {
+  "id": "extra-v-ermoeglichen",
+  "de": "ermöglichen",
+  "pos": "verb",
+  "en": "to enable, to allow, to make possible"
+ },
+ {
+  "id": "extra-n-keim",
+  "de": "der Keim",
+  "pos": "noun",
+  "en": "germ, seed, sprout"
+ },
+ {
+  "id": "extra-n-fakt",
+  "de": "der Fakt",
+  "pos": "noun",
+  "en": "fact"
+ },
+ {
+  "id": "extra-v-labern",
+  "de": "labern",
+  "pos": "verb",
+  "en": "to prattle, to babble"
+ },
+ {
+  "id": "extra-n-buergermeister",
+  "de": "der Bürgermeister",
+  "pos": "noun",
+  "en": "mayor"
+ },
+ {
+  "id": "extra-adj-ueberzeugend",
+  "de": "überzeugend",
+  "pos": "adjective",
+  "en": "convincing, persuasive, cogent"
+ },
+ {
+  "id": "extra-n-uebereinstimmung",
+  "de": "die Übereinstimmung",
+  "pos": "noun",
+  "en": "agreement, accordance, conformity, compliance, match"
+ },
+ {
+  "id": "extra-v-wiedersehen",
+  "de": "wiedersehen",
+  "pos": "verb",
+  "en": "to see again, to meet again"
+ },
+ {
+  "id": "extra-n-favorit",
+  "de": "der Favorit",
+  "pos": "noun",
+  "en": "favourite, favorite"
+ },
+ {
+  "id": "extra-adj-sanft",
+  "de": "sanft",
+  "pos": "adjective",
+  "en": "soft, gentle"
+ },
+ {
+  "id": "extra-n-beileid",
+  "de": "das Beileid",
+  "pos": "noun",
+  "en": "condolence, sympathy"
+ },
+ {
+  "id": "extra-v-aufstellen",
+  "de": "aufstellen",
+  "pos": "verb",
+  "en": "to set up, to put up, to nominate"
+ },
+ {
+  "id": "extra-adv-zwischendurch",
+  "de": "zwischendurch",
+  "pos": "adverb",
+  "en": "in between, in the meantime, occasionally"
+ },
+ {
+  "id": "extra-n-glatze",
+  "de": "die Glatze",
+  "pos": "noun",
+  "en": "bald head, baldness, skinhead"
+ },
+ {
+  "id": "extra-v-durchfuehren",
+  "de": "durchführen",
+  "pos": "verb",
+  "en": "to carry out, to perform, to pass"
+ },
+ {
+  "id": "extra-n-glocke",
+  "de": "die Glocke",
+  "pos": "noun",
+  "en": "bell"
+ },
+ {
+  "id": "extra-adj-israelisch",
+  "de": "israelisch",
+  "pos": "adjective",
+  "en": "Israeli"
+ },
+ {
+  "id": "extra-n-champagner",
+  "de": "der Champagner",
+  "pos": "noun",
+  "en": "champagne"
+ },
+ {
+  "id": "extra-v-hervorrufen",
+  "de": "hervorrufen",
+  "pos": "verb",
+  "en": "to evoke, to arouse, to cause"
+ },
+ {
+  "id": "extra-n-himmelsrichtung",
+  "de": "die Himmelsrichtung",
+  "pos": "noun",
+  "en": "cardinal direction, direction, point of the compass"
+ },
+ {
+  "id": "extra-n-buchung",
+  "de": "die Buchung",
+  "pos": "noun",
+  "en": "booking, posting, reservation"
+ },
+ {
+  "id": "extra-adj-aufwaendig",
+  "de": "aufwändig, aufwendig",
+  "pos": "adjective",
+  "en": "complex, lavish(ly), costly, expensive, elaborate(ly), time-consuming"
+ },
+ {
+  "id": "extra-v-entziehen",
+  "de": "entziehen",
+  "pos": "verb",
+  "en": "to withdraw, to remove"
+ },
+ {
+  "id": "extra-n-verstand",
+  "de": "der Verstand",
+  "pos": "noun",
+  "en": "mind, intellect, reason, brain"
+ },
+ {
+  "id": "extra-n-waehler",
+  "de": "der Wähler",
+  "pos": "noun",
+  "en": "voter, electorate, elector"
+ },
+ {
+  "id": "extra-v-sich-vornehmen",
+  "de": "sich vornehmen",
+  "pos": "verb",
+  "en": "to plan to do, to intend to do, to get to work on"
+ },
+ {
+  "id": "extra-n-gruendung",
+  "de": "die Gründung",
+  "pos": "noun",
+  "en": "foundation"
+ },
+ {
+  "id": "extra-adj-erneut",
+  "de": "erneut",
+  "pos": "adjective",
+  "en": "again, once more, another, renewed, repeated"
+ },
+ {
+  "id": "extra-n-perspektive",
+  "de": "die Perspektive",
+  "pos": "noun",
+  "en": "perspective, prospect, view"
+ },
+ {
+  "id": "extra-v-mitbekommen",
+  "de": "mitbekommen",
+  "pos": "verb",
+  "en": "to notice, to realize, to catch, to get"
+ },
+ {
+  "id": "extra-n-berechnung",
+  "de": "die Berechnung",
+  "pos": "noun",
+  "en": "calculation"
+ },
+ {
+  "id": "extra-adv-bislang",
+  "de": "bislang",
+  "pos": "adverb",
+  "en": "so far, up to now"
+ },
+ {
+  "id": "extra-adj-unkompliziert",
+  "de": "unkompliziert",
+  "pos": "adjective",
+  "en": "straightforward, uncomplicated, simple"
+ },
+ {
+  "id": "extra-n-saeule",
+  "de": "die Säule",
+  "pos": "noun",
+  "en": "column, pillar"
+ },
+ {
+  "id": "extra-v-leuchten",
+  "de": "leuchten",
+  "pos": "verb",
+  "en": "to shine, to glow"
+ },
+ {
+  "id": "extra-n-durchmesser",
+  "de": "der Durchmesser",
+  "pos": "noun",
+  "en": "diameter"
+ },
+ {
+  "id": "extra-n-republik",
+  "de": "die Republik",
+  "pos": "noun",
+  "en": "republic"
+ },
+ {
+  "id": "extra-v-bedrohen",
+  "de": "bedrohen",
+  "pos": "verb",
+  "en": "to threaten, to menace"
+ },
+ {
+  "id": "extra-adj-geschickt",
+  "de": "geschickt",
+  "pos": "adjective",
+  "en": "skilful, skillful, skilled"
+ },
+ {
+  "id": "extra-n-silber",
+  "de": "das Silber",
+  "pos": "noun",
+  "en": "silver"
+ },
+ {
+  "id": "extra-n-island",
+  "de": "das Island",
+  "pos": "noun",
+  "en": "Iceland"
+ },
+ {
+  "id": "extra-v-beziehen",
+  "de": "beziehen",
+  "pos": "verb",
+  "en": "to refer, to relate, to obtain, to source"
+ },
+ {
+  "id": "extra-n-eigenschaft",
+  "de": "die Eigenschaft",
+  "pos": "noun",
+  "en": "property, characteristic, feature, quality"
+ },
+ {
+  "id": "extra-adj-grundlegend",
+  "de": "grundlegend",
+  "pos": "adjective",
+  "en": "basic, fundamental"
+ },
+ {
+  "id": "extra-n-behaelter",
+  "de": "der Behälter",
+  "pos": "noun",
+  "en": "container, tank, vessel, reservoir"
+ },
+ {
+  "id": "extra-v-werben",
+  "de": "werben",
+  "pos": "verb",
+  "en": "to advertise"
+ },
+ {
+  "id": "extra-n-einsicht",
+  "de": "die Einsicht",
+  "pos": "noun",
+  "en": "view, insight"
+ },
+ {
+  "id": "extra-v-kombinieren",
+  "de": "kombinieren",
+  "pos": "verb",
+  "en": "to combine"
+ },
+ {
+  "id": "extra-n-felsen",
+  "de": "der Felsen",
+  "pos": "noun",
+  "en": "rock, cliff"
+ },
+ {
+  "id": "extra-adj-wissenschaftlich",
+  "de": "wissenschaftlich",
+  "pos": "adjective",
+  "en": "scientific, scholarly"
+ },
+ {
+  "id": "extra-n-pokal",
+  "de": "der Pokal",
+  "pos": "noun",
+  "en": "cup, trophy, goblet"
+ },
+ {
+  "id": "extra-adv-gleichwohl",
+  "de": "gleichwohl",
+  "pos": "adverb",
+  "en": "nevertheless, nonetheless, anyhow"
+ },
+ {
+  "id": "extra-v-drankommen",
+  "de": "drankommen",
+  "pos": "verb",
+  "en": "to have one's turn, to be asked, to be picked, to reach, to get at"
+ },
+ {
+  "id": "extra-n-gefluechtete",
+  "de": "der Geflüchtete",
+  "pos": "noun",
+  "en": "refugee"
+ },
+ {
+  "id": "extra-adj-gentechnisch",
+  "de": "gentechnisch",
+  "pos": "adjective",
+  "en": "genetic, genetical"
+ },
+ {
+  "id": "extra-n-massage",
+  "de": "die Massage",
+  "pos": "noun",
+  "en": "massage"
+ },
+ {
+  "id": "extra-v-verbergen",
+  "de": "verbergen",
+  "pos": "verb",
+  "en": "to hide, to conceal, to cover"
+ },
+ {
+  "id": "extra-n-schoenheit",
+  "de": "die Schönheit",
+  "pos": "noun",
+  "en": "beauty"
+ },
+ {
+  "id": "extra-n-stellung",
+  "de": "die Stellung",
+  "pos": "noun",
+  "en": "position, standing"
+ },
+ {
+  "id": "extra-adj-niederlaendisch",
+  "de": "niederländisch",
+  "pos": "adjective",
+  "en": "Dutch"
+ },
+ {
+  "id": "extra-v-seufzen",
+  "de": "seufzen",
+  "pos": "verb",
+  "en": "to sigh"
+ },
+ {
+  "id": "extra-n-these",
+  "de": "die These",
+  "pos": "noun",
+  "en": "thesis"
+ },
+ {
+  "id": "extra-n-mass",
+  "de": "das Maß",
+  "pos": "noun",
+  "en": "measure, degree, dimension"
+ },
+ {
+  "id": "extra-v-gelangen",
+  "de": "gelangen",
+  "pos": "verb",
+  "en": "to reach, to get, to arrive, to enter, to access"
+ },
+ {
+  "id": "extra-n-antragsteller",
+  "de": "der Antragsteller",
+  "pos": "noun",
+  "en": "applicant"
+ },
+ {
+  "id": "extra-adj-respektvoll",
+  "de": "respektvoll",
+  "pos": "adjective",
+  "en": "respectful(ly), deferential(ly)"
+ },
+ {
+  "id": "extra-n-abstimmung",
+  "de": "die Abstimmung",
+  "pos": "noun",
+  "en": "vote, coordination, reconciliation"
+ },
+ {
+  "id": "extra-v-zutreffen",
+  "de": "zutreffen",
+  "pos": "verb",
+  "en": "to be correct, to apply, to be true, to prove right"
+ },
+ {
+  "id": "extra-n-offizier",
+  "de": "der Offizier",
+  "pos": "noun",
+  "en": "officer"
+ },
+ {
+  "id": "extra-adj-umweltfreundlich",
+  "de": "umweltfreundlich",
+  "pos": "adjective",
+  "en": "environmentally friendly, eco-friendly"
+ },
+ {
+  "id": "extra-n-geschaeftsfuehrer",
+  "de": "der Geschäftsführer",
+  "pos": "noun",
+  "en": "manager, managing director, general manager, director, CEO"
+ },
+ {
+  "id": "extra-v-untergehen",
+  "de": "untergehen",
+  "pos": "verb",
+  "en": "to go down, to sink"
+ },
+ {
+  "id": "extra-adv-heutzutage",
+  "de": "heutzutage",
+  "pos": "adverb",
+  "en": "nowadays, these days"
+ },
+ {
+  "id": "extra-n-beachtung",
+  "de": "die Beachtung",
+  "pos": "noun",
+  "en": "attention, consideration, observance"
+ },
+ {
+  "id": "extra-n-erschoepfung",
+  "de": "die Erschöpfung",
+  "pos": "noun",
+  "en": "exhaustion, fatigue, depletion"
+ },
+ {
+  "id": "extra-v-erfolgen",
+  "de": "erfolgen",
+  "pos": "verb",
+  "en": "to take place, to occur, to happen"
+ },
+ {
+  "id": "extra-adj-objektiv",
+  "de": "objektiv",
+  "pos": "adjective",
+  "en": "objective"
+ },
+ {
+  "id": "extra-n-finanzierung",
+  "de": "die Finanzierung",
+  "pos": "noun",
+  "en": "financing"
+ },
+ {
+  "id": "extra-n-menschenrecht",
+  "de": "das Menschenrecht",
+  "pos": "noun",
+  "en": "human right"
+ },
+ {
+  "id": "extra-v-reiben",
+  "de": "reiben",
+  "pos": "verb",
+  "en": "to rub, to grate"
+ },
+ {
+  "id": "extra-n-veranstalter",
+  "de": "der Veranstalter",
+  "pos": "noun",
+  "en": "organizer"
+ },
+ {
+  "id": "extra-adj-einmalig",
+  "de": "einmalig",
+  "pos": "adjective",
+  "en": "unique, one-time, fantastic"
+ },
+ {
+  "id": "extra-v-konzipieren",
+  "de": "konzipieren",
+  "pos": "verb",
+  "en": "to plan, to design, to conceive"
+ },
+ {
+  "id": "extra-n-meditation",
+  "de": "die Meditation",
+  "pos": "noun",
+  "en": "meditation"
+ },
+ {
+  "id": "extra-n-reiz",
+  "de": "der Reiz",
+  "pos": "noun",
+  "en": "stimulus, appeal, charm, allure, attraction"
+ },
+ {
+  "id": "extra-v-segnen",
+  "de": "segnen",
+  "pos": "verb",
+  "en": "to bless"
+ },
+ {
+  "id": "extra-n-ausbreitung",
+  "de": "die Ausbreitung",
+  "pos": "noun",
+  "en": "spread, spreading, propagation, proliferation, sprawl"
+ },
+ {
+  "id": "extra-adj-klinisch",
+  "de": "klinisch",
+  "pos": "adjective",
+  "en": "clinical"
+ },
+ {
+  "id": "extra-n-schnuersenkel",
+  "de": "der Schnürsenkel",
+  "pos": "noun",
+  "en": "lace, shoelace, shoestring"
+ },
+ {
+  "id": "extra-v-basieren",
+  "de": "basieren",
+  "pos": "verb",
+  "en": "to be based on, to base"
+ },
+ {
+  "id": "extra-n-gluehbirne",
+  "de": "die Glühbirne",
+  "pos": "noun",
+  "en": "bulb, light bulb, electric bulb"
+ },
+ {
+  "id": "extra-adv-ohnehin",
+  "de": "ohnehin",
+  "pos": "adverb",
+  "en": "anyway, anyhow, in any case"
+ },
+ {
+  "id": "extra-adj-beliebig",
+  "de": "beliebig",
+  "pos": "adjective",
+  "en": "any, as you like, arbitrary, random"
+ },
+ {
+  "id": "extra-n-fachhochschule",
+  "de": "die Fachhochschule",
+  "pos": "noun",
+  "en": "college of higher education, university of applied sciences"
+ },
+ {
+  "id": "extra-v-ausbauen",
+  "de": "ausbauen",
+  "pos": "verb",
+  "en": "to extend, to expand, to improve, to enlarge, to remove"
+ },
+ {
+  "id": "extra-n-postbote",
+  "de": "der Postbote",
+  "pos": "noun",
+  "en": "postman, mailman, mail carrier"
+ },
+ {
+  "id": "extra-n-besitzer",
+  "de": "der Besitzer",
+  "pos": "noun",
+  "en": "owner"
+ },
+ {
+  "id": "extra-v-nachschauen",
+  "de": "nachschauen",
+  "pos": "verb",
+  "en": "to look (up), to check"
+ },
+ {
+  "id": "extra-adj-unweigerlich",
+  "de": "unweigerlich",
+  "pos": "adjective",
+  "en": "inevitable"
+ },
+ {
+  "id": "extra-n-existenz",
+  "de": "die Existenz",
+  "pos": "noun",
+  "en": "existence"
+ },
+ {
+  "id": "extra-n-probe",
+  "de": "die Probe",
+  "pos": "noun",
+  "en": "sample, test, rehearsal, specimen"
+ },
+ {
+  "id": "extra-v-abgrenzen",
+  "de": "abgrenzen",
+  "pos": "verb",
+  "en": "to enclose, to differentiate, to distinguish, to delimit"
+ },
+ {
+  "id": "extra-n-entsorgung",
+  "de": "die Entsorgung",
+  "pos": "noun",
+  "en": "disposal"
+ },
+ {
+  "id": "extra-adj-intellektuell",
+  "de": "intellektuell",
+  "pos": "adjective",
+  "en": "intellectual"
+ },
+ {
+  "id": "extra-n-provinz",
+  "de": "die Provinz",
+  "pos": "noun",
+  "en": "province, provinces"
+ },
+ {
+  "id": "extra-v-versteigern",
+  "de": "versteigern",
+  "pos": "verb",
+  "en": "to auction"
+ },
+ {
+  "id": "extra-n-band-2",
+  "de": "der Band",
+  "pos": "noun",
+  "en": "volume, tome"
+ },
+ {
+  "id": "extra-n-therapeut",
+  "de": "der Therapeut",
+  "pos": "noun",
+  "en": "therapist"
+ },
+ {
+  "id": "extra-adj-dynamisch",
+  "de": "dynamisch",
+  "pos": "adjective",
+  "en": "dynamic"
+ },
+ {
+  "id": "extra-v-fluechten",
+  "de": "flüchten",
+  "pos": "verb",
+  "en": "to flee, to escape, to run away"
+ },
+ {
+  "id": "extra-n-nachfolger",
+  "de": "der Nachfolger",
+  "pos": "noun",
+  "en": "successor"
+ },
+ {
+  "id": "extra-adv-inwieweit",
+  "de": "inwieweit",
+  "pos": "adverb",
+  "en": "to what extent, how far"
+ },
+ {
+  "id": "extra-n-narbe",
+  "de": "die Narbe",
+  "pos": "noun",
+  "en": "scar"
+ },
+ {
+  "id": "extra-v-gewaehrleisten",
+  "de": "gewährleisten",
+  "pos": "verb",
+  "en": "to guarantee, to ensure"
+ },
+ {
+  "id": "extra-adj-heimisch",
+  "de": "heimisch",
+  "pos": "adjective",
+  "en": "indigenous, native, domestic, home"
+ },
+ {
+  "id": "extra-n-argument",
+  "de": "das Argument",
+  "pos": "noun",
+  "en": "argument"
+ },
+ {
+  "id": "extra-v-erleiden",
+  "de": "erleiden",
+  "pos": "verb",
+  "en": "to suffer, to endure, to sustain"
+ },
+ {
+  "id": "extra-n-fell",
+  "de": "das Fell",
+  "pos": "noun",
+  "en": "fur, coat, skin"
+ },
+ {
+  "id": "extra-n-wuerfel",
+  "de": "der Würfel",
+  "pos": "noun",
+  "en": "cube, dice, die"
+ },
+ {
+  "id": "extra-adj-gelenkig",
+  "de": "gelenkig",
+  "pos": "adjective",
+  "en": "flexible, supple, agile"
+ },
+ {
+  "id": "extra-v-froesteln",
+  "de": "frösteln",
+  "pos": "verb",
+  "en": "to shiver"
+ },
+ {
+  "id": "extra-n-beobachter",
+  "de": "der Beobachter",
+  "pos": "noun",
+  "en": "observer, watcher"
+ },
+ {
+  "id": "extra-n-tunnel",
+  "de": "der Tunnel",
+  "pos": "noun",
+  "en": "tunnel"
+ },
+ {
+  "id": "extra-v-ausdehnen",
+  "de": "ausdehnen",
+  "pos": "verb",
+  "en": "to extend, to expand"
+ },
+ {
+  "id": "extra-n-dimension",
+  "de": "die Dimension",
+  "pos": "noun",
+  "en": "dimension"
+ },
+ {
+  "id": "extra-adj-volljaehrig",
+  "de": "volljährig",
+  "pos": "adjective",
+  "en": "of age, of legal age"
+ },
+ {
+  "id": "extra-n-rueckzug",
+  "de": "der Rückzug",
+  "pos": "noun",
+  "en": "retreat, withdrawal"
+ },
+ {
+  "id": "extra-v-sich-enthalten",
+  "de": "sich enthalten",
+  "pos": "verb",
+  "en": "to abstain"
+ },
+ {
+  "id": "extra-n-labor",
+  "de": "das Labor",
+  "pos": "noun",
+  "en": "laboratory, lab"
+ },
+ {
+  "id": "extra-n-kontext",
+  "de": "der Kontext",
+  "pos": "noun",
+  "en": "context"
+ },
+ {
+  "id": "extra-adj-konzentriert",
+  "de": "konzentriert",
+  "pos": "adjective",
+  "en": "concentrated, focused, focussed"
+ },
+ {
+  "id": "extra-v-buersten",
+  "de": "bürsten",
+  "pos": "verb",
+  "en": "to brush"
+ },
+ {
+  "id": "extra-adv-daraufhin",
+  "de": "daraufhin",
+  "pos": "adverb",
+  "en": "as a result, thereupon"
+ },
+ {
+  "id": "extra-n-bezug",
+  "de": "der Bezug",
+  "pos": "noun",
+  "en": "reference, cover"
+ },
+ {
+  "id": "extra-n-perfektion",
+  "de": "die Perfektion",
+  "pos": "noun",
+  "en": "perfection"
+ },
+ {
+  "id": "extra-v-lauschen",
+  "de": "lauschen",
+  "pos": "verb",
+  "en": "to listen, to eavesdrop"
+ },
+ {
+  "id": "extra-adj-erstaunlich",
+  "de": "erstaunlich",
+  "pos": "adjective",
+  "en": "astonishing(ly), amazing(ly), surprising(ly)"
+ },
+ {
+  "id": "extra-n-schuetze",
+  "de": "der Schütze",
+  "pos": "noun",
+  "en": "scorer, marksman, Sagittarius"
+ },
+ {
+  "id": "extra-n-basis",
+  "de": "die Basis",
+  "pos": "noun",
+  "en": "basis, base"
+ },
+ {
+  "id": "extra-v-befreien",
+  "de": "befreien",
+  "pos": "verb",
+  "en": "to free, to liberate, to release, to rid"
+ },
+ {
+  "id": "extra-n-sternzeichen",
+  "de": "das Sternzeichen",
+  "pos": "noun",
+  "en": "star sign, zodiac sign"
+ },
+ {
+  "id": "extra-adj-deutschsprachig",
+  "de": "deutschsprachig",
+  "pos": "adjective",
+  "en": "German-speaking"
+ },
+ {
+  "id": "extra-n-vorsorge",
+  "de": "die Vorsorge",
+  "pos": "noun",
+  "en": "provision, precaution, prevention"
+ },
+ {
+  "id": "extra-v-formen",
+  "de": "formen",
+  "pos": "verb",
+  "en": "to form, to shape, to mold"
+ },
+ {
+  "id": "extra-n-liebling",
+  "de": "der Liebling",
+  "pos": "noun",
+  "en": "favourite, favorite, darling, honey, sweetheart"
+ },
+ {
+  "id": "extra-n-der",
+  "de": "der der, die, das Erste",
+  "pos": "noun",
+  "en": "first, 1st"
+ },
+ {
+  "id": "extra-v-bestimmen",
+  "de": "bestimmen",
+  "pos": "verb",
+  "en": "to decide, to determine, to define"
+ },
+ {
+  "id": "extra-adj-wirtschaftlich",
+  "de": "wirtschaftlich",
+  "pos": "adjective",
+  "en": "economic"
+ },
+ {
+  "id": "extra-n-ueberfall",
+  "de": "der Überfall",
+  "pos": "noun",
+  "en": "robbery, raid, attack"
+ },
+ {
+  "id": "extra-v-verlegen",
+  "de": "verlegen",
+  "pos": "verb",
+  "en": "to misplace, to mislay, to postpone, to reschedule, to publish"
+ },
+ {
+  "id": "extra-n-gurke",
+  "de": "die Gurke",
+  "pos": "noun",
+  "en": "cucumber, gherkin"
+ },
+ {
+  "id": "extra-adv-nunmehr",
+  "de": "nunmehr",
+  "pos": "adverb",
+  "en": "now"
+ },
+ {
+  "id": "extra-n-rechtsprechung",
+  "de": "die Recht(s)sprechung",
+  "pos": "noun",
+  "en": "jurisdiction"
+ },
+ {
+  "id": "extra-adj-divers",
+  "de": "divers",
+  "pos": "adjective",
+  "en": "diverse, various"
+ },
+ {
+  "id": "extra-v-bezeichnen",
+  "de": "bezeichnen",
+  "pos": "verb",
+  "en": "to call, to name, to describe, to denote"
+ },
+ {
+  "id": "extra-n-rohstoff",
+  "de": "der Rohstoff",
+  "pos": "noun",
+  "en": "raw material, resource"
+ },
+ {
+  "id": "extra-n-geisel",
+  "de": "die Geisel",
+  "pos": "noun",
+  "en": "hostage"
+ },
+ {
+  "id": "extra-adj-fotografisch",
+  "de": "fotografisch",
+  "pos": "adjective",
+  "en": "photographic"
+ },
+ {
+  "id": "extra-v-erlaeutern",
+  "de": "erläutern",
+  "pos": "verb",
+  "en": "to explain"
+ },
+ {
+  "id": "extra-n-terror",
+  "de": "der Terror",
+  "pos": "noun",
+  "en": "terror, terrorism"
+ },
+ {
+  "id": "extra-n-ferne",
+  "de": "die Ferne",
+  "pos": "noun",
+  "en": "distance"
+ },
+ {
+  "id": "extra-v-unterstellen",
+  "de": "unterstellen",
+  "pos": "verb",
+  "en": "to put in charge, to imply, to insinuate, to store, to take shelter"
+ },
+ {
+  "id": "extra-n-nation",
+  "de": "die Nation",
+  "pos": "noun",
+  "en": "nation"
+ },
+ {
+  "id": "extra-adj-permanent",
+  "de": "permanent",
+  "pos": "adjective",
+  "en": "permanent"
+ },
+ {
+  "id": "extra-n-sonnenuntergang",
+  "de": "der Sonnenuntergang",
+  "pos": "noun",
+  "en": "sunset"
+ },
+ {
+  "id": "extra-v-erregen",
+  "de": "erregen",
+  "pos": "verb",
+  "en": "to arouse, to excite, to attract, to annoy"
+ },
+ {
+  "id": "extra-n-weltkugel",
+  "de": "die Weltkugel",
+  "pos": "noun",
+  "en": "globe"
+ },
+ {
+  "id": "extra-n-praesident",
+  "de": "der Präsident",
+  "pos": "noun",
+  "en": "president, chairman"
+ },
+ {
+  "id": "extra-adj-todkrank",
+  "de": "todkrank",
+  "pos": "adjective",
+  "en": "terminally ill"
+ },
+ {
+  "id": "extra-v-untersagen",
+  "de": "untersagen",
+  "pos": "verb",
+  "en": "to forbid, to prohibit, to ban"
+ },
+ {
+  "id": "extra-n-bundesregierung",
+  "de": "die Bundesregierung",
+  "pos": "noun",
+  "en": "federal government"
+ },
+ {
+  "id": "extra-adv-hinauf",
+  "de": "hinauf",
+  "pos": "adverb",
+  "en": "up, upwards"
+ },
+ {
+  "id": "extra-n-sueddeutschland",
+  "de": "das Süddeutschland",
+  "pos": "noun",
+  "en": "South(ern) Germany"
+ },
+ {
+  "id": "extra-v-mogeln",
+  "de": "mogeln",
+  "pos": "verb",
+  "en": "to cheat"
+ },
+ {
+  "id": "extra-adj-potenziell",
+  "de": "potenziell",
+  "pos": "adjective",
+  "en": "potential"
+ },
+ {
+  "id": "extra-n-kochbuch",
+  "de": "das Kochbuch",
+  "pos": "noun",
+  "en": "cookbook, cookery book"
+ },
+ {
+  "id": "extra-n-mittelalter",
+  "de": "das Mittelalter",
+  "pos": "noun",
+  "en": "Middle Ages, medieval times"
+ },
+ {
+  "id": "extra-v-erscheinen",
+  "de": "erscheinen",
+  "pos": "verb",
+  "en": "to appear, to seem, to be published, to be released, to come out"
+ },
+ {
+  "id": "extra-n-sommersprosse",
+  "de": "die Sommersprosse",
+  "pos": "noun",
+  "en": "freckle"
+ },
+ {
+  "id": "extra-adj-real",
+  "de": "real",
+  "pos": "adjective",
+  "en": "real"
+ },
+ {
+  "id": "extra-n-versand",
+  "de": "der Versand",
+  "pos": "noun",
+  "en": "shipping, shipment, dispatch"
+ },
+ {
+  "id": "extra-v-zuschicken",
+  "de": "zuschicken",
+  "pos": "verb",
+  "en": "to send, to mail"
+ },
+ {
+  "id": "extra-n-verb",
+  "de": "das Verb",
+  "pos": "noun",
+  "en": "verb"
+ },
+ {
+  "id": "extra-v-meiden",
+  "de": "meiden",
+  "pos": "verb",
+  "en": "to avoid"
+ },
+ {
+  "id": "extra-n-verband",
+  "de": "der Verband",
+  "pos": "noun",
+  "en": "association, federation, union, bandage"
+ },
+ {
+  "id": "extra-adj-psychologisch",
+  "de": "psychologisch",
+  "pos": "adjective",
+  "en": "psychological"
+ },
+ {
+  "id": "extra-n-zahnschmerz",
+  "de": "der Zahnschmerz",
+  "pos": "noun",
+  "en": "toothache"
+ },
+ {
+  "id": "extra-v-rechtfertigen",
+  "de": "rechtfertigen",
+  "pos": "verb",
+  "en": "to justify"
+ },
+ {
+  "id": "extra-n-bach",
+  "de": "der Bach",
+  "pos": "noun",
+  "en": "stream, brook, creek"
+ },
+ {
+  "id": "extra-n-kommunismus",
+  "de": "der Kommunismus",
+  "pos": "noun",
+  "en": "communism"
+ },
+ {
+  "id": "extra-adj-staatlich",
+  "de": "staatlich",
+  "pos": "adjective",
+  "en": "state, government, national"
+ },
+ {
+  "id": "extra-v-erstaunen",
+  "de": "erstaunen",
+  "pos": "verb",
+  "en": "to astonish, to amaze"
+ },
+ {
+  "id": "extra-n-koralle",
+  "de": "die Koralle",
+  "pos": "noun",
+  "en": "coral"
+ },
+ {
+  "id": "extra-adv-wodurch",
+  "de": "wodurch",
+  "pos": "adverb",
+  "en": "how, which, whereby, by what"
+ },
+ {
+  "id": "extra-n-konkurrent",
+  "de": "der Konkurrent",
+  "pos": "noun",
+  "en": "competitor, rival"
+ },
+ {
+  "id": "extra-v-blicken",
+  "de": "blicken",
+  "pos": "verb",
+  "en": "to look, to glance, to peep, to peek"
+ },
+ {
+  "id": "extra-adj-verfuegbar",
+  "de": "verfügbar",
+  "pos": "adjective",
+  "en": "available"
+ },
+ {
+  "id": "extra-n-befreiung",
+  "de": "die Befreiung",
+  "pos": "noun",
+  "en": "liberation, exemption, release, relief"
+ },
+ {
+  "id": "extra-n-terrorist",
+  "de": "der Terrorist",
+  "pos": "noun",
+  "en": "terrorist"
+ },
+ {
+  "id": "extra-v-ertragen",
+  "de": "ertragen",
+  "pos": "verb",
+  "en": "to bear, to endure, to stand"
+ },
+ {
+  "id": "extra-n-vergewaltigung",
+  "de": "die Vergewaltigung",
+  "pos": "noun",
+  "en": "rape"
+ },
+ {
+  "id": "extra-adj-verpflichtend",
+  "de": "verpflichtend",
+  "pos": "adjective",
+  "en": "compulsory, obligatory, binding, mandatory"
+ },
+ {
+  "id": "extra-n-gefangene",
+  "de": "der Gefangene",
+  "pos": "noun",
+  "en": "prisoner, captive"
+ },
+ {
+  "id": "extra-v-neigen",
+  "de": "neigen",
+  "pos": "verb",
+  "en": "to tend, to tilt, to bend, to lean"
+ },
+ {
+  "id": "extra-n-ansicht",
+  "de": "die Ansicht",
+  "pos": "noun",
+  "en": "opinion, view"
+ },
+ {
+  "id": "extra-n-mauszeiger",
+  "de": "der Mauszeiger",
+  "pos": "noun",
+  "en": "cursor"
+ },
+ {
+  "id": "extra-v-verderben",
+  "de": "verderben",
+  "pos": "verb",
+  "en": "to spoil, to ruin"
+ },
+ {
+  "id": "extra-adj-spezifisch",
+  "de": "spezifisch",
+  "pos": "adjective",
+  "en": "specific"
+ },
+ {
+  "id": "extra-n-wueste",
+  "de": "die Wüste",
+  "pos": "noun",
+  "en": "desert"
+ },
+ {
+  "id": "extra-n-partie",
+  "de": "die Partie",
+  "pos": "noun",
+  "en": "game, area, lot"
+ },
+ {
+  "id": "extra-v-beauftragen",
+  "de": "beauftragen",
+  "pos": "verb",
+  "en": "to commission, to engage, to hire, to instruct, to task"
+ },
+ {
+  "id": "extra-n-raumklima",
+  "de": "das Raumklima",
+  "pos": "noun",
+  "en": "room climate"
+ },
+ {
+  "id": "extra-adj-eineiig",
+  "de": "eineiig",
+  "pos": "adjective",
+  "en": "identical, monozygotic"
+ },
+ {
+  "id": "extra-adv-zuhause",
+  "de": "zuhause, zu Hause",
+  "pos": "adverb",
+  "en": "at home, home"
+ },
+ {
+  "id": "extra-n-phase",
+  "de": "die Phase",
+  "pos": "noun",
+  "en": "phase"
+ },
+ {
+  "id": "extra-v-gestehen",
+  "de": "gestehen",
+  "pos": "verb",
+  "en": "to confess, to admit"
+ },
+ {
+  "id": "extra-n-nachname",
+  "de": "der Nachname",
+  "pos": "noun",
+  "en": "surname, family name, last name"
+ },
+ {
+  "id": "extra-adj-umstritten",
+  "de": "umstritten",
+  "pos": "adjective",
+  "en": "disputed, controversial"
+ },
+ {
+  "id": "extra-n-wassermelone",
+  "de": "die Wassermelone",
+  "pos": "noun",
+  "en": "watermelon"
+ },
+ {
+  "id": "extra-v-hingehen",
+  "de": "hingehen",
+  "pos": "verb",
+  "en": "to go (there)"
+ },
+ {
+  "id": "extra-n-papa",
+  "de": "der Papa",
+  "pos": "noun",
+  "en": "daddy, dad, pop, poppa"
+ },
+ {
+  "id": "extra-v-erweitern",
+  "de": "erweitern",
+  "pos": "verb",
+  "en": "to widen, to extend, to expand, to broaden"
+ },
+ {
+  "id": "extra-n-vorgang",
+  "de": "der Vorgang",
+  "pos": "noun",
+  "en": "occurrence, process, procedure, event"
+ },
+ {
+  "id": "extra-adj-haarig",
+  "de": "haarig",
+  "pos": "adjective",
+  "en": "hairy"
+ },
+ {
+  "id": "extra-n-glaube",
+  "de": "der Glaube",
+  "pos": "noun",
+  "en": "faith, belief"
+ },
+ {
+  "id": "extra-v-ueberwinden",
+  "de": "überwinden",
+  "pos": "verb",
+  "en": "to overcome"
+ },
+ {
+  "id": "extra-n-verkauf",
+  "de": "der Verkauf",
+  "pos": "noun",
+  "en": "sale"
+ },
+ {
+  "id": "extra-n-china",
+  "de": "das China",
+  "pos": "noun",
+  "en": "China"
+ },
+ {
+  "id": "extra-adj-schlapp",
+  "de": "schlapp",
+  "pos": "adjective",
+  "en": "weak, listless, limp, flabby, floppy"
+ },
+ {
+  "id": "extra-v-bevorzugen",
+  "de": "bevorzugen",
+  "pos": "verb",
+  "en": "to prefer, to favour, to favor"
+ },
+ {
+  "id": "extra-n-durchbruch",
+  "de": "der Durchbruch",
+  "pos": "noun",
+  "en": "breakthrough, breach"
+ },
+ {
+  "id": "extra-n-ameise",
+  "de": "die Ameise",
+  "pos": "noun",
+  "en": "ant"
+ },
+ {
+  "id": "extra-adv-eh",
+  "de": "eh",
+  "pos": "adverb",
+  "en": "anyway"
+ },
+ {
+  "id": "extra-v-aufrichten",
+  "de": "aufrichten",
+  "pos": "verb",
+  "en": "to put up, to erect, to straighten up"
+ },
+ {
+  "id": "extra-n-suche",
+  "de": "die Suche",
+  "pos": "noun",
+  "en": "search"
+ },
+ {
+  "id": "extra-adj-erlaubt",
+  "de": "erlaubt",
+  "pos": "adjective",
+  "en": "allowed, permitted, permissible"
+ },
+ {
+  "id": "extra-n-lack",
+  "de": "der Lack",
+  "pos": "noun",
+  "en": "paint, varnish, lacquer"
+ },
+ {
+  "id": "extra-v-fixieren",
+  "de": "fixieren",
+  "pos": "verb",
+  "en": "to fix, to fix one’s eyes, to fixate"
+ },
+ {
+  "id": "extra-n-applikation",
+  "de": "die Applikation",
+  "pos": "noun",
+  "en": "application"
+ },
+ {
+  "id": "extra-adj-begabt",
+  "de": "begabt",
+  "pos": "adjective",
+  "en": "gifted, talented"
+ },
+ {
+  "id": "extra-n-anteilnahme",
+  "de": "die Anteilnahme",
+  "pos": "noun",
+  "en": "sympathy, condolence, compassion, participation"
+ },
+ {
+  "id": "extra-v-impfen",
+  "de": "impfen",
+  "pos": "verb",
+  "en": "to inoculate, to vaccinate"
+ },
+ {
+  "id": "extra-n-entzuendung",
+  "de": "die Entzündung",
+  "pos": "noun",
+  "en": "inflammation, ignition"
+ },
+ {
+  "id": "extra-n-symptom",
+  "de": "das Symptom",
+  "pos": "noun",
+  "en": "symptom"
+ },
+ {
+  "id": "extra-v-uebergehen",
+  "de": "übergehen",
+  "pos": "verb",
+  "en": "to ignore, to skip, to pass"
+ },
+ {
+  "id": "extra-adj-ungemuetlich",
+  "de": "ungemütlich",
+  "pos": "adjective",
+  "en": "uncomfortable, unpleasant"
+ },
+ {
+  "id": "extra-n-linse",
+  "de": "die Linse",
+  "pos": "noun",
+  "en": "lens, lentil"
+ },
+ {
+  "id": "extra-n-selbstbewusstsein",
+  "de": "das Selbstbewusstsein",
+  "pos": "noun",
+  "en": "self-confidence"
+ },
+ {
+  "id": "extra-v-pupsen",
+  "de": "pupsen",
+  "pos": "verb",
+  "en": "to fart"
+ },
+ {
+  "id": "extra-n-kapitalismus",
+  "de": "der Kapitalismus",
+  "pos": "noun",
+  "en": "capitalism"
+ },
+ {
+  "id": "extra-adj-erheblich",
+  "de": "erheblich",
+  "pos": "adjective",
+  "en": "considerable, significant"
+ },
+ {
+  "id": "extra-n-verbraucher",
+  "de": "der Verbraucher",
+  "pos": "noun",
+  "en": "consumer"
+ },
+ {
+  "id": "extra-v-sich-befassen",
+  "de": "sich befassen",
+  "pos": "verb",
+  "en": "to deal with"
+ },
+ {
+  "id": "extra-adv-hingegen",
+  "de": "hingegen",
+  "pos": "adverb",
+  "en": "on the other hand, on the contrary, in contrast, whereas"
+ },
+ {
+  "id": "extra-n-laufzeit",
+  "de": "die Laufzeit",
+  "pos": "noun",
+  "en": "term, duration, runtime"
+ },
+ {
+  "id": "extra-v-eintreffen",
+  "de": "eintreffen",
+  "pos": "verb",
+  "en": "to arrive, to come true, to happen, to occur"
+ },
+ {
+  "id": "extra-n-ketchup",
+  "de": "der Ketchup",
+  "pos": "noun",
+  "en": "ketchup"
+ },
+ {
+  "id": "extra-adj-wesentlich",
+  "de": "wesentlich",
+  "pos": "adjective",
+  "en": "essential, fundamental"
+ },
+ {
+  "id": "extra-n-daenemark",
+  "de": "das Dänemark",
+  "pos": "noun",
+  "en": "Denmark"
+ },
+ {
+  "id": "extra-v-vorbeigehen",
+  "de": "vorbeigehen",
+  "pos": "verb",
+  "en": "to go past, to pass by, to pass, to miss"
+ },
+ {
+  "id": "extra-n-versager",
+  "de": "der Versager",
+  "pos": "noun",
+  "en": "failure, loser, flop"
+ },
+ {
+  "id": "extra-adj-ersichtlich",
+  "de": "ersichtlich",
+  "pos": "adjective",
+  "en": "apparent, visible, evident"
+ },
+ {
+  "id": "extra-n-erfuellung",
+  "de": "die Erfüllung",
+  "pos": "noun",
+  "en": "fulfilment"
+ },
+ {
+  "id": "extra-v-verweisen",
+  "de": "verweisen",
+  "pos": "verb",
+  "en": "to refer"
+ },
+ {
+  "id": "extra-n-fluegel",
+  "de": "der Flügel",
+  "pos": "noun",
+  "en": "wing"
+ },
+ {
+  "id": "extra-n-missverstaendnis",
+  "de": "das Missverständnis",
+  "pos": "noun",
+  "en": "misunderstanding, misconception, misapprehension"
+ },
+ {
+  "id": "extra-adj-militaerisch",
+  "de": "militärisch",
+  "pos": "adjective",
+  "en": "military"
+ },
+ {
+  "id": "extra-v-bewirken",
+  "de": "bewirken",
+  "pos": "verb",
+  "en": "to cause, to effect"
+ },
+ {
+  "id": "extra-n-konzentration",
+  "de": "die Konzentration",
+  "pos": "noun",
+  "en": "concentration"
+ },
+ {
+  "id": "extra-n-champion",
+  "de": "der Champion",
+  "pos": "noun",
+  "en": "champion"
+ },
+ {
+  "id": "extra-v-anstreben",
+  "de": "anstreben",
+  "pos": "verb",
+  "en": "to aim at, to seek, to strive for"
+ },
+ {
+  "id": "extra-n-nachweis",
+  "de": "der Nachweis",
+  "pos": "noun",
+  "en": "proof, evidence, certificate"
+ },
+ {
+  "id": "extra-adj-verschwenderisch",
+  "de": "verschwenderisch",
+  "pos": "adjective",
+  "en": "wasteful, extravagant, lavish, profligate"
+ },
+ {
+  "id": "extra-adv-irgendwo",
+  "de": "irgendwo",
+  "pos": "adverb",
+  "en": "somewhere, anywhere"
+ },
+ {
+  "id": "extra-n-kofferraum",
+  "de": "der Kofferraum",
+  "pos": "noun",
+  "en": "boot, trunk"
+ }
+]

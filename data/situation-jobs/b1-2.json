@@ -1,0 +1,2402 @@
+[
+ {
+  "id": "b1-n-sinn",
+  "de": "der Sinn",
+  "pos": "noun",
+  "en": "sense, meaning, purpose, mind"
+ },
+ {
+  "id": "b1-adj-jaehrlich",
+  "de": "jährlich",
+  "pos": "adjective",
+  "en": "annual(ly), yearly, every year, each year"
+ },
+ {
+  "id": "b1-n-kerze",
+  "de": "die Kerze",
+  "pos": "noun",
+  "en": "candle"
+ },
+ {
+  "id": "b1-v-aufschreiben",
+  "de": "aufschreiben",
+  "pos": "verb",
+  "en": "to write down"
+ },
+ {
+  "id": "b1-adv-naemlich",
+  "de": "nämlich",
+  "pos": "adverb",
+  "en": "namely, because"
+ },
+ {
+  "id": "b1-n-oeffentlichkeit",
+  "de": "die Öffentlichkeit",
+  "pos": "noun",
+  "en": "public"
+ },
+ {
+  "id": "b1-n-picknick",
+  "de": "das Picknick",
+  "pos": "noun",
+  "en": "picnic"
+ },
+ {
+  "id": "b1-v-sich-eignen",
+  "de": "sich eignen",
+  "pos": "verb",
+  "en": "to be suitable"
+ },
+ {
+  "id": "b1-n-dach",
+  "de": "das Dach",
+  "pos": "noun",
+  "en": "roof"
+ },
+ {
+  "id": "b1-adj-spitz",
+  "de": "spitz",
+  "pos": "adjective",
+  "en": "pointed, sharp, acute"
+ },
+ {
+  "id": "b1-n-kraftfahrzeug",
+  "de": "das Kraftfahrzeug",
+  "pos": "noun",
+  "en": "motor vehicle"
+ },
+ {
+  "id": "b1-n-tod",
+  "de": "der Tod",
+  "pos": "noun",
+  "en": "death"
+ },
+ {
+  "id": "b1-v-auftreten",
+  "de": "auftreten",
+  "pos": "verb",
+  "en": "to appear, to occur, to arise, to perform"
+ },
+ {
+  "id": "b1-n-mahnung",
+  "de": "die Mahnung",
+  "pos": "noun",
+  "en": "reminder, warning, admonition"
+ },
+ {
+  "id": "b1-adj-wertvoll",
+  "de": "wertvoll",
+  "pos": "adjective",
+  "en": "valuable, precious"
+ },
+ {
+  "id": "b1-n-burg",
+  "de": "die Burg",
+  "pos": "noun",
+  "en": "castle, fortress"
+ },
+ {
+  "id": "b1-v-abwaschen",
+  "de": "abwaschen",
+  "pos": "verb",
+  "en": "to wash up, to do the dishes, to wash off sth"
+ },
+ {
+  "id": "b1-n-benzin",
+  "de": "das Benzin",
+  "pos": "noun",
+  "en": "petrol, gas(oline)"
+ },
+ {
+  "id": "b1-n-fortsetzung",
+  "de": "die Fortsetzung",
+  "pos": "noun",
+  "en": "continuation, sequel, follow-up"
+ },
+ {
+  "id": "b1-n-operation",
+  "de": "die Operation",
+  "pos": "noun",
+  "en": "operation"
+ },
+ {
+  "id": "b1-adv-damit",
+  "de": "damit",
+  "pos": "adverb",
+  "en": "with it, with that"
+ },
+ {
+  "id": "b1-v-veraendern",
+  "de": "verändern",
+  "pos": "verb",
+  "en": "to change, to alter, to modify"
+ },
+ {
+  "id": "b1-adj-zahlreich",
+  "de": "zahlreich",
+  "pos": "adjective",
+  "en": "numerous"
+ },
+ {
+  "id": "b1-n-pflicht",
+  "de": "die Pflicht",
+  "pos": "noun",
+  "en": "duty, obligation"
+ },
+ {
+  "id": "b1-n-rueckkehr",
+  "de": "die Rückkehr",
+  "pos": "noun",
+  "en": "return"
+ },
+ {
+  "id": "b1-v-entlassen",
+  "de": "entlassen",
+  "pos": "verb",
+  "en": "to dismiss, to fire, to lay off, to release"
+ },
+ {
+  "id": "b1-n-blut",
+  "de": "das Blut",
+  "pos": "noun",
+  "en": "blood"
+ },
+ {
+  "id": "b1-n-suchtmittel",
+  "de": "das Suchtmittel",
+  "pos": "noun",
+  "en": "object of addiction, addictive substance, addictive drug"
+ },
+ {
+  "id": "b1-adj-elektrisch",
+  "de": "elektrisch",
+  "pos": "adjective",
+  "en": "electric"
+ },
+ {
+  "id": "b1-v-sich-befinden",
+  "de": "sich befinden",
+  "pos": "verb",
+  "en": "to be, to be located, to be situated, to feel"
+ },
+ {
+  "id": "b1-n-kakao",
+  "de": "der Kakao",
+  "pos": "noun",
+  "en": "cocoa, chocolate milk, hot chocolate"
+ },
+ {
+  "id": "b1-n-einwohner",
+  "de": "der Einwohner",
+  "pos": "noun",
+  "en": "inhabitant"
+ },
+ {
+  "id": "b1-n-wunde",
+  "de": "die Wunde",
+  "pos": "noun",
+  "en": "wound"
+ },
+ {
+  "id": "b1-v-reagieren",
+  "de": "reagieren",
+  "pos": "verb",
+  "en": "to react, to respond"
+ },
+ {
+  "id": "b1-adj-begrenzt",
+  "de": "begrenzt",
+  "pos": "adjective",
+  "en": "limited, finite, confined"
+ },
+ {
+  "id": "b1-n-geheimnis",
+  "de": "das Geheimnis",
+  "pos": "noun",
+  "en": "secret, mystery"
+ },
+ {
+  "id": "b1-n-senior",
+  "de": "der Senior",
+  "pos": "noun",
+  "en": "senior citizen"
+ },
+ {
+  "id": "b1-adv-bloss",
+  "de": "bloß",
+  "pos": "adverb",
+  "en": "only, simply, just"
+ },
+ {
+  "id": "b1-v-folgen",
+  "de": "folgen",
+  "pos": "verb",
+  "en": "to follow"
+ },
+ {
+  "id": "b1-n-sack",
+  "de": "der Sack",
+  "pos": "noun",
+  "en": "bag, sack"
+ },
+ {
+  "id": "b1-n-empfehlung",
+  "de": "die Empfehlung",
+  "pos": "noun",
+  "en": "recommendation"
+ },
+ {
+  "id": "b1-adj-verdaechtig",
+  "de": "verdächtig",
+  "pos": "adjective",
+  "en": "suspicious"
+ },
+ {
+  "id": "b1-n-ueberschrift",
+  "de": "die Überschrift",
+  "pos": "noun",
+  "en": "title, heading, headline, header"
+ },
+ {
+  "id": "b1-v-gebrauchen",
+  "de": "gebrauchen",
+  "pos": "verb",
+  "en": "to use"
+ },
+ {
+  "id": "b1-n-fremdsprache",
+  "de": "die Fremdsprache",
+  "pos": "noun",
+  "en": "foreign language"
+ },
+ {
+  "id": "b1-n-weiterbildung",
+  "de": "die Weiterbildung",
+  "pos": "noun",
+  "en": "continuing education, further education, further training"
+ },
+ {
+  "id": "b1-v-retten",
+  "de": "retten",
+  "pos": "verb",
+  "en": "to save, to rescue"
+ },
+ {
+  "id": "b1-adj-kritisch",
+  "de": "kritisch",
+  "pos": "adjective",
+  "en": "critical"
+ },
+ {
+  "id": "b1-n-reklame",
+  "de": "die Reklame",
+  "pos": "noun",
+  "en": "advertising, advertisement"
+ },
+ {
+  "id": "b1-n-teilnahme",
+  "de": "die Teilnahme",
+  "pos": "noun",
+  "en": "participation, attendance"
+ },
+ {
+  "id": "b1-v-ausrichten",
+  "de": "ausrichten",
+  "pos": "verb",
+  "en": "to tell, to align, to line up"
+ },
+ {
+  "id": "b1-n-karotte",
+  "de": "die Karotte",
+  "pos": "noun",
+  "en": "carrot"
+ },
+ {
+  "id": "b1-n-haut",
+  "de": "die Haut",
+  "pos": "noun",
+  "en": "skin"
+ },
+ {
+  "id": "b1-adv-schliesslich",
+  "de": "schließlich",
+  "pos": "adverb",
+  "en": "in the end, finally, eventually, after all"
+ },
+ {
+  "id": "b1-adj-musikalisch",
+  "de": "musikalisch",
+  "pos": "adjective",
+  "en": "musical"
+ },
+ {
+  "id": "b1-n-kauf",
+  "de": "der Kauf",
+  "pos": "noun",
+  "en": "purchase, buy, acquisition"
+ },
+ {
+  "id": "b1-v-einschalten",
+  "de": "einschalten",
+  "pos": "verb",
+  "en": "to switch on, to turn on, to power on"
+ },
+ {
+  "id": "b1-n-einleitung",
+  "de": "die Einleitung",
+  "pos": "noun",
+  "en": "introduction, initiation, intro, preface"
+ },
+ {
+  "id": "b1-n-serie",
+  "de": "die Serie",
+  "pos": "noun",
+  "en": "series"
+ },
+ {
+  "id": "b1-v-einsetzen",
+  "de": "einsetzen",
+  "pos": "verb",
+  "en": "to put in, to insert, to use"
+ },
+ {
+  "id": "b1-n-haupt",
+  "de": "der Haupt-",
+  "pos": "noun",
+  "en": "main"
+ },
+ {
+  "id": "b1-adj-faellig",
+  "de": "fällig",
+  "pos": "adjective",
+  "en": "due, payable"
+ },
+ {
+  "id": "b1-n-abenteuer",
+  "de": "das Abenteuer",
+  "pos": "noun",
+  "en": "adventure"
+ },
+ {
+  "id": "b1-n-laufwerk",
+  "de": "das Laufwerk",
+  "pos": "noun",
+  "en": "drive, disk drive"
+ },
+ {
+  "id": "b1-v-stecken",
+  "de": "stecken",
+  "pos": "verb",
+  "en": "to put, to plug, to insert, to be (located), to stick"
+ },
+ {
+  "id": "b1-n-tuch",
+  "de": "das Tuch",
+  "pos": "noun",
+  "en": "cloth, scarf, sheet"
+ },
+ {
+  "id": "b1-adj-tolerant",
+  "de": "tolerant",
+  "pos": "adjective",
+  "en": "tolerant"
+ },
+ {
+  "id": "b1-n-heimweh",
+  "de": "das Heimweh",
+  "pos": "noun",
+  "en": "homesickness"
+ },
+ {
+  "id": "b1-v-herausfinden",
+  "de": "herausfinden",
+  "pos": "verb",
+  "en": "to find out"
+ },
+ {
+  "id": "b1-n-profi",
+  "de": "der Profi",
+  "pos": "noun",
+  "en": "pro, professional, expert"
+ },
+ {
+  "id": "b1-adv-nachher",
+  "de": "nachher",
+  "pos": "adverb",
+  "en": "after, afterwards, subsequently"
+ },
+ {
+  "id": "b1-n-gesamt",
+  "de": "der Gesamt-",
+  "pos": "noun",
+  "en": "total"
+ },
+ {
+  "id": "b1-v-beschaeftigen",
+  "de": "beschäftigen",
+  "pos": "verb",
+  "en": "to employ, to engage"
+ },
+ {
+  "id": "b1-n-bau",
+  "de": "der Bau",
+  "pos": "noun",
+  "en": "construction, building"
+ },
+ {
+  "id": "b1-adj-gemuetlich",
+  "de": "gemütlich",
+  "pos": "adjective",
+  "en": "comfortable, cosy, cozy, comfy"
+ },
+ {
+  "id": "b1-n-profisportler",
+  "de": "der Profisportler",
+  "pos": "noun",
+  "en": "professional sportsman, professional athlete"
+ },
+ {
+  "id": "b1-n-kabel",
+  "de": "das Kabel",
+  "pos": "noun",
+  "en": "wire, cable, cord"
+ },
+ {
+  "id": "b1-v-protestieren",
+  "de": "protestieren",
+  "pos": "verb",
+  "en": "to protest"
+ },
+ {
+  "id": "b1-n-luft",
+  "de": "die Luft",
+  "pos": "noun",
+  "en": "air"
+ },
+ {
+  "id": "b1-n-schwierigkeit",
+  "de": "die Schwierigkeit",
+  "pos": "noun",
+  "en": "difficulty"
+ },
+ {
+  "id": "b1-adj-begeistert",
+  "de": "begeistert",
+  "pos": "adjective",
+  "en": "enthusiastic, thrilled, excited"
+ },
+ {
+  "id": "b1-v-begegnen",
+  "de": "begegnen",
+  "pos": "verb",
+  "en": "to meet, to encounter, to face, to come across"
+ },
+ {
+  "id": "b1-n-geschwindigkeit",
+  "de": "die Geschwindigkeit",
+  "pos": "noun",
+  "en": "speed"
+ },
+ {
+  "id": "b1-n-verhaeltnis",
+  "de": "das Verhältnis",
+  "pos": "noun",
+  "en": "relationship, ratio, proportion, relation"
+ },
+ {
+  "id": "b1-n-faehigkeit",
+  "de": "die Fähigkeit",
+  "pos": "noun",
+  "en": "ability, capability, skill"
+ },
+ {
+  "id": "b1-v-entsorgen",
+  "de": "entsorgen",
+  "pos": "verb",
+  "en": "to dispose of"
+ },
+ {
+  "id": "b1-adv-extra",
+  "de": "extra",
+  "pos": "adverb",
+  "en": "separately, extra, specially, on purpose"
+ },
+ {
+  "id": "b1-adj-schlank",
+  "de": "schlank",
+  "pos": "adjective",
+  "en": "slim, lean, slender"
+ },
+ {
+  "id": "b1-n-fahrzeug",
+  "de": "das Fahrzeug",
+  "pos": "noun",
+  "en": "vehicle, car"
+ },
+ {
+  "id": "b1-n-fett",
+  "de": "das Fett",
+  "pos": "noun",
+  "en": "fat, grease"
+ },
+ {
+  "id": "b1-v-bieten",
+  "de": "bieten",
+  "pos": "verb",
+  "en": "to offer, to provide, to bid"
+ },
+ {
+  "id": "b1-n-schatten",
+  "de": "der Schatten",
+  "pos": "noun",
+  "en": "shadow, shade"
+ },
+ {
+  "id": "b1-n-grund",
+  "de": "der Grund",
+  "pos": "noun",
+  "en": "reason, cause, occasion, bottom, ground"
+ },
+ {
+  "id": "b1-adj-vergeblich",
+  "de": "vergeblich",
+  "pos": "adjective",
+  "en": "futile, vain"
+ },
+ {
+  "id": "b1-v-ansprechen",
+  "de": "ansprechen",
+  "pos": "verb",
+  "en": "to address, to bring sth up"
+ },
+ {
+  "id": "b1-n-erholung",
+  "de": "die Erholung",
+  "pos": "noun",
+  "en": "recreation, recovery, relaxation, rest"
+ },
+ {
+  "id": "b1-n-sportart",
+  "de": "die Sportart",
+  "pos": "noun",
+  "en": "type of sport, discipline"
+ },
+ {
+  "id": "b1-n-konkurrenz",
+  "de": "die Konkurrenz",
+  "pos": "noun",
+  "en": "competition"
+ },
+ {
+  "id": "b1-v-installieren",
+  "de": "installieren",
+  "pos": "verb",
+  "en": "to install"
+ },
+ {
+  "id": "b1-n-trainer",
+  "de": "der Trainer",
+  "pos": "noun",
+  "en": "coach, trainer"
+ },
+ {
+  "id": "b1-adj-haeufig",
+  "de": "häufig",
+  "pos": "adjective",
+  "en": "common, frequent(ly), often"
+ },
+ {
+  "id": "b1-n-teilnehmer",
+  "de": "der Teilnehmer",
+  "pos": "noun",
+  "en": "participant, attendee"
+ },
+ {
+  "id": "b1-v-abschreiben",
+  "de": "abschreiben",
+  "pos": "verb",
+  "en": "to copy, to plagiarize, to transcribe, to write off, to depreciate"
+ },
+ {
+  "id": "b1-adv-heim",
+  "de": "heim",
+  "pos": "adverb",
+  "en": "home"
+ },
+ {
+  "id": "b1-n-risiko",
+  "de": "das Risiko",
+  "pos": "noun",
+  "en": "risk, chance"
+ },
+ {
+  "id": "b1-n-therapie",
+  "de": "die Therapie",
+  "pos": "noun",
+  "en": "therapy"
+ },
+ {
+  "id": "b1-adj-stolz",
+  "de": "stolz",
+  "pos": "adjective",
+  "en": "proud"
+ },
+ {
+  "id": "b1-n-voraussetzung",
+  "de": "die Voraussetzung",
+  "pos": "noun",
+  "en": "prerequisite, condition, precondition, requirement"
+ },
+ {
+  "id": "b1-v-versprechen",
+  "de": "versprechen",
+  "pos": "verb",
+  "en": "to promise"
+ },
+ {
+  "id": "b1-n-bewegung",
+  "de": "die Bewegung",
+  "pos": "noun",
+  "en": "movement, motion, exercise"
+ },
+ {
+  "id": "b1-n-dreck",
+  "de": "der Dreck",
+  "pos": "noun",
+  "en": "dirt, mud, filth, crud"
+ },
+ {
+  "id": "b1-v-rennen",
+  "de": "rennen",
+  "pos": "verb",
+  "en": "to run, to race, to sprint"
+ },
+ {
+  "id": "b1-n-kursleiter",
+  "de": "der Kursleiter",
+  "pos": "noun",
+  "en": "course instructor, course leader, course director"
+ },
+ {
+  "id": "b1-adj-dankbar",
+  "de": "dankbar",
+  "pos": "adjective",
+  "en": "grateful, thankful"
+ },
+ {
+  "id": "b1-n-summe",
+  "de": "die Summe",
+  "pos": "noun",
+  "en": "sum"
+ },
+ {
+  "id": "b1-v-bekanntgeben",
+  "de": "bekanntgeben",
+  "pos": "verb",
+  "en": "to announce, to declare"
+ },
+ {
+  "id": "b1-n-fussgaengerzone",
+  "de": "die Fußgängerzone",
+  "pos": "noun",
+  "en": "pedestrian zone, pedestrian precinct"
+ },
+ {
+  "id": "b1-n-heim",
+  "de": "das Heim",
+  "pos": "noun",
+  "en": "home, asylum"
+ },
+ {
+  "id": "b1-adj-doppelt",
+  "de": "doppelt",
+  "pos": "adjective",
+  "en": "twice, double, dual"
+ },
+ {
+  "id": "b1-adv-spaetestens",
+  "de": "spätestens",
+  "pos": "adverb",
+  "en": "at the latest"
+ },
+ {
+  "id": "b1-n-breite",
+  "de": "die Breite",
+  "pos": "noun",
+  "en": "width, breadth, latitude"
+ },
+ {
+  "id": "b1-v-entwickeln",
+  "de": "entwickeln",
+  "pos": "verb",
+  "en": "to develop"
+ },
+ {
+  "id": "b1-n-faehre",
+  "de": "die Fähre",
+  "pos": "noun",
+  "en": "ferry"
+ },
+ {
+  "id": "b1-n-arbeitsstelle",
+  "de": "die Arbeitsstelle",
+  "pos": "noun",
+  "en": "job, workplace"
+ },
+ {
+  "id": "b1-v-siegen",
+  "de": "siegen",
+  "pos": "verb",
+  "en": "to win, to be victorious, to prevail, to conquer, to triumph"
+ },
+ {
+  "id": "b1-n-technik",
+  "de": "die Technik",
+  "pos": "noun",
+  "en": "technology, technique"
+ },
+ {
+  "id": "b1-adj-uebrig",
+  "de": "übrig",
+  "pos": "adjective",
+  "en": "remaining, left"
+ },
+ {
+  "id": "b1-n-rasen",
+  "de": "der Rasen",
+  "pos": "noun",
+  "en": "lawn, grass"
+ },
+ {
+  "id": "b1-n-gift",
+  "de": "das Gift",
+  "pos": "noun",
+  "en": "poison, toxin, venom"
+ },
+ {
+  "id": "b1-v-langweilen",
+  "de": "(sich) langweilen",
+  "pos": "verb",
+  "en": "to be boring, to bore, to be bored"
+ },
+ {
+  "id": "b1-n-kunststoff",
+  "de": "der Kunststoff",
+  "pos": "noun",
+  "en": "plastic, synthetic material"
+ },
+ {
+  "id": "b1-n-empfang",
+  "de": "der Empfang",
+  "pos": "noun",
+  "en": "reception"
+ },
+ {
+  "id": "b1-adj-sogenannt",
+  "de": "sogenannt",
+  "pos": "adjective",
+  "en": "so-called"
+ },
+ {
+  "id": "b1-v-vertrauen",
+  "de": "vertrauen",
+  "pos": "verb",
+  "en": "to trust, to rely on"
+ },
+ {
+  "id": "b1-n-hut",
+  "de": "der Hut",
+  "pos": "noun",
+  "en": "hat, cap"
+ },
+ {
+  "id": "b1-n-aufnahme",
+  "de": "die Aufnahme",
+  "pos": "noun",
+  "en": "reception, recording, snapshot"
+ },
+ {
+  "id": "b1-adv-nebenbei",
+  "de": "nebenbei",
+  "pos": "adverb",
+  "en": "besides, by the way, incidentally, on the side, in addition"
+ },
+ {
+  "id": "b1-v-entstehen",
+  "de": "entstehen",
+  "pos": "verb",
+  "en": "to arise, to originate, to develop, to form, to emerge"
+ },
+ {
+  "id": "b1-n-tagesablauf",
+  "de": "der Tagesablauf",
+  "pos": "noun",
+  "en": "daily routine"
+ },
+ {
+  "id": "b1-adj-roh",
+  "de": "roh",
+  "pos": "adjective",
+  "en": "raw, rough, crude"
+ },
+ {
+  "id": "b1-n-qualifikation",
+  "de": "die Qualifikation",
+  "pos": "noun",
+  "en": "qualification"
+ },
+ {
+  "id": "b1-n-margarine",
+  "de": "die Margarine",
+  "pos": "noun",
+  "en": "margarine, marge"
+ },
+ {
+  "id": "b1-v-fuettern",
+  "de": "füttern",
+  "pos": "verb",
+  "en": "to feed"
+ },
+ {
+  "id": "b1-n-linie",
+  "de": "die Linie",
+  "pos": "noun",
+  "en": "line"
+ },
+ {
+  "id": "b1-n-ausdruck",
+  "de": "der Ausdruck",
+  "pos": "noun",
+  "en": "term, phrase, expression, print, printout"
+ },
+ {
+  "id": "b1-adj-vernuenftig",
+  "de": "vernünftig",
+  "pos": "adjective",
+  "en": "reasonable, sensible"
+ },
+ {
+  "id": "b1-v-zerstoeren",
+  "de": "zerstören",
+  "pos": "verb",
+  "en": "to destroy, to ruin"
+ },
+ {
+  "id": "b1-n-strafzettel",
+  "de": "der Strafzettel",
+  "pos": "noun",
+  "en": "(parking) ticket, (speeding) ticket"
+ },
+ {
+  "id": "b1-n-wahrheit",
+  "de": "die Wahrheit",
+  "pos": "noun",
+  "en": "truth"
+ },
+ {
+  "id": "b1-n-gedicht",
+  "de": "das Gedicht",
+  "pos": "noun",
+  "en": "poem"
+ },
+ {
+  "id": "b1-v-sich-wundern",
+  "de": "sich wundern",
+  "pos": "verb",
+  "en": "to surprise, to be surprised, to wonder"
+ },
+ {
+  "id": "b1-n-badewanne",
+  "de": "die Badewanne",
+  "pos": "noun",
+  "en": "bathtub, bath, tub"
+ },
+ {
+  "id": "b1-adj-untersagt",
+  "de": "untersagt",
+  "pos": "adjective",
+  "en": "prohibited, forbidden, not allowed"
+ },
+ {
+  "id": "b1-adv-raus",
+  "de": "raus",
+  "pos": "adverb",
+  "en": "out"
+ },
+ {
+  "id": "b1-n-gas",
+  "de": "das Gas",
+  "pos": "noun",
+  "en": "gas, accelerator"
+ },
+ {
+  "id": "b1-v-umtauschen",
+  "de": "umtauschen",
+  "pos": "verb",
+  "en": "to exchange, to change"
+ },
+ {
+  "id": "b1-n-ueberstunde",
+  "de": "die Überstunde",
+  "pos": "noun",
+  "en": "overtime, hour of overtime, extra hour"
+ },
+ {
+  "id": "b1-n-feuerzeug",
+  "de": "das Feuerzeug",
+  "pos": "noun",
+  "en": "(cigarette) lighter"
+ },
+ {
+  "id": "b1-adj-befriedigend",
+  "de": "befriedigend",
+  "pos": "adjective",
+  "en": "satisfying, satisfactory"
+ },
+ {
+  "id": "b1-v-sichern",
+  "de": "sichern",
+  "pos": "verb",
+  "en": "to secure, to safeguard"
+ },
+ {
+  "id": "b1-n-frisur",
+  "de": "die Frisur",
+  "pos": "noun",
+  "en": "hairstyle, hairdo"
+ },
+ {
+  "id": "b1-n-koenig",
+  "de": "der König",
+  "pos": "noun",
+  "en": "king"
+ },
+ {
+  "id": "b1-n-arbeitslosigkeit",
+  "de": "die Arbeitslosigkeit",
+  "pos": "noun",
+  "en": "unemployment"
+ },
+ {
+  "id": "b1-v-anschliessen",
+  "de": "anschließen",
+  "pos": "verb",
+  "en": "to connect, to join"
+ },
+ {
+  "id": "b1-n-muehe",
+  "de": "die Mühe",
+  "pos": "noun",
+  "en": "effort, trouble, difficulty, toil"
+ },
+ {
+  "id": "b1-adj-allgemein",
+  "de": "allgemein",
+  "pos": "adjective",
+  "en": "general"
+ },
+ {
+  "id": "b1-n-frist",
+  "de": "die Frist",
+  "pos": "noun",
+  "en": "time period, deadline"
+ },
+ {
+  "id": "b1-v-ausstellen",
+  "de": "ausstellen",
+  "pos": "verb",
+  "en": "to display, to exhibit, to show, to issue, to make out"
+ },
+ {
+  "id": "b1-n-boot",
+  "de": "das Boot",
+  "pos": "noun",
+  "en": "boat"
+ },
+ {
+  "id": "b1-adv-ebenfalls",
+  "de": "ebenfalls",
+  "pos": "adverb",
+  "en": "also, as well, likewise, too"
+ },
+ {
+  "id": "b1-n-menue",
+  "de": "das Menü",
+  "pos": "noun",
+  "en": "menu, set menu, set meal"
+ },
+ {
+  "id": "b1-adj-verrueckt",
+  "de": "verrückt",
+  "pos": "adjective",
+  "en": "crazy, insane, mad, nuts"
+ },
+ {
+  "id": "b1-n-ec-karte",
+  "de": "die EC-Karte",
+  "pos": "noun",
+  "en": "cash card, debit card"
+ },
+ {
+  "id": "b1-v-ausfallen",
+  "de": "ausfallen",
+  "pos": "verb",
+  "en": "to drop out, to fall out, to be cancelled"
+ },
+ {
+  "id": "b1-n-nachteil",
+  "de": "der Nachteil",
+  "pos": "noun",
+  "en": "disadvantage"
+ },
+ {
+  "id": "b1-n-vermietung",
+  "de": "die Vermietung",
+  "pos": "noun",
+  "en": "renting, rental"
+ },
+ {
+  "id": "b1-v-verpacken",
+  "de": "verpacken",
+  "pos": "verb",
+  "en": "to pack, to package, to wrap"
+ },
+ {
+  "id": "b1-n-magazin",
+  "de": "das Magazin",
+  "pos": "noun",
+  "en": "magazine, journal, storeroom, stockroom"
+ },
+ {
+  "id": "b1-adj-besonderer",
+  "de": "besonderer, besondere, besonderes",
+  "pos": "adjective",
+  "en": "special"
+ },
+ {
+  "id": "b1-n-sand",
+  "de": "der Sand",
+  "pos": "noun",
+  "en": "sand"
+ },
+ {
+  "id": "b1-v-loesen",
+  "de": "lösen",
+  "pos": "verb",
+  "en": "to solve, to resolve, to release, to loosen"
+ },
+ {
+  "id": "b1-n-landwirtschaft",
+  "de": "die Landwirtschaft",
+  "pos": "noun",
+  "en": "agriculture, farming"
+ },
+ {
+  "id": "b1-n-kapitel",
+  "de": "das Kapitel",
+  "pos": "noun",
+  "en": "chapter"
+ },
+ {
+  "id": "b1-n-doppelbett",
+  "de": "das Doppelbett",
+  "pos": "noun",
+  "en": "double bed"
+ },
+ {
+  "id": "b1-adj-toedlich",
+  "de": "tödlich",
+  "pos": "adjective",
+  "en": "fatal, deadly, lethal, mortal, killing"
+ },
+ {
+  "id": "b1-v-widersprechen",
+  "de": "widersprechen",
+  "pos": "verb",
+  "en": "to contradict, to disagree with"
+ },
+ {
+  "id": "b1-adv-wieso",
+  "de": "wieso",
+  "pos": "adverb",
+  "en": "why"
+ },
+ {
+  "id": "b1-n-zusammenhang",
+  "de": "der Zusammenhang",
+  "pos": "noun",
+  "en": "connection, context, relation, link"
+ },
+ {
+  "id": "b1-n-ober",
+  "de": "der Ober",
+  "pos": "noun",
+  "en": "waiter"
+ },
+ {
+  "id": "b1-v-fordern",
+  "de": "fordern",
+  "pos": "verb",
+  "en": "to demand, to claim, to ask, to request, to challenge"
+ },
+ {
+  "id": "b1-n-stewardess",
+  "de": "die Stewardess",
+  "pos": "noun",
+  "en": "stewardess"
+ },
+ {
+  "id": "b1-adj-betrunken",
+  "de": "betrunken",
+  "pos": "adjective",
+  "en": "drunk, drunken"
+ },
+ {
+  "id": "b1-n-meister",
+  "de": "der Meister",
+  "pos": "noun",
+  "en": "master, champion, foreman"
+ },
+ {
+  "id": "b1-n-drogerie",
+  "de": "die Drogerie",
+  "pos": "noun",
+  "en": "chemist's (shop), drugstore"
+ },
+ {
+  "id": "b1-v-gelingen",
+  "de": "gelingen",
+  "pos": "verb",
+  "en": "to succeed, to work out, to manage"
+ },
+ {
+  "id": "b1-n-dialekt",
+  "de": "der Dialekt",
+  "pos": "noun",
+  "en": "dialect"
+ },
+ {
+  "id": "b1-n-kampf",
+  "de": "der Kampf",
+  "pos": "noun",
+  "en": "fight, struggle, battle"
+ },
+ {
+  "id": "b1-v-genuegen",
+  "de": "genügen",
+  "pos": "verb",
+  "en": "to be sufficient, to be enough, to satisfy, to meet"
+ },
+ {
+  "id": "b1-adj-schmal",
+  "de": "schmal",
+  "pos": "adjective",
+  "en": "narrow, slender, slim"
+ },
+ {
+  "id": "b1-n-begruendung",
+  "de": "die Begründung",
+  "pos": "noun",
+  "en": "explanation, justification"
+ },
+ {
+  "id": "b1-n-uebernachtung",
+  "de": "die Übernachtung",
+  "pos": "noun",
+  "en": "overnight stay"
+ },
+ {
+  "id": "b1-adv-quer",
+  "de": "quer",
+  "pos": "adverb",
+  "en": "diagonally, sideways, across, crosswise"
+ },
+ {
+  "id": "b1-v-ziehen",
+  "de": "ziehen",
+  "pos": "verb",
+  "en": "to pull, to drag, to draw, to move"
+ },
+ {
+  "id": "b1-n-pfingsten",
+  "de": "das Pfingsten",
+  "pos": "noun",
+  "en": "Whitsun, Pentecost"
+ },
+ {
+  "id": "b1-n-katalog",
+  "de": "der Katalog",
+  "pos": "noun",
+  "en": "catalog, catalogue"
+ },
+ {
+  "id": "b1-adj-merkwuerdig",
+  "de": "merkwürdig",
+  "pos": "adjective",
+  "en": "strange, curious, odd"
+ },
+ {
+  "id": "b1-n-zufall",
+  "de": "der Zufall",
+  "pos": "noun",
+  "en": "chance, coincidence"
+ },
+ {
+  "id": "b1-v-schminken",
+  "de": "schminken",
+  "pos": "verb",
+  "en": "to put on make-up"
+ },
+ {
+  "id": "b1-n-reihenfolge",
+  "de": "die Reihenfolge",
+  "pos": "noun",
+  "en": "order, sequence"
+ },
+ {
+  "id": "b1-n-mensa",
+  "de": "die Mensa",
+  "pos": "noun",
+  "en": "student canteen, refectory"
+ },
+ {
+  "id": "b1-v-unterstuetzen",
+  "de": "unterstützen",
+  "pos": "verb",
+  "en": "to support, to help, to assist"
+ },
+ {
+  "id": "b1-adj-minimal",
+  "de": "minimal",
+  "pos": "adjective",
+  "en": "minimal"
+ },
+ {
+  "id": "b1-n-wissenschaftler",
+  "de": "der Wissenschaftler",
+  "pos": "noun",
+  "en": "scientist, researcher, scholar"
+ },
+ {
+  "id": "b1-n-beitrag",
+  "de": "der Beitrag",
+  "pos": "noun",
+  "en": "contribution, input, article, post, fee"
+ },
+ {
+  "id": "b1-v-atmen",
+  "de": "atmen",
+  "pos": "verb",
+  "en": "to breathe"
+ },
+ {
+  "id": "b1-n-sonderangebot",
+  "de": "das Sonderangebot",
+  "pos": "noun",
+  "en": "special offer, bargain"
+ },
+ {
+  "id": "b1-n-steward",
+  "de": "der Steward",
+  "pos": "noun",
+  "en": "steward"
+ },
+ {
+  "id": "b1-adj-treu",
+  "de": "treu",
+  "pos": "adjective",
+  "en": "faithful, loyal, true"
+ },
+ {
+  "id": "b1-adv-vermutlich",
+  "de": "vermutlich",
+  "pos": "adverb",
+  "en": "probably, presumably, supposedly"
+ },
+ {
+  "id": "b1-n-gegner",
+  "de": "der Gegner",
+  "pos": "noun",
+  "en": "opponent, adversary, competitor, enemy"
+ },
+ {
+  "id": "b1-v-sich-entschliessen",
+  "de": "sich entschließen",
+  "pos": "verb",
+  "en": "to decide"
+ },
+ {
+  "id": "b1-n-ernaehrung",
+  "de": "die Ernährung",
+  "pos": "noun",
+  "en": "nutrition, food, diet"
+ },
+ {
+  "id": "b1-n-erlebnis",
+  "de": "das Erlebnis",
+  "pos": "noun",
+  "en": "experience"
+ },
+ {
+  "id": "b1-v-losfahren",
+  "de": "losfahren",
+  "pos": "verb",
+  "en": "to drive off, to set off, to depart, to leave"
+ },
+ {
+  "id": "b1-adj-eckig",
+  "de": "eckig",
+  "pos": "adjective",
+  "en": "angular, rectangular, square, cornered"
+ },
+ {
+  "id": "b1-n-monitor",
+  "de": "der Monitor",
+  "pos": "noun",
+  "en": "monitor"
+ },
+ {
+  "id": "b1-n-forderung",
+  "de": "die Forderung",
+  "pos": "noun",
+  "en": "demand, claim, call"
+ },
+ {
+  "id": "b1-n-bar",
+  "de": "die Bar",
+  "pos": "noun",
+  "en": "bar"
+ },
+ {
+  "id": "b1-v-winken",
+  "de": "winken",
+  "pos": "verb",
+  "en": "to wave, to beckon"
+ },
+ {
+  "id": "b1-n-rundfahrt",
+  "de": "die Rundfahrt",
+  "pos": "noun",
+  "en": "(sightseeing) tour, round trip"
+ },
+ {
+  "id": "b1-adj-aergerlich",
+  "de": "ärgerlich",
+  "pos": "adjective",
+  "en": "angry, annoying"
+ },
+ {
+  "id": "b1-n-neuigkeit",
+  "de": "die Neuigkeit",
+  "pos": "noun",
+  "en": "news"
+ },
+ {
+  "id": "b1-v-frieren",
+  "de": "frieren",
+  "pos": "verb",
+  "en": "to freeze, to be cold"
+ },
+ {
+  "id": "b1-n-bikini",
+  "de": "der Bikini",
+  "pos": "noun",
+  "en": "bikini"
+ },
+ {
+  "id": "b1-n-beratung",
+  "de": "die Beratung",
+  "pos": "noun",
+  "en": "advice, discussion, consultation, counselling"
+ },
+ {
+  "id": "b1-adv-moeglichst",
+  "de": "möglichst",
+  "pos": "adverb",
+  "en": "as ... as possible, if possible, preferably, ideally"
+ },
+ {
+  "id": "b1-v-reinigen",
+  "de": "reinigen",
+  "pos": "verb",
+  "en": "to clean"
+ },
+ {
+  "id": "b1-n-spezial",
+  "de": "der Spezial-",
+  "pos": "noun",
+  "en": "special"
+ },
+ {
+  "id": "b1-adj-passiv",
+  "de": "passiv",
+  "pos": "adjective",
+  "en": "passive"
+ },
+ {
+  "id": "b1-n-bargeld",
+  "de": "das Bargeld",
+  "pos": "noun",
+  "en": "cash"
+ },
+ {
+  "id": "b1-n-angehoerige",
+  "de": "der Angehörige",
+  "pos": "noun",
+  "en": "member, relative"
+ },
+ {
+  "id": "b1-v-annehmen",
+  "de": "annehmen",
+  "pos": "verb",
+  "en": "to accept, to assume, to believe"
+ },
+ {
+  "id": "b1-n-zeuge",
+  "de": "der Zeuge",
+  "pos": "noun",
+  "en": "witness"
+ },
+ {
+  "id": "b1-adj-wuetend",
+  "de": "wütend",
+  "pos": "adjective",
+  "en": "furious, angry, mad, enraged, irate"
+ },
+ {
+  "id": "b1-n-bankleitzahl",
+  "de": "die Bankleitzahl",
+  "pos": "noun",
+  "en": "bank code, sort code"
+ },
+ {
+  "id": "b1-v-verursachen",
+  "de": "verursachen",
+  "pos": "verb",
+  "en": "to cause"
+ },
+ {
+  "id": "b1-n-klick",
+  "de": "der Klick",
+  "pos": "noun",
+  "en": "click"
+ },
+ {
+  "id": "b1-n-bereich",
+  "de": "der Bereich",
+  "pos": "noun",
+  "en": "area, region, field, sector, scope"
+ },
+ {
+  "id": "b1-n-moeglichkeit",
+  "de": "die Möglichkeit",
+  "pos": "noun",
+  "en": "possibility, opportunity, way, option, chance"
+ },
+ {
+  "id": "b1-v-verschmutzen",
+  "de": "verschmutzen",
+  "pos": "verb",
+  "en": "to make sth dirty, to dirty, to pollute, to soil, to contaminate"
+ },
+ {
+  "id": "b1-adj-blind",
+  "de": "blind",
+  "pos": "adjective",
+  "en": "blind"
+ },
+ {
+  "id": "b1-n-sportler",
+  "de": "der Sportler",
+  "pos": "noun",
+  "en": "athlete, sportsman"
+ },
+ {
+  "id": "b1-adv-gemeinsam",
+  "de": "gemeinsam",
+  "pos": "adverb",
+  "en": "together, jointly, in common, hand in hand"
+ },
+ {
+  "id": "b1-n-kreuz",
+  "de": "das Kreuz",
+  "pos": "noun",
+  "en": "cross"
+ },
+ {
+  "id": "b1-v-beschaedigen",
+  "de": "beschädigen",
+  "pos": "verb",
+  "en": "to damage"
+ },
+ {
+  "id": "b1-n-einbrecher",
+  "de": "der Einbrecher",
+  "pos": "noun",
+  "en": "burglar"
+ },
+ {
+  "id": "b1-n-biene",
+  "de": "die Biene",
+  "pos": "noun",
+  "en": "bee"
+ },
+ {
+  "id": "b1-adj-stilistisch",
+  "de": "stilistisch",
+  "pos": "adjective",
+  "en": "stylistic"
+ },
+ {
+  "id": "b1-v-sich-konzentrieren",
+  "de": "sich konzentrieren",
+  "pos": "verb",
+  "en": "to concentrate, to focus on"
+ },
+ {
+  "id": "b1-n-detail",
+  "de": "das Detail",
+  "pos": "noun",
+  "en": "detail"
+ },
+ {
+  "id": "b1-n-roman",
+  "de": "der Roman",
+  "pos": "noun",
+  "en": "novel"
+ },
+ {
+  "id": "b1-n-mitglied",
+  "de": "das Mitglied",
+  "pos": "noun",
+  "en": "member"
+ },
+ {
+  "id": "b1-v-bloggen",
+  "de": "bloggen",
+  "pos": "verb",
+  "en": "to blog"
+ },
+ {
+  "id": "b1-adj-verantwortlich",
+  "de": "verantwortlich",
+  "pos": "adjective",
+  "en": "responsible"
+ },
+ {
+  "id": "b1-n-recht",
+  "de": "das Recht",
+  "pos": "noun",
+  "en": "right, law"
+ },
+ {
+  "id": "b1-n-hof",
+  "de": "der Hof",
+  "pos": "noun",
+  "en": "courtyard, court, yard, farm"
+ },
+ {
+  "id": "b1-v-begruessen",
+  "de": "begrüßen",
+  "pos": "verb",
+  "en": "to greet, to welcome"
+ },
+ {
+  "id": "b1-n-zeichnung",
+  "de": "die Zeichnung",
+  "pos": "noun",
+  "en": "drawing, sketch"
+ },
+ {
+  "id": "b1-adv-nochmals",
+  "de": "nochmals, nochmal",
+  "pos": "adverb",
+  "en": "again, once again, once more"
+ },
+ {
+  "id": "b1-n-unternehmer",
+  "de": "der Unternehmer",
+  "pos": "noun",
+  "en": "employer, entrepreneur"
+ },
+ {
+  "id": "b1-adj-ausreichend",
+  "de": "ausreichend",
+  "pos": "adjective",
+  "en": "sufficient, enough, adequate"
+ },
+ {
+  "id": "b1-n-kloss",
+  "de": "der Kloß",
+  "pos": "noun",
+  "en": "dumpling, lump"
+ },
+ {
+  "id": "b1-v-transportieren",
+  "de": "transportieren",
+  "pos": "verb",
+  "en": "to transport"
+ },
+ {
+  "id": "b1-n-grenze",
+  "de": "die Grenze",
+  "pos": "noun",
+  "en": "border, boundary, frontier"
+ },
+ {
+  "id": "b1-n-mieter",
+  "de": "der Mieter",
+  "pos": "noun",
+  "en": "tenant, lessee, renter"
+ },
+ {
+  "id": "b1-v-feststehen",
+  "de": "feststehen",
+  "pos": "verb",
+  "en": "to be certain, to be fixed, to be clear, to be determined, to be established"
+ },
+ {
+  "id": "b1-adj-urspruenglich",
+  "de": "ursprünglich",
+  "pos": "adjective",
+  "en": "original, initial, natural, unspoiled"
+ },
+ {
+  "id": "b1-n-erkaeltung",
+  "de": "die Erkältung",
+  "pos": "noun",
+  "en": "cold, chill"
+ },
+ {
+  "id": "b1-n-vorspeise",
+  "de": "die Vorspeise",
+  "pos": "noun",
+  "en": "starter, appetizer"
+ },
+ {
+  "id": "b1-v-laecheln",
+  "de": "lächeln",
+  "pos": "verb",
+  "en": "to smile"
+ },
+ {
+  "id": "b1-n-umfrage",
+  "de": "die Umfrage",
+  "pos": "noun",
+  "en": "survey, poll"
+ },
+ {
+  "id": "b1-n-pech",
+  "de": "das Pech",
+  "pos": "noun",
+  "en": "bad luck, pitch, misfortune"
+ },
+ {
+  "id": "b1-adj-zufaellig",
+  "de": "zufällig",
+  "pos": "adjective",
+  "en": "accidental, by chance"
+ },
+ {
+  "id": "b1-n-einfall",
+  "de": "der Einfall",
+  "pos": "noun",
+  "en": "idea, invasion, incursion"
+ },
+ {
+  "id": "b1-v-spueren",
+  "de": "spüren",
+  "pos": "verb",
+  "en": "to sense, to feel"
+ },
+ {
+  "id": "b1-adv-halbtags",
+  "de": "halbtags",
+  "pos": "adverb",
+  "en": "half-day, part-time"
+ },
+ {
+  "id": "b1-n-rolle",
+  "de": "die Rolle",
+  "pos": "noun",
+  "en": "roll, role"
+ },
+ {
+  "id": "b1-n-zahnpasta",
+  "de": "die Zahnpasta",
+  "pos": "noun",
+  "en": "toothpaste"
+ },
+ {
+  "id": "b1-v-umgehen",
+  "de": "umgehen",
+  "pos": "verb",
+  "en": "to avoid, to bypass, to circumvent, to handle, to deal with"
+ },
+ {
+  "id": "b1-n-buerger",
+  "de": "der Bürger",
+  "pos": "noun",
+  "en": "citizen"
+ },
+ {
+  "id": "b1-adj-gleichberechtigt",
+  "de": "gleichberechtigt",
+  "pos": "adjective",
+  "en": "equal, with equal rights"
+ },
+ {
+  "id": "b1-n-personalie",
+  "de": "die Personalie",
+  "pos": "noun",
+  "en": "personal data, personal details"
+ },
+ {
+  "id": "b1-n-einfahrt",
+  "de": "die Einfahrt",
+  "pos": "noun",
+  "en": "entry, entrance, driveway"
+ },
+ {
+  "id": "b1-v-tippen",
+  "de": "tippen",
+  "pos": "verb",
+  "en": "to type, to tap, to tip"
+ },
+ {
+  "id": "b1-n-ueberzeugung",
+  "de": "die Überzeugung",
+  "pos": "noun",
+  "en": "conviction, persuasion"
+ },
+ {
+  "id": "b1-adj-nahe",
+  "de": "nahe, nah",
+  "pos": "adjective",
+  "en": "near, nearby, close"
+ },
+ {
+  "id": "b1-n-kosten",
+  "de": "die Kosten",
+  "pos": "noun",
+  "en": "costs, expenses"
+ },
+ {
+  "id": "b1-v-landen",
+  "de": "landen",
+  "pos": "verb",
+  "en": "to land"
+ },
+ {
+  "id": "b1-n-nordsee",
+  "de": "die Nordsee",
+  "pos": "noun",
+  "en": "the North Sea"
+ },
+ {
+  "id": "b1-n-regal",
+  "de": "das Regal",
+  "pos": "noun",
+  "en": "shelf"
+ },
+ {
+  "id": "b1-adv-miteinander",
+  "de": "miteinander",
+  "pos": "adverb",
+  "en": "together, with each other, to each other"
+ },
+ {
+  "id": "b1-v-betruegen",
+  "de": "betrügen",
+  "pos": "verb",
+  "en": "to cheat, to defraud, to betray, to trick, to deceive"
+ },
+ {
+  "id": "b1-n-aufenthalt",
+  "de": "der Aufenthalt",
+  "pos": "noun",
+  "en": "stay, residence"
+ },
+ {
+  "id": "b1-adj-einzig",
+  "de": "einzig",
+  "pos": "adjective",
+  "en": "only, single, sole"
+ },
+ {
+  "id": "b1-n-schularbeit",
+  "de": "die Schularbeit",
+  "pos": "noun",
+  "en": "(class) test, homework"
+ },
+ {
+  "id": "b1-n-fussgaenger",
+  "de": "der Fußgänger",
+  "pos": "noun",
+  "en": "pedestrian"
+ },
+ {
+  "id": "b1-v-erstellen",
+  "de": "erstellen",
+  "pos": "verb",
+  "en": "to create, to build, to draw up, to produce"
+ },
+ {
+  "id": "b1-n-taeter",
+  "de": "der Täter",
+  "pos": "noun",
+  "en": "culprit, offender, perpetrator"
+ },
+ {
+  "id": "b1-n-wirklichkeit",
+  "de": "die Wirklichkeit",
+  "pos": "noun",
+  "en": "reality"
+ },
+ {
+  "id": "b1-adj-fliessend",
+  "de": "fließend",
+  "pos": "adjective",
+  "en": "fluent, flowing, fluid, running"
+ },
+ {
+  "id": "b1-v-unterscheiden",
+  "de": "unterscheiden",
+  "pos": "verb",
+  "en": "to distinguish, to differentiate"
+ },
+ {
+  "id": "b1-n-betreuung",
+  "de": "die Betreuung",
+  "pos": "noun",
+  "en": "care, support, mentoring"
+ },
+ {
+  "id": "b1-n-faktor",
+  "de": "der Faktor",
+  "pos": "noun",
+  "en": "factor"
+ },
+ {
+  "id": "b1-n-fahrbahn",
+  "de": "die Fahrbahn",
+  "pos": "noun",
+  "en": "road(way)"
+ },
+ {
+  "id": "b1-v-sich-vergnuegen",
+  "de": "sich vergnügen",
+  "pos": "verb",
+  "en": "to amuse oneself, to enjoy oneself, to have a good time, to have fun"
+ },
+ {
+  "id": "b1-adj-ausschliesslich",
+  "de": "ausschließlich",
+  "pos": "adjective",
+  "en": "exclusive(ly), sole(ly), only"
+ },
+ {
+  "id": "b1-n-textaufbau",
+  "de": "der Textaufbau",
+  "pos": "noun",
+  "en": "text structure"
+ },
+ {
+  "id": "b1-adv-rueckwaerts",
+  "de": "rückwärts",
+  "pos": "adverb",
+  "en": "backward(s)"
+ },
+ {
+  "id": "b1-n-karriere",
+  "de": "die Karriere",
+  "pos": "noun",
+  "en": "career"
+ },
+ {
+  "id": "b1-v-einfuegen",
+  "de": "einfügen",
+  "pos": "verb",
+  "en": "to fit in, to insert, to paste"
+ },
+ {
+  "id": "b1-n-bedeutung",
+  "de": "die Bedeutung",
+  "pos": "noun",
+  "en": "meaning, significance, importance"
+ },
+ {
+  "id": "b1-n-gesellschaft",
+  "de": "die Gesellschaft",
+  "pos": "noun",
+  "en": "society, company"
+ },
+ {
+  "id": "b1-adj-schuld",
+  "de": "schuld",
+  "pos": "adjective",
+  "en": "to be to blame"
+ },
+ {
+  "id": "b1-v-enttaeuschen",
+  "de": "enttäuschen",
+  "pos": "verb",
+  "en": "to disappoint"
+ },
+ {
+  "id": "b1-n-pinguin",
+  "de": "der Pinguin",
+  "pos": "noun",
+  "en": "penguin"
+ },
+ {
+  "id": "b1-n-wert",
+  "de": "der Wert",
+  "pos": "noun",
+  "en": "value, worth"
+ },
+ {
+  "id": "b1-n-semmel",
+  "de": "die Semmel",
+  "pos": "noun",
+  "en": "roll, bun"
+ },
+ {
+  "id": "b1-v-schauen",
+  "de": "schauen",
+  "pos": "verb",
+  "en": "to look, to watch"
+ },
+ {
+  "id": "b1-adj-bereit",
+  "de": "bereit",
+  "pos": "adjective",
+  "en": "ready, prepared, willing"
+ },
+ {
+  "id": "b1-n-verlust",
+  "de": "der Verlust",
+  "pos": "noun",
+  "en": "loss"
+ },
+ {
+  "id": "b1-n-pfleger",
+  "de": "der Pfleger",
+  "pos": "noun",
+  "en": "nurse (male)"
+ },
+ {
+  "id": "b1-v-nutzen",
+  "de": "nutzen",
+  "pos": "verb",
+  "en": "to use, to utilize, to utilise, to take advantage"
+ },
+ {
+  "id": "b1-n-verbrecher",
+  "de": "der Verbrecher",
+  "pos": "noun",
+  "en": "criminal"
+ },
+ {
+  "id": "b1-n-verhalten",
+  "de": "das Verhalten",
+  "pos": "noun",
+  "en": "behaviour, conduct"
+ },
+ {
+  "id": "b1-adv-eben",
+  "de": "eben",
+  "pos": "adverb",
+  "en": "just, just now"
+ },
+ {
+  "id": "b1-adj-extrem",
+  "de": "extrem",
+  "pos": "adjective",
+  "en": "extreme(ly)"
+ },
+ {
+  "id": "b1-n-orchester",
+  "de": "das Orchester",
+  "pos": "noun",
+  "en": "orchestra"
+ },
+ {
+  "id": "b1-v-verlassen",
+  "de": "verlassen",
+  "pos": "verb",
+  "en": "to leave, to abandon, to forsake, to desert"
+ },
+ {
+  "id": "b1-n-inserat",
+  "de": "das Inserat",
+  "pos": "noun",
+  "en": "ad(vert), advertisement"
+ },
+ {
+  "id": "b1-n-kiste",
+  "de": "die Kiste",
+  "pos": "noun",
+  "en": "box, crate"
+ },
+ {
+  "id": "b1-v-uebernehmen",
+  "de": "übernehmen",
+  "pos": "verb",
+  "en": "to take, to take over, to take on, to assume"
+ },
+ {
+  "id": "b1-n-staub",
+  "de": "der Staub",
+  "pos": "noun",
+  "en": "dust"
+ },
+ {
+  "id": "b1-adj-niedrig",
+  "de": "niedrig",
+  "pos": "adjective",
+  "en": "low, base"
+ },
+ {
+  "id": "b1-n-runde",
+  "de": "die Runde",
+  "pos": "noun",
+  "en": "round"
+ },
+ {
+  "id": "b1-v-bewegen",
+  "de": "bewegen",
+  "pos": "verb",
+  "en": "to move"
+ },
+ {
+  "id": "b1-n-lippe",
+  "de": "die Lippe",
+  "pos": "noun",
+  "en": "lip"
+ },
+ {
+  "id": "b1-n-nahrungsmittel",
+  "de": "das Nahrungsmittel",
+  "pos": "noun",
+  "en": "food"
+ },
+ {
+  "id": "b1-adj-frech",
+  "de": "frech",
+  "pos": "adjective",
+  "en": "cheeky, fresh, impudent, insolent"
+ },
+ {
+  "id": "b1-n-kraft",
+  "de": "die Kraft",
+  "pos": "noun",
+  "en": "strength, power, force"
+ },
+ {
+  "id": "b1-v-verwechseln",
+  "de": "verwechseln",
+  "pos": "verb",
+  "en": "to mix up, to mistake, to confuse"
+ },
+ {
+  "id": "b1-n-einzelkind",
+  "de": "das Einzelkind",
+  "pos": "noun",
+  "en": "only child"
+ },
+ {
+  "id": "b1-adv-gleichfalls",
+  "de": "gleichfalls",
+  "pos": "adverb",
+  "en": "likewise, also"
+ },
+ {
+  "id": "b1-n-umleitung",
+  "de": "die Umleitung",
+  "pos": "noun",
+  "en": "detour, diversion, redirection"
+ },
+ {
+  "id": "b1-v-erziehen",
+  "de": "erziehen",
+  "pos": "verb",
+  "en": "to bring up, to educate, to raise, to teach"
+ },
+ {
+  "id": "b1-n-erde",
+  "de": "die Erde",
+  "pos": "noun",
+  "en": "earth, world, ground, soil"
+ },
+ {
+  "id": "b1-adj-intensiv",
+  "de": "intensiv",
+  "pos": "adjective",
+  "en": "intensive"
+ },
+ {
+  "id": "b1-n-gebrauchsanweisung",
+  "de": "die Gebrauchsanweisung",
+  "pos": "noun",
+  "en": "instructions for use, directions for use, operating instructions, user manual"
+ },
+ {
+  "id": "b1-n-einkommen",
+  "de": "das Einkommen",
+  "pos": "noun",
+  "en": "income"
+ },
+ {
+  "id": "b1-v-treten",
+  "de": "treten",
+  "pos": "verb",
+  "en": "to step, to kick"
+ },
+ {
+  "id": "b1-n-braten",
+  "de": "der Braten",
+  "pos": "noun",
+  "en": "roast, joint"
+ },
+ {
+  "id": "b1-n-schrift",
+  "de": "die Schrift",
+  "pos": "noun",
+  "en": "script, writing, font"
+ },
+ {
+  "id": "b1-adj-knapp",
+  "de": "knapp",
+  "pos": "adjective",
+  "en": "scarce, slim, tight, almost"
+ },
+ {
+  "id": "b1-v-trennen",
+  "de": "trennen",
+  "pos": "verb",
+  "en": "to separate, to disconnect, to isolate"
+ },
+ {
+  "id": "b1-n-verletzung",
+  "de": "die Verletzung",
+  "pos": "noun",
+  "en": "injury, violation, infringement"
+ },
+ {
+  "id": "b1-n-kueste",
+  "de": "die Küste",
+  "pos": "noun",
+  "en": "coast, coastline, shore, seaside"
+ },
+ {
+  "id": "b1-v-sich-beteiligen",
+  "de": "sich beteiligen",
+  "pos": "verb",
+  "en": "to participate, to take part, to contribute"
+ },
+ {
+  "id": "b1-n-salbe",
+  "de": "die Salbe",
+  "pos": "noun",
+  "en": "ointment, salve"
+ },
+ {
+  "id": "b1-adv-wochentags",
+  "de": "wochentags",
+  "pos": "adverb",
+  "en": "on weekdays"
+ },
+ {
+  "id": "b1-adj-huebsch",
+  "de": "hübsch",
+  "pos": "adjective",
+  "en": "pretty"
+ },
+ {
+  "id": "b1-n-aussicht",
+  "de": "die Aussicht",
+  "pos": "noun",
+  "en": "prospect, view"
+ },
+ {
+  "id": "b1-n-alphabet",
+  "de": "das Alphabet",
+  "pos": "noun",
+  "en": "alphabet"
+ },
+ {
+  "id": "b1-v-aussuchen",
+  "de": "aussuchen",
+  "pos": "verb",
+  "en": "to choose, to pick"
+ },
+ {
+  "id": "b1-n-foerderung",
+  "de": "die Förderung",
+  "pos": "noun",
+  "en": "support, sponsorship, promotion"
+ },
+ {
+  "id": "b1-n-botschaft",
+  "de": "die Botschaft",
+  "pos": "noun",
+  "en": "message, embassy"
+ },
+ {
+  "id": "b1-adj-positiv",
+  "de": "positiv",
+  "pos": "adjective",
+  "en": "positive"
+ },
+ {
+  "id": "b1-v-hinterlassen",
+  "de": "hinterlassen",
+  "pos": "verb",
+  "en": "to leave"
+ },
+ {
+  "id": "b1-n-spiegel",
+  "de": "der Spiegel",
+  "pos": "noun",
+  "en": "mirror"
+ },
+ {
+  "id": "b1-n-medizin",
+  "de": "die Medizin",
+  "pos": "noun",
+  "en": "medicine"
+ },
+ {
+  "id": "b1-n-schnitzel",
+  "de": "das Schnitzel",
+  "pos": "noun",
+  "en": "schnitzel, cutlet"
+ },
+ {
+  "id": "b1-v-verbringen",
+  "de": "verbringen",
+  "pos": "verb",
+  "en": "to spend (time)"
+ },
+ {
+  "id": "b1-adj-rechtzeitig",
+  "de": "rechtzeitig",
+  "pos": "adjective",
+  "en": "punctual, in time, in good time, on time, timely"
+ },
+ {
+  "id": "b1-n-socke",
+  "de": "die Socke",
+  "pos": "noun",
+  "en": "sock"
+ },
+ {
+  "id": "b1-n-abschnitt",
+  "de": "der Abschnitt",
+  "pos": "noun",
+  "en": "portion, section, paragraph, clause, phase"
+ },
+ {
+  "id": "b1-v-eintreten",
+  "de": "eintreten",
+  "pos": "verb",
+  "en": "to enter, to join, to happen, to occur"
+ },
+ {
+  "id": "b1-adv-rauf",
+  "de": "rauf",
+  "pos": "adverb",
+  "en": "up"
+ },
+ {
+  "id": "b1-n-spritze",
+  "de": "die Spritze",
+  "pos": "noun",
+  "en": "syringe, injection, shot"
+ },
+ {
+  "id": "b1-n-konfituere",
+  "de": "die Konfitüre",
+  "pos": "noun",
+  "en": "jam, preserve"
+ },
+ {
+  "id": "b1-adj-flexibel",
+  "de": "flexibel",
+  "pos": "adjective",
+  "en": "flexible"
+ },
+ {
+  "id": "b1-v-wetten",
+  "de": "wetten",
+  "pos": "verb",
+  "en": "to bet, to wager, to gamble"
+ },
+ {
+  "id": "b1-n-intensivkurs",
+  "de": "der Intensivkurs",
+  "pos": "noun",
+  "en": "intensive course"
+ },
+ {
+  "id": "b1-n-golf",
+  "de": "das Golf",
+  "pos": "noun",
+  "en": "golf"
+ },
+ {
+  "id": "b1-n-werkzeug",
+  "de": "das Werkzeug",
+  "pos": "noun",
+  "en": "tool, instrument"
+ },
+ {
+  "id": "b1-v-reichen",
+  "de": "reichen",
+  "pos": "verb",
+  "en": "to reach, to be enough, to last, to suffice, to pass"
+ },
+ {
+  "id": "b1-n-huegel",
+  "de": "der Hügel",
+  "pos": "noun",
+  "en": "hill, mound"
+ },
+ {
+  "id": "b1-adj-schief",
+  "de": "schief",
+  "pos": "adjective",
+  "en": "crooked, not straight"
+ },
+ {
+  "id": "b1-n-kaeufer",
+  "de": "der Käufer",
+  "pos": "noun",
+  "en": "buyer, purchaser, shopper"
+ },
+ {
+  "id": "b1-v-erhalten",
+  "de": "erhalten",
+  "pos": "verb",
+  "en": "to receive, to get, to obtain, to preserve, to maintain"
+ },
+ {
+  "id": "b1-n-taste",
+  "de": "die Taste",
+  "pos": "noun",
+  "en": "key, button"
+ },
+ {
+  "id": "b1-n-netz",
+  "de": "das Netz",
+  "pos": "noun",
+  "en": "net, network, web, mesh"
+ },
+ {
+  "id": "b1-adv-mitten",
+  "de": "mitten",
+  "pos": "adverb",
+  "en": "in the middle, in the center, amidst, in the midst"
+ }
+]

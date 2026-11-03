@@ -1,0 +1,502 @@
+{
+ "a1-n-beruf": [
+  "A new friend asks what you do every day to earn money. You say that you are a nurse.",
+  "On the form there is a box that asks what you work as, for example teacher or driver.",
+  "A child says that when he grows up he wants to be a pilot. What is the word for this kind of work that you train for?"
+ ],
+ "a1-pr-es": [
+  "You look out of the window and say that water is falling from the sky. Which small word is the subject in 'it is raining'?",
+  "You point at the baby and say that it is sleeping. Which pronoun replaces a neuter noun like 'the baby'?",
+  "A friend asks about the time and you answer: it is half past two. Which small word starts the sentence?"
+ ],
+ "a1-adv-daneben": [
+  "You look at the pharmacy and say that the bakery is right at its side, on the same street. Which adverb means 'next to it'?",
+  "The waiter says that there is a table at the window and one at the side of it, free as well. Which adverb?",
+  "The man says that he works as a teacher and, in addition to that, he plays in a band. Which adverb means 'besides'?"
+ ],
+ "a1-v-fruehstuecken": [
+  "On Sunday morning you sit with your family at the table with rolls, jam and coffee, and eat the first meal of the day.",
+  "The hotel guests go to the dining room at eight o'clock to eat rolls and eggs.",
+  "A friend asks what you do at 7 o'clock with your coffee and toast. Which verb?"
+ ],
+ "a1-n-bekannte": [
+  "At the supermarket you meet a man whom you know a little, but he is not a close friend.",
+  "You say that the man in the street is someone that you met once at a party, so you only know him a little.",
+  "A woman says that she will go to the cinema with a man whom she knows slightly. Who is he?"
+ ],
+ "a1-n-herbst": [
+  "The leaves on the trees turn red and yellow and fall to the ground, and the days become shorter.",
+  "After summer and before winter there is a season with wind, rain and apples.",
+  "A friend asks which season comes between summer and winter. Which season?"
+ ],
+ "a1-n-bahnhof": [
+  "You carry your suitcase to the place where trains arrive and depart, with platforms and a ticket office.",
+  "The taxi driver asks where to take you, and you say: to the place where I can take the train to Berlin.",
+  "At the end of the journey the train stops and all the passengers get off at the big building with platforms. What is it?"
+ ],
+ "a1-v-sein": [
+  "The teacher asks you how old you are. You say that you are twenty-five. Which verb is needed in 'I am'?",
+  "A friend asks where you are. You say that you are at home. Which verb is used?",
+  "You say: the weather is nice today. Which very common verb is used for 'is'?"
+ ],
+ "a1-n-laden": [
+  "You walk into a small place in the street where you can buy shoes and clothes.",
+  "At the corner there is a place where the owner sells milk, bread and newspapers.",
+  "The sign on the door says that the place is open from nine to six. What kind of place is it?"
+ ],
+ "a1-adj-blau": [
+  "On a sunny day the sky is clear and has this colour, like the sea.",
+  "A child draws the sea and chooses the crayon with the colour of water.",
+  "The jeans are a dark version of this colour, like the colour of the ocean."
+ ],
+ "a1-n-geld": [
+  "At the cash desk of the shop you give notes and coins to the cashier.",
+  "You work all week and at the end of the month the bank pays you your salary. What do you receive?",
+  "A friend says that he cannot go on holiday because he does not have enough of what you use to buy things."
+ ],
+ "a1-n-gespraech": [
+  "You sit with your neighbour at the table and talk for an hour about the weather and your families.",
+  "The boss invites you to his office to talk with you about your work.",
+  "A friend says that after the exchange of words on the phone with his mother he feels better. What noun?"
+ ],
+ "a1-v-einladen": [
+  "You write to your friends and ask them to come to your birthday party on Saturday.",
+  "Your neighbour says that he would like you to come to his house for dinner tonight.",
+  "The workers put boxes into the van, one after another, until it is full. Which verb?"
+ ],
+ "a1-adv-gleich": [
+  "A friend calls and asks where you are. You say that you will be there in a minute, very soon. Which adverb?",
+  "The waiter says to the guests that the food will come in no time, without delay. Which adverb?",
+  "The teacher says that the two children are the same age. They are old in the same way. Which adverb means 'equally'?"
+ ],
+ "a1-n-bett": [
+  "After a long day you go to the room with the soft mattress and the pillow to sleep.",
+  "In the hotel there is a big piece of furniture with two pillows and a blanket in the room.",
+  "The child is tired and the mother puts him into the place where he sleeps at night."
+ ],
+ "a1-n-lokal": [
+  "On Friday evening you meet your friends in a small place where you can have a beer and talk.",
+  "A friend recommends a place in town with good food and nice atmosphere, with a menu and waiters.",
+  "The man goes to a place after work, where he can order a beer or a meal, with tables and a counter."
+ ],
+ "a1-v-lernen": [
+  "Every evening you sit at your desk and repeat words from your book to remember them for the test.",
+  "The child gets to know the letters of the alphabet at school, step by step.",
+  "Your friend asks what you do in the language school. You say that you gain knowledge about German."
+ ],
+ "a1-n-pause": [
+  "After two hours of lessons the teacher says that you can have a rest for fifteen minutes.",
+  "At work you leave the desk at noon, to eat your sandwich and drink coffee.",
+  "In the middle of the film there is a short stop, so that the audience can buy a drink."
+ ],
+ "a1-adj-fertig": [
+  "You cooked for an hour and now you say that the food is complete and on the table.",
+  "The teacher asks if you have completed the exercise. You say yes, I have no more to do.",
+  "A friend asks if you are prepared to leave. You say yes, I have my coat and my keys. Which adjective?"
+ ],
+ "a1-n-wiederhoeren": [
+  "At the end of a phone call to a company, the clerk says a polite phrase meaning 'goodbye until we speak again'.",
+  "At the end of a radio programme the host says goodbye to the people who are listening, hoping they will tune in again.",
+  "You finish a phone call with your teacher and want to say a polite goodbye that only works on the phone, not face to face."
+ ],
+ "a1-pr-ihnen-2": [
+  "A stranger on the street asks you for the way. You politely ask: can I help you? Which word means 'you' in the polite form, as an indirect object?",
+  "The clerk says to a customer: I thank you for your patience. Which polite pronoun is used?",
+  "Your boss says to a visitor: this gift is for you. In the polite form, which word is used?"
+ ],
+ "a1-n-postleitzahl": [
+  "On the envelope you write the number of five digits, such as 10115, before the name of the town.",
+  "The online shop asks for your street, house number and the number for your area, so that the parcel can arrive.",
+  "On the form: street, city and the number that helps the post office to sort the mail. What is it called?"
+ ],
+ "a1-v-trinken": [
+  "After the long walk you take the bottle and swallow water in big mouthfuls.",
+  "At breakfast the children have milk or juice in a glass. What do they do with it?",
+  "The waiter asks what you want with your meal. You say you would like a glass of wine and take a sip. Which verb describes this?"
+ ],
+ "a1-n-meter": [
+  "The room is 4 of these long. What unit of length is it?",
+  "A tailor measures the cloth. One of these is a hundred centimetres.",
+  "The athlete runs a hundred of these in the race. Which unit?"
+ ],
+ "a1-n-klasse": [
+  "At school you sit with twenty other pupils of the same age in a room, with one teacher.",
+  "The teacher says that the pupils in her group are very noisy today.",
+  "On the train you buy a ticket for the second level, which is cheaper than the first level."
+ ],
+ "a1-adv-jetzt": [
+  "You are asked when you want to start. You say: at this moment, not later. Which adverb?",
+  "The teacher says: no, not tomorrow, but at this moment we start the test. Which adverb?",
+  "A friend asks if you are still working. You say: at present I am at home. Which adverb means 'currently'?"
+ ],
+ "a1-adj-falsch": [
+  "The teacher marks your answer in the test with a cross. It is not correct.",
+  "You take the bus in the wrong direction and arrive at a place you did not want to go to.",
+  "The statement says that the sun goes round the Earth. Is it true? No, it is ..."
+ ],
+ "a1-n-pfund": [
+  "At the market you ask for a pound of cheese, an old unit of about half a kilo.",
+  "In an English recipe the weight is given in lbs. Which unit is this?",
+  "The baker says that the loaf weighs one of these, between 400 and 500 grams. Which unit?"
+ ],
+ "a1-v-riechen": [
+  "You walk past the bakery and notice the delicious scent of fresh bread with your nose.",
+  "The milk is old. You hold it near your face and notice a bad odour.",
+  "The flowers in the garden give off a sweet scent. What do you do with your nose?"
+ ],
+ "a1-n-preis": [
+  "You look at the label on the jacket and see that it costs 80 euros. What is the amount called?",
+  "At the sports day the winner receives a gold cup. What is the cup called?",
+  "A friend asks how much the ticket is. You tell him the amount you paid. Which noun?"
+ ],
+ "a1-n-test": [
+  "The teacher says that tomorrow there will be a short written examination in vocabulary.",
+  "Before you begin the course, the school asks you to do a short exercise to find out your level.",
+  "The doctor sends your blood to the lab to check for illness. What do you call this check?"
+ ],
+ "a1-v-wissen": [
+  "The teacher asks the capital of France and you are sure that you have the information: Paris.",
+  "A friend asks if you have heard that the shop is closed. You say: yes, I am aware of that.",
+  "A tourist asks you for the way and you say that you do not have the information. Which verb means 'to be aware of a fact'?"
+ ],
+ "a1-n-essen": [
+  "At noon the whole family sits at the table and the mother serves soup and meat.",
+  "At the canteen the workers go at 12 o'clock to have lunch. What do they eat?",
+  "A friend invites you: come to our house on Saturday, we will have an evening meal. Which noun?"
+ ],
+ "a1-n-reis": [
+  "The cook boils small white grains in water and serves them with curry.",
+  "In Asia the farmers grow this plant in wet fields, and it is eaten with fish and vegetables every day.",
+  "At the Indian restaurant you order chicken with a side dish of white grains. What is the side dish?"
+ ],
+ "a1-adj-klein": [
+  "A mouse is not big, and an elephant is not small. Which adjective describes the mouse?",
+  "The flat has only one room and a tiny kitchen. It is not large at all.",
+  "A child is not tall for his age. The doctor says that he is quite short."
+ ],
+ "a1-n-text": [
+  "The teacher gives you a page with a story and asks you to read it and answer the questions.",
+  "You write a message on your phone with words and sentences for your friend.",
+  "In the newspaper there is a picture, and below it there are several lines of words that explain it."
+ ],
+ "a1-v-wehtun": [
+  "You fall off your bike and your knee gives you pain. You say that it hurts.",
+  "The dentist touches the tooth and you say that you feel pain. Which verb?",
+  "The child says to his mother that his head aches. What does his head do?"
+ ],
+ "a1-adv-warum": [
+  "A child sees that his mother is sad and asks for the reason. Which question word?",
+  "You come late to the party and your friend asks you for the cause. Which question word?",
+  "The teacher says that nobody knows the reason for the strange noise, and asks: for what reason did it happen? Which question word?"
+ ],
+ "a1-n-flasche": [
+  "At the supermarket you buy a drink in a container with a narrow neck, made of glass or plastic.",
+  "The baby is hungry and the mother gives him milk in a container with a rubber nipple.",
+  "At the restaurant the waiter brings a container of wine and opens it with a corkscrew."
+ ],
+ "a1-n-alter": [
+  "The doctor asks how many years old you are. You say: twenty-five. What is this number called?",
+  "On the form there is a box where you write the number of years since birth.",
+  "The film has the label: only for people over 16 years of age. What is this quantity called?"
+ ],
+ "a1-pr-wenig": [
+  "There are only a small number of people at the party. Which word means 'not many'?",
+  "You have only a small amount of time before the train leaves. Which word means 'not much'?",
+  "A friend asks if you have money, and you say that you have just a little. Which word expresses a small quantity?"
+ ],
+ "a1-n-welt": [
+  "A traveller says that he wants to see all the countries and oceans of the Earth.",
+  "The news reports that people from every country watch the final of the football cup, from Asia to America.",
+  "A child looks at the globe and asks what it is. It is a model of the planet where we live."
+ ],
+ "a1-v-ankreuzen": [
+  "In the test you put a cross in the box next to the correct answer.",
+  "At the election the voter puts a cross next to the name of the party.",
+  "The form says: please put a mark in the right box. Which verb means to mark a box with a cross?"
+ ],
+ "a1-n-monat": [
+  "There are twelve of these in a year, and each has about thirty days.",
+  "You pay your rent on the first day of each one of these.",
+  "The baby is only three of these old. Which unit of time?"
+ ],
+ "a1-adj-verheiratet": [
+  "The man wears a ring on his finger. He has a wife and says that he is not single.",
+  "On the form: single, divorced or ... You tick the box because you went to a wedding last year with your partner.",
+  "A woman says that she has been with her husband since her wedding twenty years ago. Which adjective describes her?"
+ ],
+ "a1-n-auslaender": [
+  "A man from Turkey lives in Germany and does not have a German passport. What is he called?",
+  "At the immigration office, the officer says that people who come from other countries must register.",
+  "In a country, a person who comes from another country and lives there for some time is called what?"
+ ],
+ "a1-n-april": [
+  "It is the month between March and May, when the weather changes a lot, sun and rain.",
+  "The children look for Easter eggs in this month, the fourth of the year.",
+  "On the first day of this month people play jokes on each other. Which month?"
+ ],
+ "a1-v-kennenlernen": [
+  "At the party you meet a person for the first time and talk to her for an hour.",
+  "On the first day at the new school, the pupils get acquainted with each other.",
+  "Your friend says that he met his wife on a train. What did he do with her at first?"
+ ],
+ "a1-n-glueck": [
+  "You win the lottery and everyone says that you are fortunate. What is that called?",
+  "You smile and feel joy, because your family is healthy and your life is good.",
+  "The friend says: I wish you success in the exam. He wants you to have what?"
+ ],
+ "a1-adv-woher": [
+  "You meet a new person at the party and ask about his home country. Which question word?",
+  "A friend gives you a nice cake and you ask: where is it from? Which question word?",
+  "The teacher asks the student: from which country do you come? Which question word?"
+ ],
+ "a1-n-vater": [
+  "On Father's Day the children give a present to the man who raised them.",
+  "A child calls out for the man who gets him from school every day, his male parent.",
+  "You introduce the man next to you as the husband of your mother. He is a male parent. Who?"
+ ],
+ "a1-v-abgeben": [
+  "At the end of the exam you give your paper to the teacher, so that she can check it.",
+  "At the reception you leave your coat with the clerk, who takes it for the evening.",
+  "You hand in the form at the office before Friday. Which verb means to hand in?"
+ ],
+ "a1-n-sofa": [
+  "In the evening you sit on a soft piece of furniture in the living room with cushions and watch TV.",
+  "A guest stays overnight and sleeps on the soft piece of furniture in the living room.",
+  "The cat sleeps on the soft seat for several people, in front of the television."
+ ],
+ "a1-adj-willkommen": [
+  "The host opens the door and says that you are received with joy and invites you in.",
+  "A sign at the airport says that the visitors are greeted warmly. Which adjective?",
+  "The family is happy when the guests arrive. They say: you are very ... here."
+ ],
+ "a1-n-praxis": [
+  "You have a pain in your back, so you make an appointment at the place where your doctor treats patients.",
+  "The sign on the door says that the surgery is open from 8 to 12.",
+  "The company wants an employee with experience in actually doing the work, not only from books. What do you call this kind of experience?"
+ ],
+ "a1-n-herr": [
+  "At the hotel the clerk says to a man: how can I help you? She uses a polite title for him.",
+  "On the envelope you write a polite title before the family name of a man.",
+  "At the beginning of a formal letter you write: Dear ... Müller. Which word is used for a man?"
+ ],
+ "a1-v-zahlen": [
+  "The waiter brings the bill and you take your wallet to give the amount in cash.",
+  "You buy a coffee and give the cashier two euros.",
+  "At the end of the month you hand over the rent to your landlord. What do you do with the money?"
+ ],
+ "a1-n-studium": [
+  "After school he spent five years at university, learning medicine, and then he became a doctor.",
+  "Your sister will begin her time at the university in October.",
+  "At the application form the question is about the time you spent at university. What noun?"
+ ],
+ "a1-pr-ihm": [
+  "You give a book to your brother. You say: I give a book to ... Which word is used for 'him' as an indirect object?",
+  "You ask about your friend and say: I phone ... every day. Which pronoun means 'him' as the indirect object?",
+  "The teacher says that you should help the new pupil, and say: help ... with the homework. Which word?"
+ ],
+ "a1-n-hand": [
+  "You meet a business partner and put out the part of your body at the end of your arm to say hello.",
+  "The child holds his mother's part of the body with five fingers when they cross the street.",
+  "The doctor looks at the part of your body with five fingers, because you cut it with a knife."
+ ],
+ "a1-adv-so": [
+  "You show your child how to tie shoes: do it in this way. Which small word means 'in this way'?",
+  "A friend asks if the film was good and you say that it was extremely good. Which word means 'such' or 'that much'?",
+  "The teacher says: write the letter like this, and shows an example. Which small word?"
+ ],
+ "a1-adj-schoen": [
+  "You look at the lake, the mountains and the flowers and say that it is very pleasing to the eye.",
+  "The weather is sunny and warm. You say that it is pleasant today.",
+  "A friend shows you her new dress and you say that it looks lovely. Which adjective?"
+ ],
+ "a1-n-reparatur": [
+  "The car does not work, so the mechanic says that he will fix it and the work will cost 200 euros.",
+  "The sign in the window says: we do the work of mending your phone, in one hour.",
+  "The washing machine has stopped, so you call a technician to do the job of making it work again. What noun?"
+ ],
+ "a1-v-abholen": [
+  "After school the mother stands at the gate and takes her child home.",
+  "The parcel is at the post office and you walk there to take it with you.",
+  "A friend says that he will come to your house at 7 o'clock with his car and take you to the party."
+ ],
+ "a1-n-achtung": [
+  "A sign on the road says: be careful, the surface is wet. What is the single word at the top?",
+  "At the station a voice says that you must stand back from the edge of the platform, with a warning word first.",
+  "You show your respect for an old person, giving him the regard that he deserves. Which noun?"
+ ],
+ "a1-n-kuehlschrank": [
+  "You put milk, cheese and butter into a big cold box in the kitchen so that they stay fresh.",
+  "The ice cream melts, because you left it on the table instead of putting it in the cold place in the kitchen.",
+  "At the shop you buy an electric machine, which keeps food cold, together with a freezer."
+ ],
+ "a1-v-telefonieren": [
+  "Every evening you sit on the sofa and speak to your mother over the line for an hour.",
+  "The boss says that he is in a conversation on the phone and cannot be disturbed right now.",
+  "You call your friend in another country with your mobile. What is the action?"
+ ],
+ "a1-n-fuss": [
+  "The shoes are too small and the part of your body at the end of your leg hurts.",
+  "The dancer stands on the tips of the parts of her body that are in her shoes.",
+  "The doctor asks you to step on the scale with the parts of your body at the bottom of the legs. What is it?"
+ ],
+ "a1-n-wind": [
+  "In autumn the air moves strongly, and the leaves fly around, and your hat flies away.",
+  "On the beach the sailors are happy, because the air moves and fills the sails.",
+  "The weather report says that tomorrow there will be strong moving air from the west. What noun?"
+ ],
+ "a1-adj-leicht": [
+  "The test is not difficult at all. Everybody finishes it in ten minutes.",
+  "The bag weighs only two kilos. It is not heavy and you can carry it with one hand.",
+  "The jacket is thin and weighs almost nothing. Which adjective describes its weight?"
+ ],
+ "a1-n-dank": [
+  "After the help of your neighbour you say: many thanks. What noun expresses what you feel?",
+  "At the end of the speech the president expresses his gratitude to all the people who helped.",
+  "A card says: with deep gratitude for your help. What noun is it?"
+ ],
+ "a1-v-werden": [
+  "The boy was small last year and next year he will be tall. What does he do with respect to size?",
+  "You say that tomorrow you will go to the cinema. Which verb expresses the future?",
+  "It is cold in the morning, but in the afternoon it will get warm. Which verb describes the change?"
+ ],
+ "a1-n-ankunft": [
+  "On the screen at the airport you see the time when the plane from Rome lands. What is the information?",
+  "Your friend phones to say that she will be there at 5 o'clock, when the train reaches the station.",
+  "At the train station a sign says 'Arrivals and Departures'. What is the opposite of departure?"
+ ],
+ "a1-adv-sofort": [
+  "The boss says that you must come to his office this very second, without waiting. Which adverb?",
+  "The doctor says that you should take the medicine without delay, at once.",
+  "You call the taxi and the driver says that he will be there straight away. Which adverb?"
+ ],
+ "a1-n-uhr": [
+  "You look at the wall in the kitchen to see that it is already 8 o'clock.",
+  "Your grandfather gives you a small device that you wear on your wrist to show the time.",
+  "The train leaves at 9 ... Which word means 'o'clock', or also the instrument that shows the time?"
+ ],
+ "a1-n-kugelschreiber": [
+  "At the bank, you write your name on the form with a writing tool with a small ball at the tip and blue ink.",
+  "You buy a small plastic writing instrument with a clicking button in the stationery shop.",
+  "The teacher says that tests must not be written with a pencil but with a blue writing instrument. What is it?"
+ ],
+ "a1-v-antworten": [
+  "The teacher asks a question and you give your reply in a loud voice.",
+  "You receive an email from your boss, and write back the same day.",
+  "A friend asks if you are coming to the party. You say: yes. What did you do?"
+ ],
+ "a1-n-fax": [
+  "Before email, the office used a machine to send paper copies over the phone line.",
+  "The lawyer asks you to send the contract by a machine that scans the paper and sends it over a telephone line.",
+  "The old office has a printer, a telephone and a machine for sending documents over the phone line."
+ ],
+ "a1-pr-mein": [
+  "You show a photo and say that this is the car that belongs to you. Which word means 'belonging to me'?",
+  "You introduce a person: this is the sister who belongs to me. Which possessive word?",
+  "At the airport the officer asks whose bag it is. You say: it belongs to me. Which word means 'my' or 'mine'?"
+ ],
+ "a1-adj-leise": [
+  "At night the baby is sleeping, so you speak with a soft voice and walk without noise.",
+  "In the library the librarian asks everybody not to talk loudly. Which adjective?",
+  "The new electric car makes almost no sound. Which adjective describes it?"
+ ],
+ "a1-n-eingang": [
+  "At the entrance of the cinema there is a queue of people who wait to get in.",
+  "You look for the door where you can come into the building, and the sign says: use the door at the side.",
+  "The letter of the bank arrives on Monday. The date of its arrival is written down as receipt."
+ ],
+ "a1-v-sich-kuemmern": [
+  "Your neighbour is on holiday, so you give water to her plants and feed her cat. You take responsibility.",
+  "The mother looks after her sick child and gives him medicine.",
+  "The teacher says that you must arrange the project yourself. Which verb means to take care of something?"
+ ],
+ "a1-n-zimmer": [
+  "In the hotel you get the key for a place with a bed, a window and a bathroom, number 305.",
+  "The flat has a kitchen, a bathroom and three of these: a living room and two bedrooms.",
+  "A student rents a place with a bed and a desk in a shared flat. What do you call each space?"
+ ],
+ "a1-n-ordnung": [
+  "The teacher says that your desk is a mess, and that you must put everything in the right place. What is it?",
+  "Your mother looks into your room and is happy: everything is clean and in its place.",
+  "In the rules for the library, the books must be in the sequence of the alphabet. What is it called?"
+ ],
+ "a1-adv-schnell": [
+  "The runner crosses the finish line at high speed. Which adverb describes how he runs?",
+  "The teacher says: please answer in a short time, do not wait. Which adverb?",
+  "A friend says: come soon, we do not have much time. Which adverb describes the way you should come?"
+ ],
+ "a1-n-glueckwunsch": [
+  "You hear that your friend has passed the exam and you say 'well done' with a smile.",
+  "On your birthday you receive many cards and messages with kind words about your day.",
+  "After the wedding, the guests tell the bride and the groom that they are happy for them. What noun?"
+ ],
+ "a1-v-scheinen": [
+  "After the rain the sun comes out and gives light and warmth to the garden.",
+  "The man looks very tired. You say that he gives the impression of not having slept.",
+  "The text says that the shop is closed, although the light is on. Which verb means 'to give the impression'?"
+ ],
+ "a1-n-baby": [
+  "The young mother carries a very small child who is only three months old and sleeps all day.",
+  "At the hospital the nurse brings the newborn to the mother.",
+  "A couple buys a small bed, tiny clothes and a pram, because their child will soon be born."
+ ],
+ "a1-adj-alt": [
+  "The man with white hair and a stick is eighty years of age. He is not young.",
+  "The church in the town centre was built in the year 1200. It is not new.",
+  "You do not buy the car because it has been used for twenty years and looks worn. Which adjective?"
+ ],
+ "a1-n-bauch": [
+  "After a big meal you feel full, and the front part of your body below the chest is round and hurts.",
+  "The doctor says that you have a pain in the part of the body where the stomach is.",
+  "The child says that he has pain in his tummy. Which part of the body?"
+ ],
+ "a1-n-gleis": [
+  "At the station the voice says that the train to Hamburg will leave from number 7, where you wait on the platform.",
+  "The train drives on steel lines in the ground. What are these lines called?",
+  "At the station the sign says: do not cross the lines. What are they?"
+ ],
+ "a1-v-kommen": [
+  "A friend phones you and asks if you will visit him this evening. You say: yes, I will be there at 8 o'clock.",
+  "The train arrives at the station at 10:15. What does it do?",
+  "The teacher says to a pupil outside: please enter the room. Which verb describes coming towards the speaker?"
+ ],
+ "a1-n-angebot": [
+  "In the supermarket there is a sign with a special price for tomatoes this week.",
+  "The shop clerk says that the shop has a large selection of jackets in different sizes.",
+  "A company writes to you and says that it will do the work for 500 euros. What do you call this written price proposal?"
+ ],
+ "a1-n-ausland": [
+  "After school she goes to live in France, Spain and Italy, in other countries than hers.",
+  "The company sends its employees to work in a country that is not their home country. Where do they go?",
+  "A friend says: I will go on holiday not in my own country but somewhere else, on the other side of the border."
+ ],
+ "a1-v-ausfuellen": [
+  "At the bank the clerk gives you a paper with empty boxes, and you write your name and address into them.",
+  "At the doctor's reception you must write information in the boxes of the paper.",
+  "The teacher says that you should put the missing words into the gaps of the sentence."
+ ],
+ "a1-n-ergebnis": [
+  "After the exam the teacher tells you your mark. What is it?",
+  "The football match is over, and the newspaper says 2:1. What do you call this?",
+  "The doctor tells you the outcome of the blood test on the phone. What noun?"
+ ],
+ "a1-adj-gerade": [
+  "The road runs for ten kilometres without any curve. It is not curved at all.",
+  "You draw a line with a ruler on the paper. It is not bent. Which adjective?",
+  "The number 4 is not odd, but ... Which adjective describes numbers like 2, 4 and 6?"
+ ],
+ "a1-adv-heute": [
+  "You ask your friend if he has plans for this day, not tomorrow. Which adverb?",
+  "The teacher says that the test will be written on this day, not on another day.",
+  "Nowadays most people have a mobile phone. In contrast with the past, what adverb means 'at the present time'?"
+ ],
+ "a1-n-feiertag": [
+  "On December 25th, all shops are closed and most people do not work. What kind of day is it?",
+  "On the first of January nobody goes to the office, because it is a day off for everybody in the country.",
+  "On the calendar some days are marked in red, such as Christmas and Easter. What are these days?"
+ ],
+ "a1-pr-du": [
+  "You meet a friend and ask how he is. Which word means 'you' for a close friend, a child or a family member?",
+  "A boy says to his sister: are you coming with me to the shop? Which pronoun is used for 'you' in the informal form?",
+  "Two students who are friends talk to each other: what pronoun means 'you' for one person informally?"
+ ]
+}

@@ -1,0 +1,404 @@
+[
+ {
+  "id": "b1-v-entscheiden",
+  "de": "(sich) entscheiden",
+  "pos": "verb",
+  "en": "to decide, to determine, to rule"
+ },
+ {
+  "id": "b1-n-katastrophe",
+  "de": "die Katastrophe",
+  "pos": "noun",
+  "en": "disaster, catastrophe"
+ },
+ {
+  "id": "b1-n-stoff",
+  "de": "der Stoff",
+  "pos": "noun",
+  "en": "fabric, cloth, material, substance"
+ },
+ {
+  "id": "b1-v-ausdrucken",
+  "de": "ausdrucken",
+  "pos": "verb",
+  "en": "to print (out)"
+ },
+ {
+  "id": "b1-n-einfuehrung",
+  "de": "die Einführung",
+  "pos": "noun",
+  "en": "introduction"
+ },
+ {
+  "id": "b1-adj-seltsam",
+  "de": "seltsam",
+  "pos": "adjective",
+  "en": "strange, peculiar, odd"
+ },
+ {
+  "id": "b1-n-verlag",
+  "de": "der Verlag",
+  "pos": "noun",
+  "en": "publisher, publishing company, publishing house"
+ },
+ {
+  "id": "b1-n-geschwindigkeitsbeschraenkung",
+  "de": "die Geschwindigkeitsbeschränkung",
+  "pos": "noun",
+  "en": "speed limit"
+ },
+ {
+  "id": "b1-v-streiken",
+  "de": "streiken",
+  "pos": "verb",
+  "en": "to strike"
+ },
+ {
+  "id": "b1-adv-bisher",
+  "de": "bisher",
+  "pos": "adverb",
+  "en": "so far, until now, up to now"
+ },
+ {
+  "id": "b1-n-visum",
+  "de": "das Visum",
+  "pos": "noun",
+  "en": "visa"
+ },
+ {
+  "id": "b1-adj-zentral",
+  "de": "zentral",
+  "pos": "adjective",
+  "en": "central"
+ },
+ {
+  "id": "b1-n-hase",
+  "de": "der Hase",
+  "pos": "noun",
+  "en": "rabbit, hare"
+ },
+ {
+  "id": "b1-v-praesentieren",
+  "de": "präsentieren",
+  "pos": "verb",
+  "en": "to present"
+ },
+ {
+  "id": "b1-n-folie",
+  "de": "die Folie",
+  "pos": "noun",
+  "en": "foil, film, slide"
+ },
+ {
+  "id": "b1-n-spielzeug",
+  "de": "das Spielzeug",
+  "pos": "noun",
+  "en": "toy"
+ },
+ {
+  "id": "b1-v-aufnehmen",
+  "de": "aufnehmen",
+  "pos": "verb",
+  "en": "to record, to include, to absorb, to accommodate"
+ },
+ {
+  "id": "b1-n-lebenslauf",
+  "de": "der Lebenslauf",
+  "pos": "noun",
+  "en": "curriculum vitae, CV, résumé, resume"
+ },
+ {
+  "id": "b1-adj-strafbar",
+  "de": "strafbar",
+  "pos": "adjective",
+  "en": "punishable, liable to prosecution, criminal"
+ },
+ {
+  "id": "b1-n-umtausch",
+  "de": "der Umtausch",
+  "pos": "noun",
+  "en": "exchange"
+ },
+ {
+  "id": "b1-n-stempel",
+  "de": "der Stempel",
+  "pos": "noun",
+  "en": "stamp"
+ },
+ {
+  "id": "b1-v-verbrauchen",
+  "de": "verbrauchen",
+  "pos": "verb",
+  "en": "to use up, to consume"
+ },
+ {
+  "id": "b1-n-nebel",
+  "de": "der Nebel",
+  "pos": "noun",
+  "en": "fog, mist, haze"
+ },
+ {
+  "id": "b1-adj-alternativ",
+  "de": "alternativ",
+  "pos": "adjective",
+  "en": "alternative"
+ },
+ {
+  "id": "b1-n-abteilung",
+  "de": "die Abteilung",
+  "pos": "noun",
+  "en": "department"
+ },
+ {
+  "id": "b1-adv-ebenso",
+  "de": "ebenso",
+  "pos": "adverb",
+  "en": "just as, as much as, as well, equally, likewise"
+ },
+ {
+  "id": "b1-v-verstecken",
+  "de": "verstecken",
+  "pos": "verb",
+  "en": "to hide"
+ },
+ {
+  "id": "b1-n-aprikose",
+  "de": "die Aprikose",
+  "pos": "noun",
+  "en": "apricot"
+ },
+ {
+  "id": "b1-n-schritt",
+  "de": "der Schritt",
+  "pos": "noun",
+  "en": "step"
+ },
+ {
+  "id": "b1-n-szene",
+  "de": "die Szene",
+  "pos": "noun",
+  "en": "scene"
+ },
+ {
+  "id": "b1-v-erledigen",
+  "de": "erledigen",
+  "pos": "verb",
+  "en": "to handle, to complete, to do, to deal with, to take care of"
+ },
+ {
+  "id": "b1-adj-noerdlich",
+  "de": "nördlich",
+  "pos": "adjective",
+  "en": "north, northern"
+ },
+ {
+  "id": "b1-n-dessert",
+  "de": "das Dessert",
+  "pos": "noun",
+  "en": "dessert"
+ },
+ {
+  "id": "b1-n-schildkroete",
+  "de": "die Schildkröte",
+  "pos": "noun",
+  "en": "turtle, tortoise"
+ },
+ {
+  "id": "b1-v-gewoehnen",
+  "de": "gewöhnen",
+  "pos": "verb",
+  "en": "to get used to, to become accustomed, to accustom"
+ },
+ {
+  "id": "b1-n-brust",
+  "de": "die Brust",
+  "pos": "noun",
+  "en": "breast, chest"
+ },
+ {
+  "id": "b1-n-gefaengnis",
+  "de": "das Gefängnis",
+  "pos": "noun",
+  "en": "prison, jail"
+ },
+ {
+  "id": "b1-adj-zukuenftig",
+  "de": "zukünftig",
+  "pos": "adjective",
+  "en": "future"
+ },
+ {
+  "id": "b1-v-feststellen",
+  "de": "feststellen",
+  "pos": "verb",
+  "en": "to detect, to determine, to find out, to notice, to realize"
+ },
+ {
+  "id": "b1-n-wohnort",
+  "de": "der Wohnort",
+  "pos": "noun",
+  "en": "place of residence"
+ },
+ {
+  "id": "b1-n-nachspeise",
+  "de": "die Nachspeise",
+  "pos": "noun",
+  "en": "dessert"
+ },
+ {
+  "id": "b1-adv-auseinander",
+  "de": "auseinander",
+  "pos": "adverb",
+  "en": "apart"
+ },
+ {
+  "id": "b1-n-buehne",
+  "de": "die Bühne",
+  "pos": "noun",
+  "en": "stage"
+ },
+ {
+  "id": "b1-v-schaden",
+  "de": "schaden",
+  "pos": "verb",
+  "en": "to harm, to damage"
+ },
+ {
+  "id": "b1-adj-mild",
+  "de": "mild",
+  "pos": "adjective",
+  "en": "mild, gentle, lenient"
+ },
+ {
+  "id": "b1-n-held",
+  "de": "der Held",
+  "pos": "noun",
+  "en": "hero"
+ },
+ {
+  "id": "b1-n-hammer",
+  "de": "der Hammer",
+  "pos": "noun",
+  "en": "hammer"
+ },
+ {
+  "id": "b1-v-ueberraschen",
+  "de": "überraschen",
+  "pos": "verb",
+  "en": "to surprise, to astonish"
+ },
+ {
+  "id": "b1-n-sitz",
+  "de": "der Sitz",
+  "pos": "noun",
+  "en": "seat, fit, headquarters, head office"
+ },
+ {
+  "id": "b1-n-marmelade",
+  "de": "die Marmelade",
+  "pos": "noun",
+  "en": "jam, jelly, marmalade"
+ },
+ {
+  "id": "b1-adj-heimlich",
+  "de": "heimlich",
+  "pos": "adjective",
+  "en": "secret, clandestine, furtive, stealthy"
+ },
+ {
+  "id": "b1-n-inhalt",
+  "de": "der Inhalt",
+  "pos": "noun",
+  "en": "content, contents"
+ },
+ {
+  "id": "b1-v-absagen",
+  "de": "absagen",
+  "pos": "verb",
+  "en": "to cancel, to call off"
+ },
+ {
+  "id": "b1-n-diskussion",
+  "de": "die Diskussion",
+  "pos": "noun",
+  "en": "discussion, debate"
+ },
+ {
+  "id": "b1-n-golf-2",
+  "de": "der Golf",
+  "pos": "noun",
+  "en": "gulf"
+ },
+ {
+  "id": "b1-v-nachdenken",
+  "de": "nachdenken",
+  "pos": "verb",
+  "en": "to think, to think about, to reflect, to ponder, to contemplate"
+ },
+ {
+  "id": "b1-n-terminkalender",
+  "de": "der Terminkalender",
+  "pos": "noun",
+  "en": "calendar, diary, planner, timetable, datebook"
+ },
+ {
+  "id": "b1-adj-ehrlich",
+  "de": "ehrlich",
+  "pos": "adjective",
+  "en": "honest"
+ },
+ {
+  "id": "b1-adv-voraus",
+  "de": "voraus",
+  "pos": "adverb",
+  "en": "ahead, forward, in front"
+ },
+ {
+  "id": "b1-n-ernte",
+  "de": "die Ernte",
+  "pos": "noun",
+  "en": "harvest, crop"
+ },
+ {
+  "id": "b1-v-wachsen",
+  "de": "wachsen",
+  "pos": "verb",
+  "en": "to grow, to increase, to wax"
+ },
+ {
+  "id": "b1-n-fortbildung",
+  "de": "die Fortbildung",
+  "pos": "noun",
+  "en": "further education, training"
+ },
+ {
+  "id": "b1-n-nichte",
+  "de": "die Nichte",
+  "pos": "noun",
+  "en": "niece"
+ },
+ {
+  "id": "b1-adj-sichtbar",
+  "de": "sichtbar",
+  "pos": "adjective",
+  "en": "visible"
+ },
+ {
+  "id": "b1-n-schlange",
+  "de": "die Schlange",
+  "pos": "noun",
+  "en": "snake, serpent, line, queue"
+ },
+ {
+  "id": "b1-v-vorlesen",
+  "de": "vorlesen",
+  "pos": "verb",
+  "en": "to read, to read aloud, to read out"
+ },
+ {
+  "id": "b1-n-energie",
+  "de": "die Energie",
+  "pos": "noun",
+  "en": "energy, power"
+ }
+]

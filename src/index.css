@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  --bg: #0b0d12;
+  --surface: #12151c;
+  --surface-2: #181c25;
+  --line: #232836;
+  --ink: #e8eaf0;
+  --muted: #8a92a6;
+}
+
+html,
+body {
+  background: var(--bg);
+  color: var(--ink);
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  font-family: Inter, 'Hind Siliguri', system-ui, sans-serif;
+  font-feature-settings: 'cv11', 'ss01';
+}
+
+:lang(bn) body,
+.bn {
+  font-family: 'Hind Siliguri', Inter, system-ui, sans-serif;
+}
+
+@layer components {
+  .card {
+    @apply rounded-2xl border border-[var(--line)] bg-[var(--surface)];
+  }
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl px-4 py-2.5 text-sm font-semibold transition active:scale-[0.98] disabled:cursor-not-allowed disabled:opacity-40;
+  }
+  .btn-primary {
+    @apply btn bg-emerald-400 text-[#06281c] hover:bg-emerald-300;
+  }
+  .btn-ghost {
+    @apply btn border border-[var(--line)] bg-[var(--surface-2)] text-[var(--ink)] hover:border-slate-500;
+  }
+  .btn-danger {
+    @apply btn border border-red-500/40 bg-red-500/10 text-red-300 hover:bg-red-500/20;
+  }
+  .input {
+    @apply w-full rounded-xl border border-[var(--line)] bg-[var(--surface-2)] px-3 py-2.5 text-[var(--ink)] outline-none placeholder:text-slate-500 focus:border-emerald-400/70;
+  }
+  .label {
+    @apply mb-1.5 block text-xs font-medium uppercase tracking-wider text-[var(--muted)];
+  }
+  .muted {
+    @apply text-[var(--muted)];
+  }
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}

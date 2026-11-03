@@ -1,0 +1,30 @@
+[
+  {
+    "id": "a1",
+    "name": "A1 Vocabulary",
+    "description": "Goethe A1 word list",
+    "count": 758,
+    "version": "a8ab733fd587"
+  },
+  {
+    "id": "a2",
+    "name": "A2 Vocabulary",
+    "description": "Goethe A2 word list",
+    "count": 671,
+    "version": "2a17ae7b0fc9"
+  },
+  {
+    "id": "b1",
+    "name": "B1 Vocabulary",
+    "description": "Goethe B1 word list",
+    "count": 1667,
+    "version": "825fa170a494"
+  },
+  {
+    "id": "extra",
+    "name": "Extra Vocabulary",
+    "description": "Extended word list",
+    "count": 2799,
+    "version": "0447bc044531"
+  }
+]

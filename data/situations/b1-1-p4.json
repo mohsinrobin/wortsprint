@@ -1,0 +1,502 @@
+{
+"b1-v-betreuen": [
+"You are a babysitter. The parents leave and you stay with the kids until they return.",
+"A nurse looks after the old people in the care home all day.",
+"Your teacher supervises your thesis and guides your work."
+],
+"b1-n-urkunde": [
+"After the race the winner gets a paper with their name and place on it.",
+"At the town hall you receive an official paper that proves your marriage.",
+"For your house purchase you sign a legal paper that a notary stamps."
+],
+"b1-n-ausnahme": [
+"The shop rule says no dogs, but the owner allows a guide dog. It is a special case.",
+"You say: 'Normally I am never late, but today was not like the others.'",
+"All students passed the test except for one single case."
+],
+"b1-adj-gespannt": [
+"You wait for the lottery result and can hardly wait to know it.",
+"Before opening a present the child is full of expectation.",
+"The rope is pulled tight between two trees."
+],
+"b1-v-verbinden": [
+"You plug in a cable to link your laptop to the TV.",
+"The new bridge links two cities across the river.",
+"You mix business with pleasure by combining a work trip with a holiday."
+],
+"b1-adv-uebrigens": [
+"While talking about the party you suddenly add a related thought. Which word introduces it?",
+"At the end of a chat you remember something extra to mention. Which word means 'by the way'?",
+"You add an extra remark to the conversation that was not planned."
+],
+"b1-n-nachhilfe": [
+"Your son is weak in math, so you pay a student to teach him at home after school.",
+"Before the exam you take extra lessons from a teacher in the afternoon.",
+"Which noun means extra paid lessons outside of school?"
+],
+"b1-n-oper": [
+"In the evening you dress up and go to a theatre where singers perform a story with an orchestra.",
+"A famous soprano sings on the stage in a story where nobody talks, they only sing.",
+"Mozart's 'The Magic Flute' is this kind of work."
+],
+"b1-v-loeschen": [
+"The firefighters use water to stop the flames.",
+"You remove an old photo from your phone.",
+"Before sleep you blow out the candle."
+],
+"b1-n-konferenz": [
+"Experts from many countries meet in a big hall for three days to give talks.",
+"The company holds a big event in a hotel with many speakers.",
+"Doctors from all over the world travel to a city for a medical meeting."
+],
+"b1-adj-biologisch": [
+"Scientists study living things like plants and animals. This branch of science is about them.",
+"A teacher explains how a cell works, which is a process of living things.",
+"Digesting food is a natural process of the body. Which adjective describes it?"
+],
+"b1-n-situation": [
+"You lost your wallet and the last bus is leaving. You are in a difficult position.",
+"The police ask: 'Can you describe what was happening at that moment?'",
+"Which noun means the state of things at a certain time?"
+],
+"b1-n-opfer": [
+"A woman had her bag stolen. She is the person who suffered from the crime.",
+"A mother gives up her free time and sleep for her sick child. It is a hard personal giving up.",
+"After the flood help arrived for the people who suffered."
+],
+"b1-v-naehen": [
+"A button fell off your shirt, so you take a needle and thread to fix it.",
+"Your grandma makes a dress with a sewing machine.",
+"The doctor closes the cut on your arm with thread."
+],
+"b1-n-floete": [
+"In music class you blow into a thin wooden tube with holes and press them with your fingers.",
+"A musician plays a high, soft sound with a silver tube held sideways.",
+"Which instrument of the orchestra is a thin tube that you blow across?"
+],
+"b1-n-unglueck": [
+"A terrible train accident happens, and the news reports it as a tragedy.",
+"You break a mirror and think it brings seven years of ill fortune.",
+"Everything goes wrong for you: you lose your job and your car breaks down. You say you have this."
+],
+"b1-adj-woechentlich": [
+"Your Spanish class is every Tuesday evening, once a week.",
+"The magazine appears on Fridays, every seven days.",
+"You pay your gym fee once per week. Which adjective means 'happening every week'?"
+],
+"b1-v-ernaehren": [
+"A doctor asks: 'What do you usually eat? Do you have a healthy diet?'",
+"A mother feeds her baby with milk only.",
+"A farmer supports a family of five with his small farm."
+],
+"b1-n-ostsee": [
+"In summer you take a holiday at the sea in northern Germany, a calm, less salty sea to the east of Denmark.",
+"On the map a sea lies between Germany, Sweden and Poland. Which sea?",
+"The island of Rügen and the city of Lübeck lie on this sea. Which sea is called the Baltic?"
+],
+"b1-n-maerchen": [
+"Before bed mother reads a story about a princess, a wolf and a magic spell.",
+"Hansel and Gretel and Cinderella are this kind of story.",
+"Your grandfather tells children a story that begins 'Once upon a time'."
+],
+"b1-n-abschluss": [
+"After five years at university you receive your final diploma.",
+"At the end of the meeting the boss gives a final summary.",
+"After the completion of the project, we will have a party."
+],
+"b1-v-kopieren": [
+"At the office you put the contract in a machine to get a second sheet.",
+"On your computer you select the file and press Ctrl-C to make a duplicate.",
+"A student makes an exact duplicate of a friend's homework."
+],
+"b1-adv-teilweise": [
+"The sky is partly cloudy: in some places there are clouds, in other places blue sky.",
+"You finished half the task, but the rest is not done.",
+"'Do you agree?' 'Only in some parts.' Which adverb means 'partly'?"
+],
+"b1-n-vorfahrt": [
+"At the crossing the car on the main road may go first, and the other must wait.",
+"In driving school you learn who may go first at a junction without traffic lights.",
+"A yellow diamond sign means that you have priority."
+],
+"b1-adj-fair": [
+"In a football game the player does not cheat and plays honestly.",
+"The teacher gives everyone the same chance and treats everyone equally.",
+"The price is reasonable, not too high for what you get."
+],
+"b1-n-oeko": [
+"A supermarket sells environmentally friendly food. Which prefix means 'eco-' in German compound nouns?",
+"You buy electricity that comes from sun and wind, 'eco-electricity'. Which prefix is used for this?",
+"The shop's detergent is good for nature. Which prefix means 'eco-' or 'organic' in German compound words?"
+],
+"b1-v-verabreden": [
+"You and a friend plan to meet at the cinema at 7 pm.",
+"You make an appointment with the dentist for Monday.",
+"Two colleagues decide on a time for a call."
+],
+"b1-n-gewerkschaft": [
+"Workers at the factory join an organization that fights for higher pay and better conditions.",
+"Every month you pay a small fee to the group that protects employees' rights.",
+"Representatives of this group talk to the bosses about wages."
+],
+"b1-n-zugang": [
+"Your password gives you entry to the online account.",
+"The building has a ramp, so wheelchair users have a way in.",
+"Which noun means the way or right to enter or use something?"
+],
+"b1-adj-umgekehrt": [
+"You say 'I like you', and your friend says the same, 'and the other way round'.",
+"In the mirror the writing looks backwards.",
+"You thought he would be angry, but in fact it was the contrary."
+],
+"b1-v-zwingen": [
+"The boss does not ask but makes you work on Sunday, and you have no choice.",
+"Bad weather makes the pilot land early. He has no choice.",
+"Your mother makes you eat vegetables though you do not want to."
+],
+"b1-n-anleitung": [
+"You build a shelf from a box, with a paper that shows step by step what to do.",
+"A video shows you how to cook the dish step by step.",
+"Your teacher gives you directions on how to do the experiment."
+],
+"b1-n-tastatur": [
+"You type on a board of keys connected to your computer.",
+"Coffee spilled on it, and now letters do not appear when you press.",
+"On your laptop you have a board with letters and numbers that you press with your fingers."
+],
+"b1-n-traum": [
+"You see a house that is absolutely perfect for you. Which German word-part meaning 'dream' goes before 'house' for this?",
+"You imagine the perfect holiday you always wished for. Which prefix 'dream-' goes before 'holiday'?",
+"A man finds his ideal job, the best he could imagine. Which prefix means 'dream' in this compound?"
+],
+"b1-v-verzichten": [
+"You give up sugar in your coffee to lose weight.",
+"On this trip you have to go without a car.",
+"She decides not to claim the money and gives up her right."
+],
+"b1-n-anlage": [
+"The city's big sports complex has pools and tracks.",
+"A big industrial facility cleans the town's wastewater.",
+"You put your savings into stocks to make money."
+],
+"b1-adj-eventuell": [
+"The announcement says delays are possible at the border.",
+"In an email: 'We might perhaps change the date.'",
+"Describe a chance that might happen but is not sure."
+],
+"b1-n-trinkgeld": [
+"At the restaurant you round up the bill and leave a few extra euros for the waiter.",
+"The taxi driver helps with your luggage, so you give him a little extra.",
+"At the hairdresser you add 2 euros on top of the price as thanks."
+],
+"b1-adv-abwaerts": [
+"On the hill you ride your bike in the direction toward the bottom.",
+"The lift goes toward the lower floors.",
+"The stairs lead in the direction of the cellar."
+],
+"b1-v-umarmen": [
+"At the airport you put your arms around your sister to greet her.",
+"A mother takes her crying child in her arms.",
+"After the match the players put their arms around each other."
+],
+"b1-n-erfindung": [
+"The telephone, the light bulb and the printing press are each a new thing created by a clever person.",
+"A student creates a new machine that cleans windows and registers it.",
+"The wheel was a great new idea. Which noun means 'invention'?"
+],
+"b1-n-politik": [
+"On TV they talk about government, parties and elections.",
+"Your uncle likes to discuss how the country is governed.",
+"At school there is a subject where you learn about how the state works."
+],
+"b1-adj-anstrengend": [
+"After carrying heavy bags up five floors, you are out of breath.",
+"A day with five crying toddlers is very tiring.",
+"A long uphill hike is difficult and takes all your energy."
+],
+"b1-n-forschung": [
+"Scientists in a lab work for years to find a cure for a disease.",
+"A university professor studies the origin of language.",
+"A company spends a lot of money on finding new materials."
+],
+"b1-v-gruenden": [
+"Two friends start their own company.",
+"A group of neighbors sets up a new football club.",
+"A woman creates a charity for homeless animals."
+],
+"b1-n-ueberweisung": [
+"You pay your rent by sending money from your bank account to the landlord's account.",
+"Your family doctor writes a paper to send you to a specialist.",
+"The bank statement shows a payment from your employer on the first of the month."
+],
+"b1-n-stein": [
+"A child throws a small hard piece of rock into the lake.",
+"The old wall is built of large rocks.",
+"You find a smooth rock on the beach."
+],
+"b1-v-konsumieren": [
+"A family uses a lot of electricity each month and uses up a lot of energy.",
+"Young people drink lots of soft drinks and eat many sweets.",
+"People buy and use up many products very fast."
+],
+"b1-n-kurve": [
+"The road turns sharply to the left, so you slow down.",
+"On the chart a line goes up and then down.",
+"The runner takes the corner of the track fast."
+],
+"b1-adj-elektronisch": [
+"A small device with chips and circuits runs on a battery and has a display.",
+"You send a message by computer, not by post.",
+"A musician plays an instrument that makes sound through circuits and speakers."
+],
+"b1-n-entscheidung": [
+"After thinking for a week you choose to take the new job.",
+"The judge announces who is right and gives a final ruling.",
+"You must choose between two flats, and time is running out."
+],
+"b1-v-bluten": [
+"You cut your finger with a knife and red liquid comes out.",
+"After a fall your nose has red fluid running from it.",
+"The doctor says to press on the wound until the red fluid stops coming."
+],
+"b1-n-schmerzmittel": [
+"You have a bad headache and take a tablet from the pharmacy.",
+"After the dentist you take medicine so your tooth stops hurting.",
+"The doctor prescribes something so your back does not hurt."
+],
+"b1-n-nerv": [
+"The dentist hits a thin cord in your tooth that sends pain signals to your brain.",
+"Your leg goes numb because a thin fiber carrying signals to the brain is pressed.",
+"Your hand cannot feel anything because something in the body that carries signals is damaged."
+],
+"b1-adv-irgendwann": [
+"You say you want to visit Japan, not this year but some day in the future.",
+"You say: 'We should have dinner together some time.' There is no exact date.",
+"Your old friend says he will call at some point, but gives no date."
+],
+"b1-n-kaelte": [
+"In January it is minus ten degrees, and you wear a thick coat and gloves.",
+"Your fingers hurt from the low temperature outside.",
+"Which noun means the opposite of heat?"
+],
+"b1-adj-vordere": [
+"On the bus you sit in the seat nearest the driver.",
+"The teacher says: 'Please come to the first row, at the front.'",
+"You sit in the seat next to the driver in the car, not in the back."
+],
+"b1-v-produzieren": [
+"A factory makes 1000 cars a month.",
+"A farm creates milk and cheese.",
+"A TV company makes a new series."
+],
+"b1-n-transport": [
+"A truck moves furniture from one city to another.",
+"A ship carries goods across the ocean.",
+"The ambulance takes the patient to hospital."
+],
+"b1-n-zeug": [
+"Your desk is covered with random things, so you say: 'Take your things away!'",
+"'I do not believe this!' 'What silly stuff are you saying?'",
+"In your bag you carry all sorts of stuff."
+],
+"b1-v-ueberfahren": [
+"A driver does not see a cat on the road and the car goes over it.",
+"If you do not brake, you will go over the traffic cone and flatten it.",
+"A driver does not see a hedgehog and goes over it."
+],
+"b1-n-ruecksicht": [
+"You turn down your music at night because your neighbors are sleeping. You show care for others.",
+"You wait for your slower friend on the hike.",
+"On the bus you give your seat to an older woman."
+],
+"b1-adj-kraeftig": [
+"A big man lifts a heavy piano with his muscles.",
+"The tea is very strong, with an intense taste.",
+"A baby grows well and looks healthy and strong."
+],
+"b1-n-hafen": [
+"Ships and boats are tied up at the place by the sea where cargo is loaded.",
+"The tourists walk along the water's edge where fishing boats come in.",
+"Hamburg is famous for the big place where ships dock."
+],
+"b1-v-sich-ereignen": [
+"A traffic accident happened at 8 pm at the crossing, the newspaper says it took place.",
+"The news reports a big event that took place in the city yesterday.",
+"You ask the witness: 'When did it happen?'"
+],
+"b1-n-eile": [
+"You are late for the train, and you run to the station.",
+"'Slow down!' your mother says. 'There is no need to rush.'",
+"The waiter walks fast between the tables."
+],
+"b1-n-elefant": [
+"At the zoo a big gray animal with a long trunk and large ears sprays water.",
+"In Africa and India lives the largest land animal, with big tusks.",
+"A child's book shows an animal that never forgets, with a trunk."
+],
+"b1-n-leiter-2": [
+"You need to change a light bulb on a high ceiling, so you climb up on a tool with steps.",
+"The firefighter puts a long tool with rungs against the wall.",
+"You pick apples from the tree with a tool with steps leaning against it."
+],
+"b1-v-bluehen": [
+"In spring the cherry trees are covered with white flowers.",
+"The roses in the garden have opened their petals.",
+"The business is doing very well and growing."
+],
+"b1-adj-negativ": [
+"The test result shows you do not have the disease.",
+"Your boss gives you critical feedback with only bad points.",
+"The thermometer shows minus five, below zero."
+],
+"b1-n-architekt": [
+"A man draws plans for the new house and decides how many rooms it has.",
+"At the building site a man shows the workers the design of the new library.",
+"The city hires a man to design a new museum."
+],
+"b1-adv-seitdem": [
+"You moved to Berlin in 2020 and have lived there continuously since that time.",
+"You broke your leg last year, and since that moment you do not ski.",
+"Which adverb means 'since then'?"
+],
+"b1-n-reporter": [
+"A man with a microphone stands at the scene of the fire and tells the TV viewers what happened.",
+"A man writes for a newspaper about the town festival.",
+"A man asks the mayor questions in front of a camera."
+],
+"b1-v-verpflegen": [
+"At the school camp the cooks provide meals for all 50 children.",
+"The hotel gives guests breakfast and dinner.",
+"At the marathon volunteers supply runners with water and bananas."
+],
+"b1-n-betrieb": [
+"Your uncle owns a small company with 20 employees that makes furniture.",
+"A sign at the lift says it is not working today.",
+"The factory is in use, and the machines are running."
+],
+"b1-n-seminar": [
+"At university there is a small class where students talk about a topic with the professor.",
+"A one-day course for employees about teamwork.",
+"A weekend course teaches you how to paint."
+],
+"b1-adj-korrekt": [
+"The teacher checks your answer and says it has no mistakes.",
+"The waiter gives you the exact change, and the bill is right.",
+"The man behaves politely and properly."
+],
+"b1-n-zone": [
+"A sign says that in this area of the city you may only drive 30 km/h.",
+"The airport has an area that only staff may enter.",
+"The ticket price depends on which area of the city you travel in."
+],
+"b1-v-handeln": [
+"Merchants buy and sell goods across countries.",
+"A child falls into the water, and the lifeguard does not wait but takes action.",
+"In an emergency you must think and then move quickly."
+],
+"b1-n-muesli": [
+"For breakfast you mix oats, nuts and dried fruit with milk.",
+"A healthy breakfast is a bowl of grains with yoghurt.",
+"In the supermarket you search for the box of grains, nuts and raisins."
+],
+"b1-n-sessel": [
+"You sit in a soft, comfortable seat with arms in the living room and read.",
+"Grandfather has his favorite seat with arms by the window.",
+"Next to the sofa stands a single comfortable seat."
+],
+"b1-v-kaputtgehen": [
+"Your washing machine suddenly stops working.",
+"The glass slips from your hand and shatters.",
+"After ten years the chain of your bicycle stops working."
+],
+"b1-adj-noetig": [
+"To get a visa you need a passport. It is required.",
+"'Do I have to come?' 'No, it is not required.'",
+"You do not need to hurry, because it is not a must."
+],
+"b1-n-alltag": [
+"After the holiday you return to normal routines: work, shopping, cooking.",
+"Your day: get up at 7, work, dinner, sleep.",
+"A film shows the normal, ordinary life of a family, nothing special."
+],
+"b1-n-notruf": [
+"You see a fire and dial 112 to get help.",
+"You phone the police when a crime happens.",
+"The number 911 or 112 is for this kind of call."
+],
+"b1-v-erschrecken": [
+"Your friend hides behind the door and jumps out, and you are startled.",
+"A loud bang from nowhere makes the cat jump.",
+"A horror film gives the viewers a fright."
+],
+"b1-n-freundschaft": [
+"Anna and Maria have known each other since kindergarten and always help each other.",
+"After twenty years the two men still call each other every week. Their bond is strong.",
+"A good relationship between two people who like and trust each other, but are not a couple."
+],
+"b1-adv-dafuer": [
+"Your friend gives you a present. You want to say 'thank you for it'. Which adverb means 'for it'?",
+"You talk about the money for the coffee machine and say: 'I will pay for it.' Which adverb is that?",
+"In a discussion someone asks if you are in favour of the plan. You say yes, you are for it."
+],
+"b1-n-daten": [
+"On your computer the numbers, names and addresses stored in files.",
+"The company collects customer information such as age and purchases.",
+"Scientists measure and save many values for the experiment."
+],
+"b1-adj-blass": [
+"After the shock your friend's face has lost all color and looks almost white.",
+"A sick person who stays inside all winter has light skin.",
+"The color is very light, not strong, like a faint yellow."
+],
+"b1-n-gebaeck": [
+"At the bakery you buy small sweet baked things like croissants and cookies to have with coffee.",
+"At Christmas time there is a plate of baked treats with the tea.",
+"A plate of small sweet baked treats is set out for guests."
+],
+"b1-v-aufloesen": [
+"You put a spoon of sugar in your tea and stir until it disappears.",
+"The tablet is placed in water and vanishes into the liquid.",
+"You stir salt into water until you can no longer see the grains."
+],
+"b1-n-absicht": [
+"You step on someone's foot by accident, and say you did not do it on purpose.",
+"She has the plan of starting her own business.",
+"What are you trying to achieve? What is your aim?"
+],
+"b1-n-import": [
+"A shop brings coffee from Brazil into the country to sell it.",
+"The country buys oil from other countries.",
+"Which noun is the opposite of export?"
+],
+"b1-v-auffordern": [
+"The teacher tells the student formally to leave the room.",
+"The police officer tells the driver to stop.",
+"The letter says: 'We ask you to pay.'"
+],
+"b1-adj-ordentlich": [
+"Your room is tidy, and everything is in its place.",
+"You did a good job on the repair. It was done properly.",
+"He is a decent person with good manners."
+],
+"b1-n-tankstelle": [
+"Your car is almost out of fuel, so you stop at a place by the road to fill up.",
+"At night you buy fuel and a snack at a roadside place.",
+"The sign shows the price of diesel per litre."
+],
+"b1-n-portemonnaie": [
+"You pay at the cash desk and take out the small case that holds coins and notes.",
+"You lost the little case with your cards, cash and ID from your trouser pocket.",
+"A thief took the small case from your bag."
+],
+"b1-n-mobilitaet": [
+"Cities build bike lanes, trams and buses so people can get around easily.",
+"After a knee operation the old man's ability to move freely is limited.",
+"The company wants better ways for workers to travel to work."
+],
+"b1-v-verlangen": [
+"The taxi driver says you must pay 50 euros for the ride.",
+"The customs officer says you must show your passport.",
+"The teacher demands that the students be quiet."
+]
+}

@@ -1,0 +1,2150 @@
+[
+ {
+  "id": "a1-n-kilometer",
+  "de": "der Kilometer, km",
+  "pos": "noun",
+  "en": "kilometer, kilometre"
+ },
+ {
+  "id": "a1-v-mieten",
+  "de": "mieten",
+  "pos": "verb",
+  "en": "to rent, to hire, to lease"
+ },
+ {
+  "id": "a1-n-geschwister",
+  "de": "das Geschwister",
+  "pos": "noun",
+  "en": "siblings, brothers and sisters"
+ },
+ {
+  "id": "a1-n-moebel",
+  "de": "das Möbel",
+  "pos": "noun",
+  "en": "furniture"
+ },
+ {
+  "id": "a1-adj-europaeisch",
+  "de": "europäisch",
+  "pos": "adjective",
+  "en": "European"
+ },
+ {
+  "id": "a1-n-bitte",
+  "de": "die Bitte",
+  "pos": "noun",
+  "en": "request"
+ },
+ {
+  "id": "a1-v-fernsehen",
+  "de": "fernsehen",
+  "pos": "verb",
+  "en": "to watch television, to watch TV"
+ },
+ {
+  "id": "a1-n-arzt",
+  "de": "der Arzt",
+  "pos": "noun",
+  "en": "doctor, physician, practitioner"
+ },
+ {
+  "id": "a1-adv-gestern",
+  "de": "gestern",
+  "pos": "adverb",
+  "en": "yesterday"
+ },
+ {
+  "id": "a1-n-vormittag",
+  "de": "der Vormittag",
+  "pos": "noun",
+  "en": "morning"
+ },
+ {
+  "id": "a1-v-grillen",
+  "de": "grillen",
+  "pos": "verb",
+  "en": "to barbecue, to have a barbecue, to grill"
+ },
+ {
+  "id": "a1-n-viertel",
+  "de": "das Viertel",
+  "pos": "noun",
+  "en": "quarter, district, fourth"
+ },
+ {
+  "id": "a1-n-ausweis",
+  "de": "der Ausweis",
+  "pos": "noun",
+  "en": "identity card, ID, pass, badge"
+ },
+ {
+  "id": "a1-adj-halb",
+  "de": "halb",
+  "pos": "adjective",
+  "en": "half"
+ },
+ {
+  "id": "a1-n-schinken",
+  "de": "der Schinken",
+  "pos": "noun",
+  "en": "ham, bacon"
+ },
+ {
+  "id": "a1-v-gewinnen",
+  "de": "gewinnen",
+  "pos": "verb",
+  "en": "to win, to gain"
+ },
+ {
+  "id": "a1-n-groesse",
+  "de": "die Größe",
+  "pos": "noun",
+  "en": "size, height"
+ },
+ {
+  "id": "a1-pr-was",
+  "de": "was",
+  "pos": "pronoun",
+  "en": "what"
+ },
+ {
+  "id": "a1-n-geburtsjahr",
+  "de": "das Geburtsjahr",
+  "pos": "noun",
+  "en": "year of birth"
+ },
+ {
+  "id": "a1-n-ausflug",
+  "de": "der Ausflug",
+  "pos": "noun",
+  "en": "trip, excursion, tour, outing"
+ },
+ {
+  "id": "a1-adv-frueher",
+  "de": "früher",
+  "pos": "adverb",
+  "en": "in former times, in the past, early"
+ },
+ {
+  "id": "a1-v-abfliegen",
+  "de": "abfliegen",
+  "pos": "verb",
+  "en": "to depart, to fly away, to take off"
+ },
+ {
+  "id": "a1-n-birne",
+  "de": "die Birne",
+  "pos": "noun",
+  "en": "pear"
+ },
+ {
+  "id": "a1-adj-schwer",
+  "de": "schwer",
+  "pos": "adjective",
+  "en": "difficult, heavy, hard, severe"
+ },
+ {
+  "id": "a1-n-schalter",
+  "de": "der Schalter",
+  "pos": "noun",
+  "en": "counter, switch"
+ },
+ {
+  "id": "a1-n-studentin",
+  "de": "die Studentin",
+  "pos": "noun",
+  "en": "student (female)"
+ },
+ {
+  "id": "a1-v-stellen",
+  "de": "stellen",
+  "pos": "verb",
+  "en": "to put (vertically), to place, to position, to set, to provide"
+ },
+ {
+  "id": "a1-n-broetchen",
+  "de": "das Brötchen",
+  "pos": "noun",
+  "en": "roll, bread roll, bun"
+ },
+ {
+  "id": "a1-n-hausaufgabe",
+  "de": "die Hausaufgabe",
+  "pos": "noun",
+  "en": "homework"
+ },
+ {
+  "id": "a1-v-bezahlen",
+  "de": "bezahlen",
+  "pos": "verb",
+  "en": "to pay"
+ },
+ {
+  "id": "a1-n-fussball",
+  "de": "der Fußball",
+  "pos": "noun",
+  "en": "soccer, football"
+ },
+ {
+  "id": "a1-adj-guenstig",
+  "de": "günstig",
+  "pos": "adjective",
+  "en": "cheap, reasonable, favourable, favorable, good"
+ },
+ {
+  "id": "a1-adv-unten",
+  "de": "unten",
+  "pos": "adverb",
+  "en": "down, below, at the bottom, downstairs"
+ },
+ {
+  "id": "a1-n-ende",
+  "de": "das Ende",
+  "pos": "noun",
+  "en": "end"
+ },
+ {
+  "id": "a1-n-autobahn",
+  "de": "die Autobahn",
+  "pos": "noun",
+  "en": "motorway, highway, freeway"
+ },
+ {
+  "id": "a1-v-muessen",
+  "de": "müssen",
+  "pos": "verb",
+  "en": "to have to, to need to, to must"
+ },
+ {
+  "id": "a1-n-mensch",
+  "de": "der Mensch",
+  "pos": "noun",
+  "en": "human, human being, person, man"
+ },
+ {
+  "id": "a1-pr-wer",
+  "de": "wer",
+  "pos": "pronoun",
+  "en": "who"
+ },
+ {
+  "id": "a1-n-kaffee",
+  "de": "der Kaffee",
+  "pos": "noun",
+  "en": "coffee"
+ },
+ {
+  "id": "a1-adj-bitter",
+  "de": "bitter",
+  "pos": "adjective",
+  "en": "bitter"
+ },
+ {
+  "id": "a1-n-antwort",
+  "de": "die Antwort",
+  "pos": "noun",
+  "en": "answer, reply, response"
+ },
+ {
+  "id": "a1-v-oeffnen",
+  "de": "öffnen",
+  "pos": "verb",
+  "en": "to open"
+ },
+ {
+  "id": "a1-n-aufzug",
+  "de": "der Aufzug",
+  "pos": "noun",
+  "en": "elevator, lift"
+ },
+ {
+  "id": "a1-n-handy",
+  "de": "das Handy",
+  "pos": "noun",
+  "en": "mobile (phone), cell phone"
+ },
+ {
+  "id": "a1-adv-morgen",
+  "de": "morgen",
+  "pos": "adverb",
+  "en": "tomorrow"
+ },
+ {
+  "id": "a1-v-besuchen",
+  "de": "besuchen",
+  "pos": "verb",
+  "en": "to visit, to attend"
+ },
+ {
+  "id": "a1-n-donnerstag",
+  "de": "der Donnerstag",
+  "pos": "noun",
+  "en": "Thursday"
+ },
+ {
+  "id": "a1-n-anmeldung",
+  "de": "die Anmeldung",
+  "pos": "noun",
+  "en": "application, registration, login, enrolment"
+ },
+ {
+  "id": "a1-adj-geschlossen",
+  "de": "geschlossen",
+  "pos": "adjective",
+  "en": "closed"
+ },
+ {
+  "id": "a1-n-party",
+  "de": "die Party",
+  "pos": "noun",
+  "en": "party"
+ },
+ {
+  "id": "a1-v-mitmachen",
+  "de": "mitmachen",
+  "pos": "verb",
+  "en": "to participate, to join in, to take part"
+ },
+ {
+  "id": "a1-n-bleistift",
+  "de": "der Bleistift",
+  "pos": "noun",
+  "en": "pencil, pen"
+ },
+ {
+  "id": "a1-n-osten",
+  "de": "der Osten",
+  "pos": "noun",
+  "en": "east"
+ },
+ {
+  "id": "a1-n-stadt",
+  "de": "die Stadt",
+  "pos": "noun",
+  "en": "city, town"
+ },
+ {
+  "id": "a1-v-geben",
+  "de": "geben",
+  "pos": "verb",
+  "en": "to give, to provide"
+ },
+ {
+  "id": "a1-adv-gut",
+  "de": "gut",
+  "pos": "adverb",
+  "en": "well"
+ },
+ {
+  "id": "a1-pr-mir",
+  "de": "mir",
+  "pos": "pronoun",
+  "en": "me"
+ },
+ {
+  "id": "a1-n-banane",
+  "de": "die Banane",
+  "pos": "noun",
+  "en": "banana"
+ },
+ {
+  "id": "a1-adj-international",
+  "de": "international",
+  "pos": "adjective",
+  "en": "international(ly)"
+ },
+ {
+  "id": "a1-n-haus",
+  "de": "das Haus",
+  "pos": "noun",
+  "en": "house, home, building"
+ },
+ {
+  "id": "a1-v-verdienen",
+  "de": "verdienen",
+  "pos": "verb",
+  "en": "to earn, to deserve, to merit"
+ },
+ {
+  "id": "a1-n-fuehrung",
+  "de": "die Führung",
+  "pos": "noun",
+  "en": "management, command, leadership, guided tour, lead"
+ },
+ {
+  "id": "a1-n-fahrrad",
+  "de": "das Fahrrad",
+  "pos": "noun",
+  "en": "bicycle, bike"
+ },
+ {
+  "id": "a1-n-sonnabend",
+  "de": "der Sonnabend",
+  "pos": "noun",
+  "en": "Saturday"
+ },
+ {
+  "id": "a1-v-bestellen",
+  "de": "bestellen",
+  "pos": "verb",
+  "en": "to order"
+ },
+ {
+  "id": "a1-n-kurs",
+  "de": "der Kurs",
+  "pos": "noun",
+  "en": "course, class, rate, exchange rate"
+ },
+ {
+  "id": "a1-adj-deutsch",
+  "de": "deutsch",
+  "pos": "adjective",
+  "en": "German"
+ },
+ {
+  "id": "a1-n-freizeit",
+  "de": "die Freizeit",
+  "pos": "noun",
+  "en": "free time, spare time, leisure (time)"
+ },
+ {
+  "id": "a1-adv-gern",
+  "de": "gern, gerne",
+  "pos": "adverb",
+  "en": "gladly, with pleasure, enjoy (+verb), like"
+ },
+ {
+  "id": "a1-n-karte",
+  "de": "die Karte",
+  "pos": "noun",
+  "en": "card, map, ticket, menu"
+ },
+ {
+  "id": "a1-v-wandern",
+  "de": "wandern",
+  "pos": "verb",
+  "en": "to hike, to migrate, to wander"
+ },
+ {
+  "id": "a1-n-beamte",
+  "de": "der Beamte(r)",
+  "pos": "noun",
+  "en": "official, officer, civil servant"
+ },
+ {
+  "id": "a1-n-unterricht",
+  "de": "der Unterricht",
+  "pos": "noun",
+  "en": "lesson, class, instruction"
+ },
+ {
+  "id": "a1-adj-besetzt",
+  "de": "besetzt",
+  "pos": "adjective",
+  "en": "occupied, filled, busy, taken"
+ },
+ {
+  "id": "a1-v-anbieten",
+  "de": "anbieten",
+  "pos": "verb",
+  "en": "to offer"
+ },
+ {
+  "id": "a1-n-ecke",
+  "de": "die Ecke",
+  "pos": "noun",
+  "en": "corner"
+ },
+ {
+  "id": "a1-pr-sie",
+  "de": "Sie",
+  "pos": "pronoun",
+  "en": "you (formal)"
+ },
+ {
+  "id": "a1-n-buchstabe",
+  "de": "der Buchstabe",
+  "pos": "noun",
+  "en": "letter, character"
+ },
+ {
+  "id": "a1-n-ei",
+  "de": "das Ei",
+  "pos": "noun",
+  "en": "egg"
+ },
+ {
+  "id": "a1-adv-bald",
+  "de": "bald",
+  "pos": "adverb",
+  "en": "soon, almost"
+ },
+ {
+  "id": "a1-v-schwimmen",
+  "de": "schwimmen",
+  "pos": "verb",
+  "en": "to swim, to float"
+ },
+ {
+  "id": "a1-n-loesung",
+  "de": "die Lösung",
+  "pos": "noun",
+  "en": "solution"
+ },
+ {
+  "id": "a1-n-cd",
+  "de": "die CD",
+  "pos": "noun",
+  "en": "CD, (compact) disc"
+ },
+ {
+  "id": "a1-adj-jung",
+  "de": "jung",
+  "pos": "adjective",
+  "en": "young"
+ },
+ {
+  "id": "a1-n-toilette",
+  "de": "die Toilette",
+  "pos": "noun",
+  "en": "toilet, restroom"
+ },
+ {
+  "id": "a1-v-beginnen",
+  "de": "beginnen",
+  "pos": "verb",
+  "en": "to begin, to start, to commence"
+ },
+ {
+  "id": "a1-n-sueden",
+  "de": "der Süden",
+  "pos": "noun",
+  "en": "south"
+ },
+ {
+  "id": "a1-n-grossmutter",
+  "de": "die Großmutter",
+  "pos": "noun",
+  "en": "grandmother"
+ },
+ {
+  "id": "a1-v-treffen",
+  "de": "treffen",
+  "pos": "verb",
+  "en": "to meet, to make, to hit, to strike"
+ },
+ {
+  "id": "a1-n-prozent",
+  "de": "das Prozent",
+  "pos": "noun",
+  "en": "per cent, percent, percentage"
+ },
+ {
+  "id": "a1-adv-nur",
+  "de": "nur",
+  "pos": "adverb",
+  "en": "only, just, simply"
+ },
+ {
+  "id": "a1-n-auge",
+  "de": "das Auge",
+  "pos": "noun",
+  "en": "eye"
+ },
+ {
+  "id": "a1-adj-gluecklich",
+  "de": "glücklich",
+  "pos": "adjective",
+  "en": "happy, fortunate, lucky"
+ },
+ {
+  "id": "a1-n-haltestelle",
+  "de": "die Haltestelle",
+  "pos": "noun",
+  "en": "stop, station"
+ },
+ {
+  "id": "a1-v-arbeiten",
+  "de": "arbeiten",
+  "pos": "verb",
+  "en": "to work"
+ },
+ {
+  "id": "a1-n-kundin",
+  "de": "die Kundin",
+  "pos": "noun",
+  "en": "customer (female), client (female)"
+ },
+ {
+  "id": "a1-pr-ihr",
+  "de": "ihr",
+  "pos": "pronoun",
+  "en": "you (pl./informal), her, their, hers, theirs"
+ },
+ {
+  "id": "a1-n-jugendliche",
+  "de": "der Jugendliche",
+  "pos": "noun",
+  "en": "adolescent, youngster, young person"
+ },
+ {
+  "id": "a1-n-juni",
+  "de": "der Juni",
+  "pos": "noun",
+  "en": "June"
+ },
+ {
+  "id": "a1-v-aussteigen",
+  "de": "aussteigen",
+  "pos": "verb",
+  "en": "to get off, to get out, to disembark"
+ },
+ {
+  "id": "a1-n-mannschaft",
+  "de": "die Mannschaft",
+  "pos": "noun",
+  "en": "crew, team"
+ },
+ {
+  "id": "a1-adj-spaeter",
+  "de": "später",
+  "pos": "adjective",
+  "en": "later"
+ },
+ {
+  "id": "a1-n-papier",
+  "de": "das Papier",
+  "pos": "noun",
+  "en": "paper"
+ },
+ {
+  "id": "a1-adv-zu",
+  "de": "zu",
+  "pos": "adverb",
+  "en": "too, closed"
+ },
+ {
+  "id": "a1-n-stelle",
+  "de": "die Stelle",
+  "pos": "noun",
+  "en": "place, position, location, job"
+ },
+ {
+  "id": "a1-v-kosten",
+  "de": "kosten",
+  "pos": "verb",
+  "en": "to cost, to taste"
+ },
+ {
+  "id": "a1-n-zeitung",
+  "de": "die Zeitung",
+  "pos": "noun",
+  "en": "newspaper, paper"
+ },
+ {
+  "id": "a1-n-mann",
+  "de": "der Mann",
+  "pos": "noun",
+  "en": "man, husband"
+ },
+ {
+  "id": "a1-v-erlauben",
+  "de": "erlauben",
+  "pos": "verb",
+  "en": "to allow, to permit"
+ },
+ {
+  "id": "a1-adj-bar",
+  "de": "bar",
+  "pos": "adjective",
+  "en": "cash"
+ },
+ {
+  "id": "a1-n-junge",
+  "de": "der Junge",
+  "pos": "noun",
+  "en": "boy"
+ },
+ {
+  "id": "a1-n-vermieterin",
+  "de": "die Vermieterin",
+  "pos": "noun",
+  "en": "landlady"
+ },
+ {
+  "id": "a1-n-milliarde",
+  "de": "die Milliarde",
+  "pos": "noun",
+  "en": "billion"
+ },
+ {
+  "id": "a1-v-enden",
+  "de": "enden",
+  "pos": "verb",
+  "en": "to end, to terminate, to cease"
+ },
+ {
+  "id": "a1-pr-sein",
+  "de": "sein",
+  "pos": "pronoun",
+  "en": "his, its, their, one's, his or her"
+ },
+ {
+  "id": "a1-adv-oft",
+  "de": "oft",
+  "pos": "adverb",
+  "en": "often, frequently"
+ },
+ {
+  "id": "a1-n-wochentag",
+  "de": "der Wochentag",
+  "pos": "noun",
+  "en": "weekday, day of the week"
+ },
+ {
+  "id": "a1-n-hochzeit",
+  "de": "die Hochzeit",
+  "pos": "noun",
+  "en": "wedding"
+ },
+ {
+  "id": "a1-adj-braun",
+  "de": "braun",
+  "pos": "adjective",
+  "en": "brown"
+ },
+ {
+  "id": "a1-n-schluss",
+  "de": "der Schluss",
+  "pos": "noun",
+  "en": "end, conclusion, closing, finish"
+ },
+ {
+  "id": "a1-v-benutzen",
+  "de": "benutzen",
+  "pos": "verb",
+  "en": "to use"
+ },
+ {
+  "id": "a1-n-ehemann",
+  "de": "der Ehemann",
+  "pos": "noun",
+  "en": "husband"
+ },
+ {
+  "id": "a1-n-geburtstag",
+  "de": "der Geburtstag",
+  "pos": "noun",
+  "en": "birthday, date of birth"
+ },
+ {
+  "id": "a1-v-anmelden",
+  "de": "anmelden",
+  "pos": "verb",
+  "en": "to sign up, to log in, to register, to enrol, to subscribe"
+ },
+ {
+  "id": "a1-n-licht",
+  "de": "das Licht",
+  "pos": "noun",
+  "en": "light"
+ },
+ {
+  "id": "a1-n-frage",
+  "de": "die Frage",
+  "pos": "noun",
+  "en": "question"
+ },
+ {
+  "id": "a1-adv-auf",
+  "de": "auf",
+  "pos": "adverb",
+  "en": "open, up"
+ },
+ {
+  "id": "a1-adj-gross",
+  "de": "groß",
+  "pos": "adjective",
+  "en": "big, large, great, tall"
+ },
+ {
+  "id": "a1-n-arbeit",
+  "de": "die Arbeit",
+  "pos": "noun",
+  "en": "work, job, labour, labor, paper"
+ },
+ {
+  "id": "a1-v-fragen",
+  "de": "fragen",
+  "pos": "verb",
+  "en": "to ask"
+ },
+ {
+  "id": "a1-n-fahrer",
+  "de": "der Fahrer",
+  "pos": "noun",
+  "en": "driver"
+ },
+ {
+  "id": "a1-n-tasche",
+  "de": "die Tasche",
+  "pos": "noun",
+  "en": "pocket, bag"
+ },
+ {
+  "id": "a1-n-januar",
+  "de": "der Januar",
+  "pos": "noun",
+  "en": "January"
+ },
+ {
+  "id": "a1-v-reisen",
+  "de": "reisen",
+  "pos": "verb",
+  "en": "to travel"
+ },
+ {
+  "id": "a1-pr-euer",
+  "de": "euer",
+  "pos": "pronoun",
+  "en": "your (pl./informal)"
+ },
+ {
+  "id": "a1-n-kilogramm",
+  "de": "das Kilogramm, kg",
+  "pos": "noun",
+  "en": "kilogram"
+ },
+ {
+  "id": "a1-adj-breit",
+  "de": "breit",
+  "pos": "adjective",
+  "en": "wide, broad"
+ },
+ {
+  "id": "a1-n-regen",
+  "de": "der Regen",
+  "pos": "noun",
+  "en": "rain"
+ },
+ {
+  "id": "a1-adv-allein",
+  "de": "allein",
+  "pos": "adverb",
+  "en": "alone, on one's own"
+ },
+ {
+  "id": "a1-v-lachen",
+  "de": "lachen",
+  "pos": "verb",
+  "en": "to laugh"
+ },
+ {
+  "id": "a1-n-feuer",
+  "de": "das Feuer",
+  "pos": "noun",
+  "en": "fire"
+ },
+ {
+  "id": "a1-n-minute",
+  "de": "die Minute",
+  "pos": "noun",
+  "en": "minute"
+ },
+ {
+  "id": "a1-n-rezeption",
+  "de": "die Rezeption",
+  "pos": "noun",
+  "en": "reception, front desk"
+ },
+ {
+  "id": "a1-v-aufstehen",
+  "de": "aufstehen",
+  "pos": "verb",
+  "en": "to stand up, to get up"
+ },
+ {
+  "id": "a1-adj-lang",
+  "de": "lang",
+  "pos": "adjective",
+  "en": "long"
+ },
+ {
+  "id": "a1-n-speisekarte",
+  "de": "die Speisekarte",
+  "pos": "noun",
+  "en": "menu"
+ },
+ {
+  "id": "a1-n-job",
+  "de": "der Job",
+  "pos": "noun",
+  "en": "job"
+ },
+ {
+  "id": "a1-n-urlaub",
+  "de": "der Urlaub",
+  "pos": "noun",
+  "en": "vacation, holiday"
+ },
+ {
+  "id": "a1-v-erzaehlen",
+  "de": "erzählen",
+  "pos": "verb",
+  "en": "to tell"
+ },
+ {
+  "id": "a1-n-jacke",
+  "de": "die Jacke",
+  "pos": "noun",
+  "en": "coat, jacket"
+ },
+ {
+  "id": "a1-adv-dort",
+  "de": "dort",
+  "pos": "adverb",
+  "en": "there, over there"
+ },
+ {
+  "id": "a1-n-september",
+  "de": "der September",
+  "pos": "noun",
+  "en": "September"
+ },
+ {
+  "id": "a1-adj-auslaendisch",
+  "de": "ausländisch",
+  "pos": "adjective",
+  "en": "foreign"
+ },
+ {
+  "id": "a1-v-abfahren",
+  "de": "abfahren",
+  "pos": "verb",
+  "en": "to leave, to depart, to drive off"
+ },
+ {
+  "id": "a1-n-herd",
+  "de": "der Herd",
+  "pos": "noun",
+  "en": "cooker, stove, range"
+ },
+ {
+  "id": "a1-pr-viel",
+  "de": "viel",
+  "pos": "pronoun",
+  "en": "much, a lot of, lots of, many"
+ },
+ {
+  "id": "a1-n-stunde",
+  "de": "die Stunde",
+  "pos": "noun",
+  "en": "hour, lesson"
+ },
+ {
+  "id": "a1-n-kopf",
+  "de": "der Kopf",
+  "pos": "noun",
+  "en": "head, mind"
+ },
+ {
+  "id": "a1-v-gratulieren",
+  "de": "gratulieren",
+  "pos": "verb",
+  "en": "to congratulate"
+ },
+ {
+  "id": "a1-n-frau",
+  "de": "die Frau",
+  "pos": "noun",
+  "en": "woman, wife, Mrs."
+ },
+ {
+  "id": "a1-n-aussage",
+  "de": "die Aussage",
+  "pos": "noun",
+  "en": "statement, testimony"
+ },
+ {
+  "id": "a1-adj-moeglich",
+  "de": "möglich",
+  "pos": "adjective",
+  "en": "possible"
+ },
+ {
+  "id": "a1-adv-schon",
+  "de": "schon",
+  "pos": "adverb",
+  "en": "already, yet, even"
+ },
+ {
+  "id": "a1-n-woche",
+  "de": "die Woche",
+  "pos": "noun",
+  "en": "week"
+ },
+ {
+  "id": "a1-v-halten",
+  "de": "halten",
+  "pos": "verb",
+  "en": "to stop, to hold, to keep, to last"
+ },
+ {
+  "id": "a1-n-drucker",
+  "de": "der Drucker",
+  "pos": "noun",
+  "en": "printer"
+ },
+ {
+  "id": "a1-n-hausfrau",
+  "de": "die Hausfrau",
+  "pos": "noun",
+  "en": "housewife, homemaker"
+ },
+ {
+  "id": "a1-n-anrede",
+  "de": "die Anrede",
+  "pos": "noun",
+  "en": "salutation, title, address"
+ },
+ {
+  "id": "a1-v-hoeren",
+  "de": "hören",
+  "pos": "verb",
+  "en": "to hear, to listen to"
+ },
+ {
+  "id": "a1-n-telefon",
+  "de": "das Telefon",
+  "pos": "noun",
+  "en": "telephone, phone"
+ },
+ {
+  "id": "a1-adj-gut",
+  "de": "gut",
+  "pos": "adjective",
+  "en": "good, fine"
+ },
+ {
+  "id": "a1-n-geburtsort",
+  "de": "der Geburtsort",
+  "pos": "noun",
+  "en": "place of birth, birthplace"
+ },
+ {
+  "id": "a1-pr-unser",
+  "de": "unser",
+  "pos": "pronoun",
+  "en": "our"
+ },
+ {
+  "id": "a1-v-mitnehmen",
+  "de": "mitnehmen",
+  "pos": "verb",
+  "en": "to take, to take along, to give a lift"
+ },
+ {
+  "id": "a1-n-s-bahn",
+  "de": "die S-Bahn",
+  "pos": "noun",
+  "en": "suburban train"
+ },
+ {
+  "id": "a1-adv-immer",
+  "de": "immer",
+  "pos": "adverb",
+  "en": "always, constantly, all the time"
+ },
+ {
+  "id": "a1-n-zoll",
+  "de": "der Zoll",
+  "pos": "noun",
+  "en": "customs duty, duty, inch"
+ },
+ {
+  "id": "a1-n-maerz",
+  "de": "der März",
+  "pos": "noun",
+  "en": "March"
+ },
+ {
+  "id": "a1-v-gehoeren",
+  "de": "gehören",
+  "pos": "verb",
+  "en": "to belong to, to be part of"
+ },
+ {
+  "id": "a1-adj-ledig",
+  "de": "ledig",
+  "pos": "adjective",
+  "en": "single, unmarried"
+ },
+ {
+  "id": "a1-n-lastkraftwagen",
+  "de": "der Lastkraftwagen, Lastwagen, Laster, LKW",
+  "pos": "noun",
+  "en": "truck, lorry"
+ },
+ {
+  "id": "a1-n-familienname",
+  "de": "der Familienname",
+  "pos": "noun",
+  "en": "surname, family name, last name"
+ },
+ {
+  "id": "a1-n-november",
+  "de": "der November",
+  "pos": "noun",
+  "en": "November"
+ },
+ {
+  "id": "a1-v-heissen",
+  "de": "heißen",
+  "pos": "verb",
+  "en": "to be called, to mean"
+ },
+ {
+  "id": "a1-n-opa",
+  "de": "der Opa",
+  "pos": "noun",
+  "en": "grandpa, grandad, granddad"
+ },
+ {
+  "id": "a1-adv-dorthin",
+  "de": "dorthin",
+  "pos": "adverb",
+  "en": "there"
+ },
+ {
+  "id": "a1-n-gruppe",
+  "de": "die Gruppe",
+  "pos": "noun",
+  "en": "group"
+ },
+ {
+  "id": "a1-adj-herzlich",
+  "de": "herzlich",
+  "pos": "adjective",
+  "en": "warm, friendly, cordial, kind"
+ },
+ {
+  "id": "a1-v-duerfen",
+  "de": "dürfen",
+  "pos": "verb",
+  "en": "to be allowed, may, can"
+ },
+ {
+  "id": "a1-n-verwandte",
+  "de": "der Verwandte",
+  "pos": "noun",
+  "en": "relative"
+ },
+ {
+  "id": "a1-n-anfang",
+  "de": "der Anfang",
+  "pos": "noun",
+  "en": "beginning, start"
+ },
+ {
+  "id": "a1-n-arbeitsplatz",
+  "de": "der Arbeitsplatz",
+  "pos": "noun",
+  "en": "job, workplace"
+ },
+ {
+  "id": "a1-pr-ihr-2",
+  "de": "Ihr",
+  "pos": "pronoun",
+  "en": "your (formal)"
+ },
+ {
+  "id": "a1-v-laufen",
+  "de": "laufen",
+  "pos": "verb",
+  "en": "to run, to go, to walk"
+ },
+ {
+  "id": "a1-n-vorname",
+  "de": "der Vorname",
+  "pos": "noun",
+  "en": "first name, given name, forename"
+ },
+ {
+  "id": "a1-n-flughafen",
+  "de": "der Flughafen",
+  "pos": "noun",
+  "en": "airport"
+ },
+ {
+  "id": "a1-adj-besser",
+  "de": "besser",
+  "pos": "adjective",
+  "en": "better"
+ },
+ {
+  "id": "a1-n-schwimmbad",
+  "de": "das Schwimmbad",
+  "pos": "noun",
+  "en": "pool, schwimming pool, schwimming bath"
+ },
+ {
+  "id": "a1-v-brauchen",
+  "de": "brauchen",
+  "pos": "verb",
+  "en": "to need, to require"
+ },
+ {
+  "id": "a1-adv-zusammen",
+  "de": "zusammen",
+  "pos": "adverb",
+  "en": "together"
+ },
+ {
+  "id": "a1-n-dame",
+  "de": "die Dame",
+  "pos": "noun",
+  "en": "lady, queen, checkers"
+ },
+ {
+  "id": "a1-n-kindergarten",
+  "de": "der Kindergarten",
+  "pos": "noun",
+  "en": "kindergarten, nursery school"
+ },
+ {
+  "id": "a1-v-sitzen",
+  "de": "sitzen",
+  "pos": "verb",
+  "en": "to sit, to perch"
+ },
+ {
+  "id": "a1-n-sonne",
+  "de": "die Sonne",
+  "pos": "noun",
+  "en": "sun"
+ },
+ {
+  "id": "a1-n-restaurant",
+  "de": "das Restaurant",
+  "pos": "noun",
+  "en": "restaurant"
+ },
+ {
+  "id": "a1-adj-hell",
+  "de": "hell",
+  "pos": "adjective",
+  "en": "light, bright"
+ },
+ {
+  "id": "a1-n-oma",
+  "de": "die Oma",
+  "pos": "noun",
+  "en": "granny, grandma"
+ },
+ {
+  "id": "a1-v-anmachen",
+  "de": "anmachen",
+  "pos": "verb",
+  "en": "to turn on, to light"
+ },
+ {
+  "id": "a1-n-chef",
+  "de": "der Chef",
+  "pos": "noun",
+  "en": "head, leader, boss, manager, director"
+ },
+ {
+  "id": "a1-adv-draussen",
+  "de": "draußen",
+  "pos": "adverb",
+  "en": "outside"
+ },
+ {
+  "id": "a1-n-wiedersehen",
+  "de": "das Wiedersehen",
+  "pos": "noun",
+  "en": "reunion, (next) meeting, goodbye"
+ },
+ {
+  "id": "a1-pr-mich",
+  "de": "mich",
+  "pos": "pronoun",
+  "en": "me, myself"
+ },
+ {
+  "id": "a1-n-mund",
+  "de": "der Mund",
+  "pos": "noun",
+  "en": "mouth"
+ },
+ {
+  "id": "a1-v-anziehen",
+  "de": "anziehen",
+  "pos": "verb",
+  "en": "to dress, to get dressed, to put on, to attract, to tighten"
+ },
+ {
+  "id": "a1-adj-laut",
+  "de": "laut",
+  "pos": "adjective",
+  "en": "loud, noisy"
+ },
+ {
+  "id": "a1-n-februar",
+  "de": "der Februar",
+  "pos": "noun",
+  "en": "February"
+ },
+ {
+  "id": "a1-n-anruf",
+  "de": "der Anruf",
+  "pos": "noun",
+  "en": "call, phone call, telephone call"
+ },
+ {
+  "id": "a1-v-kaufen",
+  "de": "kaufen",
+  "pos": "verb",
+  "en": "to buy, to purchase, to shop"
+ },
+ {
+  "id": "a1-n-wetter",
+  "de": "das Wetter",
+  "pos": "noun",
+  "en": "weather"
+ },
+ {
+  "id": "a1-n-hotel",
+  "de": "das Hotel",
+  "pos": "noun",
+  "en": "hotel"
+ },
+ {
+  "id": "a1-n-tomate",
+  "de": "die Tomate",
+  "pos": "noun",
+  "en": "tomato"
+ },
+ {
+  "id": "a1-adv-wo",
+  "de": "wo",
+  "pos": "adverb",
+  "en": "where"
+ },
+ {
+  "id": "a1-v-mitbringen",
+  "de": "mitbringen",
+  "pos": "verb",
+  "en": "to bring"
+ },
+ {
+  "id": "a1-adj-schwarz",
+  "de": "schwarz",
+  "pos": "adjective",
+  "en": "black"
+ },
+ {
+  "id": "a1-n-hobby",
+  "de": "das Hobby",
+  "pos": "noun",
+  "en": "hobby"
+ },
+ {
+  "id": "a1-n-anzeige",
+  "de": "die Anzeige",
+  "pos": "noun",
+  "en": "display, advertisement"
+ },
+ {
+  "id": "a1-n-liter",
+  "de": "der Liter",
+  "pos": "noun",
+  "en": "litre, liter"
+ },
+ {
+  "id": "a1-v-druecken",
+  "de": "drücken",
+  "pos": "verb",
+  "en": "to press, to push, to squeeze, to hug"
+ },
+ {
+  "id": "a1-n-kuchen",
+  "de": "der Kuchen",
+  "pos": "noun",
+  "en": "cake, pie"
+ },
+ {
+  "id": "a1-n-abend",
+  "de": "der Abend",
+  "pos": "noun",
+  "en": "evening"
+ },
+ {
+  "id": "a1-pr-man",
+  "de": "man",
+  "pos": "pronoun",
+  "en": "one, you, they"
+ },
+ {
+  "id": "a1-adj-weiblich",
+  "de": "weiblich",
+  "pos": "adjective",
+  "en": "feminine, female"
+ },
+ {
+  "id": "a1-v-ankommen",
+  "de": "ankommen",
+  "pos": "verb",
+  "en": "to arrive, to reach"
+ },
+ {
+  "id": "a1-n-lieblings",
+  "de": "der Lieblings-",
+  "pos": "noun",
+  "en": "favourite, favorite"
+ },
+ {
+  "id": "a1-adv-nicht",
+  "de": "nicht",
+  "pos": "adverb",
+  "en": "not, no"
+ },
+ {
+  "id": "a1-n-koffer",
+  "de": "der Koffer",
+  "pos": "noun",
+  "en": "case, suitcase"
+ },
+ {
+  "id": "a1-n-apfel",
+  "de": "der Apfel",
+  "pos": "noun",
+  "en": "apple"
+ },
+ {
+  "id": "a1-v-schlafen",
+  "de": "schlafen",
+  "pos": "verb",
+  "en": "to sleep"
+ },
+ {
+  "id": "a1-n-fieber",
+  "de": "das Fieber",
+  "pos": "noun",
+  "en": "fever"
+ },
+ {
+  "id": "a1-n-baum",
+  "de": "der Baum",
+  "pos": "noun",
+  "en": "tree"
+ },
+ {
+  "id": "a1-adj-billig",
+  "de": "billig",
+  "pos": "adjective",
+  "en": "cheap"
+ },
+ {
+  "id": "a1-n-oktober",
+  "de": "der Oktober",
+  "pos": "noun",
+  "en": "October"
+ },
+ {
+  "id": "a1-v-mitkommen",
+  "de": "mitkommen",
+  "pos": "verb",
+  "en": "to come with, to come too, to come along, to keep up"
+ },
+ {
+  "id": "a1-n-film",
+  "de": "der Film",
+  "pos": "noun",
+  "en": "film, movie"
+ },
+ {
+  "id": "a1-n-see",
+  "de": "der See",
+  "pos": "noun",
+  "en": "lake"
+ },
+ {
+  "id": "a1-adv-lieber",
+  "de": "lieber",
+  "pos": "adverb",
+  "en": "rather"
+ },
+ {
+  "id": "a1-n-nummer",
+  "de": "die Nummer",
+  "pos": "noun",
+  "en": "number"
+ },
+ {
+  "id": "a1-v-einkaufen",
+  "de": "einkaufen",
+  "pos": "verb",
+  "en": "to shop, to buy"
+ },
+ {
+  "id": "a1-n-august",
+  "de": "der August",
+  "pos": "noun",
+  "en": "August"
+ },
+ {
+  "id": "a1-adj-ruhig",
+  "de": "ruhig",
+  "pos": "adjective",
+  "en": "quiet(ly), calm(ly)"
+ },
+ {
+  "id": "a1-n-ansage",
+  "de": "die Ansage",
+  "pos": "noun",
+  "en": "announcement"
+ },
+ {
+  "id": "a1-pr-ich",
+  "de": "ich",
+  "pos": "pronoun",
+  "en": "I"
+ },
+ {
+  "id": "a1-v-essen",
+  "de": "essen",
+  "pos": "verb",
+  "en": "to eat, to dine"
+ },
+ {
+  "id": "a1-n-dezember",
+  "de": "der Dezember",
+  "pos": "noun",
+  "en": "December"
+ },
+ {
+  "id": "a1-n-appetit",
+  "de": "der Appetit",
+  "pos": "noun",
+  "en": "appitite"
+ },
+ {
+  "id": "a1-n-anschluss",
+  "de": "der Anschluss",
+  "pos": "noun",
+  "en": "connection, port"
+ },
+ {
+  "id": "a1-v-kennen",
+  "de": "kennen",
+  "pos": "verb",
+  "en": "to know"
+ },
+ {
+  "id": "a1-adv-gerade",
+  "de": "gerade",
+  "pos": "adverb",
+  "en": "just, now, just now, right now"
+ },
+ {
+  "id": "a1-adj-einfach",
+  "de": "einfach",
+  "pos": "adjective",
+  "en": "simple, easy"
+ },
+ {
+  "id": "a1-n-miete",
+  "de": "die Miete",
+  "pos": "noun",
+  "en": "rent"
+ },
+ {
+  "id": "a1-n-viertelstunde",
+  "de": "die Viertelstunde",
+  "pos": "noun",
+  "en": "quarter of an hour"
+ },
+ {
+  "id": "a1-n-salz",
+  "de": "das Salz",
+  "pos": "noun",
+  "en": "salt"
+ },
+ {
+  "id": "a1-v-heiraten",
+  "de": "heiraten",
+  "pos": "verb",
+  "en": "to marry, to get married"
+ },
+ {
+  "id": "a1-n-sprache",
+  "de": "die Sprache",
+  "pos": "noun",
+  "en": "language, speech"
+ },
+ {
+  "id": "a1-n-schild",
+  "de": "das Schild",
+  "pos": "noun",
+  "en": "sign"
+ },
+ {
+  "id": "a1-adj-gruen",
+  "de": "grün",
+  "pos": "adjective",
+  "en": "green"
+ },
+ {
+  "id": "a1-v-lesen",
+  "de": "lesen",
+  "pos": "verb",
+  "en": "to read"
+ },
+ {
+  "id": "a1-n-vorsicht",
+  "de": "die Vorsicht",
+  "pos": "noun",
+  "en": "caution, care, prudence"
+ },
+ {
+  "id": "a1-adv-meist",
+  "de": "meist",
+  "pos": "adverb",
+  "en": "mostly, usually"
+ },
+ {
+  "id": "a1-n-praktikum",
+  "de": "das Praktikum",
+  "pos": "noun",
+  "en": "internship, traineeship, work placement"
+ },
+ {
+  "id": "a1-pr-dein",
+  "de": "dein",
+  "pos": "pronoun",
+  "en": "your (informal)"
+ },
+ {
+  "id": "a1-n-wochenende",
+  "de": "das Wochenende",
+  "pos": "noun",
+  "en": "weekend"
+ },
+ {
+  "id": "a1-v-klicken",
+  "de": "klicken",
+  "pos": "verb",
+  "en": "to click"
+ },
+ {
+  "id": "a1-n-pruefung",
+  "de": "die Prüfung",
+  "pos": "noun",
+  "en": "exam(ination), test, inspection, verification"
+ },
+ {
+  "id": "a1-n-schuh",
+  "de": "der Schuh",
+  "pos": "noun",
+  "en": "shoe"
+ },
+ {
+  "id": "a1-adj-wunderbar",
+  "de": "wunderbar",
+  "pos": "adjective",
+  "en": "wonderful"
+ },
+ {
+  "id": "a1-n-geschenk",
+  "de": "das Geschenk",
+  "pos": "noun",
+  "en": "gift, present"
+ },
+ {
+  "id": "a1-v-wohnen",
+  "de": "wohnen",
+  "pos": "verb",
+  "en": "to live, to dwell, to reside"
+ },
+ {
+  "id": "a1-n-prospekt",
+  "de": "der Prospekt",
+  "pos": "noun",
+  "en": "brochure, leaflet"
+ },
+ {
+  "id": "a1-n-zug",
+  "de": "der Zug",
+  "pos": "noun",
+  "en": "train"
+ },
+ {
+  "id": "a1-adv-vielleicht",
+  "de": "vielleicht",
+  "pos": "adverb",
+  "en": "perhaps, maybe, possibly"
+ },
+ {
+  "id": "a1-v-liegen",
+  "de": "liegen",
+  "pos": "verb",
+  "en": "to lie, to be located, to be situated"
+ },
+ {
+  "id": "a1-n-abfahrt",
+  "de": "die Abfahrt",
+  "pos": "noun",
+  "en": "departure"
+ },
+ {
+  "id": "a1-n-bahnsteig",
+  "de": "der Bahnsteig",
+  "pos": "noun",
+  "en": "platform"
+ },
+ {
+  "id": "a1-adj-krank",
+  "de": "krank",
+  "pos": "adjective",
+  "en": "sick, ill"
+ },
+ {
+  "id": "a1-n-einzelzimmer",
+  "de": "das Einzelzimmer",
+  "pos": "noun",
+  "en": "single room"
+ },
+ {
+  "id": "a1-v-helfen",
+  "de": "helfen",
+  "pos": "verb",
+  "en": "to help, to aid, to assist"
+ },
+ {
+  "id": "a1-n-maschine",
+  "de": "die Maschine",
+  "pos": "noun",
+  "en": "machine, machinery"
+ },
+ {
+  "id": "a1-n-plan",
+  "de": "der Plan",
+  "pos": "noun",
+  "en": "plan, map, schedule"
+ },
+ {
+  "id": "a1-pr-welcher",
+  "de": "welcher, welche, welches",
+  "pos": "pronoun",
+  "en": "which, what"
+ },
+ {
+  "id": "a1-n-rechnung",
+  "de": "die Rechnung",
+  "pos": "noun",
+  "en": "invoice, bill, calculation"
+ },
+ {
+  "id": "a1-v-spielen",
+  "de": "spielen",
+  "pos": "verb",
+  "en": "to play, to gamble, to act, to perform"
+ },
+ {
+  "id": "a1-adj-selbstaendig",
+  "de": "selb(st)ständig",
+  "pos": "adjective",
+  "en": "independent, self-employed"
+ },
+ {
+  "id": "a1-adv-mehr",
+  "de": "mehr",
+  "pos": "adverb",
+  "en": "more, further"
+ },
+ {
+  "id": "a1-n-grad",
+  "de": "der Grad",
+  "pos": "noun",
+  "en": "degree, level, extent"
+ },
+ {
+  "id": "a1-n-satz",
+  "de": "der Satz",
+  "pos": "noun",
+  "en": "sentence, clause, phrase, set"
+ },
+ {
+  "id": "a1-v-nehmen",
+  "de": "nehmen",
+  "pos": "verb",
+  "en": "to take, to have, to use"
+ },
+ {
+  "id": "a1-n-auto",
+  "de": "das Auto",
+  "pos": "noun",
+  "en": "automobile, car"
+ },
+ {
+  "id": "a1-n-kueche",
+  "de": "die Küche",
+  "pos": "noun",
+  "en": "kitchen, cuisine"
+ },
+ {
+  "id": "a1-n-verkaeufer",
+  "de": "der Verkäufer",
+  "pos": "noun",
+  "en": "seller, vendor, shop assistant, salesperson, salesman"
+ },
+ {
+  "id": "a1-adj-muede",
+  "de": "müde",
+  "pos": "adjective",
+  "en": "tired, weary"
+ },
+ {
+  "id": "a1-v-fliegen",
+  "de": "fliegen",
+  "pos": "verb",
+  "en": "to fly"
+ },
+ {
+  "id": "a1-n-tag",
+  "de": "der Tag",
+  "pos": "noun",
+  "en": "day"
+ },
+ {
+  "id": "a1-n-baeckerei",
+  "de": "die Bäckerei",
+  "pos": "noun",
+  "en": "bakery"
+ },
+ {
+  "id": "a1-adv-sehr",
+  "de": "sehr",
+  "pos": "adverb",
+  "en": "very (much), really, a lot, highly, greatly, extremely"
+ },
+ {
+  "id": "a1-n-e-mail",
+  "de": "die E-Mail, Email",
+  "pos": "noun",
+  "en": "email, e-mail"
+ },
+ {
+  "id": "a1-v-tanzen",
+  "de": "tanzen",
+  "pos": "verb",
+  "en": "to dance"
+ },
+ {
+  "id": "a1-n-firma",
+  "de": "die Firma",
+  "pos": "noun",
+  "en": "firm, company, business"
+ },
+ {
+  "id": "a1-pr-dir",
+  "de": "dir",
+  "pos": "pronoun",
+  "en": "you (informal), yourself"
+ },
+ {
+  "id": "a1-n-stock",
+  "de": "der Stock",
+  "pos": "noun",
+  "en": "floor, story, storey, stick, cane"
+ },
+ {
+  "id": "a1-adj-klar",
+  "de": "klar",
+  "pos": "adjective",
+  "en": "clear"
+ },
+ {
+  "id": "a1-v-aufhoeren",
+  "de": "aufhören",
+  "pos": "verb",
+  "en": "to stop, to cease, to end"
+ },
+ {
+  "id": "a1-n-hausmann",
+  "de": "der Hausmann",
+  "pos": "noun",
+  "en": "house husband, househusband"
+ },
+ {
+  "id": "a1-n-apartment",
+  "de": "das Apartment, Appartement",
+  "pos": "noun",
+  "en": "apartment, flat"
+ },
+ {
+  "id": "a1-n-haar",
+  "de": "das Haar",
+  "pos": "noun",
+  "en": "hair"
+ },
+ {
+  "id": "a1-v-anrufen",
+  "de": "anrufen",
+  "pos": "verb",
+  "en": "to call, to phone"
+ },
+ {
+  "id": "a1-adv-wohin",
+  "de": "wohin",
+  "pos": "adverb",
+  "en": "where, where...to"
+ },
+ {
+  "id": "a1-n-deutsche",
+  "de": "der Deutsche",
+  "pos": "noun",
+  "en": "German"
+ },
+ {
+  "id": "a1-n-freundin",
+  "de": "die Freundin",
+  "pos": "noun",
+  "en": "friend, girlfriend"
+ },
+ {
+  "id": "a1-adj-neu",
+  "de": "neu",
+  "pos": "adjective",
+  "en": "new"
+ },
+ {
+  "id": "a1-n-tochter",
+  "de": "die Tochter",
+  "pos": "noun",
+  "en": "daughter"
+ },
+ {
+  "id": "a1-v-uebernachten",
+  "de": "übernachten",
+  "pos": "verb",
+  "en": "to spend the night, to stay overnight"
+ },
+ {
+  "id": "a1-n-grossvater",
+  "de": "der Großvater",
+  "pos": "noun",
+  "en": "grandfather, grandpa"
+ },
+ {
+  "id": "a1-n-termin",
+  "de": "der Termin",
+  "pos": "noun",
+  "en": "appointment, date, deadline"
+ },
+ {
+  "id": "a1-n-hilfe",
+  "de": "die Hilfe",
+  "pos": "noun",
+  "en": "help, aid, assistance, support"
+ },
+ {
+  "id": "a1-v-haben",
+  "de": "haben",
+  "pos": "verb",
+  "en": "to have"
+ },
+ {
+  "id": "a1-adj-normal",
+  "de": "normal",
+  "pos": "adjective",
+  "en": "normal"
+ },
+ {
+  "id": "a1-n-geschaeft",
+  "de": "das Geschäft",
+  "pos": "noun",
+  "en": "business, deal, store, shop"
+ },
+ {
+  "id": "a1-adv-da",
+  "de": "da",
+  "pos": "adverb",
+  "en": "there, here"
+ },
+ {
+  "id": "a1-pr-ihnen",
+  "de": "ihnen",
+  "pos": "pronoun",
+  "en": "them"
+ },
+ {
+  "id": "a1-n-strassenbahn",
+  "de": "die Straßenbahn",
+  "pos": "noun",
+  "en": "tram, tramway"
+ },
+ {
+  "id": "a1-v-rauchen",
+  "de": "rauchen",
+  "pos": "verb",
+  "en": "to smoke, to fume"
+ },
+ {
+  "id": "a1-n-vermieter",
+  "de": "der Vermieter",
+  "pos": "noun",
+  "en": "landlord"
+ },
+ {
+  "id": "a1-n-norden",
+  "de": "der Norden",
+  "pos": "noun",
+  "en": "north"
+ },
+ {
+  "id": "a1-n-europaeer",
+  "de": "der Europäer",
+  "pos": "noun",
+  "en": "European"
+ },
+ {
+  "id": "a1-v-sprechen",
+  "de": "sprechen",
+  "pos": "verb",
+  "en": "to speak, to talk"
+ },
+ {
+  "id": "a1-adj-verboten",
+  "de": "verboten",
+  "pos": "adjective",
+  "en": "prohibited, forbidden, not allowed"
+ },
+ {
+  "id": "a1-n-student",
+  "de": "der Student",
+  "pos": "noun",
+  "en": "student"
+ },
+ {
+  "id": "a1-n-unterschrift",
+  "de": "die Unterschrift",
+  "pos": "noun",
+  "en": "signature"
+ },
+ {
+  "id": "a1-adv-links",
+  "de": "links",
+  "pos": "adverb",
+  "en": "left, on the left, to the left"
+ },
+ {
+  "id": "a1-n-kasse",
+  "de": "die Kasse",
+  "pos": "noun",
+  "en": "cash register, checkout, till"
+ },
+ {
+  "id": "a1-v-einsteigen",
+  "de": "einsteigen",
+  "pos": "verb",
+  "en": "to board, to get on, to get in"
+ },
+ {
+  "id": "a1-n-computer",
+  "de": "der Computer",
+  "pos": "noun",
+  "en": "computer"
+ },
+ {
+  "id": "a1-n-aerztin",
+  "de": "die Ärztin",
+  "pos": "noun",
+  "en": "physician (female), doctor (female)"
+ },
+ {
+  "id": "a1-adj-boese",
+  "de": "böse",
+  "pos": "adjective",
+  "en": "bad, mad, angry, evil"
+ },
+ {
+  "id": "a1-v-sagen",
+  "de": "sagen",
+  "pos": "verb",
+  "en": "to say, to tell"
+ },
+ {
+  "id": "a1-n-mittag",
+  "de": "der Mittag",
+  "pos": "noun",
+  "en": "noon, midday, lunch"
+ },
+ {
+  "id": "a1-n-post",
+  "de": "die Post",
+  "pos": "noun",
+  "en": "mail, post office"
+ },
+ {
+  "id": "a1-pr-nichts",
+  "de": "nichts, nix",
+  "pos": "pronoun",
+  "en": "nothing, not anything"
+ },
+ {
+  "id": "a1-n-eintrittskarte",
+  "de": "die Eintrittskarte",
+  "pos": "noun",
+  "en": "ticket"
+ },
+ {
+  "id": "a1-v-verkaufen",
+  "de": "verkaufen",
+  "pos": "verb",
+  "en": "to sell"
+ },
+ {
+  "id": "a1-n-wort",
+  "de": "das Wort",
+  "pos": "noun",
+  "en": "word"
+ },
+ {
+  "id": "a1-adv-geradeaus",
+  "de": "geradeaus",
+  "pos": "adverb",
+  "en": "straight ahead"
+ },
+ {
+  "id": "a1-n-polizei",
+  "de": "die Polizei",
+  "pos": "noun",
+  "en": "police"
+ },
+ {
+  "id": "a1-adj-gleich",
+  "de": "gleich",
+  "pos": "adjective",
+  "en": "same, equal, identical"
+ },
+ {
+  "id": "a1-n-reisefuehrer",
+  "de": "der Reiseführer",
+  "pos": "noun",
+  "en": "travel guide, guidebook"
+ },
+ {
+  "id": "a1-v-baden",
+  "de": "baden",
+  "pos": "verb",
+  "en": "to bathe, to bath, to swim"
+ },
+ {
+  "id": "a1-n-milch",
+  "de": "die Milch",
+  "pos": "noun",
+  "en": "milk"
+ }
+]

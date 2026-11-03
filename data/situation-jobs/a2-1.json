@@ -1,0 +1,2402 @@
+[
+ {
+  "id": "a2-n-lampe",
+  "de": "die Lampe",
+  "pos": "noun",
+  "en": "lamp"
+ },
+ {
+  "id": "a2-v-traeumen",
+  "de": "träumen",
+  "pos": "verb",
+  "en": "to dream"
+ },
+ {
+  "id": "a2-n-kalender",
+  "de": "der Kalender",
+  "pos": "noun",
+  "en": "calendar"
+ },
+ {
+  "id": "a2-adj-wach",
+  "de": "wach",
+  "pos": "adjective",
+  "en": "awake"
+ },
+ {
+  "id": "a2-adv-genug",
+  "de": "genug",
+  "pos": "adverb",
+  "en": "enough"
+ },
+ {
+  "id": "a2-n-stuhl",
+  "de": "der Stuhl",
+  "pos": "noun",
+  "en": "chair"
+ },
+ {
+  "id": "a2-n-ruhe",
+  "de": "die Ruhe",
+  "pos": "noun",
+  "en": "silence, peace, rest, calm(ness), quietness"
+ },
+ {
+  "id": "a2-v-tragen",
+  "de": "tragen",
+  "pos": "verb",
+  "en": "to carry, to wear, to bear"
+ },
+ {
+  "id": "a2-n-ahnung",
+  "de": "die Ahnung",
+  "pos": "noun",
+  "en": "suspicion, idea"
+ },
+ {
+  "id": "a2-adj-interessant",
+  "de": "interessant",
+  "pos": "adjective",
+  "en": "interesting"
+ },
+ {
+  "id": "a2-n-link",
+  "de": "der Link",
+  "pos": "noun",
+  "en": "link"
+ },
+ {
+  "id": "a2-v-einpacken",
+  "de": "einpacken",
+  "pos": "verb",
+  "en": "to pack, to wrap (up)"
+ },
+ {
+  "id": "a2-n-ausstellung",
+  "de": "die Ausstellung",
+  "pos": "noun",
+  "en": "exhibition"
+ },
+ {
+  "id": "a2-adv-dienstags",
+  "de": "dienstags",
+  "pos": "adverb",
+  "en": "(on) Tuesdays"
+ },
+ {
+  "id": "a2-n-interesse",
+  "de": "das Interesse",
+  "pos": "noun",
+  "en": "interest"
+ },
+ {
+  "id": "a2-adj-schmutzig",
+  "de": "schmutzig",
+  "pos": "adjective",
+  "en": "dirty, filthy, sordid"
+ },
+ {
+  "id": "a2-v-streiten",
+  "de": "streiten",
+  "pos": "verb",
+  "en": "to quarrel, to argue, to dispute"
+ },
+ {
+  "id": "a2-n-baecker",
+  "de": "der Bäcker",
+  "pos": "noun",
+  "en": "baker, bakery"
+ },
+ {
+  "id": "a2-n-festival",
+  "de": "das Festival",
+  "pos": "noun",
+  "en": "festival"
+ },
+ {
+  "id": "a2-n-erdgeschoss",
+  "de": "das Erdgeschoss",
+  "pos": "noun",
+  "en": "ground floor, ground level, first floor"
+ },
+ {
+  "id": "a2-adj-duenn",
+  "de": "dünn",
+  "pos": "adjective",
+  "en": "thin, slim, lean, fine"
+ },
+ {
+  "id": "a2-v-schneien",
+  "de": "schneien",
+  "pos": "verb",
+  "en": "to snow"
+ },
+ {
+  "id": "a2-adv-hinein",
+  "de": "hinein",
+  "pos": "adverb",
+  "en": "in, into"
+ },
+ {
+  "id": "a2-n-stueck",
+  "de": "das Stück",
+  "pos": "noun",
+  "en": "piece, part, bit"
+ },
+ {
+  "id": "a2-n-wohnzimmer",
+  "de": "das Wohnzimmer",
+  "pos": "noun",
+  "en": "living room"
+ },
+ {
+  "id": "a2-v-fallen",
+  "de": "fallen",
+  "pos": "verb",
+  "en": "to fall, to drop, to decline"
+ },
+ {
+  "id": "a2-n-autorin",
+  "de": "die Autorin",
+  "pos": "noun",
+  "en": "author (female)"
+ },
+ {
+  "id": "a2-adj-erkaeltet",
+  "de": "erkältet",
+  "pos": "adjective",
+  "en": "with a cold, to have a cold"
+ },
+ {
+  "id": "a2-n-sache",
+  "de": "die Sache",
+  "pos": "noun",
+  "en": "thing, matter, cause"
+ },
+ {
+  "id": "a2-v-uebersetzen",
+  "de": "übersetzen",
+  "pos": "verb",
+  "en": "to translate"
+ },
+ {
+  "id": "a2-n-geldboerse",
+  "de": "die Geldbörse",
+  "pos": "noun",
+  "en": "wallet, purse"
+ },
+ {
+  "id": "a2-adv-vormittags",
+  "de": "vormittags",
+  "pos": "adverb",
+  "en": "in the morning"
+ },
+ {
+  "id": "a2-n-ausbildung",
+  "de": "die Ausbildung",
+  "pos": "noun",
+  "en": "training, education, apprenticeship, development"
+ },
+ {
+  "id": "a2-adj-natuerlich",
+  "de": "natürlich",
+  "pos": "adjective",
+  "en": "natural"
+ },
+ {
+  "id": "a2-n-kamera",
+  "de": "die Kamera",
+  "pos": "noun",
+  "en": "camera"
+ },
+ {
+  "id": "a2-v-spazieren",
+  "de": "spazieren (gehen)",
+  "pos": "verb",
+  "en": "to (take a) walk, to (go for a) walk, to stroll"
+ },
+ {
+  "id": "a2-n-gesundheit",
+  "de": "die Gesundheit",
+  "pos": "noun",
+  "en": "health"
+ },
+ {
+  "id": "a2-n-schloss",
+  "de": "das Schloss",
+  "pos": "noun",
+  "en": "lock, castle"
+ },
+ {
+  "id": "a2-adj-romantisch",
+  "de": "romantisch",
+  "pos": "adjective",
+  "en": "romantic, picturesque"
+ },
+ {
+  "id": "a2-v-wegmachen",
+  "de": "wegmachen",
+  "pos": "verb",
+  "en": "to remove, to get rid of"
+ },
+ {
+  "id": "a2-n-mailbox",
+  "de": "die Mailbox",
+  "pos": "noun",
+  "en": "mailbox, voicemail"
+ },
+ {
+  "id": "a2-adv-drinnen",
+  "de": "drinnen",
+  "pos": "adverb",
+  "en": "inside, indoors"
+ },
+ {
+  "id": "a2-n-bewerbung",
+  "de": "die Bewerbung",
+  "pos": "noun",
+  "en": "application"
+ },
+ {
+  "id": "a2-v-fuehlen",
+  "de": "fühlen",
+  "pos": "verb",
+  "en": "to feel, to sense"
+ },
+ {
+  "id": "a2-n-lust",
+  "de": "die Lust",
+  "pos": "noun",
+  "en": "desire, pleasure"
+ },
+ {
+  "id": "a2-adj-weich",
+  "de": "weich",
+  "pos": "adjective",
+  "en": "soft"
+ },
+ {
+  "id": "a2-n-projekt",
+  "de": "das Projekt",
+  "pos": "noun",
+  "en": "project"
+ },
+ {
+  "id": "a2-n-fach",
+  "de": "das Fach",
+  "pos": "noun",
+  "en": "compartment, subject, shelf, pocket, field"
+ },
+ {
+  "id": "a2-v-sich-umziehen",
+  "de": "sich umziehen",
+  "pos": "verb",
+  "en": "to change (clothes), to get changed"
+ },
+ {
+  "id": "a2-adv-nachts",
+  "de": "nachts",
+  "pos": "adverb",
+  "en": "at night"
+ },
+ {
+  "id": "a2-n-bohne",
+  "de": "die Bohne",
+  "pos": "noun",
+  "en": "bean"
+ },
+ {
+  "id": "a2-adj-geschieden",
+  "de": "geschieden",
+  "pos": "adjective",
+  "en": "divorced"
+ },
+ {
+  "id": "a2-n-unfall",
+  "de": "der Unfall",
+  "pos": "noun",
+  "en": "accident"
+ },
+ {
+  "id": "a2-v-merken",
+  "de": "merken",
+  "pos": "verb",
+  "en": "to notice, to note, to remember, to memorise, to realise"
+ },
+ {
+  "id": "a2-n-training",
+  "de": "das Training",
+  "pos": "noun",
+  "en": "training, workout, practice"
+ },
+ {
+  "id": "a2-n-handtuch",
+  "de": "das Handtuch",
+  "pos": "noun",
+  "en": "towel"
+ },
+ {
+  "id": "a2-adj-wirklich",
+  "de": "wirklich",
+  "pos": "adjective",
+  "en": "real, actual, true"
+ },
+ {
+  "id": "a2-v-zeigen",
+  "de": "zeigen",
+  "pos": "verb",
+  "en": "to show, to demonstrate, to point, to indicate"
+ },
+ {
+  "id": "a2-n-kaese",
+  "de": "der Käse",
+  "pos": "noun",
+  "en": "cheese"
+ },
+ {
+  "id": "a2-adv-donnerstags",
+  "de": "donnerstags",
+  "pos": "adverb",
+  "en": "(on) Thursdays"
+ },
+ {
+  "id": "a2-n-latein",
+  "de": "das Latein",
+  "pos": "noun",
+  "en": "Latin"
+ },
+ {
+  "id": "a2-n-bibliothek",
+  "de": "die Bibliothek",
+  "pos": "noun",
+  "en": "library"
+ },
+ {
+  "id": "a2-adj-heiss",
+  "de": "heiß",
+  "pos": "adjective",
+  "en": "hot"
+ },
+ {
+  "id": "a2-v-weitermachen",
+  "de": "weitermachen",
+  "pos": "verb",
+  "en": "to carry on, to continue, to proceed, to go on"
+ },
+ {
+  "id": "a2-n-klassenfahrt",
+  "de": "die Klassenfahrt",
+  "pos": "noun",
+  "en": "school trip, class trip, class outing"
+ },
+ {
+  "id": "a2-n-mathematik",
+  "de": "die Mathematik",
+  "pos": "noun",
+  "en": "mathematics, maths"
+ },
+ {
+  "id": "a2-v-basteln",
+  "de": "basteln",
+  "pos": "verb",
+  "en": "to do handicrafts, to work on, to tinker, to make (with one's hands)"
+ },
+ {
+  "id": "a2-adv-anders",
+  "de": "anders",
+  "pos": "adverb",
+  "en": "different(ly), otherwise"
+ },
+ {
+  "id": "a2-n-kuenstler",
+  "de": "der Künstler",
+  "pos": "noun",
+  "en": "artist"
+ },
+ {
+  "id": "a2-adj-traurig",
+  "de": "traurig",
+  "pos": "adjective",
+  "en": "sad"
+ },
+ {
+  "id": "a2-n-nudel",
+  "de": "die Nudel",
+  "pos": "noun",
+  "en": "noodle, pasta"
+ },
+ {
+  "id": "a2-v-ueben",
+  "de": "üben",
+  "pos": "verb",
+  "en": "to practise, to practice, to exercise"
+ },
+ {
+  "id": "a2-n-kunst",
+  "de": "die Kunst",
+  "pos": "noun",
+  "en": "art"
+ },
+ {
+  "id": "a2-n-rezept",
+  "de": "das Rezept",
+  "pos": "noun",
+  "en": "recipe, prescription, remedy, formula"
+ },
+ {
+  "id": "a2-adj-wahr",
+  "de": "wahr",
+  "pos": "adjective",
+  "en": "true, real"
+ },
+ {
+  "id": "a2-n-onkel",
+  "de": "der Onkel",
+  "pos": "noun",
+  "en": "uncle"
+ },
+ {
+  "id": "a2-v-braten",
+  "de": "braten",
+  "pos": "verb",
+  "en": "to fry, to roast"
+ },
+ {
+  "id": "a2-adv-hinaus",
+  "de": "hinaus",
+  "pos": "adverb",
+  "en": "out, beyond"
+ },
+ {
+  "id": "a2-n-insel",
+  "de": "die Insel",
+  "pos": "noun",
+  "en": "island"
+ },
+ {
+  "id": "a2-n-weg",
+  "de": "der Weg",
+  "pos": "noun",
+  "en": "path, way, route, road, trail"
+ },
+ {
+  "id": "a2-adj-fit",
+  "de": "fit",
+  "pos": "adjective",
+  "en": "fit"
+ },
+ {
+  "id": "a2-v-hoffen",
+  "de": "hoffen",
+  "pos": "verb",
+  "en": "to hope"
+ },
+ {
+  "id": "a2-n-verspaetung",
+  "de": "die Verspätung",
+  "pos": "noun",
+  "en": "delay, late arrival, tardiness"
+ },
+ {
+  "id": "a2-n-pferd",
+  "de": "das Pferd",
+  "pos": "noun",
+  "en": "horse"
+ },
+ {
+  "id": "a2-v-interessieren",
+  "de": "interessieren",
+  "pos": "verb",
+  "en": "to interest"
+ },
+ {
+  "id": "a2-n-fest",
+  "de": "das Fest",
+  "pos": "noun",
+  "en": "festival, celebration, feast, party"
+ },
+ {
+  "id": "a2-adj-getrennt",
+  "de": "getrennt",
+  "pos": "adjective",
+  "en": "separate"
+ },
+ {
+  "id": "a2-adv-natuerlich",
+  "de": "natürlich",
+  "pos": "adverb",
+  "en": "naturally, of course, obviously"
+ },
+ {
+  "id": "a2-n-zettel",
+  "de": "der Zettel",
+  "pos": "noun",
+  "en": "piece of paper, note, receipt"
+ },
+ {
+  "id": "a2-n-markt",
+  "de": "der Markt",
+  "pos": "noun",
+  "en": "market, marketplace, mart"
+ },
+ {
+  "id": "a2-v-organisieren",
+  "de": "organisieren",
+  "pos": "verb",
+  "en": "to organize, to organise, to arrange"
+ },
+ {
+  "id": "a2-n-gitarre",
+  "de": "die Gitarre",
+  "pos": "noun",
+  "en": "guitar"
+ },
+ {
+  "id": "a2-adj-frisch",
+  "de": "frisch",
+  "pos": "adjective",
+  "en": "fresh"
+ },
+ {
+  "id": "a2-n-spiel",
+  "de": "das Spiel",
+  "pos": "noun",
+  "en": "game, match, play"
+ },
+ {
+  "id": "a2-v-bestehen",
+  "de": "bestehen",
+  "pos": "verb",
+  "en": "to exist, to insist, to pass, to consist, to persist"
+ },
+ {
+  "id": "a2-adv-weg",
+  "de": "weg",
+  "pos": "adverb",
+  "en": "away, off"
+ },
+ {
+  "id": "a2-n-grippe",
+  "de": "die Grippe",
+  "pos": "noun",
+  "en": "influenza, flu, cold"
+ },
+ {
+  "id": "a2-n-zitrone",
+  "de": "die Zitrone",
+  "pos": "noun",
+  "en": "lemon"
+ },
+ {
+  "id": "a2-adj-sauber",
+  "de": "sauber",
+  "pos": "adjective",
+  "en": "clean"
+ },
+ {
+  "id": "a2-v-sich-beschweren",
+  "de": "sich beschweren",
+  "pos": "verb",
+  "en": "to complain"
+ },
+ {
+  "id": "a2-n-stockwerk",
+  "de": "das Stockwerk",
+  "pos": "noun",
+  "en": "floor, level, storey, story"
+ },
+ {
+  "id": "a2-n-basketball",
+  "de": "der Basketball",
+  "pos": "noun",
+  "en": "basketball"
+ },
+ {
+  "id": "a2-n-mantel",
+  "de": "der Mantel",
+  "pos": "noun",
+  "en": "coat, cloak"
+ },
+ {
+  "id": "a2-adj-bequem",
+  "de": "bequem",
+  "pos": "adjective",
+  "en": "comfortable"
+ },
+ {
+  "id": "a2-v-setzen",
+  "de": "setzen",
+  "pos": "verb",
+  "en": "to set, to place, to put"
+ },
+ {
+  "id": "a2-adv-endlich",
+  "de": "endlich",
+  "pos": "adverb",
+  "en": "finally, at last, eventually"
+ },
+ {
+  "id": "a2-n-keller",
+  "de": "der Keller",
+  "pos": "noun",
+  "en": "cellar, basement"
+ },
+ {
+  "id": "a2-n-strand",
+  "de": "der Strand",
+  "pos": "noun",
+  "en": "beach"
+ },
+ {
+  "id": "a2-v-markieren",
+  "de": "markieren",
+  "pos": "verb",
+  "en": "to mark"
+ },
+ {
+  "id": "a2-n-verkehrsmittel",
+  "de": "das Verkehrsmittel",
+  "pos": "noun",
+  "en": "means of transport"
+ },
+ {
+  "id": "a2-adj-haesslich",
+  "de": "hässlich",
+  "pos": "adjective",
+  "en": "ugly"
+ },
+ {
+  "id": "a2-n-note",
+  "de": "die Note",
+  "pos": "noun",
+  "en": "note, grade, mark"
+ },
+ {
+  "id": "a2-adv-wahrscheinlich",
+  "de": "wahrscheinlich",
+  "pos": "adverb",
+  "en": "probably"
+ },
+ {
+  "id": "a2-v-teilen",
+  "de": "teilen",
+  "pos": "verb",
+  "en": "to divide, to share, to split"
+ },
+ {
+  "id": "a2-n-interview",
+  "de": "das Interview",
+  "pos": "noun",
+  "en": "interview"
+ },
+ {
+  "id": "a2-n-pizza",
+  "de": "die Pizza",
+  "pos": "noun",
+  "en": "pizza"
+ },
+ {
+  "id": "a2-adj-blond",
+  "de": "blond",
+  "pos": "adjective",
+  "en": "blond"
+ },
+ {
+  "id": "a2-n-nachbarin",
+  "de": "die Nachbarin",
+  "pos": "noun",
+  "en": "neighbour (female), neighbor (female)"
+ },
+ {
+  "id": "a2-v-klappen",
+  "de": "klappen",
+  "pos": "verb",
+  "en": "to fold, to go as planned, to work out"
+ },
+ {
+  "id": "a2-n-hamburger",
+  "de": "der Hamburger",
+  "pos": "noun",
+  "en": "hamburger"
+ },
+ {
+  "id": "a2-n-club",
+  "de": "der Club",
+  "pos": "noun",
+  "en": "club"
+ },
+ {
+  "id": "a2-adj-fett",
+  "de": "fett",
+  "pos": "adjective",
+  "en": "fat, fatty, rich, bold"
+ },
+ {
+  "id": "a2-adv-besonders",
+  "de": "besonders",
+  "pos": "adverb",
+  "en": "especially, particularly"
+ },
+ {
+  "id": "a2-v-sich-verabreden",
+  "de": "sich verabreden",
+  "pos": "verb",
+  "en": "to make an appointment, to arrange to meet, to make a date"
+ },
+ {
+  "id": "a2-n-reihe",
+  "de": "die Reihe",
+  "pos": "noun",
+  "en": "row, line, series"
+ },
+ {
+  "id": "a2-n-kultur",
+  "de": "die Kultur",
+  "pos": "noun",
+  "en": "culture"
+ },
+ {
+  "id": "a2-v-verlieren",
+  "de": "verlieren",
+  "pos": "verb",
+  "en": "to lose"
+ },
+ {
+  "id": "a2-n-kirche",
+  "de": "die Kirche",
+  "pos": "noun",
+  "en": "church"
+ },
+ {
+  "id": "a2-adj-beliebt",
+  "de": "beliebt",
+  "pos": "adjective",
+  "en": "popular"
+ },
+ {
+  "id": "a2-n-pruefer",
+  "de": "der Prüfer",
+  "pos": "noun",
+  "en": "examiner, inspector, auditor, tester"
+ },
+ {
+  "id": "a2-adv-nirgends",
+  "de": "nirgends",
+  "pos": "adverb",
+  "en": "nowhere, not anywhere"
+ },
+ {
+  "id": "a2-n-ball",
+  "de": "der Ball",
+  "pos": "noun",
+  "en": "ball"
+ },
+ {
+  "id": "a2-v-vorbereiten",
+  "de": "vorbereiten",
+  "pos": "verb",
+  "en": "to prepare"
+ },
+ {
+  "id": "a2-n-schauspieler",
+  "de": "der Schauspieler",
+  "pos": "noun",
+  "en": "actor"
+ },
+ {
+  "id": "a2-adj-lila",
+  "de": "lila",
+  "pos": "adjective",
+  "en": "purple"
+ },
+ {
+  "id": "a2-n-band",
+  "de": "die Band",
+  "pos": "noun",
+  "en": "band"
+ },
+ {
+  "id": "a2-v-eintragen",
+  "de": "eintragen",
+  "pos": "verb",
+  "en": "to enter, to record, to register, to fill in"
+ },
+ {
+  "id": "a2-n-kellner",
+  "de": "der Kellner",
+  "pos": "noun",
+  "en": "waiter"
+ },
+ {
+  "id": "a2-n-zirkus",
+  "de": "der Zirkus",
+  "pos": "noun",
+  "en": "circus, fuss"
+ },
+ {
+  "id": "a2-adj-schwierig",
+  "de": "schwierig",
+  "pos": "adjective",
+  "en": "difficult, hard"
+ },
+ {
+  "id": "a2-adv-zweitens",
+  "de": "zweitens",
+  "pos": "adverb",
+  "en": "secondly"
+ },
+ {
+  "id": "a2-v-zurueckgeben",
+  "de": "zurückgeben",
+  "pos": "verb",
+  "en": "to give back, to return"
+ },
+ {
+  "id": "a2-n-parfuem",
+  "de": "das Parfüm",
+  "pos": "noun",
+  "en": "perfume"
+ },
+ {
+  "id": "a2-n-ziel",
+  "de": "das Ziel",
+  "pos": "noun",
+  "en": "destination, goal, aim, target"
+ },
+ {
+  "id": "a2-n-ehepartner",
+  "de": "der Ehepartner",
+  "pos": "noun",
+  "en": "spouse"
+ },
+ {
+  "id": "a2-adj-dringend",
+  "de": "dringend",
+  "pos": "adjective",
+  "en": "urgent"
+ },
+ {
+  "id": "a2-v-surfen",
+  "de": "surfen",
+  "pos": "verb",
+  "en": "to surf, to windsurf, to browse"
+ },
+ {
+  "id": "a2-n-t-shirt",
+  "de": "das T-Shirt",
+  "pos": "noun",
+  "en": "T-shirt"
+ },
+ {
+  "id": "a2-n-creme",
+  "de": "die Creme",
+  "pos": "noun",
+  "en": "cream, mousse"
+ },
+ {
+  "id": "a2-adv-vorwaerts",
+  "de": "vorwärts",
+  "pos": "adverb",
+  "en": "forward(s), onward(s)"
+ },
+ {
+  "id": "a2-v-reden",
+  "de": "reden",
+  "pos": "verb",
+  "en": "to talk, to speak"
+ },
+ {
+  "id": "a2-n-rock",
+  "de": "der Rock",
+  "pos": "noun",
+  "en": "skirt, rock (music)"
+ },
+ {
+  "id": "a2-adj-intelligent",
+  "de": "intelligent",
+  "pos": "adjective",
+  "en": "intelligent"
+ },
+ {
+  "id": "a2-n-anzug",
+  "de": "der Anzug",
+  "pos": "noun",
+  "en": "suit"
+ },
+ {
+  "id": "a2-v-passieren",
+  "de": "passieren",
+  "pos": "verb",
+  "en": "to take place, to happen, to pass, to pass through"
+ },
+ {
+  "id": "a2-n-abitur",
+  "de": "das Abitur",
+  "pos": "noun",
+  "en": "school leaving exam, A levels"
+ },
+ {
+  "id": "a2-n-theater",
+  "de": "das Theater",
+  "pos": "noun",
+  "en": "theatre"
+ },
+ {
+  "id": "a2-adj-schrecklich",
+  "de": "schrecklich",
+  "pos": "adjective",
+  "en": "terrible, horrible, awful, dreadful"
+ },
+ {
+  "id": "a2-adv-hoffentlich",
+  "de": "hoffentlich",
+  "pos": "adverb",
+  "en": "hopefully"
+ },
+ {
+  "id": "a2-n-landschaft",
+  "de": "die Landschaft",
+  "pos": "noun",
+  "en": "landscape, countryside"
+ },
+ {
+  "id": "a2-v-mitspielen",
+  "de": "mitspielen",
+  "pos": "verb",
+  "en": "to play too, to play along, to join in a game"
+ },
+ {
+  "id": "a2-n-see",
+  "de": "die See",
+  "pos": "noun",
+  "en": "sea"
+ },
+ {
+  "id": "a2-n-bluse",
+  "de": "die Bluse",
+  "pos": "noun",
+  "en": "blouse"
+ },
+ {
+  "id": "a2-adj-einzeln",
+  "de": "einzeln",
+  "pos": "adjective",
+  "en": "individual, single, separate, lone"
+ },
+ {
+  "id": "a2-v-bauen",
+  "de": "bauen",
+  "pos": "verb",
+  "en": "to build, to construct"
+ },
+ {
+  "id": "a2-n-teller",
+  "de": "der Teller",
+  "pos": "noun",
+  "en": "plate"
+ },
+ {
+  "id": "a2-n-ferien",
+  "de": "die Ferien",
+  "pos": "noun",
+  "en": "holiday, vacation"
+ },
+ {
+  "id": "a2-adv-vorn",
+  "de": "vorn, vorne",
+  "pos": "adverb",
+  "en": "in the front, at the front, ahead"
+ },
+ {
+  "id": "a2-v-aendern",
+  "de": "ändern",
+  "pos": "verb",
+  "en": "to change, to modify, to alter, to amend"
+ },
+ {
+  "id": "a2-n-ermaessigung",
+  "de": "die Ermäßigung",
+  "pos": "noun",
+  "en": "reduction, discount, abatement"
+ },
+ {
+  "id": "a2-adj-echt",
+  "de": "echt",
+  "pos": "adjective",
+  "en": "genuine, real"
+ },
+ {
+  "id": "a2-n-kreuzung",
+  "de": "die Kreuzung",
+  "pos": "noun",
+  "en": "crossroads, intersection, junction, crossbreed"
+ },
+ {
+  "id": "a2-n-tafel",
+  "de": "die Tafel",
+  "pos": "noun",
+  "en": "board, blackboard, table"
+ },
+ {
+  "id": "a2-v-trainieren",
+  "de": "trainieren",
+  "pos": "verb",
+  "en": "to train, to practice, to exercise, to work out, to coach"
+ },
+ {
+  "id": "a2-n-rundgang",
+  "de": "der Rundgang",
+  "pos": "noun",
+  "en": "tour, round, walk"
+ },
+ {
+  "id": "a2-adj-praktisch",
+  "de": "praktisch",
+  "pos": "adjective",
+  "en": "practical"
+ },
+ {
+  "id": "a2-adv-heraus",
+  "de": "heraus",
+  "pos": "adverb",
+  "en": "out"
+ },
+ {
+  "id": "a2-n-schnee",
+  "de": "der Schnee",
+  "pos": "noun",
+  "en": "snow"
+ },
+ {
+  "id": "a2-v-beantworten",
+  "de": "beantworten",
+  "pos": "verb",
+  "en": "to answer, to respond, to reply"
+ },
+ {
+  "id": "a2-n-neujahr",
+  "de": "das Neujahr",
+  "pos": "noun",
+  "en": "New Year('s Day)"
+ },
+ {
+  "id": "a2-n-kette",
+  "de": "die Kette",
+  "pos": "noun",
+  "en": "chain, necklace"
+ },
+ {
+  "id": "a2-adj-sauer",
+  "de": "sauer",
+  "pos": "adjective",
+  "en": "sour, acid(ic), pickled, angry, pissed (off)"
+ },
+ {
+  "id": "a2-v-erreichen",
+  "de": "erreichen",
+  "pos": "verb",
+  "en": "to achieve, to reach, to attain, to accomplish, to gain"
+ },
+ {
+  "id": "a2-n-sendung",
+  "de": "die Sendung",
+  "pos": "noun",
+  "en": "shipment, transmission, broadcast, programme, program"
+ },
+ {
+  "id": "a2-n-weihnachten",
+  "de": "das Weihnachten",
+  "pos": "noun",
+  "en": "Christmas"
+ },
+ {
+  "id": "a2-adv-online",
+  "de": "online",
+  "pos": "adverb",
+  "en": "online"
+ },
+ {
+  "id": "a2-n-tasse",
+  "de": "die Tasse",
+  "pos": "noun",
+  "en": "cup, mug"
+ },
+ {
+  "id": "a2-adj-sportlich",
+  "de": "sportlich",
+  "pos": "adjective",
+  "en": "athletic, sporty"
+ },
+ {
+  "id": "a2-v-runterladen",
+  "de": "(he)runterladen",
+  "pos": "verb",
+  "en": "to download"
+ },
+ {
+  "id": "a2-n-antwortbogen",
+  "de": "der Antwortbogen",
+  "pos": "noun",
+  "en": "questionnaire, answer sheet"
+ },
+ {
+  "id": "a2-n-ostern",
+  "de": "das Ostern",
+  "pos": "noun",
+  "en": "Easter"
+ },
+ {
+  "id": "a2-v-teilnehmen",
+  "de": "teilnehmen",
+  "pos": "verb",
+  "en": "to take part, to participate, to attend"
+ },
+ {
+  "id": "a2-n-angestellte",
+  "de": "der Angestellte",
+  "pos": "noun",
+  "en": "employee"
+ },
+ {
+  "id": "a2-adj-eigen",
+  "de": "eigen",
+  "pos": "adjective",
+  "en": "own"
+ },
+ {
+  "id": "a2-adv-mittags",
+  "de": "mittags",
+  "pos": "adverb",
+  "en": "at noon, at midday, at lunchtime"
+ },
+ {
+  "id": "a2-n-fruehjahr",
+  "de": "das Frühjahr",
+  "pos": "noun",
+  "en": "spring"
+ },
+ {
+  "id": "a2-v-leihen",
+  "de": "leihen",
+  "pos": "verb",
+  "en": "to lend, to borrow, to hire, to loan"
+ },
+ {
+  "id": "a2-n-zeugnis",
+  "de": "das Zeugnis",
+  "pos": "noun",
+  "en": "report, certificate, testimony, testimonial"
+ },
+ {
+  "id": "a2-n-fahrplan",
+  "de": "der Fahrplan",
+  "pos": "noun",
+  "en": "timetable, schedule"
+ },
+ {
+  "id": "a2-adj-offen",
+  "de": "offen",
+  "pos": "adjective",
+  "en": "open"
+ },
+ {
+  "id": "a2-n-arbeitstag",
+  "de": "der Arbeitstag",
+  "pos": "noun",
+  "en": "working day, workday"
+ },
+ {
+  "id": "a2-v-beraten",
+  "de": "beraten",
+  "pos": "verb",
+  "en": "to advise, to consult, to discuss"
+ },
+ {
+  "id": "a2-n-zoo",
+  "de": "der Zoo",
+  "pos": "noun",
+  "en": "zoo"
+ },
+ {
+  "id": "a2-adv-mittwochs",
+  "de": "mittwochs",
+  "pos": "adverb",
+  "en": "(on) Wednesdays"
+ },
+ {
+  "id": "a2-n-e-book",
+  "de": "das E-Book",
+  "pos": "noun",
+  "en": "e-book"
+ },
+ {
+  "id": "a2-adj-faul",
+  "de": "faul",
+  "pos": "adjective",
+  "en": "lazy, rotten, foul"
+ },
+ {
+  "id": "a2-v-auspacken",
+  "de": "auspacken",
+  "pos": "verb",
+  "en": "to unpack"
+ },
+ {
+  "id": "a2-n-krankheit",
+  "de": "die Krankheit",
+  "pos": "noun",
+  "en": "illness, disease"
+ },
+ {
+  "id": "a2-n-mode",
+  "de": "die Mode",
+  "pos": "noun",
+  "en": "fashion, style"
+ },
+ {
+  "id": "a2-v-beschreiben",
+  "de": "beschreiben",
+  "pos": "verb",
+  "en": "to describe"
+ },
+ {
+  "id": "a2-n-tuer",
+  "de": "die Tür",
+  "pos": "noun",
+  "en": "door"
+ },
+ {
+  "id": "a2-adj-deutlich",
+  "de": "deutlich",
+  "pos": "adjective",
+  "en": "clear(ly), significant(ly)"
+ },
+ {
+  "id": "a2-n-fluss",
+  "de": "der Fluss",
+  "pos": "noun",
+  "en": "river, flow, flux, stream"
+ },
+ {
+  "id": "a2-adv-meistens",
+  "de": "meistens",
+  "pos": "adverb",
+  "en": "mostly, usually, most of the time"
+ },
+ {
+  "id": "a2-n-hemd",
+  "de": "das Hemd",
+  "pos": "noun",
+  "en": "shirt"
+ },
+ {
+  "id": "a2-v-sich-erinnern",
+  "de": "sich erinnern",
+  "pos": "verb",
+  "en": "to remember, to recall"
+ },
+ {
+  "id": "a2-n-rose",
+  "de": "die Rose",
+  "pos": "noun",
+  "en": "rose"
+ },
+ {
+  "id": "a2-adj-sympathisch",
+  "de": "sympathisch",
+  "pos": "adjective",
+  "en": "likable, likeable, nice, personable, congenial"
+ },
+ {
+  "id": "a2-n-naehe",
+  "de": "die Nähe",
+  "pos": "noun",
+  "en": "vicinity, proximity, closeness"
+ },
+ {
+  "id": "a2-v-parken",
+  "de": "parken",
+  "pos": "verb",
+  "en": "to park"
+ },
+ {
+  "id": "a2-n-einkaufszentrum",
+  "de": "das Einkaufszentrum",
+  "pos": "noun",
+  "en": "(shopping) mall, shopping centre"
+ },
+ {
+  "id": "a2-adv-wenigstens",
+  "de": "wenigstens",
+  "pos": "adverb",
+  "en": "at least"
+ },
+ {
+  "id": "a2-n-krankenschwester",
+  "de": "die Krankenschwester",
+  "pos": "noun",
+  "en": "nurse"
+ },
+ {
+  "id": "a2-adj-einverstanden",
+  "de": "einverstanden",
+  "pos": "adjective",
+  "en": "in agreement, agreed, agreeable, okay"
+ },
+ {
+  "id": "a2-v-vergessen",
+  "de": "vergessen",
+  "pos": "verb",
+  "en": "to forget"
+ },
+ {
+  "id": "a2-n-techniker",
+  "de": "der Techniker",
+  "pos": "noun",
+  "en": "technician, engineer"
+ },
+ {
+  "id": "a2-n-messe",
+  "de": "die Messe",
+  "pos": "noun",
+  "en": "trade fair, mass"
+ },
+ {
+  "id": "a2-n-berg",
+  "de": "der Berg",
+  "pos": "noun",
+  "en": "mountain, hill"
+ },
+ {
+  "id": "a2-adj-witzig",
+  "de": "witzig",
+  "pos": "adjective",
+  "en": "funny, witty"
+ },
+ {
+  "id": "a2-v-putzen",
+  "de": "putzen",
+  "pos": "verb",
+  "en": "to clean"
+ },
+ {
+  "id": "a2-n-musiker",
+  "de": "der Musiker",
+  "pos": "noun",
+  "en": "musician"
+ },
+ {
+  "id": "a2-adv-sonntags",
+  "de": "sonntags",
+  "pos": "adverb",
+  "en": "on Sundays"
+ },
+ {
+  "id": "a2-n-uebersetzung",
+  "de": "die Übersetzung",
+  "pos": "noun",
+  "en": "translation"
+ },
+ {
+  "id": "a2-v-ansehen",
+  "de": "ansehen",
+  "pos": "verb",
+  "en": "to look at, to see, to view, to watch"
+ },
+ {
+  "id": "a2-n-wagen",
+  "de": "der Wagen",
+  "pos": "noun",
+  "en": "car, wagon, carriage, trolley, cart"
+ },
+ {
+  "id": "a2-adj-super",
+  "de": "super",
+  "pos": "adjective",
+  "en": "super, great"
+ },
+ {
+  "id": "a2-n-datei",
+  "de": "die Datei",
+  "pos": "noun",
+  "en": "file, data file"
+ },
+ {
+  "id": "a2-v-diskutieren",
+  "de": "diskutieren",
+  "pos": "verb",
+  "en": "to discuss, to debate"
+ },
+ {
+  "id": "a2-n-heft",
+  "de": "das Heft",
+  "pos": "noun",
+  "en": "notebook, booklet, issue"
+ },
+ {
+  "id": "a2-adv-mindestens",
+  "de": "mindestens",
+  "pos": "adverb",
+  "en": "at least"
+ },
+ {
+  "id": "a2-n-postkarte",
+  "de": "die Postkarte",
+  "pos": "noun",
+  "en": "postcard"
+ },
+ {
+  "id": "a2-adj-warm",
+  "de": "warm",
+  "pos": "adjective",
+  "en": "warm"
+ },
+ {
+  "id": "a2-n-stadtplan",
+  "de": "der Stadtplan",
+  "pos": "noun",
+  "en": "map, street map, city map"
+ },
+ {
+  "id": "a2-v-aussprechen",
+  "de": "aussprechen",
+  "pos": "verb",
+  "en": "to pronounce, to express"
+ },
+ {
+  "id": "a2-n-schokolade",
+  "de": "die Schokolade",
+  "pos": "noun",
+  "en": "chocolate"
+ },
+ {
+  "id": "a2-n-krankenpfleger",
+  "de": "der Krankenpfleger",
+  "pos": "noun",
+  "en": "(male) nurse"
+ },
+ {
+  "id": "a2-adj-notwendig",
+  "de": "notwendig",
+  "pos": "adjective",
+  "en": "necessary"
+ },
+ {
+  "id": "a2-v-aufraeumen",
+  "de": "aufräumen",
+  "pos": "verb",
+  "en": "to tidy up, to clear up"
+ },
+ {
+  "id": "a2-n-hals",
+  "de": "der Hals",
+  "pos": "noun",
+  "en": "neck, throat"
+ },
+ {
+  "id": "a2-adv-vorgestern",
+  "de": "vorgestern",
+  "pos": "adverb",
+  "en": "the day before yesterday"
+ },
+ {
+  "id": "a2-n-rind",
+  "de": "das Rind",
+  "pos": "noun",
+  "en": "cow, cattle, beef"
+ },
+ {
+  "id": "a2-v-kontrollieren",
+  "de": "kontrollieren",
+  "pos": "verb",
+  "en": "to check, to control"
+ },
+ {
+  "id": "a2-n-wolke",
+  "de": "die Wolke",
+  "pos": "noun",
+  "en": "cloud"
+ },
+ {
+  "id": "a2-adj-rund",
+  "de": "rund",
+  "pos": "adjective",
+  "en": "round, circular"
+ },
+ {
+  "id": "a2-n-torte",
+  "de": "die Torte",
+  "pos": "noun",
+  "en": "cake, torte, tart, gateau, flan"
+ },
+ {
+  "id": "a2-n-musik",
+  "de": "die Musik",
+  "pos": "noun",
+  "en": "music"
+ },
+ {
+  "id": "a2-v-zurueckgehen",
+  "de": "zurückgehen",
+  "pos": "verb",
+  "en": "to go back, to return, to decrease, to decline"
+ },
+ {
+  "id": "a2-n-kauffrau",
+  "de": "die Kauffrau",
+  "pos": "noun",
+  "en": "businesswoman"
+ },
+ {
+  "id": "a2-adj-schwanger",
+  "de": "schwanger",
+  "pos": "adjective",
+  "en": "pregnant"
+ },
+ {
+  "id": "a2-adv-sonst",
+  "de": "sonst",
+  "pos": "adverb",
+  "en": "otherwise"
+ },
+ {
+  "id": "a2-n-produkt",
+  "de": "das Produkt",
+  "pos": "noun",
+  "en": "product"
+ },
+ {
+  "id": "a2-v-zeichnen",
+  "de": "zeichnen",
+  "pos": "verb",
+  "en": "to draw"
+ },
+ {
+  "id": "a2-n-radio",
+  "de": "das Radio",
+  "pos": "noun",
+  "en": "radio"
+ },
+ {
+  "id": "a2-n-konzert",
+  "de": "das Konzert",
+  "pos": "noun",
+  "en": "concert"
+ },
+ {
+  "id": "a2-adj-schaedlich",
+  "de": "schädlich",
+  "pos": "adjective",
+  "en": "damaging, harmful, detrimental, noxious"
+ },
+ {
+  "id": "a2-v-aufmachen",
+  "de": "aufmachen",
+  "pos": "verb",
+  "en": "to open"
+ },
+ {
+  "id": "a2-n-website",
+  "de": "die Website",
+  "pos": "noun",
+  "en": "website"
+ },
+ {
+  "id": "a2-adv-samstags",
+  "de": "samstags",
+  "pos": "adverb",
+  "en": "(on) Saturdays"
+ },
+ {
+  "id": "a2-n-mechaniker",
+  "de": "der Mechaniker",
+  "pos": "noun",
+  "en": "mechanic"
+ },
+ {
+  "id": "a2-n-sozialkunde",
+  "de": "die Sozialkunde",
+  "pos": "noun",
+  "en": "social science, social studies"
+ },
+ {
+  "id": "a2-adj-stressig",
+  "de": "stressig",
+  "pos": "adjective",
+  "en": "stressful"
+ },
+ {
+  "id": "a2-v-speichern",
+  "de": "speichern",
+  "pos": "verb",
+  "en": "to store, to save, to retain"
+ },
+ {
+  "id": "a2-n-baustelle",
+  "de": "die Baustelle",
+  "pos": "noun",
+  "en": "site, building site, construction site"
+ },
+ {
+  "id": "a2-n-franzoesisch",
+  "de": "das Französisch",
+  "pos": "noun",
+  "en": "French"
+ },
+ {
+  "id": "a2-v-abschliessen",
+  "de": "abschließen",
+  "pos": "verb",
+  "en": "to lock, to close, to complete, to conclude, to finish"
+ },
+ {
+  "id": "a2-n-physik",
+  "de": "die Physik",
+  "pos": "noun",
+  "en": "physics"
+ },
+ {
+  "id": "a2-adj-klug",
+  "de": "klug",
+  "pos": "adjective",
+  "en": "clever, smart, wise"
+ },
+ {
+  "id": "a2-adv-etwas",
+  "de": "etwas",
+  "pos": "adverb",
+  "en": "somewhat, slightly, a little bit"
+ },
+ {
+  "id": "a2-n-medikament",
+  "de": "das Medikament",
+  "pos": "noun",
+  "en": "medicine, medication, drug"
+ },
+ {
+  "id": "a2-v-reservieren",
+  "de": "reservieren",
+  "pos": "verb",
+  "en": "to reserve"
+ },
+ {
+  "id": "a2-n-topf",
+  "de": "der Topf",
+  "pos": "noun",
+  "en": "pot"
+ },
+ {
+  "id": "a2-n-enkelin",
+  "de": "die Enkelin",
+  "pos": "noun",
+  "en": "grandchild (female)"
+ },
+ {
+  "id": "a2-adj-gefaehrlich",
+  "de": "gefährlich",
+  "pos": "adjective",
+  "en": "dangerous"
+ },
+ {
+  "id": "a2-n-zahl",
+  "de": "die Zahl",
+  "pos": "noun",
+  "en": "number"
+ },
+ {
+  "id": "a2-v-beenden",
+  "de": "beenden",
+  "pos": "verb",
+  "en": "to end, to finish, to terminate, to stop, to complete"
+ },
+ {
+  "id": "a2-adv-wirklich",
+  "de": "wirklich",
+  "pos": "adverb",
+  "en": "really, truly, actually"
+ },
+ {
+  "id": "a2-n-werkstatt",
+  "de": "die Werkstatt",
+  "pos": "noun",
+  "en": "workshop, garage"
+ },
+ {
+  "id": "a2-n-ding",
+  "de": "das Ding",
+  "pos": "noun",
+  "en": "thing, item"
+ },
+ {
+  "id": "a2-adj-suess",
+  "de": "süß",
+  "pos": "adjective",
+  "en": "sweet, cute"
+ },
+ {
+  "id": "a2-v-verletzen",
+  "de": "verletzen",
+  "pos": "verb",
+  "en": "to injure, to violate, to offend, to hurt, to harm"
+ },
+ {
+  "id": "a2-n-paar",
+  "de": "das Paar",
+  "pos": "noun",
+  "en": "pair, couple"
+ },
+ {
+  "id": "a2-n-stundenplan",
+  "de": "der Stundenplan",
+  "pos": "noun",
+  "en": "timetable, schedule"
+ },
+ {
+  "id": "a2-v-informieren",
+  "de": "informieren",
+  "pos": "verb",
+  "en": "to inform"
+ },
+ {
+  "id": "a2-n-schirm",
+  "de": "der Schirm",
+  "pos": "noun",
+  "en": "umbrella, sunshade, shade, (TV) screen"
+ },
+ {
+  "id": "a2-adj-aktuell",
+  "de": "aktuell",
+  "pos": "adjective",
+  "en": "current, topical"
+ },
+ {
+  "id": "a2-adv-doch",
+  "de": "doch",
+  "pos": "adverb",
+  "en": "however, still, nevertheless, after all"
+ },
+ {
+  "id": "a2-n-taschengeld",
+  "de": "das Taschengeld",
+  "pos": "noun",
+  "en": "pocket money, allowance"
+ },
+ {
+  "id": "a2-n-kredit",
+  "de": "der Kredit",
+  "pos": "noun",
+  "en": "credit, loan"
+ },
+ {
+  "id": "a2-v-nennen",
+  "de": "nennen",
+  "pos": "verb",
+  "en": "to name, to call"
+ },
+ {
+  "id": "a2-n-punkt",
+  "de": "der Punkt",
+  "pos": "noun",
+  "en": "dot, point, period, spot, item"
+ },
+ {
+  "id": "a2-adj-spannend",
+  "de": "spannend",
+  "pos": "adjective",
+  "en": "exciting, thrilling"
+ },
+ {
+  "id": "a2-n-programm",
+  "de": "das Programm",
+  "pos": "noun",
+  "en": "programme"
+ },
+ {
+  "id": "a2-v-haengen",
+  "de": "hängen",
+  "pos": "verb",
+  "en": "to hang"
+ },
+ {
+  "id": "a2-adv-eigentlich",
+  "de": "eigentlich",
+  "pos": "adverb",
+  "en": "actually, in fact, technically, really"
+ },
+ {
+  "id": "a2-n-klavier",
+  "de": "das Klavier",
+  "pos": "noun",
+  "en": "piano"
+ },
+ {
+  "id": "a2-n-vertrag",
+  "de": "der Vertrag",
+  "pos": "noun",
+  "en": "contract, agreement, treaty, pact"
+ },
+ {
+  "id": "a2-adj-toll",
+  "de": "toll",
+  "pos": "adjective",
+  "en": "great, terrific, awesome, fantastic"
+ },
+ {
+  "id": "a2-v-wecken",
+  "de": "wecken",
+  "pos": "verb",
+  "en": "to wake, to wake up, to awaken, to arouse"
+ },
+ {
+  "id": "a2-n-babysitter",
+  "de": "der Babysitter",
+  "pos": "noun",
+  "en": "babysitter"
+ },
+ {
+  "id": "a2-n-erlaubnis",
+  "de": "die Erlaubnis",
+  "pos": "noun",
+  "en": "permission, permit, authorization, leave"
+ },
+ {
+  "id": "a2-n-raetsel",
+  "de": "das Rätsel",
+  "pos": "noun",
+  "en": "puzzle, mystery, riddle, enigma, conundrum"
+ },
+ {
+  "id": "a2-adj-genau",
+  "de": "genau",
+  "pos": "adjective",
+  "en": "exact, precise, accurate"
+ },
+ {
+  "id": "a2-v-ausgeben",
+  "de": "ausgeben",
+  "pos": "verb",
+  "en": "to spend, to dispense, to output"
+ },
+ {
+  "id": "a2-adv-zuerst",
+  "de": "zuerst",
+  "pos": "adverb",
+  "en": "first, at first, initially"
+ },
+ {
+  "id": "a2-n-wurst",
+  "de": "die Wurst",
+  "pos": "noun",
+  "en": "sausage"
+ },
+ {
+  "id": "a2-n-mal",
+  "de": "das Mal",
+  "pos": "noun",
+  "en": "time"
+ },
+ {
+  "id": "a2-v-unternehmen",
+  "de": "unternehmen",
+  "pos": "verb",
+  "en": "to do, to undertake, to take action, to take steps"
+ },
+ {
+  "id": "a2-n-geschirr",
+  "de": "das Geschirr",
+  "pos": "noun",
+  "en": "dishes, crockery, tableware, harness"
+ },
+ {
+  "id": "a2-adj-ganz",
+  "de": "ganz",
+  "pos": "adjective",
+  "en": "whole, entire, all the, total"
+ },
+ {
+  "id": "a2-n-witz",
+  "de": "der Witz",
+  "pos": "noun",
+  "en": "joke"
+ },
+ {
+  "id": "a2-v-lassen",
+  "de": "lassen",
+  "pos": "verb",
+  "en": "to let, to allow, to leave"
+ },
+ {
+  "id": "a2-n-service",
+  "de": "der Service",
+  "pos": "noun",
+  "en": "service"
+ },
+ {
+  "id": "a2-adv-getrennt",
+  "de": "getrennt",
+  "pos": "adverb",
+  "en": "separately, apart"
+ },
+ {
+  "id": "a2-n-eis",
+  "de": "das Eis",
+  "pos": "noun",
+  "en": "ice, ice cream"
+ },
+ {
+  "id": "a2-adj-beruehmt",
+  "de": "berühmt",
+  "pos": "adjective",
+  "en": "famous"
+ },
+ {
+  "id": "a2-n-homepage",
+  "de": "die Homepage",
+  "pos": "noun",
+  "en": "home page"
+ },
+ {
+  "id": "a2-v-verschieben",
+  "de": "verschieben",
+  "pos": "verb",
+  "en": "to move, to relocate, to postpone, to reschedule"
+ },
+ {
+  "id": "a2-n-werktag",
+  "de": "der Werktag",
+  "pos": "noun",
+  "en": "workday, working day"
+ },
+ {
+  "id": "a2-n-angst",
+  "de": "die Angst",
+  "pos": "noun",
+  "en": "fear, anxiety"
+ },
+ {
+  "id": "a2-adj-kalt",
+  "de": "kalt",
+  "pos": "adjective",
+  "en": "cold"
+ },
+ {
+  "id": "a2-v-liefern",
+  "de": "liefern",
+  "pos": "verb",
+  "en": "to deliver, to supply, to provide"
+ },
+ {
+  "id": "a2-adv-rund",
+  "de": "rund",
+  "pos": "adverb",
+  "en": "around, about, approximately"
+ },
+ {
+  "id": "a2-n-seife",
+  "de": "die Seife",
+  "pos": "noun",
+  "en": "soap"
+ },
+ {
+  "id": "a2-n-passwort",
+  "de": "das Passwort",
+  "pos": "noun",
+  "en": "password"
+ },
+ {
+  "id": "a2-n-vorschlag",
+  "de": "der Vorschlag",
+  "pos": "noun",
+  "en": "suggestion, proposal"
+ },
+ {
+  "id": "a2-adj-nuetzlich",
+  "de": "nützlich",
+  "pos": "adjective",
+  "en": "useful"
+ },
+ {
+  "id": "a2-v-schenken",
+  "de": "schenken",
+  "pos": "verb",
+  "en": "to give (as a present)"
+ },
+ {
+  "id": "a2-n-stiefel",
+  "de": "der Stiefel",
+  "pos": "noun",
+  "en": "boot"
+ },
+ {
+  "id": "a2-n-tante",
+  "de": "die Tante",
+  "pos": "noun",
+  "en": "aunt"
+ },
+ {
+  "id": "a2-adv-darueber",
+  "de": "darüber, drüber",
+  "pos": "adverb",
+  "en": "above it, about it"
+ },
+ {
+  "id": "a2-v-sich-setzen",
+  "de": "sich setzen",
+  "pos": "verb",
+  "en": "to sit down, to take seat, to settle"
+ },
+ {
+  "id": "a2-n-journalist",
+  "de": "der Journalist",
+  "pos": "noun",
+  "en": "journalist"
+ },
+ {
+  "id": "a2-adj-dunkel",
+  "de": "dunkel",
+  "pos": "adjective",
+  "en": "dark"
+ },
+ {
+  "id": "a2-n-rucksack",
+  "de": "der Rucksack",
+  "pos": "noun",
+  "en": "rucksack, backpack"
+ },
+ {
+  "id": "a2-v-ausruhen",
+  "de": "ausruhen",
+  "pos": "verb",
+  "en": "to rest, to have a rest, to take a rest, to relax"
+ },
+ {
+  "id": "a2-n-unterkunft",
+  "de": "die Unterkunft",
+  "pos": "noun",
+  "en": "accommodation, lodging, housing, shelter"
+ },
+ {
+  "id": "a2-n-volleyball",
+  "de": "der Volleyball",
+  "pos": "noun",
+  "en": "volleyball"
+ },
+ {
+  "id": "a2-adj-schade",
+  "de": "schade",
+  "pos": "adjective",
+  "en": "a pity, a shame, a bummer, too bad"
+ },
+ {
+  "id": "a2-adv-hin",
+  "de": "hin",
+  "pos": "adverb",
+  "en": "there, towards"
+ },
+ {
+  "id": "a2-n-motor",
+  "de": "der Motor",
+  "pos": "noun",
+  "en": "motor, engine"
+ },
+ {
+  "id": "a2-v-zurueckfahren",
+  "de": "zurückfahren",
+  "pos": "verb",
+  "en": "to drive back, to go back, to return"
+ },
+ {
+  "id": "a2-n-quiz",
+  "de": "das Quiz",
+  "pos": "noun",
+  "en": "quiz"
+ },
+ {
+  "id": "a2-n-flug",
+  "de": "der Flug",
+  "pos": "noun",
+  "en": "flight"
+ },
+ {
+  "id": "a2-adj-eigentlich",
+  "de": "eigentlich",
+  "pos": "adjective",
+  "en": "actual, real"
+ },
+ {
+  "id": "a2-v-singen",
+  "de": "singen",
+  "pos": "verb",
+  "en": "to sing"
+ },
+ {
+  "id": "a2-n-supermarkt",
+  "de": "der Supermarkt",
+  "pos": "noun",
+  "en": "supermarket"
+ },
+ {
+  "id": "a2-n-qualitaet",
+  "de": "die Qualität",
+  "pos": "noun",
+  "en": "quality"
+ },
+ {
+  "id": "a2-adv-manchmal",
+  "de": "manchmal",
+  "pos": "adverb",
+  "en": "sometimes"
+ },
+ {
+  "id": "a2-v-zumachen",
+  "de": "zumachen",
+  "pos": "verb",
+  "en": "to close, to shut"
+ },
+ {
+  "id": "a2-n-zelt",
+  "de": "das Zelt",
+  "pos": "noun",
+  "en": "tent"
+ },
+ {
+  "id": "a2-adj-furchtbar",
+  "de": "furchtbar",
+  "pos": "adjective",
+  "en": "terrible, horrible, awful, dreadful"
+ },
+ {
+  "id": "a2-n-idee",
+  "de": "die Idee",
+  "pos": "noun",
+  "en": "idea"
+ },
+ {
+  "id": "a2-n-nachbar",
+  "de": "der Nachbar",
+  "pos": "noun",
+  "en": "neighbour, neighbor"
+ },
+ {
+  "id": "a2-v-planen",
+  "de": "planen",
+  "pos": "verb",
+  "en": "to plan"
+ },
+ {
+  "id": "a2-n-blog",
+  "de": "der Blog",
+  "pos": "noun",
+  "en": "blog"
+ },
+ {
+  "id": "a2-adj-nass",
+  "de": "nass",
+  "pos": "adjective",
+  "en": "wet"
+ },
+ {
+  "id": "a2-n-rathaus",
+  "de": "das Rathaus",
+  "pos": "noun",
+  "en": "town hall"
+ },
+ {
+  "id": "a2-adv-zuletzt",
+  "de": "zuletzt",
+  "pos": "adverb",
+  "en": "last, finally, in the end"
+ },
+ {
+  "id": "a2-v-luegen",
+  "de": "lügen",
+  "pos": "verb",
+  "en": "to lie, to tell a lie"
+ },
+ {
+  "id": "a2-n-mitarbeiter",
+  "de": "der Mitarbeiter",
+  "pos": "noun",
+  "en": "employee, co-worker, staff member"
+ },
+ {
+  "id": "a2-n-stift",
+  "de": "der Stift",
+  "pos": "noun",
+  "en": "pen, pencil, peg, tack, pin"
+ },
+ {
+  "id": "a2-adj-geehrt",
+  "de": "geehrt",
+  "pos": "adjective",
+  "en": "honoured, honored, dear"
+ },
+ {
+  "id": "a2-v-untersuchen",
+  "de": "untersuchen",
+  "pos": "verb",
+  "en": "to examine, to investigate, to check"
+ },
+ {
+  "id": "a2-n-loeffel",
+  "de": "der Löffel",
+  "pos": "noun",
+  "en": "spoon, spoonful"
+ },
+ {
+  "id": "a2-n-rentnerin",
+  "de": "die Rentnerin",
+  "pos": "noun",
+  "en": "pensioner (female), senior (female)"
+ },
+ {
+  "id": "a2-adv-erst",
+  "de": "erst",
+  "pos": "adverb",
+  "en": "first, only, not until"
+ },
+ {
+  "id": "a2-n-geografie",
+  "de": "die Geografie, Geographie",
+  "pos": "noun",
+  "en": "geography"
+ },
+ {
+  "id": "a2-adj-eng",
+  "de": "eng",
+  "pos": "adjective",
+  "en": "narrow, tight, close"
+ },
+ {
+  "id": "a2-v-begruenden",
+  "de": "begründen",
+  "pos": "verb",
+  "en": "to justify, to establish, to explain"
+ },
+ {
+  "id": "a2-n-suppe",
+  "de": "die Suppe",
+  "pos": "noun",
+  "en": "soup, potage"
+ },
+ {
+  "id": "a2-n-silvester",
+  "de": "das Silvester",
+  "pos": "noun",
+  "en": "New Year's Eve"
+ },
+ {
+  "id": "a2-v-umsteigen",
+  "de": "umsteigen",
+  "pos": "verb",
+  "en": "to change, to switch"
+ },
+ {
+  "id": "a2-n-enkel",
+  "de": "der Enkel",
+  "pos": "noun",
+  "en": "grandchild (male)"
+ },
+ {
+  "id": "a2-adj-windig",
+  "de": "windig",
+  "pos": "adjective",
+  "en": "windy, breezy"
+ },
+ {
+  "id": "a2-n-orange",
+  "de": "die Orange",
+  "pos": "noun",
+  "en": "orange"
+ },
+ {
+  "id": "a2-adv-ganz",
+  "de": "ganz",
+  "pos": "adverb",
+  "en": "very, completely, entirely, totally, quite"
+ },
+ {
+  "id": "a2-v-weinen",
+  "de": "weinen",
+  "pos": "verb",
+  "en": "to cry, to weep"
+ },
+ {
+  "id": "a2-n-mittagessen",
+  "de": "das Mittagessen",
+  "pos": "noun",
+  "en": "lunch"
+ },
+ {
+  "id": "a2-n-universitaet",
+  "de": "die Universität, Uni",
+  "pos": "noun",
+  "en": "university"
+ },
+ {
+  "id": "a2-adj-bewoelkt",
+  "de": "bewölkt",
+  "pos": "adjective",
+  "en": "cloudy"
+ },
+ {
+  "id": "a2-n-krimi",
+  "de": "der Krimi",
+  "pos": "noun",
+  "en": "crime thriller, crime novel, murder mystery, detective novel"
+ },
+ {
+  "id": "a2-v-waehlen",
+  "de": "wählen",
+  "pos": "verb",
+  "en": "to choose, to select, to elect, to vote, to dial"
+ },
+ {
+  "id": "a2-n-erfahrung",
+  "de": "die Erfahrung",
+  "pos": "noun",
+  "en": "experience"
+ },
+ {
+  "id": "a2-adv-uebermorgen",
+  "de": "übermorgen",
+  "pos": "adverb",
+  "en": "the day after tomorrow"
+ },
+ {
+  "id": "a2-n-tablette",
+  "de": "die Tablette",
+  "pos": "noun",
+  "en": "tablet, pill"
+ },
+ {
+  "id": "a2-adj-fleissig",
+  "de": "fleißig",
+  "pos": "adjective",
+  "en": "hard-working, diligent, industrious"
+ },
+ {
+  "id": "a2-v-zurueckkommen",
+  "de": "zurückkommen",
+  "pos": "verb",
+  "en": "to come back, to return"
+ },
+ {
+  "id": "a2-n-bruecke",
+  "de": "die Brücke",
+  "pos": "noun",
+  "en": "bridge"
+ },
+ {
+  "id": "a2-n-pflanze",
+  "de": "die Pflanze",
+  "pos": "noun",
+  "en": "plant"
+ },
+ {
+  "id": "a2-v-sammeln",
+  "de": "sammeln",
+  "pos": "verb",
+  "en": "to collect, to gather"
+ }
+]

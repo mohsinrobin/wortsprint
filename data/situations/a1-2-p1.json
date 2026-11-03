@@ -1,0 +1,502 @@
+{
+ "a1-n-kilometer": [
+  "A road sign says the next town is 5 of these away. Each one is 1,000 meters. What is this unit of distance called?",
+  "You go jogging. After one hour your watch shows you ran 10 of them, which is 10,000 meters.",
+  "You drive to the airport and the sign says 'Airport 25'. Which word means 'kilometre'?"
+ ],
+ "a1-v-mieten": [
+  "You have no car, so you pay a company a small amount for two days to use one for a trip. What do you do with the car?",
+  "You are a student. Every month you pay the owner money to live in a small flat that is not yours.",
+  "On holiday you pay a shop to use a bicycle for the afternoon and bring it back in the evening. Which word means 'to rent'?"
+ ],
+ "a1-n-geschwister": [
+  "At a family dinner your brother and your sister sit next to you. What do you call the three of you together, as children of the same parents?",
+  "A form asks how many of these you have. You write: one older sister and two younger brothers.",
+  "A friend says: 'I am an only child.' You answer that you have a brother and a sister. What is the plural word for brothers and sisters together?"
+ ],
+ "a1-n-moebel": [
+  "You move into a new flat. It is empty, so you go to a big shop to buy a table, chairs, a sofa and a bed.",
+  "Two men from the moving company carry your wardrobe, desk and shelves up the stairs.",
+  "Your living room looks bare because it has no sofa, no table and no shelves. Which word means 'furniture'?"
+ ],
+ "a1-adj-europaeisch": [
+  "You buy a car in a shop. The label says it was built in Germany, France or Spain, so it comes from the continent with Paris and Rome.",
+  "On TV, clubs from Madrid, Munich and Paris play in a cup for teams from this continent. Which adjective fits this cup?",
+  "At a customs office, one line is for people with a passport from countries of this continent, and another line is for people from everywhere else."
+ ],
+ "a1-n-bitte": [
+  "You ask your neighbour if he can water your plants while you are away. What is such a polite question for help called?",
+  "Your boss says: 'I have one small thing to ask of you.' You listen. What is the noun for what she wants to ask?",
+  "A child writes a note to her mother: 'Mum, I have something I want to ask you.' Which noun means 'a request'?"
+ ],
+ "a1-v-fernsehen": [
+  "After dinner you sit on the sofa and look at a film on the screen in the living room.",
+  "It is raining, so you stay at home all evening and follow the news and a quiz show on the box.",
+  "Your friend calls and asks what you are doing. You say you are sitting at home and looking at programs. Which verb means 'to watch TV'?"
+ ],
+ "a1-n-arzt": [
+  "You have a fever and a sore throat. You make an appointment with a man in a white coat who examines you and writes a prescription.",
+  "A friend says: 'My uncle works at the hospital and treats sick people.' Which word is used for a male medical person like him?",
+  "Your child falls and hurts his arm. You call the emergency number and ask for a man who can treat him. Which word means 'doctor' (male)?"
+ ],
+ "a1-adv-gestern": [
+  "Today is Wednesday. You tell your colleague that you went to the cinema on Tuesday evening.",
+  "You see a friend and say: 'Sorry I did not call. I was very busy the whole day before today.'",
+  "Which word means 'yesterday', the day before today?"
+ ],
+ "a1-n-vormittag": [
+  "Your dentist appointment is at 10 o'clock, after breakfast but long before lunch. At what part of the day is it?",
+  "At school the lessons begin at 8 and a long break comes at 11. The part of the day before noon is nearly over.",
+  "A shop sign says: 'Open from 9 to 12, then closed.' Which noun means the time from about 9 to noon?"
+ ],
+ "a1-v-grillen": [
+  "It is a sunny Saturday. You and your friends stand in the garden and cook sausages and steaks over hot charcoal.",
+  "At a summer party in the park, somebody brings meat and vegetables to cook on a metal rack over a fire.",
+  "Your neighbour invites you to come on Sunday for food outside on his barbecue. Which verb means 'to barbecue'?"
+ ],
+ "a1-n-viertel": [
+  "You cut a pizza into four equal pieces and eat one of them.",
+  "You live in a lively part of the city with many cafes and old houses. People call such a part of a city by this name.",
+  "A friend says: 'I only need one of four equal parts of the cake.' Which noun means 'quarter'?"
+ ],
+ "a1-n-ausweis": [
+  "At the airport the officer asks for a small card with your photo, name and date of birth.",
+  "At the entrance of the company building you wear a card on a band around your neck so the guard can see who you are.",
+  "You want to buy a train ticket with a student discount. The clerk says you must show your student card. Which word means 'ID card'?"
+ ],
+ "a1-adj-halb": [
+  "You cut an apple into two equal pieces and give one piece to your friend.",
+  "A shop has a sale: you pay only 50 percent of the normal price for a jacket.",
+  "The bottle was full yesterday. Today only 50 percent of the water is left. Which adjective describes this bottle?"
+ ],
+ "a1-n-schinken": [
+  "For breakfast you put cheese and thin slices of pink meat from a pig on your bread roll.",
+  "At the butcher's counter you ask for 200 grams of smoked pork, thinly sliced, for your sandwiches.",
+  "A pizza has tomatoes, cheese and slices of pig meat on it. Which word means 'ham'?"
+ ],
+ "a1-v-gewinnen": [
+  "Your football team scores three goals and the other team scores one. Your team gets the points.",
+  "You buy a lottery ticket and the numbers on it are the right ones, so you get a big prize.",
+  "You play chess against your uncle and for the first time you are better than him. Which verb means 'to win'?"
+ ],
+ "a1-n-groesse": [
+  "In a shop you ask for the jacket in a larger one, because 'M' is too small. What are you asking about?",
+  "A doctor measures you and says: 'You are 1.80 meters.' Which noun describes how tall you are?",
+  "Your new flat is nice, but the living room is not big enough for a large sofa. What do you worry about?"
+ ],
+ "a1-pr-was": [
+  "You see a strange object on the table and you do not know it. You point at it. Which word do you use to ask 'What is that?'",
+  "You did not hear your friend clearly. You ask him to repeat by asking about the thing he said. Which question word means 'what'?",
+  "Your friend holds a gift behind his back. You are curious about the thing inside. Which word do you use to ask 'What is it?'"
+ ],
+ "a1-n-geburtsjahr": [
+  "On a form at the doctor's office there is a line for the number that shows in which year you were born, for example 1995.",
+  "You say: 'I am 30 years old.' The clerk asks you to write the number of the year you first came into the world.",
+  "Your teacher wants to know when you were born. She asks only for the number of the year, not the day or the month. Which word means 'year of birth'?"
+ ],
+ "a1-n-ausflug": [
+  "On Sunday your family goes by bus to a lake for the whole day and brings sandwiches.",
+  "Your school class leaves the classroom for a day and goes to visit a castle together with the teacher.",
+  "A friend asks what you did last weekend. You say: 'We took a short day journey to the mountains.' Which noun means 'excursion'?"
+ ],
+ "a1-adv-frueher": [
+  "Your grandfather says: 'Long ago there was only one small shop in our village, but now there are three supermarkets.'",
+  "You look at an old photo and say: 'I had long hair in the time before now.' Which word means 'in the past'?",
+  "You always get to work at 7:30. Today your boss asks you to be there at 6, earlier than normal. Which word means 'earlier'?"
+ ],
+ "a1-v-abfliegen": [
+  "You stand at the airport. Your plane leaves the ground at 14:20 and you wave goodbye to your friends.",
+  "The departure board says your flight to Berlin goes up into the air at 8:10 tomorrow morning.",
+  "A colleague asks: 'When does your plane leave?' You answer: 'At six o'clock.' Which verb means 'to fly away, to take off'?"
+ ],
+ "a1-n-birne": [
+  "At the market you buy a fruit that is green or yellow, round at the bottom and thin at the top. It is not an apple.",
+  "For dessert your grandmother serves a sweet fruit with a long shape, cut in two, with chocolate sauce.",
+  "You are in a fruit shop. You ask for apples, bananas and one more fruit shaped like a drop. Which word means 'pear'?"
+ ],
+ "a1-adj-schwer": [
+  "You try to carry a suitcase full of books up the stairs, and your arms hurt because it weighs a lot.",
+  "In the exam you cannot solve most questions because they are very hard to understand.",
+  "A friend says: 'The test was not easy at all.' Which adjective can mean both 'heavy' and 'difficult'?"
+ ],
+ "a1-n-schalter": [
+  "At the post office you wait in line until the clerk behind the window can help you.",
+  "It is dark in your room. You press a small button on the wall and the lamp turns on. What do you press?",
+  "At the train station you go to a window to buy a ticket. Which noun means 'counter' or 'switch'?"
+ ],
+ "a1-n-studentin": [
+  "A girl studies biology at the university. She goes to lectures and writes exams. How do you call her?",
+  "You meet a woman in the library. She says she is learning for her law exam at the university. Which word describes her?",
+  "On the bus, a young woman shows a card and gets a cheaper ticket because she is still at university. Which word means 'student' (female)?"
+ ],
+ "a1-v-stellen": [
+  "You take a bottle from the shelf and put it upright on the table, next to the glass.",
+  "The waiter brings the cake and puts it in front of you on the table. He does not lay it down flat.",
+  "Your friend helps you in the kitchen. You tell her to put the pots upright in the cupboard. Which verb means 'to put, to place (upright)'?"
+ ],
+ "a1-n-broetchen": [
+  "Every morning you go to the bakery and buy a small round piece of bread, not a big loaf, for your breakfast.",
+  "At the hotel breakfast buffet you cut a small crispy piece of bread in half and put butter and cheese on it.",
+  "At the bakery you say: 'I would like two of the small ones, please.' Which word means 'bread roll'?"
+ ],
+ "a1-n-hausaufgabe": [
+  "Your teacher says: 'Please write ten sentences for the next lesson.' You must do it at home in the afternoon.",
+  "Your child says he cannot play outside yet because he must finish his maths exercises for school first.",
+  "After school your friend asks if you want to go to the cinema. You say you cannot because you still have school work to do at home. Which word means 'homework'?"
+ ],
+ "a1-v-bezahlen": [
+  "You finish your meal in a restaurant and give the waiter your card to settle the bill.",
+  "At the supermarket the cashier says: 'That is 23 euros.' You take out your wallet.",
+  "You buy a ticket at the machine and put in coins. Which verb means 'to pay'?"
+ ],
+ "a1-n-fussball": [
+  "Every Saturday you play on a green field with ten friends. Two teams try to kick a ball into a net.",
+  "Your favourite sport has twenty-two players on the field and a referee with a whistle. People shout when a goal is scored.",
+  "A boy asks his father to buy him a ball and shoes for the most popular sport in Europe. Which noun means 'soccer, football'?"
+ ],
+ "a1-adj-guenstig": [
+  "You look at two shops. The same jeans cost 80 euros in one and only 30 euros in the other. You say the second one is not expensive.",
+  "A travel website offers a flight for only 40 euros. Your friend says it is a good price.",
+  "You are looking for a hotel and want one that does not cost a lot of money. Which adjective means 'cheap, reasonable'?"
+ ],
+ "a1-adv-unten": [
+  "You live on the ground floor. Your friend lives on the fifth floor and calls you: 'Come up!' You say you are at the bottom of the building.",
+  "You look into a deep well and see a coin at the bottom. Where is the coin?",
+  "Your jacket is in the cellar. Your sister asks where it is, and you point to the floor and say: 'Downstairs.' Which adverb means 'down below'?"
+ ],
+ "a1-n-ende": [
+  "You read a book and turn to the last page. The story stops there.",
+  "The film is over and the screen goes black. Your friend says: 'That was the last part, the finish of the story.'",
+  "Your holiday is almost over. It is the last day, and tomorrow you go back to work. Which noun means 'end'?"
+ ],
+ "a1-n-autobahn": [
+  "You drive from Munich to Berlin on a wide road with several lanes where there is no speed limit in many places.",
+  "The traffic radio says there is a long traffic jam on the big road between two cities near Frankfurt.",
+  "Your friend says: 'Take the road with three lanes in each direction, then you arrive faster.' Which noun means 'motorway'?"
+ ],
+ "a1-v-muessen": [
+  "The doctor says: 'You are sick. It is not a choice, you have no other way than to stay in bed.' Which verb says that something is necessary?",
+  "You tell your friend you cannot go to the cinema because you need to do your homework first.",
+  "At the airport the sign says everyone is obliged to show a passport. Which verb means 'to have to'?"
+ ],
+ "a1-n-mensch": [
+  "You look at the crowd in the station and see thousands of individual beings, each one a member of our species.",
+  "A teacher says: 'Every woman, every man and every child is one of these, and all of them have rights.'",
+  "A small boy asks his mother if a dog is an animal. She says yes, and then explains that you and he are a different kind of creature: a human being. Which noun means 'human being'?"
+ ],
+ "a1-pr-wer": [
+  "The doorbell rings and you do not know who stands outside. You ask through the door: '... is there?'",
+  "You hear a loud noise in the kitchen. You call out to find the person responsible. Which question word means 'who'?",
+  "The phone rings and you pick up. You want to know the name of the person who is calling. Which word do you use to ask 'Who is this?'"
+ ],
+ "a1-n-kaffee": [
+  "In the morning you cannot wake up. You make a hot, dark drink from roasted beans and drink it from a cup.",
+  "At a cafe the waiter asks what you want to drink, and you ask for a hot drink with milk and a piece of cake.",
+  "Your colleague says: 'I need something with caffeine to stay awake.' Which noun is the answer, the hot drink made from beans?"
+ ],
+ "a1-adj-bitter": [
+  "You eat a very dark chocolate with 90 percent cocoa. It is not sweet at all and has a strong, sharp taste.",
+  "You drink tea without sugar and the taste on your tongue is unpleasant, almost like medicine, not sweet.",
+  "The opposite of sweet: your friend tastes a lemon peel and makes a face. Which adjective means 'bitter'?"
+ ],
+ "a1-n-antwort": [
+  "Your teacher asks: 'What is the capital of France?' You say: 'Paris.' What is your reply to the question?",
+  "You sent an email to your landlord three days ago and still have not received a reply.",
+  "In a quiz you do not know what to say after the host reads the question. Which noun means 'answer'?"
+ ],
+ "a1-v-oeffnen": [
+  "It is hot in the room. You go to the window and push it so that fresh air can come in.",
+  "The shop has not started yet, but at nine the staff turn the key and let the customers in.",
+  "You get a parcel and cut the tape to see what is inside. Which verb means 'to open'?"
+ ],
+ "a1-n-aufzug": [
+  "You live on the eighth floor and your shopping bags are very heavy. You press a button and a small room takes you up.",
+  "In the hotel you carry your suitcase into a small cabin with doors and press number 5.",
+  "A sign in the building says: 'In case of fire do not use the machine that moves up and down inside the shaft.' Which noun means 'elevator'?"
+ ],
+ "a1-n-handy": [
+  "You are late and want to tell your friend. You take the small device from your pocket and send a message.",
+  "In the cinema a voice says: 'Please switch off your small device that rings and makes calls.'",
+  "You lose your way in a new city and look at the map on the small screen you carry everywhere. Which noun means 'mobile phone'?"
+ ],
+ "a1-adv-morgen": [
+  "Today is Monday. You tell your friend you will meet him on Tuesday.",
+  "You say goodbye to your colleague and say: 'See you on the day after today.'",
+  "You are tired and say: 'I will do the shopping on the next day, not today.' Which word means 'tomorrow'?"
+ ],
+ "a1-v-besuchen": [
+  "On Sunday you take a train to see your grandmother and stay with her for the afternoon.",
+  "You are in Berlin and go to see the museum and the old castle as a tourist.",
+  "You go to a language class two evenings a week at the adult school. Which verb means 'to visit' or 'to attend'?"
+ ],
+ "a1-n-donnerstag": [
+  "The week has seven days. Wednesday is over and tomorrow is Friday. What day is today?",
+  "Your language course meets on Monday and on the day after Wednesday.",
+  "Which noun means 'Thursday'?"
+ ],
+ "a1-n-anmeldung": [
+  "You want to join a German course and must fill in a form with your name and address before it starts.",
+  "You move to a new city and must tell the city office that you live at the new address.",
+  "You open a website, type your name and password and click the button to go into your account. Which noun can mean 'registration' or 'login'?"
+ ],
+ "a1-adj-geschlossen": [
+  "It is Sunday evening. You walk to the supermarket, but the doors are shut and the lights are off.",
+  "The sign on the museum door says: 'Not open today, because of holiday.'",
+  "At the post office the window is down and the sign says the counter is not in service. Which adjective means 'closed'?"
+ ],
+ "a1-n-party": [
+  "On Saturday night your friends meet at Anna's flat with music, drinks and dancing to celebrate her birthday.",
+  "Your neighbours make a lot of noise until 2 a.m. because they invited many guests to celebrate.",
+  "Your colleague says: 'On Friday we celebrate the end of the project with food and music in the office.' Which noun means 'party'?"
+ ],
+ "a1-v-mitmachen": [
+  "Your friends play volleyball at the beach. They ask if you want to be part of the game too, and you say yes.",
+  "A teacher asks the whole class to join in a game, and nobody should sit and just watch.",
+  "There is a cleaning day in your street, and your neighbour asks if you want to help with the others. Which verb means 'to take part'?"
+ ],
+ "a1-n-bleistift": [
+  "In the exam the teacher says: 'You may write with ink or with the grey writing tool made of wood and graphite.'",
+  "You draw a picture and want to be able to rub out the lines with an eraser, so you take the wooden writing tool.",
+  "A child puts a long, thin wooden writing tool with a sharp point into his school bag. Which noun means 'pencil'?"
+ ],
+ "a1-n-osten": [
+  "The sun comes up in the morning. In which direction do you look to see it rise?",
+  "On a map the compass shows north on top. The side on the right, the direction opposite to west, is this one.",
+  "You live in Berlin and your friend lives far away in the direction where the sun rises. Which noun means 'east'?"
+ ],
+ "a1-n-stadt": [
+  "You grew up in a small village, but now you live in a big place with many streets, shops, trains and thousands of people.",
+  "Munich, Hamburg and Cologne are examples of what? They are places with a lot of houses and a centre with a town hall.",
+  "A friend says: 'I want to move from the countryside to a place with more jobs, cafes and cinemas.' Which noun means 'city, town'?"
+ ],
+ "a1-v-geben": [
+  "Your friend has no pen. You take yours and put it into her hand.",
+  "At the dinner table your father asks you to pass him the salt. What do you do with the salt?",
+  "The teacher hands each pupil a sheet of paper. Which verb means 'to give'?"
+ ],
+ "a1-adv-gut": [
+  "Your teacher asks how you did in the exam. You answer that it went fine, not badly at all.",
+  "A friend plays the piano and you listen. You say that she plays in a very nice way, not badly.",
+  "Someone asks: 'How are you?' and you say you are fine. Which adverb means 'well'?"
+ ],
+ "a1-pr-mir": [
+  "Your friend wants to hand you a gift. He says: 'This is for ...' and points at you. Which word means 'to me' or 'me'?",
+  "At the bookshop you ask the clerk to show a book to you. 'Can you show it to ...?' Which small word do you use?",
+  "A friend is cooking. You say: 'Could you pass the salt to ..., please?' Which pronoun means 'me' after 'to'?"
+ ],
+ "a1-n-banane": [
+  "You buy a long yellow fruit with a thick peel that grows in warm countries. Monkeys love it.",
+  "For a quick snack before sport you peel a soft, sweet fruit, which is yellow and curved.",
+  "At the market you buy apples, oranges and a bunch of curved fruits. Which word means 'banana'?"
+ ],
+ "a1-adj-international": [
+  "At the university there are students from Brazil, India, Nigeria and Japan. The group is not only from one country.",
+  "The airport has flights to many countries. The sign shows the terminal for flights that cross borders.",
+  "A company has offices in twenty countries around the world. Which adjective describes such a company: not local, but between nations?"
+ ],
+ "a1-n-haus": [
+  "You and your family live in a building with a roof, a front door and a garden. It is not a flat.",
+  "An architect draws a plan for a new building with four rooms and a kitchen for a young family.",
+  "At the end of a long day you say: 'I want to go to the place where I live and feel safe.' Which noun means 'house, home'?"
+ ],
+ "a1-v-verdienen": [
+  "At the end of the month the company puts money into your bank account for your work.",
+  "You ask your uncle how much money he gets every month from his job as an engineer.",
+  "A child cleans the whole kitchen and her mother says: 'You really deserve a reward.' Which verb can mean 'to earn' or 'to deserve'?"
+ ],
+ "a1-n-fuehrung": [
+  "In the old town a woman walks with your group and tells you the history of each building. What is this tour called?",
+  "A manager says that the company needs strong leaders. Which noun means the act of leading people at work?",
+  "At a museum a sign says: 'Tours at 10 and 14 o'clock with a guide.' Which noun means 'guided tour' or 'leadership'?"
+ ],
+ "a1-n-fahrrad": [
+  "You ride to work every morning on two wheels, turning the pedals with your feet.",
+  "The shop sells things with two wheels, a chain, a saddle and a bell. You buy one for your son.",
+  "The train is too expensive, so you decide to go to the lake on something with pedals and a chain. Which noun means 'bicycle'?"
+ ],
+ "a1-n-sonnabend": [
+  "People in the north of the country use a second name for the day after Friday and before Sunday. Which day is that?",
+  "Your colleague from Hamburg says: 'We meet on the weekend's first day.' It is the day between Friday and Sunday.",
+  "Which word means 'Saturday' in the north of Germany?"
+ ],
+ "a1-v-bestellen": [
+  "In the restaurant you tell the waiter: 'I would like the soup and a glass of water.'",
+  "You are at home and want a new book. You go on a website and ask the shop to send it to you.",
+  "At the cafe the waiter comes to your table and asks what you want to eat and drink. What do you do now? Which verb means 'to order'?"
+ ],
+ "a1-n-kurs": [
+  "Every Tuesday and Thursday evening you go to a room with a teacher and other adults to learn German.",
+  "At the bank you want to change dollars into euros. The clerk tells you how many euros you get for one dollar today.",
+  "At the gym there is a group lesson for yoga that runs for eight weeks. Which noun means 'course'?"
+ ],
+ "a1-adj-deutsch": [
+  "You meet a man from Berlin. You ask where he comes from and he says: 'I come from Germany.' Which adjective describes his nationality?",
+  "At a restaurant the menu says the sausage and the beer are made the way people in Germany make them.",
+  "Your friend learns the language that is spoken in Germany, Austria and part of Switzerland. Which adjective means 'German'?"
+ ],
+ "a1-n-freizeit": [
+  "After work and at weekends you go swimming, meet friends and read books, without anything you must do.",
+  "A form asks about your hobbies. You write: football, cinema and cooking, things you do when you are not at work or school.",
+  "Your boss asks what you do when you are not working. You answer: 'I use my spare hours for sport.' Which noun means 'free time'?"
+ ],
+ "a1-adv-gern": [
+  "Your friend asks: 'Do you want to come with us to the cinema?' You answer that you will come and that it makes you happy.",
+  "You say: 'I ... play tennis', meaning that you like to play it.",
+  "A colleague asks you to help with something and you say you will do it with pleasure. Which adverb means 'gladly'?"
+ ],
+ "a1-n-karte": [
+  "At the restaurant the waiter brings a list of dishes and drinks, and you choose your meal.",
+  "You are lost in a new city, so you open a paper sheet that shows all the streets and parks.",
+  "You pay at the shop with a small plastic rectangle from your bank. Which noun can mean 'card', 'map', 'menu' or 'ticket'?"
+ ],
+ "a1-v-wandern": [
+  "On Sunday you put on strong shoes, take a backpack and walk for six hours in the mountains.",
+  "Your friends love nature, so they spend their holidays walking along paths through forests and over hills.",
+  "Birds fly south in the autumn. What do many animals do when they move from one region to another? Which verb means 'to hike' or 'to migrate'?"
+ ],
+ "a1-n-beamte": [
+  "A man works for the city office and has a safe job for life, working for the state. He sits behind a desk and stamps papers.",
+  "At the town hall the man behind the counter says: 'I am a state employee and I cannot do that for you.'",
+  "Your uncle works in a government job with a secure position. Which noun means 'civil servant' (male)?"
+ ],
+ "a1-n-unterricht": [
+  "At eight o'clock the teacher comes into the room, closes the door and starts teaching the whole class.",
+  "Your son says: 'Today there was no school because the teacher was sick.' What did not happen?",
+  "A student says he missed the teaching on Monday because he was sick. Which noun means 'lessons, class'?"
+ ],
+ "a1-adj-besetzt": [
+  "You go into the toilet on the train and the door is locked with a red sign. Somebody is inside.",
+  "You call your friend, but you hear a beeping sound because he is already talking to someone else.",
+  "In a restaurant a man points to the free chair and you ask: 'Is this seat free?' He says: 'No, someone is sitting there.' Which adjective means 'occupied'?"
+ ],
+ "a1-v-anbieten": [
+  "A guest comes into your flat. You say: 'Would you like some tea?' and hold out a cup.",
+  "A shop wants you to buy more. It says on the poster: 'We give you a free bag if you buy two shirts.'",
+  "Your colleague says to the new person: 'If you need help, just ask. I can help you with it.' Which verb means 'to offer'?"
+ ],
+ "a1-n-ecke": [
+  "You walk to the end of the street and turn left where two walls or streets meet.",
+  "Your sofa stands in the place of the room where two walls meet, next to the lamp.",
+  "A friend asks where the bakery is. You say: 'It is right where this street meets the next one.' Which noun means 'corner'?"
+ ],
+ "a1-pr-sie": [
+  "You meet your new teacher for the first time and want to be polite. You do not say the word for 'you' that you use with friends. Which word means 'you' in the polite form?",
+  "A clerk at the bank speaks to an older customer and asks: '... are next.' Which word means formal 'you'?",
+  "You talk to a stranger on the street and ask for the way. Which pronoun do you use for polite 'you'?"
+ ],
+ "a1-n-buchstabe": [
+  "A, B, C and D are all examples of what? The alphabet has 26 of them.",
+  "On the phone you spell your name one by one for the clerk: 'M as in Maria, I as in Ida...'",
+  "A child learns to write the first sign of the alphabet. Which noun means 'letter (of the alphabet)'?"
+ ],
+ "a1-n-ei": [
+  "For breakfast you boil a white oval food with a shell for five minutes and eat it with salt.",
+  "A hen lays them every morning. You use some of them to make a cake.",
+  "At the supermarket you buy a box of six, which come from chickens. Which word means 'egg'?"
+ ],
+ "a1-adv-bald": [
+  "You are waiting for your friend at the bus stop. He calls and says he will be there in a few minutes, not later.",
+  "A teacher says: 'The holidays are nearly here. Only two more days!' Which word means 'soon'?",
+  "The doctor says: 'You will be healthy again in the near future.' Which adverb means 'soon'?"
+ ],
+ "a1-v-schwimmen": [
+  "It is hot, so you jump into the lake and move your arms and legs to stay on the water.",
+  "At the swimming pool the lifeguard asks: 'Can you move in the water without touching the ground?'",
+  "A piece of wood falls into the river and stays on top of the water. Which verb means 'to swim, to float'?"
+ ],
+ "a1-n-loesung": [
+  "In maths class the teacher asks for the correct result to the problem on the board.",
+  "Your computer does not start. A friend finds a way to fix the problem and says: 'Here is what we do.'",
+  "In a quiz book the answers to all the questions are on the last page. Which noun means 'solution'?"
+ ],
+ "a1-n-cd": [
+  "You put a round shiny disc into the player to listen to your favourite band's album.",
+  "In an old car there is no streaming, only a slot for a flat silver disc with music.",
+  "At a music shop you buy a plastic case with a round disc inside. Which word is the short form for 'compact disc'?"
+ ],
+ "a1-adj-jung": [
+  "Your grandmother is 80 years old, but her granddaughter is only 6. How would you describe the little girl in terms of age?",
+  "The new colleague is only 22 and has just finished school. Your boss says that he is not old.",
+  "A teacher says: 'I want to work with people who have not lived many years.' Which adjective means 'young'?"
+ ],
+ "a1-n-toilette": [
+  "At the restaurant you stand up and ask the waiter where you can wash your hands and go to the room with a sink.",
+  "In the train station you pay 50 cents to use a public room with a sink and a bowl.",
+  "A child says: 'Mum, I need to go to the place where you go when you must go.' Which noun means 'restroom'?"
+ ],
+ "a1-v-beginnen": [
+  "The film is at 8 o'clock. You sit in the cinema and the lights go out. The film is starting now.",
+  "The teacher says: 'Please open your books. We will now take the first page.' What does the lesson do?",
+  "In the morning your meeting does not start until 9. You ask: 'When does it commence?' Which verb means 'to begin'?"
+ ],
+ "a1-n-sueden": [
+  "You live in Hamburg, and in winter you travel to a warm region where the sun is high at noon, towards Italy.",
+  "On a compass the needle points to the north and the opposite direction is this one.",
+  "Bavaria lies in the part of Germany that is at the bottom of the map. Which noun means 'south'?"
+ ],
+ "a1-n-grossmutter": [
+  "On Sunday you visit an old woman who is your mother's mother. She bakes cakes and tells stories.",
+  "A child says: 'My mum's mum lives in the countryside, and I go there in summer.'",
+  "At a family party the oldest woman in the room is the mother of your father. Which noun means 'grandmother'?"
+ ],
+ "a1-v-treffen": [
+  "After work you go to a cafe where your friend is waiting. You see each other and talk for an hour.",
+  "The ball flies towards the goal and hits the post. Which verb describes when something hits a target?",
+  "You arrange with a colleague that you will see each other at the station at 6. Which verb means 'to meet'?"
+ ],
+ "a1-n-prozent": [
+  "A shop sign says: 'Everything is 20 of these cheaper!' The sign shows a symbol: %.",
+  "At the bank you get 2 of every 100 euros as interest each year. How is this part of one hundred called?",
+  "In the news you hear that 5 out of every 100 people are out of work. Which noun means 'per cent'?"
+ ],
+ "a1-adv-nur": [
+  "You ask: 'How many euros do you have?' and your friend says: 'Just two, not more.' Which word means 'only'?",
+  "A waiter asks if you want a dessert. You say that you want a coffee and nothing else.",
+  "You tell your boss: 'I did not do anything special. I did that one small thing.' Which adverb means 'only, just'?"
+ ],
+ "a1-n-auge": [
+  "You have something in your eye, so you close it and rub it. You have two of them, and you use them to see.",
+  "The optician says: 'Please cover your left one and read the letters on the wall with your right.'",
+  "A child draws a face with a nose, a mouth, ears and two round things to see with. Which noun means 'eye'?"
+ ],
+ "a1-adj-gluecklich": [
+  "Your friend wins the lottery and jumps around with a big smile. How does she feel?",
+  "A little boy gets a puppy for his birthday and laughs all day. How would you describe him?",
+  "You say: 'I feel great today. Everything is going well.' Which adjective means 'happy'?"
+ ],
+ "a1-n-haltestelle": [
+  "You wait under a roof next to a sign with a number. In five minutes the bus comes.",
+  "A tram stops in the street and people get on and off at the sign with the line number. Where do they wait?",
+  "A friend says: 'Get off at the next place where the bus stops, and then walk two minutes.' Which noun means 'stop' (for buses and trams)?"
+ ],
+ "a1-v-arbeiten": [
+  "Every day from 9 to 5 you sit in an office, write emails and have meetings. What do you do?",
+  "Your father gets up at six to go to the factory, where he does his job as a mechanic.",
+  "A friend asks what you do during the week. You say that you have a job in a hospital. Which verb means 'to work'?"
+ ],
+ "a1-n-kundin": [
+  "A woman walks into the shop to buy a coat. The salesman says: 'Welcome. How can I help you?' What is she in the shop?",
+  "At the hairdresser's the boss says: 'The woman who is waiting there buys our services.' Which word describes her?",
+  "In a bank a female clerk speaks to a woman who has an account there. Which noun means 'customer' (female)?"
+ ],
+ "a1-pr-ihr": [
+  "You talk to your two friends at the same time and ask: 'Are ... coming to the party?' Which word means 'you' for more than one friend?",
+  "In the class the teacher looks at all the children and says: 'Please sit down, ...' Which pronoun is used when talking to several people informally?",
+  "You point to your sister's bag: 'This is ... bag.' You mean it belongs to her. Which word means 'her' before a noun?"
+ ],
+ "a1-n-jugendliche": [
+  "A boy of 15 is no longer a child, but not yet an adult. He plays football with his friends after school.",
+  "A youth club is open to people between 13 and 18. Today a young boy from the neighbourhood joins for the first time.",
+  "The police officer says: 'A teenage boy broke the window.' Which noun means 'adolescent' (male)?"
+ ],
+ "a1-n-juni": [
+  "The sixth month of the year starts after May and ends before July. School holidays are nearly here.",
+  "Your birthday is in the month when summer begins, in the northern part of the world, around 21st.",
+  "You write the date on a form: 15 ... 2025. Which noun means 'June'?"
+ ],
+ "a1-v-aussteigen": [
+  "The train arrives in Munich. You stand up, take your bag and step out onto the platform.",
+  "The bus driver says: 'This is the last stop. Everyone must leave the bus now.'",
+  "You take a taxi to the station, and when you arrive you open the door and step out. Which verb means 'to get off, to get out'?"
+ ]
+}
