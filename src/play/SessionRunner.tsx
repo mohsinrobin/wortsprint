@@ -110,6 +110,42 @@ export function SessionRunner({ mode, wordIds, extra, onDone, onQuit }: Props) {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [session]);
 
+  // Phones: while the keyboard is up, use a tighter layout and keep the
+  // question and the answer line inside the visible part of the screen.
+  const touch = useMemo(() => typeof matchMedia !== 'undefined' && matchMedia('(pointer: coarse)').matches, []);
+  const [typing, setTyping] = useState(false);
+  const compact = touch && typing && !!question?.typed && !feedback;
+  const answerRef = useRef<HTMLDivElement>(null);
+  const blurTimer = useRef<ReturnType<typeof setTimeout>>();
+  // A tap on ä/ö/ü can blur the field for a moment; don't flip the layout for that.
+  const onFocusChange = useCallback((focused: boolean) => {
+    clearTimeout(blurTimer.current);
+    if (focused) setTyping(true);
+    else blurTimer.current = setTimeout(() => setTyping(false), 200);
+  }, []);
+  useEffect(() => () => clearTimeout(blurTimer.current), []);
+  useEffect(() => {
+    if (!compact) return;
+    const vv = window.visualViewport;
+    const fit = () => {
+      const el = answerRef.current;
+      if (!el) return;
+      const visible = vv ? vv.height : window.innerHeight;
+      const bottom = el.getBoundingClientRect().bottom + window.scrollY;
+      // Show as much from the top as fits while the answer line stays in view.
+      window.scrollTo({ top: Math.max(0, bottom + 12 - visible), behavior: 'instant' });
+    };
+    const frame = requestAnimationFrame(fit);
+    // The keyboard slides in over ~300 ms; settle again once it is up.
+    const timers = [setTimeout(fit, 150), setTimeout(fit, 450)];
+    vv?.addEventListener('resize', fit);
+    return () => {
+      cancelAnimationFrame(frame);
+      timers.forEach(clearTimeout);
+      vv?.removeEventListener('resize', fit);
+    };
+  }, [compact, session.step]);
+
   useEffect(() => {
     setInput('');
     setHint(false);
@@ -249,8 +285,8 @@ export function SessionRunner({ mode, wordIds, extra, onDone, onQuit }: Props) {
       )}
 
       {/* Question */}
-      <div key={session.step} className="flex flex-1 animate-pop flex-col justify-center py-8">
-        <div className="mb-8 text-center">
+      <div key={session.step} className={`flex flex-1 animate-pop flex-col ${compact ? 'justify-start py-3' : 'justify-center py-8'}`}>
+        <div className={`text-center ${compact ? 'mb-4' : 'mb-8'}`}>
           {item.kind === 'meaning' && (
             <>
               <div className="mb-3 text-[15px] text-pencil">{t('whatMeans')}</div>
@@ -274,9 +310,9 @@ export function SessionRunner({ mode, wordIds, extra, onDone, onQuit }: Props) {
           )}
           {item.kind === 'situation' && (
             <>
-              <div className="mb-3 text-[15px] text-pencil">{t('situationQ')}</div>
-              <div className="card mx-auto max-w-xl -rotate-[0.6deg] px-6 py-5 text-left text-[19px] leading-relaxed sm:text-xl">{question.situation}</div>
-              <div className="mt-4 flex items-center justify-center gap-3">
+              <div className={`text-[15px] text-pencil ${compact ? 'mb-2' : 'mb-3'}`}>{t('situationQ')}</div>
+              <div className={`card mx-auto max-w-xl -rotate-[0.6deg] text-left ${compact ? 'px-4 py-3 text-[17px] leading-snug' : 'px-6 py-5 text-[19px] leading-relaxed sm:text-xl'}`}>{question.situation}</div>
+              <div className={`flex items-center justify-center gap-3 ${compact ? 'mt-2' : 'mt-4'}`}>
                 <span className="hand text-xl text-pencil">{t(`pos_${word.pos}`)}</span>
                 {showHintAlways || hint ? (
                   <span className="rounded-[3px] bg-marker/60 px-1.5 text-[15px] font-semibold text-ink">{meaningText(word, settings.meaningLang, 4)}</span>
@@ -339,11 +375,13 @@ export function SessionRunner({ mode, wordIds, extra, onDone, onQuit }: Props) {
             )}
           </div>
         ) : (
-          <div className="mx-auto w-full max-w-md">
-            <UmlautInput ref={inputRef} value={input} onChange={setInput} onSubmit={() => submit()} disabled={false} state="idle" placeholder="…" />
-            <button onClick={() => submit()} disabled={!input.trim()} className="btn-primary mt-5 w-full py-3 text-base">
-              {t('submit')}
-            </button>
+          <div ref={answerRef} className="mx-auto w-full max-w-md">
+            <UmlautInput ref={inputRef} value={input} onChange={setInput} onSubmit={() => submit()} disabled={false} state="idle" placeholder="…" onFocusChange={onFocusChange} compact={compact} submitLabel={t('submit')} />
+            {!compact && (
+              <button onClick={() => submit()} disabled={!input.trim()} className="btn-primary mt-5 w-full py-3 text-base">
+                {t('submit')}
+              </button>
+            )}
           </div>
         )}
       </div>

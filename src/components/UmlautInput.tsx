@@ -8,11 +8,17 @@ interface Props {
   disabled?: boolean;
   state?: 'idle' | 'correct' | 'wrong';
   placeholder?: string;
+  onFocusChange?: (focused: boolean) => void;
+  /** Phone with the keyboard open: tighter layout, the send button joins the letter row. */
+  compact?: boolean;
+  submitLabel?: string;
 }
 
 const CHARS = ['ä', 'ö', 'ü', 'ß', 'Ä', 'Ö', 'Ü'];
+// Answers ignore case, so the compact row drops the capitals to make room.
+const COMPACT_CHARS = ['ä', 'ö', 'ü', 'ß'];
 
-export const UmlautInput = forwardRef<HTMLInputElement, Props>(function UmlautInput({ value, onChange, onSubmit, disabled, state = 'idle', placeholder }, ref) {
+export const UmlautInput = forwardRef<HTMLInputElement, Props>(function UmlautInput({ value, onChange, onSubmit, disabled, state = 'idle', placeholder, onFocusChange, compact, submitLabel }, ref) {
   const inner = useRef<HTMLInputElement>(null);
   useImperativeHandle(ref, () => inner.current!);
 
@@ -38,6 +44,8 @@ export const UmlautInput = forwardRef<HTMLInputElement, Props>(function UmlautIn
         value={value}
         disabled={disabled}
         onChange={(e) => onChange(e.target.value)}
+        onFocus={() => onFocusChange?.(true)}
+        onBlur={() => onFocusChange?.(false)}
         onKeyDown={(e) => {
           if (e.key === 'Enter') {
             e.preventDefault();
@@ -51,10 +59,10 @@ export const UmlautInput = forwardRef<HTMLInputElement, Props>(function UmlautIn
         spellCheck={false}
         enterKeyHint="go"
         lang="de"
-        className={`hand w-full border-0 border-b-2 bg-transparent focus-visible:outline-none px-2 pb-1 pt-3 text-center text-[32px] leading-tight text-blue outline-none transition-colors placeholder:text-pencil/40 sm:text-4xl ${line}`}
+        className={`hand w-full border-0 border-b-2 bg-transparent focus-visible:outline-none px-2 pb-1 text-center leading-tight ${compact ? 'pt-1 text-[28px]' : 'pt-3 text-[32px]'} text-blue outline-none transition-colors placeholder:text-pencil/40 sm:text-4xl ${line}`}
       />
-      <div className="mt-4 flex justify-center gap-1.5">
-        {CHARS.map((ch) => (
+      <div className={`flex gap-1.5 ${compact ? 'mt-3' : 'mt-4 justify-center'}`}>
+        {(compact ? COMPACT_CHARS : CHARS).map((ch) => (
           <button
             key={ch}
             type="button"
@@ -67,6 +75,17 @@ export const UmlautInput = forwardRef<HTMLInputElement, Props>(function UmlautIn
             {ch}
           </button>
         ))}
+        {compact && (
+          <button
+            type="button"
+            onMouseDown={(e) => e.preventDefault()}
+            onClick={onSubmit}
+            disabled={disabled || !value.trim()}
+            className="btn-primary ml-auto h-11 px-5"
+          >
+            {submitLabel}
+          </button>
+        )}
       </div>
     </div>
   );
