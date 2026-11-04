@@ -178,12 +178,14 @@ export function SessionRunner({ mode, wordIds, extra, onDone, onQuit }: Props) {
       if (!question || !word || feedback || paused) return;
       const ms = timeout ? limitMs : Math.min(elapsedRef.current, limitMs);
       let fb: Feedback;
-      if (timeout) {
-        fb = { ok: false, verdict: 'timeout', typed: question.typed ? input : undefined, xp: 0 };
-      } else if (question.typed) {
-        if (!input.trim()) return;
+      // When time runs out, whatever is already typed still gets judged.
+      if (question.typed && input.trim()) {
         const r = checkTyped(input, word, isChallenge ? { typo: 'strict', difficulty: 'hard', pool: allWords } : { typo: settings.typo, difficulty: settings.difficulty, pool: allWords });
         fb = { ok: r.ok, verdict: r.verdict, typed: input, matched: r.matched, givenArticle: r.givenArticle, xp: 0 };
+      } else if (timeout) {
+        fb = { ok: false, verdict: 'timeout', xp: 0 };
+      } else if (question.typed) {
+        return;
       } else {
         fb = { ok: choice === question.correctIndex, verdict: 'choice', chosen: choice, xp: 0 };
       }

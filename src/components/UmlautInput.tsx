@@ -49,6 +49,9 @@ export const UmlautInput = forwardRef<HTMLInputElement, Props>(function UmlautIn
         onKeyDown={(e) => {
           if (e.key === 'Enter') {
             e.preventDefault();
+            // The page also listens for Enter to go on after feedback; without
+            // this, the same press would submit and skip the feedback at once.
+            e.stopPropagation();
             onSubmit();
           }
         }}
