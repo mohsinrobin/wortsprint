@@ -326,14 +326,14 @@ export const useStore = create<State>((set, get) => {
         const prev = s.levels[config.levelKey] ?? emptyLevelProgress(config.levelKey);
         let lp = applySessionToLevel(prev, config.stage, summary, recallWordIds, now);
         const [cid, idx] = config.levelKey.split(':');
-        const level = buildLevels(cid, s.words[cid] ?? [])[Number(idx)];
+        const level = buildLevels(cid, wordsOf(s.words, cid) ?? [])[Number(idx)];
         if (level) lp = { ...lp, mastered: checkMastery(level, lp, s.progress).mastered };
         if (config.stage === 'boss') bossPassed = evaluateBoss(summary).passed;
         levels = { ...levels, [config.levelKey]: lp };
       } else if (config.levelKey) {
         // Weak-word review of a level can complete mastery.
         const [cid, idx] = config.levelKey.split(':');
-        const level = buildLevels(cid, s.words[cid] ?? [])[Number(idx)];
+        const level = buildLevels(cid, wordsOf(s.words, cid) ?? [])[Number(idx)];
         const lp = s.levels[config.levelKey];
         if (level && lp) levels = { ...levels, [config.levelKey]: { ...lp, mastered: checkMastery(level, lp, s.progress).mastered } };
       }
@@ -427,6 +427,12 @@ export const useStore = create<State>((set, get) => {
 });
 
 // --- derived helpers used by screens ------------------------------------
+
+/** Words of one collection. Ids can come from the URL, so only own keys count:
+    "#/c/constructor" must not read Object.prototype.constructor. */
+export function wordsOf(words: Record<string, Word[]>, collectionId: string): Word[] | undefined {
+  return Object.prototype.hasOwnProperty.call(words, collectionId) ? words[collectionId] : undefined;
+}
 
 /** Timer seconds each difficulty sets; the user can fine-tune them afterwards. */
 export const DIFFICULTY_TIMERS: Record<Settings['difficulty'], Settings['timers']> = {

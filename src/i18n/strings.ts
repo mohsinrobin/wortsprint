@@ -280,6 +280,9 @@ const en = {
   copied: 'Copied',
   shareText: 'I passed Mutprobe {n} on WortSprint, {c}/{total} right. Can you?',
   backToMutprobe: 'Back to Mutprobe',
+  crashTitle: 'Something went wrong',
+  crashBody: 'This page could not be shown. Your progress is safe on this device.',
+  crashHome: 'Back to start',
 };
 
 export type StringKey = keyof typeof en;

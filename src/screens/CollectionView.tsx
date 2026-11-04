@@ -1,7 +1,7 @@
 import { CheckSquare, Crown, Lock, MagnifyingGlass, Play, SealCheck, Square } from '@phosphor-icons/react';
 import { useMemo, useState } from 'react';
 import type { Word } from '../types';
-import { useStore } from '../store/useStore';
+import { useStore, wordsOf } from '../store/useStore';
 import { navigate } from '../lib/router';
 import { useT } from '../lib/i18n';
 import { PageHeader, StateBadge, GermanWord, Empty } from '../components/ui';
@@ -13,7 +13,7 @@ import { ladderPlay } from '../play/configs';
 export function CollectionView({ collectionId }: { collectionId: string }) {
   const t = useT();
   const collection = useStore((s) => s.collections.find((c) => c.id === collectionId));
-  const words = useStore((s) => s.words[collectionId]);
+  const words = useStore((s) => wordsOf(s.words, collectionId));
   const progress = useStore((s) => s.progress);
   const levelProgress = useStore((s) => s.levels);
   const settings = useStore((s) => s.settings);
