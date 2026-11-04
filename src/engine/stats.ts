@@ -30,6 +30,10 @@ export interface Overview {
   byState: Record<MemoryState, number>;
   accuracy: number;
   avgMs: number;
+  /** Words answered for the first time in the last 7 days. */
+  week: number;
+  /** Earliest review time among started words (0 = none scheduled). */
+  nextDue: number;
 }
 
 export function overview(words: Word[], progress: Record<string, WordProgress>, now: number): Overview {
@@ -39,11 +43,16 @@ export function overview(words: Word[], progress: Record<string, WordProgress>, 
   let cor = 0;
   let msSum = 0;
   let msN = 0;
+  let week = 0;
+  let nextDue = 0;
+  const weekAgo = now - 7 * 86400000;
   for (const w of words) {
     const p = progress[w.id];
     byState[memoryState(p)]++;
     if (isDue(p, now)) due++;
     if (p) {
+      if (p.firstSeen && p.firstSeen >= weekAgo) week++;
+      if (p.due && (!nextDue || p.due < nextDue)) nextDue = p.due;
       enc += p.encounters;
       cor += p.correct;
       if (p.correct) {
@@ -61,6 +70,8 @@ export function overview(words: Word[], progress: Record<string, WordProgress>, 
     byState,
     accuracy: enc ? cor / enc : 0,
     avgMs: msN ? Math.round(msSum / msN) : 0,
+    week,
+    nextDue,
   };
 }
 

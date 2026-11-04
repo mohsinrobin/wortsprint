@@ -7,7 +7,7 @@ import { answerCurrent, createSession, currentItem, isFinished, sessionProgress,
 import { buildLevels, checkMastery, evaluateBoss, isLevelUnlocked, emptyLevelProgress, applySessionToLevel } from './levels';
 import { buildQuestion, pickDistractors } from './questions';
 import { createRng } from './rng';
-import { currentStreak, localDay, selectReview } from './stats';
+import { currentStreak, localDay, overview, selectReview } from './stats';
 import { pickSituation, templateSituations } from './situations';
 
 function word(de: string, en: string, pos?: Word['pos'], i = 0): Word {
@@ -112,6 +112,17 @@ describe('spaced repetition', () => {
     expect(p.due).toBe(now + DAY + 3 * DAY);
     p = applyOutcome(p, correct, now + 4 * DAY);
     expect(p.due).toBe(now + 4 * DAY + 7 * DAY);
+  });
+
+  it('counts words started this week and finds the next review', () => {
+    const a = applyOutcome(emptyProgress('a'), correct, now);
+    expect(a.firstSeen).toBe(now);
+    expect(applyOutcome(a, correct, now + DAY).firstSeen).toBe(now);
+    const old = applyOutcome(emptyProgress('b'), correct, now - 10 * DAY);
+    const words = [word('der Apfel', 'apple', 'noun', 1), word('das Haus', 'house', 'noun', 2), word('die Katze', 'cat', 'noun', 3)];
+    const ov = overview(words, { [words[0].id]: { ...a, wordId: words[0].id }, [words[1].id]: { ...old, wordId: words[1].id } }, now + 1000);
+    expect(ov.week).toBe(1);
+    expect(ov.nextDue).toBe(old.due);
   });
 
   it('does not promote on in-session repeats or slow answers', () => {

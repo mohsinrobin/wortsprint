@@ -53,6 +53,9 @@ const KIND_LABEL: Record<QuestionKind, string> = {
   speed: 'speedChallenge',
 };
 
+/** End a label with a full stop so a screen reader pauses after it. */
+const sentence = (s: string) => (/[.!?]$/.test(s) ? s : `${s}.`);
+
 export function SessionRunner({ mode, wordIds, extra, onDone, onQuit }: Props) {
   const t = useT();
   const settings = useStore((s) => s.settings);
@@ -423,6 +426,12 @@ export function SessionRunner({ mode, wordIds, extra, onDone, onQuit }: Props) {
             )}
           </div>
         )}
+      </div>
+
+      {/* Screen readers hear the verdict and the right answer. The region is
+          always in the page, so a change inside it is announced. */}
+      <div role="status" aria-live="polite" className="sr-only">
+        {feedback && `${sentence(feedback.verdict === 'timeout' ? t('timeUp') : feedback.ok ? t('correct') : t('wrong'))} ${word.de}: ${meaning}`}
       </div>
 
       {/* Feedback */}

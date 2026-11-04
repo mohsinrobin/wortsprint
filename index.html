@@ -13,8 +13,9 @@
         document.documentElement.dataset.theme = dark ? 'dark' : 'light';
         var l = new URLSearchParams(location.search).get('look');
         try { l = l || localStorage.getItem('ws-look'); } catch (e) {}
-        document.documentElement.dataset.look = l || 'heft';
-        document.querySelector('meta[name="theme-color"]').setAttribute('content', dark ? '#0F121B' : '#EEEFEA');
+        l = l === 'bahn' ? 'bahn' : 'heft';
+        document.documentElement.dataset.look = l;
+        document.querySelector('meta[name="theme-color"]').setAttribute('content', dark ? (l === 'bahn' ? '#0A0C11' : '#12110F') : '#EEEFEA');
       })();
     </script>
     <meta name="apple-mobile-web-app-capable" content="yes" />

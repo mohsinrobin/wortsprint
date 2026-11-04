@@ -60,6 +60,8 @@ export interface WordProgress {
   due: number;
   /** Highest question format the word has been answered correctly in (0..4). */
   ladder: number;
+  /** When the word was first answered. Missing on progress saved before this was added. */
+  firstSeen?: number;
 }
 
 export type StageId = 'learn' | 'recognize' | 'reverse' | 'recall' | 'situations' | 'boss';

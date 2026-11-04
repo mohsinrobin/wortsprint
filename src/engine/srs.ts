@@ -68,6 +68,7 @@ export function memoryState(p: WordProgress | undefined): MemoryState {
 
 export function applyOutcome(prev: WordProgress, o: Outcome, now: number): WordProgress {
   const p: WordProgress = { ...prev, encounters: prev.encounters + 1, lastSeen: now };
+  if (prev.encounters === 0) p.firstSeen = now;
   const stateBefore = memoryState(prev);
   const kindIdx = KIND_ORDER.indexOf(o.kind) + 1;
   if (o.typed) p.typingAttempts++;

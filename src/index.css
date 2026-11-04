@@ -45,38 +45,43 @@
   --c-signal: 255 211 0;
 }
 
-/* Dark: the same exercise book at night — deep blue-black paper, ink and
-   pen colours lifted so they glow softly instead of shouting. */
+/* Dark: a black-paper notebook under a desk lamp. Warm near-black paper
+   (not blue-slate), cream ink, and gel-pen colours that glow on it. The
+   steps between paper, sheet and line are even, so depth reads clearly. */
 :root[data-theme='dark'] {
   color-scheme: dark;
-  --c-paper: 15 18 27;
-  --c-sheet: 23 27 39;
-  --c-grid: 26 31 45;
-  --c-line: 42 49 67;
-  --c-ink: 226 229 236;
-  --c-pencil: 150 158 177;
-  --c-blue: 138 162 255;
-  --c-blue-soft: 30 38 68;
-  --c-onblue: 12 16 31;
-  --c-pen: 255 128 138;
-  --c-pen-soft: 56 29 37;
-  --c-ok: 104 211 157;
-  --c-ok-soft: 21 46 39;
-  --c-gold: 230 194 104;
-  --c-gold-soft: 50 42 22;
-  --c-marker: 104 88 28;
-  --c-der: 130 176 255;
-  --c-die: 238 140 192;
-  --c-das: 96 208 192;
-  --cover-1: 44 64 140;
-  --cover-2: 132 52 54;
-  --cover-3: 30 96 70;
-  --cover-4: 140 114 36;
-  --cover-5: 76 58 128;
-  --cover-6: 140 82 38;
-  --shadow-sheet: inset 0 1px 0 rgb(255 255 255 / 0.03), 0 1px 2px rgb(0 0 0 / 0.4), 0 12px 28px -16px rgb(0 0 0 / 0.7);
-  --shadow-lift: inset 0 1px 0 rgb(255 255 255 / 0.05), 0 2px 4px rgb(0 0 0 / 0.4), 0 20px 40px -18px rgb(0 0 0 / 0.8);
-  --shadow-press: inset 0 1px 0 rgb(255 255 255 / 0.25), 0 1px 2px rgb(0 0 0 / 0.4), 0 8px 20px -10px rgb(138 162 255 / 0.45);
+  --c-paper: 18 17 15;
+  --c-sheet: 29 28 25;
+  --c-grid: 30 29 26;
+  --c-line: 52 50 45;
+  --c-ink: 240 235 224;
+  --c-pencil: 166 159 146;
+  --c-blue: 122 152 255;
+  --c-blue-soft: 33 39 64;
+  --c-onblue: 12 13 22;
+  --c-pen: 255 124 116;
+  --c-pen-soft: 62 32 30;
+  --c-ok: 112 214 152;
+  --c-ok-soft: 26 48 37;
+  --c-gold: 236 194 98;
+  --c-gold-soft: 56 46 22;
+  --c-marker: 120 98 30;
+  --c-der: 132 172 255;
+  --c-die: 244 142 192;
+  --c-das: 96 212 190;
+  /* Cloth-bound covers: deep, slightly dusty tones, like books on a dark shelf. */
+  --cover-1: 44 66 150;
+  --cover-2: 132 42 48;
+  --cover-3: 30 94 70;
+  --cover-4: 158 120 38;
+  --cover-5: 84 62 140;
+  --cover-6: 146 80 38;
+  --shadow-sheet: inset 0 1px 0 rgb(255 245 225 / 0.05), 0 1px 2px rgb(0 0 0 / 0.5), 0 14px 30px -18px rgb(0 0 0 / 0.9);
+  --shadow-lift: inset 0 1px 0 rgb(255 245 225 / 0.07), 0 2px 4px rgb(0 0 0 / 0.5), 0 22px 44px -20px rgb(0 0 0 / 0.95);
+  --shadow-press: inset 0 1px 0 rgb(255 255 255 / 0.35), 0 1px 2px rgb(0 0 0 / 0.5), 0 10px 26px -10px rgb(122 152 255 / 0.55);
+  /* The lamp: a faint warm glow from the top over a barely-there grid. */
+  --page-bg: radial-gradient(ellipse 90% 55% at 50% -5%, rgb(255 226 170 / 0.07), transparent 70%), linear-gradient(rgb(var(--c-grid)) 1px, transparent 1px), linear-gradient(90deg, rgb(var(--c-grid)) 1px, transparent 1px);
+  --page-bg-size: 100% 100%, 20px 20px, 20px 20px;
 }
 
 /* ---- Themes (see src/lib/look.ts). Schulheft is the default above. ------ */
@@ -114,30 +119,48 @@
   --shadow-lift: 0 2px 6px rgb(17 28 54 / 0.12), 0 12px 24px -16px rgb(17 28 54 / 0.35);
   --shadow-press: 0 1px 2px rgb(17 28 54 / 0.25);
 }
+/* Fahrplan at night: a station platform after dark. Graphite surfaces, so
+   the navy departure board is the one lit object on the page, and signal
+   yellow plus the line colours carry the accent. */
 :root[data-look='bahn'][data-theme='dark'] {
-  --c-paper: 8 16 33;
-  --c-sheet: 14 27 52;
-  --c-grid: 20 34 62;
-  --c-line: 33 50 84;
-  --c-ink: 230 235 245;
-  --c-pencil: 150 164 190;
-  --c-blue: 120 168 255;
-  --c-blue-soft: 22 40 80;
-  --c-onblue: 6 14 30;
-  --c-pen: 255 112 122;
-  --c-pen-soft: 60 24 34;
-  --c-ok: 92 210 150;
-  --c-ok-soft: 18 48 40;
-  --c-gold: 240 200 80;
-  --c-gold-soft: 52 44 16;
-  --c-marker: 116 96 12;
-  --c-der: 130 176 255;
-  --c-die: 240 140 192;
-  --c-das: 96 208 192;
-  --c-board: 17 40 88;
-  --c-boardink: 238 243 250;
-  --shadow-sheet: 0 1px 2px rgb(0 0 0 / 0.5);
-  --shadow-lift: 0 2px 6px rgb(0 0 0 / 0.5), 0 14px 28px -16px rgb(0 0 0 / 0.8);
+  --c-paper: 10 12 17;
+  --c-sheet: 20 23 31;
+  --c-grid: 24 28 37;
+  --c-line: 40 45 58;
+  --c-ink: 238 241 247;
+  --c-pencil: 154 162 180;
+  --c-blue: 112 164 255;
+  --c-blue-soft: 24 38 72;
+  --c-onblue: 6 12 28;
+  --c-pen: 244 76 88;
+  --c-pen-soft: 64 24 32;
+  --c-ok: 72 214 146;
+  --c-ok-soft: 16 50 38;
+  --c-gold: 255 211 0;
+  --c-gold-soft: 56 46 8;
+  --c-marker: 120 98 10;
+  --c-der: 124 176 255;
+  --c-die: 244 136 190;
+  --c-das: 80 212 190;
+  --c-board: 14 40 98;
+  --c-boardink: 242 246 252;
+  /* S-Bahn line colours: bright and flat, like the badges on a network map. */
+  --cover-1: 40 96 226;
+  --cover-2: 214 48 62;
+  --cover-3: 0 150 96;
+  --cover-4: 246 190 0;
+  --cover-5: 136 82 214;
+  --cover-6: 236 112 24;
+  --shadow-sheet: inset 0 1px 0 rgb(255 255 255 / 0.04), 0 1px 2px rgb(0 0 0 / 0.6);
+  --shadow-lift: inset 0 1px 0 rgb(255 255 255 / 0.06), 0 2px 6px rgb(0 0 0 / 0.5), 0 18px 36px -16px rgb(0 0 0 / 0.9);
+  --shadow-press: inset 0 1px 0 rgb(255 255 255 / 0.3), 0 1px 2px rgb(0 0 0 / 0.5), 0 8px 22px -10px rgb(112 164 255 / 0.5);
+  /* Platform lights: a cool glow from above, no grid. */
+  --page-bg: radial-gradient(ellipse 100% 50% at 50% -8%, rgb(60 110 230 / 0.16), transparent 70%);
+  --page-bg-size: 100% 100%;
+}
+/* The board glows a little, the way a lit display does at night. */
+:root[data-look='bahn'][data-theme='dark'] .bg-board {
+  box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.08), 0 0 0 1px rgb(90 140 255 / 0.18), 0 18px 40px -18px rgb(40 90 220 / 0.55);
 }
 
 html,
@@ -194,7 +217,7 @@ h3 {
     @apply rounded-sheet border border-line/80 bg-sheet shadow-sheet;
   }
   .btn {
-    @apply inline-flex items-center justify-center gap-2 rounded-sheet px-4 py-2.5 text-[15px] font-semibold transition-[transform,background-color,border-color,box-shadow] duration-150 ease-out active:scale-[0.98] disabled:cursor-not-allowed disabled:opacity-40 disabled:active:scale-100;
+    @apply inline-flex items-center justify-center gap-2 rounded-sheet px-4 py-2.5 text-[15px] font-semibold transition-[transform,background-color,border-color,box-shadow] duration-150 ease-out active:scale-[0.98] disabled:cursor-not-allowed disabled:opacity-50 disabled:active:scale-100;
   }
   .btn-primary {
     @apply btn bg-blue text-onblue shadow-press hover:bg-blue/90;
@@ -217,6 +240,17 @@ h3 {
   .hand {
     @apply font-hand;
   }
+}
+
+/* Dark mode: a soft top sheen makes the primary button read as lit, not flat. */
+:root[data-theme='dark'] .btn-primary {
+  background-image: linear-gradient(180deg, rgb(255 255 255 / 0.16), rgb(0 0 0 / 0.16));
+}
+
+/* Dark mode: exercise-book covers catch the lamp light at the top left and
+   fall into shadow at the bottom right, like cloth over card. */
+:root[data-theme='dark'] .book-cover {
+  background-image: linear-gradient(135deg, rgb(255 255 255 / 0.12), rgb(255 255 255 / 0) 45%, rgb(0 0 0 / 0.3));
 }
 
 /* Theme-specific component details. */

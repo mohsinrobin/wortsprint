@@ -33,6 +33,7 @@ export function Hero(p: HeroProps) {
 function HeftHero({ target, done, progress, lang, onPlay }: HeroProps) {
   const t = useT();
   const words = target.level.words.slice(0, 6);
+  const stageNo = STAGES.findIndex((s) => s.id === target.stage) + 1;
   return (
     <section className="card overflow-hidden">
       <div className="flex items-end justify-between gap-4 border-b-2 border-pen/50 px-5 pb-3 pt-5 sm:px-7 sm:pt-6">
@@ -42,17 +43,23 @@ function HeftHero({ target, done, progress, lang, onPlay }: HeroProps) {
           </h1>
           <p className="mt-1.5 truncate text-[15px] text-pencil">{target.name}</p>
         </div>
-        <ol className="flex shrink-0 gap-1.5 pb-1" aria-label={t('stagesDone', { n: done.size })}>
-          {STAGES.map((s) => (
-            <li key={s.id} title={t(`stage_${s.id}`)} className={`relative h-4 w-4 rounded-[3px] border-[1.5px] ${s.id === target.stage ? 'border-blue bg-blue-soft' : 'border-pencil/40'}`}>
-              {done.has(s.id) && (
-                <span className="absolute -left-0.5 -top-2">
-                  <Tick size={20} tone="blue" />
-                </span>
-              )}
-            </li>
-          ))}
-        </ol>
+        <div className="flex shrink-0 flex-col items-end gap-1.5 pb-0.5">
+          <ol className="flex gap-1.5" aria-hidden>
+            {STAGES.map((s) => (
+              <li key={s.id} title={t(`stage_${s.id}`)} className={`relative h-4 w-4 rounded-[3px] border-[1.5px] ${s.id === target.stage ? 'border-blue bg-blue-soft' : 'border-pencil/40'}`}>
+                {done.has(s.id) && (
+                  <span className="absolute -left-0.5 -top-2">
+                    <Tick size={20} tone="blue" />
+                  </span>
+                )}
+              </li>
+            ))}
+          </ol>
+          <span className="text-sm text-pencil">
+            <span className="font-semibold text-ink">{t('stageOf', { n: stageNo, total: STAGES.length })}</span> · {t(`stage_${target.stage}`)}
+            <span className="sr-only">. {t('stagesDone', { n: done.size })}</span>
+          </span>
+        </div>
       </div>
       <div className="relative">
         <span className="pointer-events-none absolute inset-y-0 left-1/2 w-px bg-pen/30" aria-hidden />
@@ -110,7 +117,7 @@ function BahnHero({ target, done, onPlay }: HeroProps) {
       </div>
       {/* the line: six stops */}
       <div className="px-5 pb-5">
-        <div className="relative flex items-center justify-between">
+        <div className="relative flex items-center justify-between" aria-hidden>
           <span className="absolute inset-x-2 top-1/2 h-[3px] -translate-y-1/2 bg-boardink/25" aria-hidden />
           {STAGES.map((s) => {
             const isDone = done.has(s.id);
@@ -125,8 +132,9 @@ function BahnHero({ target, done, onPlay }: HeroProps) {
           })}
         </div>
         <div className="mt-2 text-[15px]">
-          <span className="text-boardink/70">{t('nextStage')}: </span>
+          <span className="text-boardink/70">{t('stageOf', { n: stageNo, total: STAGES.length })}: </span>
           <span className="font-semibold">{t(`stage_${target.stage}`)}</span>
+          <span className="sr-only">. {t('stagesDone', { n: done.size })}</span>
         </div>
         <button onClick={onPlay} className="mt-4 w-full rounded-[4px] bg-signal px-5 py-3.5 text-[17px] font-semibold text-board transition-transform active:scale-[0.99]">
           {t('continueWith', { stage: t(`stage_${target.stage}`) })}

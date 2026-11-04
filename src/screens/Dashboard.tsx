@@ -4,17 +4,31 @@ import { navigate } from '../lib/router';
 import { useT } from '../lib/i18n';
 import { usePaid } from '../lib/premium';
 import type { ReactNode } from 'react';
-import { CalendarCheck, CaretRight, Crosshair, Stack } from '@phosphor-icons/react';
+import { CalendarCheck, CaretDown, CaretRight, CheckCircle, Crosshair, Stack } from '@phosphor-icons/react';
 import { Empty, gradeFor, ProgressBar, STATE_COLOR } from '../components/ui';
 import { Hero } from '../looks/Hero';
 import { BadgeIcon } from '../components/icons';
 import { Ring } from '../components/marks';
-import { buildLevels, stageCount, STAGES } from '../engine/levels';
+import { buildLevels, STAGES } from '../engine/levels';
+import { memoryState } from '../engine/srs';
 import { currentStreak, levelFromXp, overview, selectReview, selectWeak } from '../engine/stats';
 import { continueTarget, ladderPlay, stagePlay } from '../play/configs';
 import type { MemoryState, Word } from '../types';
 
-const STATES: MemoryState[] = ['new', 'learning', 'weak', 'familiar', 'strong', 'mastered'];
+/** States of words already started; "new" is shown apart, as a small total. */
+const STARTED: MemoryState[] = ['learning', 'weak', 'familiar', 'strong', 'mastered'];
+
+/** "in 3 hours", "tomorrow", or "now" for a review time. */
+function whenText(ts: number, now: number, lang: string, nowLabel: string): string {
+  const diff = ts - now;
+  if (diff <= 0) return nowLabel;
+  const rtf = new Intl.RelativeTimeFormat(lang, { numeric: 'auto' });
+  const min = Math.round(diff / 60000);
+  if (min < 60) return rtf.format(Math.max(1, min), 'minute');
+  const h = Math.round(diff / 3600000);
+  if (h < 24) return rtf.format(h, 'hour');
+  return rtf.format(Math.round(diff / 86400000), 'day');
+}
 
 export function Dashboard() {
   const t = useT();
@@ -60,6 +74,9 @@ export function Dashboard() {
   };
 
   const accGrade = ov.learned ? gradeFor(ov.accuracy) : null;
+  const nextWhen = ov.nextDue ? whenText(ov.nextDue, now, settings.uiLang, t('reviewNow')) : '—';
+  const levelWords = target?.level.words ?? [];
+  const levelLearned = levelWords.filter((w) => memoryState(progress[w.id]) !== 'new').length;
 
   return (
     <div className="space-y-8">
@@ -81,50 +98,110 @@ export function Dashboard() {
         </Empty>
       )}
 
-      <div className="grid gap-8 lg:grid-cols-[minmax(0,1.15fr)_minmax(0,1fr)]">
-        {/* Today */}
-        <section>
-          <h2 className="mb-3 text-xl font-bold">{t('today')}</h2>
+      {/* Today: only what can be played right now. */}
+      <section>
+        <h2 className="mb-3 text-xl font-bold">{t('today')}</h2>
+        {review.length || weak.length || learnedWords.length ? (
           <ul className="card divide-y divide-line">
-            <ModeRow
-              icon={<CalendarCheck size={22} weight="bold" />}
-              title={t('dailyReview')}
-              desc={review.length ? t('dailyReviewDesc') : t('nothingDue')}
-              count={ov.due}
-              tone="text-blue"
-              note={dueOnly < review.length && review.length > 0 ? `+${review.length - dueOnly} ${t('weakWords').toLowerCase()}` : undefined}
-              disabled={review.length === 0}
-              onClick={() => play(ladderPlay(t('dailyReview'), review))}
-            />
-            <ModeRow icon={<Crosshair size={22} weight="bold" />} title={t('weakTraining')} desc={weak.length ? t('weakTrainingDesc') : t('noWeak')} count={weak.length} tone="text-pen" disabled={weak.length === 0} onClick={() => play(ladderPlay(t('weakTraining'), weak))} />
-            <ModeRow icon={<Stack size={22} weight="bold" />} title={t('customPractice')} desc={learnedWords.length ? t('customPracticeDesc') : t('noSessions')} count={learnedWords.length} tone="text-ink" disabled={learnedWords.length === 0} onClick={() => play(ladderPlay(t('customPractice'), customWords()))} />
+            {review.length > 0 && (
+              <ModeRow
+                icon={<CalendarCheck size={22} weight="bold" />}
+                title={t('dailyReview')}
+                desc={t('dailyReviewDesc')}
+                count={ov.due}
+                tone="text-blue"
+                note={dueOnly < review.length ? `+${review.length - dueOnly} ${t('weakWords').toLowerCase()}` : undefined}
+                onClick={() => play(ladderPlay(t('dailyReview'), review))}
+              />
+            )}
+            {weak.length > 0 && <ModeRow icon={<Crosshair size={22} weight="bold" />} title={t('weakTraining')} desc={t('weakTrainingDesc')} count={weak.length} tone="text-pen" onClick={() => play(ladderPlay(t('weakTraining'), weak))} />}
+            {learnedWords.length > 0 && <ModeRow icon={<Stack size={22} weight="bold" />} title={t('customPractice')} desc={t('customPracticeDesc')} count={learnedWords.length} tone="text-ink" onClick={() => play(ladderPlay(t('customPractice'), customWords()))} />}
           </ul>
-
-          {/* Memory map */}
-          <h2 className="mb-3 mt-8 text-xl font-bold">{t('memoryMap')}</h2>
-          <div className="card p-5">
-            <div className="flex h-4 overflow-hidden rounded-[3px] border border-line bg-paper">
-              {STATES.map((s) => (ov.byState[s] ? <div key={s} className={STATE_COLOR[s]} style={{ width: `${(ov.byState[s] / Math.max(1, ov.total)) * 100}%` }} title={`${t(`state_${s}`)}: ${ov.byState[s]}`} /> : null))}
-            </div>
-            <dl className="mt-4 grid grid-cols-2 gap-x-6 gap-y-1.5 text-[15px] sm:grid-cols-3">
-              {STATES.map((s) => (
-                <div key={s} className="flex items-center gap-2">
-                  <dt className="flex items-center gap-2 text-pencil">
-                    <span className={`h-2.5 w-2.5 shrink-0 rounded-[2px] border border-ink/10 ${STATE_COLOR[s]}`} />
-                    {t(`state_${s}`)}
-                  </dt>
-                  <dd className="ml-auto font-semibold">{ov.byState[s]}</dd>
-                </div>
-              ))}
-            </dl>
+        ) : (
+          <div className="card flex items-center gap-4 px-5 py-4">
+            {ov.learned ? <CheckCircle size={26} weight="fill" className="shrink-0 text-ok" aria-hidden /> : <CalendarCheck size={24} weight="bold" className="shrink-0 text-pencil" aria-hidden />}
+            <span className="min-w-0">
+              <span className="block font-semibold">{t(ov.learned ? 'allCaughtUp' : 'nothingYet')}</span>
+              <span className="block text-sm text-pencil">{!ov.learned ? t('nothingYetDesc') : ov.nextDue ? t('nextReviewIn', { when: nextWhen }) : t('allCaughtUpDesc')}</span>
+            </span>
           </div>
-        </section>
+        )}
+      </section>
 
-        {/* Report card */}
-        <section>
-          <h2 className="mb-3 text-xl font-bold">{t('reportCard')}</h2>
-          <div className="card px-5 py-4">
-            <div className="flex items-center justify-between gap-4 border-b border-line pb-4">
+      {/* Statistics, folded away so the first screen stays about what to do next. */}
+      <details className="card group overflow-hidden">
+        <summary className="flex min-h-[56px] cursor-pointer list-none items-center justify-between gap-4 px-5 py-4 [&::-webkit-details-marker]:hidden">
+          <span className="min-w-0">
+            <span className="block text-lg font-semibold">{t('yourProgress')}</span>
+            <span className="block text-sm text-pencil">
+              {t('progressSummary', { learned: ov.learned, mastered: ov.mastered })}
+              {ov.learned > 0 && ` · ${Math.round(ov.accuracy * 100)}%`}
+            </span>
+          </span>
+          <CaretDown size={18} weight="bold" className="shrink-0 text-pencil transition-transform group-open:rotate-180" aria-hidden />
+        </summary>
+        <div className="grid gap-6 border-t border-line px-5 pb-5 pt-4 lg:grid-cols-2">
+          <div className="space-y-6">
+            {/* Memory map: what moved lately first, the size of the whole list last. */}
+            <section>
+              <h3 className="mb-2 font-semibold">{t('memoryMap')}</h3>
+              <dl className="grid grid-cols-3 gap-2 text-center">
+                <Stat label={t('thisWeek')} value={ov.week} />
+                {target && <Stat label={`${t('level')} ${target.level.index + 1}`} value={`${levelLearned}/${levelWords.length}`} />}
+                <Stat label={t('nextReview')} value={nextWhen} />
+              </dl>
+              {/* The bar is a picture of the numbers listed under it. */}
+              <div className="mt-4 flex h-3 overflow-hidden rounded-[3px] border border-line bg-paper" aria-hidden>
+                {STARTED.map((s) => (ov.byState[s] ? <div key={s} className={STATE_COLOR[s]} style={{ width: `${(ov.byState[s] / Math.max(1, ov.learned)) * 100}%` }} /> : null))}
+              </div>
+              <dl className="mt-3 grid grid-cols-2 gap-x-6 gap-y-1.5 text-[15px] sm:grid-cols-3">
+                {STARTED.map((s) => (
+                  <div key={s} className="flex items-center gap-2">
+                    <dt className="flex items-center gap-2 text-pencil">
+                      <span className={`h-2.5 w-2.5 shrink-0 rounded-[2px] border border-ink/10 ${STATE_COLOR[s]}`} />
+                      {t(`state_${s}`)}
+                    </dt>
+                    <dd className="ml-auto font-semibold">{ov.byState[s]}</dd>
+                  </div>
+                ))}
+              </dl>
+              <p className="mt-2 text-sm text-pencil">{t('stillNew', { n: ov.byState.new.toLocaleString(settings.uiLang) })}</p>
+            </section>
+
+            {/* Recent sessions */}
+            <section>
+              <h3 className="mb-1 font-semibold">{t('recentSessions')}</h3>
+              {profile.recent.length === 0 ? (
+                <div className="py-1 text-[15px] text-pencil">{t('noSessions')}</div>
+              ) : (
+                <ul className="divide-y divide-dashed divide-line">
+                  {profile.recent.slice(0, 6).map((r) => (
+                    <li key={r.at} className="flex items-center justify-between gap-3 py-2 text-[15px]">
+                      <span className="min-w-0 truncate">{r.title}</span>
+                      <span className="flex shrink-0 items-baseline gap-3">
+                        <span className="text-sm text-pencil">{Math.round(r.accuracy * 100)}%</span>
+                        <span className={`hand w-5 text-center text-xl font-bold ${r.accuracy >= 0.81 ? 'text-ok' : 'text-pen'}`}>{gradeFor(r.accuracy).grade}</span>
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+              )}
+              {profile.badges.length > 0 && (
+                <div className="mt-2 flex flex-wrap gap-2 border-t border-line pb-1 pt-3">
+                  {profile.badges.map((b, i) => (
+                    <span key={b} className={`flex items-center gap-1.5 rounded-full border border-gold/30 bg-gold-soft px-2.5 py-1 text-sm font-semibold text-gold ${i % 2 ? 'rotate-1' : '-rotate-1'}`}>
+                      <BadgeIcon id={b} size={15} /> {t(`badge_${b}` as never)}
+                    </span>
+                  ))}
+                </div>
+              )}
+            </section>
+          </div>
+
+          {/* Report card */}
+          <section>
+            <h3 className="mb-1 font-semibold">{t('reportCard')}</h3>
+            <div className="flex items-center justify-between gap-4 border-b border-line pb-3">
               <div>
                 <div className="text-[15px] text-pencil">{t('accuracy')}</div>
                 <div className="text-2xl font-bold">{ov.learned ? `${Math.round(ov.accuracy * 100)}%` : '—'}</div>
@@ -150,71 +227,18 @@ export function Dashboard() {
               <Row label={`${t('playerLevel')} ${lvl.level}`} value={`${profile.xp} ${t('xp')}`} />
             </dl>
             <ProgressBar value={lvl.into / lvl.need} className="mb-1 mt-2" />
-          </div>
-        </section>
-      </div>
+          </section>
+        </div>
+      </details>
+    </div>
+  );
+}
 
-      <div className="grid gap-8 lg:grid-cols-2">
-        {/* Collections */}
-        <section>
-          <div className="mb-3 flex items-baseline justify-between">
-            <h2 className="text-xl font-bold">{t('collections')}</h2>
-            <button className="flex items-center gap-1 text-sm font-semibold text-blue hover:underline" onClick={() => navigate('/library')}>
-              {t('navLibrary')}
-            </button>
-          </div>
-          <ul className="card divide-y divide-line">
-            {byCollection.map(({ c, levels: ls }) => {
-              const passed = ls.filter((l) => levels[l.key]?.bossPassed).length;
-              const stages = ls.reduce((n, l) => n + stageCount(levels[l.key]), 0);
-              return (
-                <li key={c.id}>
-                  <button className="w-full px-5 py-3.5 text-left hover:bg-blue-soft/40" onClick={() => navigate(`/c/${encodeURIComponent(c.id)}`)}>
-                    <div className="flex justify-between gap-3 text-[15px]">
-                      <span className="font-semibold">{c.name}</span>
-                      <span className="text-sm text-pencil">
-                        {passed}/{ls.length} {t('levels')}
-                      </span>
-                    </div>
-                    <ProgressBar value={stages / Math.max(1, ls.length * STAGES.length)} className="mt-2" />
-                  </button>
-                </li>
-              );
-            })}
-          </ul>
-        </section>
-
-        {/* Recent */}
-        <section>
-          <h2 className="mb-3 text-xl font-bold">{t('recentSessions')}</h2>
-          <div className="card px-5 py-3">
-            {profile.recent.length === 0 ? (
-              <div className="py-2 text-[15px] text-pencil">{t('noSessions')}</div>
-            ) : (
-              <ul className="divide-y divide-dashed divide-line">
-                {profile.recent.slice(0, 6).map((r) => (
-                  <li key={r.at} className="flex items-center justify-between gap-3 py-2 text-[15px]">
-                    <span className="min-w-0 truncate">{r.title}</span>
-                    <span className="flex shrink-0 items-baseline gap-3">
-                      <span className="text-sm text-pencil">{Math.round(r.accuracy * 100)}%</span>
-                      <span className={`hand w-5 text-center text-xl font-bold ${r.accuracy >= 0.81 ? 'text-ok' : 'text-pen'}`}>{gradeFor(r.accuracy).grade}</span>
-                    </span>
-                  </li>
-                ))}
-              </ul>
-            )}
-            {profile.badges.length > 0 && (
-              <div className="mt-2 flex flex-wrap gap-2 border-t border-line pb-1 pt-3">
-                {profile.badges.map((b, i) => (
-                  <span key={b} className={`flex items-center gap-1.5 rounded-full border border-gold/30 bg-gold-soft px-2.5 py-1 text-sm font-semibold text-gold ${i % 2 ? 'rotate-1' : '-rotate-1'}`} title={t(`badge_${b}` as never)}>
-                    <BadgeIcon id={b} size={15} /> {t(`badge_${b}` as never)}
-                  </span>
-                ))}
-              </div>
-            )}
-          </div>
-        </section>
-      </div>
+function Stat({ label, value }: { label: string; value: ReactNode }) {
+  return (
+    <div className="flex flex-col-reverse rounded-sheet border border-line bg-paper/60 px-2 py-2.5">
+      <dt className="text-xs leading-tight text-pencil">{label}</dt>
+      <dd className="text-lg font-bold leading-tight">{value}</dd>
     </div>
   );
 }
@@ -228,18 +252,18 @@ function Row({ label, value, warn }: { label: string; value: ReactNode; warn?: b
   );
 }
 
-function ModeRow(p: { icon: ReactNode; title: string; desc: string; count: number; tone: string; disabled: boolean; onClick: () => void; note?: string }) {
+function ModeRow(p: { icon: ReactNode; title: string; desc: string; count: number; tone: string; onClick: () => void; note?: string }) {
   return (
     <li>
-      <button disabled={p.disabled} onClick={p.onClick} className="group flex w-full items-center gap-4 px-5 py-4 text-left transition-colors hover:bg-blue-soft/40 disabled:cursor-default disabled:hover:bg-transparent">
-        <span className={`shrink-0 ${p.disabled ? 'text-pencil/60' : p.tone}`}>{p.icon}</span>
+      <button onClick={p.onClick} className="group flex w-full items-center gap-4 px-5 py-4 text-left transition-colors hover:bg-blue-soft/40">
+        <span className={`shrink-0 ${p.tone}`}>{p.icon}</span>
         <span className="min-w-0 flex-1">
-          <span className={`block font-semibold ${p.disabled ? 'text-pencil' : ''}`}>{p.title}</span>
+          <span className="block font-semibold">{p.title}</span>
           <span className="block text-sm text-pencil">{p.desc}</span>
           {p.note && <span className="block text-sm text-pencil">{p.note}</span>}
         </span>
-        <span className={`hand text-[26px] font-bold leading-none ${p.disabled ? 'text-pencil/50' : p.tone}`}>{p.count}</span>
-        {!p.disabled && <CaretRight size={18} weight="bold" className="shrink-0 text-pencil transition-transform group-hover:translate-x-0.5" />}
+        <span className={`hand text-[26px] font-bold leading-none ${p.tone}`}>{p.count}</span>
+        <CaretRight size={18} weight="bold" className="shrink-0 text-pencil transition-transform group-hover:translate-x-0.5" />
       </button>
     </li>
   );

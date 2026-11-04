@@ -23,7 +23,7 @@ export function resolvedTheme(pref = getThemePref()): 'light' | 'dark' {
 function apply() {
   const theme = resolvedTheme();
   document.documentElement.dataset.theme = theme;
-  document.querySelector('meta[name="theme-color"]')?.setAttribute('content', theme === 'dark' ? '#0F121B' : '#EEEFEA');
+  document.querySelector('meta[name="theme-color"]')?.setAttribute('content', theme === 'dark' ? (document.documentElement.dataset.look === 'bahn' ? '#0A0C11' : '#12110F') : '#EEEFEA');
   listeners.forEach((l) => l());
 }
 
