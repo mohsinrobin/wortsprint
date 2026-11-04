@@ -106,9 +106,12 @@ export function SessionRunner({ mode, wordIds, extra, onDone, onQuit }: Props) {
   }, [session.step, word?.id]);
 
   // Letter clue when a word the learner knows (or sees in this session) also
-  // shares this meaning, so it is clear which word is wanted.
+  // shares this meaning, so it is clear which word is wanted. Mutprobe has no
+  // hint button and costs a life per miss, so its situations always get one:
+  // a scene often fits more than one word.
   const clue = useMemo(() => {
     if (!word || !item || (item.kind !== 'typing' && item.kind !== 'situation')) return null;
+    if (isChallenge && item.kind === 'situation') return letterClue(word);
     const progress = useStore.getState().progress;
     const known = allWords.filter((w) => progress[w.id]?.encounters || session.wordIds.includes(w.id));
     return needsClue(word, known) ? letterClue(word) : null;
