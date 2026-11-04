@@ -28,14 +28,15 @@ export function readiness(ids: string[], progress: Record<string, WordProgress>)
   return known / ids.length;
 }
 
-/** Mutprobe 1–5 are free; 6 and up need premium. */
+/** Mutprobe 1–5 are free and open from the start; 6 and up need premium. */
 export const FREE_CHALLENGES = 5;
 
 export const challengeNeedsPremium = (index: number, paid: boolean) => !paid && index >= FREE_CHALLENGES;
 
 export function isChallengeUnlocked(index: number, results: Record<string, ChallengeResult>, paid: boolean): boolean {
-  if (challengeNeedsPremium(index, paid)) return false;
-  return index === 0 || !!results[index - 1]?.passed;
+  if (index < FREE_CHALLENGES) return true;
+  if (!paid) return false;
+  return Array.from({ length: index }, (_, i) => results[i]?.passed).every(Boolean);
 }
 
 /** Collection ids in the order they appear, e.g. ['a1', 'a2']. */

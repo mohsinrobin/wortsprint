@@ -228,27 +228,22 @@ describe('levels and mastery', () => {
     expect(levels.map((l) => l.words.length)).toEqual([20, 20, 5]);
   });
 
-  it('unlocks the next level only after the boss is passed', () => {
-    const levels = buildLevels('t', words);
-    expect(isLevelUnlocked(levels, 1, {}, false)).toBe(false);
-    expect(isLevelUnlocked(levels, 1, { 't:0': { ...emptyLevelProgress('t:0'), bossPassed: true } }, false)).toBe(true);
-  });
-
-  it('keeps levels 1–5 free and needs premium plus the previous boss for level 6', () => {
+  it('opens levels 1–5 freely; level 6 needs premium and levels 1–5 passed', () => {
     const many = Array.from({ length: 140 }, (_, i) => word(`w${i}, das`, `x${i}`, 'noun', i));
     const levels = buildLevels('t', many);
     const done = Object.fromEntries(levels.slice(0, 6).map((l) => [l.key, { ...emptyLevelProgress(l.key), bossPassed: true }]));
     const upTo4 = Object.fromEntries(levels.slice(0, 4).map((l) => [l.key, { ...emptyLevelProgress(l.key), bossPassed: true }]));
-    expect(isLevelUnlocked(levels, 4, upTo4, false)).toBe(true); // level 5: free
+    expect(isLevelUnlocked(levels, 4, {}, false)).toBe(true); // level 5: open with no progress
     expect(isLevelUnlocked(levels, 5, done, false)).toBe(false); // level 6: not paid
     expect(isLevelUnlocked(levels, 5, done, true)).toBe(true); // paid, level 5 done
     expect(isLevelUnlocked(levels, 5, upTo4, true)).toBe(false); // paid, level 5 not done
   });
 
-  it('keeps Mutprobe 1–5 free', async () => {
+  it('opens Mutprobe 1–5 freely; 6 needs premium and 1–5 passed', async () => {
     const { isChallengeUnlocked } = await import('./challenge');
     const passed = Object.fromEntries(Array.from({ length: 6 }, (_, i) => [String(i), { attempts: 1, passed: true, best: 20, lastPlayed: 1 }]));
-    expect(isChallengeUnlocked(4, passed, false)).toBe(true);
+    expect(isChallengeUnlocked(4, {}, false)).toBe(true);
+    expect(isChallengeUnlocked(5, { '0': passed['0'] }, true)).toBe(false);
     expect(isChallengeUnlocked(5, passed, false)).toBe(false);
     expect(isChallengeUnlocked(5, passed, true)).toBe(true);
   });

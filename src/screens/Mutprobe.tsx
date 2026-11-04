@@ -25,7 +25,7 @@ export function MutprobeList() {
 
   return (
     <div className="mx-auto max-w-2xl space-y-6">
-      <PageHeader title="Mutprobe" subtitle={t('mutprobeTagline')} back={() => navigate('/library')} />
+      <PageHeader title={<>Mutprobe <span className="font-normal text-pencil">· {t('challenge')}</span></>} subtitle={t('mutprobeTagline')} back={() => navigate('/library')} />
 
       <div className="card space-y-4 p-5">
         <p className="text-[15px] text-pencil">{t('mutprobeIntro')}</p>

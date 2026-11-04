@@ -259,6 +259,7 @@ const en = {
   resetHelp: 'Start again from Level 1. Your XP, streak and word memory are cleared.',
 
   // Mutprobe (challenge)
+  challenge: 'Challenge',
   mutprobeTagline: 'Think you know your German? Prove it.',
   mutprobeMeta: '50 tests · hard mode',
   mutprobeProgress: '{n} of 50 passed',
