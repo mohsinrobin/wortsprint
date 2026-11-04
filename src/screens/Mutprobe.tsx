@@ -1,13 +1,14 @@
 // Mutprobe: the list of 50 hard-mode tests, and the start page for one.
-import { CaretRight, Clock, Heart, Lock, ListNumbers, ProhibitInset } from '@phosphor-icons/react';
+import { CaretRight, Clock, Heart, Lock, ListNumbers, ProhibitInset, Sparkle } from '@phosphor-icons/react';
 import type { ReactNode } from 'react';
 import { useStore } from '../store/useStore';
 import { navigate } from '../lib/router';
 import { useT } from '../lib/i18n';
+import { usePaid } from '../lib/premium';
 import { useLook } from '../lib/look';
-import { Empty, PageHeader, ProgressBar } from '../components/ui';
+import { Empty, PageHeader, PremiumNotice, ProgressBar } from '../components/ui';
 import { Tick } from '../components/marks';
-import { CHALLENGES, READY_AT, challengeTiers, isChallengeUnlocked, readiness } from '../engine/challenge';
+import { CHALLENGES, READY_AT, challengeNeedsPremium, challengeTiers, isChallengeUnlocked, readiness } from '../engine/challenge';
 import { challengePlay } from '../play/configs';
 
 const TIER_NAME: Record<string, string> = { a1: 'A1', a2: 'A2', b1: 'B1', extra: 'Extra' };
@@ -17,6 +18,7 @@ const pct = (x: number) => Math.round(x * 100);
 export function MutprobeList() {
   const t = useT();
   const results = useStore((s) => s.challenges);
+  const paid = usePaid();
   const progress = useStore((s) => s.progress);
   const passed = CHALLENGES.filter((_, i) => results[i]?.passed).length;
   const current = CHALLENGES.findIndex((_, i) => !results[i]?.passed);
@@ -39,25 +41,26 @@ export function MutprobeList() {
       <ol className="card divide-y divide-line overflow-hidden">
         {CHALLENGES.map((ids, i) => {
           const r = results[i];
-          const open = isChallengeUnlocked(i, results);
+          const open = isChallengeUnlocked(i, results, paid);
+          const premium = challengeNeedsPremium(i, paid);
           const ready = readiness(ids, progress);
           const isNext = i === current;
           return (
             <li key={i}>
               <button
-                disabled={!open}
+                disabled={!open && !premium}
                 onClick={() => navigate(`/mutprobe/${i}`)}
-                className={`flex w-full items-center gap-4 px-4 py-3.5 text-left transition-colors sm:px-5 ${isNext ? 'bg-pen-soft/50' : ''} ${open ? 'hover:bg-ink/[0.03]' : 'opacity-50'}`}
+                className={`flex w-full items-center gap-4 px-4 py-3.5 text-left transition-colors sm:px-5 ${isNext ? 'bg-pen-soft/50' : ''} ${open ? 'hover:bg-ink/[0.03]' : premium ? 'opacity-60 hover:bg-ink/[0.03]' : 'opacity-50'}`}
               >
                 <Number n={i + 1} state={r?.passed ? 'passed' : isNext ? 'next' : 'idle'} />
                 <span className="min-w-0 flex-1">
                   <span className="block font-semibold">{tierLabel(ids)}</span>
                   <span className="block text-sm text-pencil">
-                    {open ? t('readyPct', { n: pct(ready) }) : t('locked')}
+                    {open ? t('readyPct', { n: pct(ready) }) : premium ? t('premium') : t('locked')}
                     {r && r.attempts > 0 && <> · {t('bestRun', { n: r.best, total: ids.length })}</>}
                   </span>
                 </span>
-                {r?.passed ? <Tick size={28} /> : open ? <CaretRight size={18} weight="bold" className="text-pencil" /> : <Lock size={18} weight="bold" className="text-pencil" aria-hidden />}
+                {r?.passed ? <Tick size={28} /> : open ? <CaretRight size={18} weight="bold" className="text-pencil" /> : premium ? <Sparkle size={18} weight="fill" className="text-gold" aria-hidden /> : <Lock size={18} weight="bold" className="text-pencil" aria-hidden />}
               </button>
             </li>
           );
@@ -70,12 +73,21 @@ export function MutprobeList() {
 export function MutprobeDetail({ index }: { index: number }) {
   const t = useT();
   const results = useStore((s) => s.challenges);
+  const paid = usePaid();
   const progress = useStore((s) => s.progress);
   const startPlay = useStore((s) => s.startPlay);
   const ids = CHALLENGES[index];
   const back = () => navigate('/mutprobe');
 
-  if (!ids || !isChallengeUnlocked(index, results)) {
+  if (ids && challengeNeedsPremium(index, paid)) {
+    return (
+      <div className="mx-auto max-w-2xl">
+        <PageHeader title={`Mutprobe ${index + 1}`} subtitle={tierLabel(ids)} back={back} />
+        <PremiumNotice body={t('premiumChallenges')} />
+      </div>
+    );
+  }
+  if (!ids || !isChallengeUnlocked(index, results, paid)) {
     return (
       <div className="mx-auto max-w-2xl">
         <PageHeader title={`Mutprobe ${index + 1}`} back={back} />

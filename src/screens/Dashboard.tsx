@@ -2,6 +2,7 @@ import { useMemo } from 'react';
 import { useStore } from '../store/useStore';
 import { navigate } from '../lib/router';
 import { useT } from '../lib/i18n';
+import { usePaid } from '../lib/premium';
 import type { ReactNode } from 'react';
 import { CalendarCheck, CaretRight, Crosshair, Stack } from '@phosphor-icons/react';
 import { Empty, gradeFor, ProgressBar, STATE_COLOR } from '../components/ui';
@@ -21,6 +22,7 @@ export function Dashboard() {
   const words = useStore((s) => s.words);
   const progress = useStore((s) => s.progress);
   const levels = useStore((s) => s.levels);
+  const paid = usePaid();
   const profile = useStore((s) => s.profile);
   const settings = useStore((s) => s.settings);
   const startPlay = useStore((s) => s.startPlay);
@@ -30,7 +32,7 @@ export function Dashboard() {
   const ov = useMemo(() => overview(all, progress, now), [all, progress, now]);
   const byCollection = useMemo(() => collections.map((c) => ({ c, name: c.name, levels: buildLevels(c.id, words[c.id] ?? []) })), [collections, words]);
   const totalLevels = byCollection.reduce((n, x) => n + x.levels.length, 0);
-  const target = continueTarget(byCollection, levels);
+  const target = continueTarget(byCollection, levels, paid);
   const review = useMemo(() => selectReview(all, progress, now, settings.reviewSize), [all, progress, now, settings.reviewSize]);
   const dueOnly = review.filter((w) => progress[w.id]?.due && progress[w.id].due <= now).length;
   const weak = useMemo(() => selectWeak(all, progress, now, settings.reviewSize), [all, progress, now, settings.reviewSize]);

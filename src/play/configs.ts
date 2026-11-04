@@ -53,7 +53,7 @@ export function nextStage(lp: LevelProgress | undefined): StageId | null {
 }
 
 /** Where "Continue learning" should go: the most recent unfinished level. */
-export function continueTarget(levelsByCollection: { levels: Level[]; name: string }[], progress: Record<string, LevelProgress>): { level: Level; stage: StageId; name: string } | null {
+export function continueTarget(levelsByCollection: { levels: Level[]; name: string }[], progress: Record<string, LevelProgress>, paid: boolean): { level: Level; stage: StageId; name: string } | null {
   let best: { level: Level; stage: StageId; name: string; at: number } | null = null;
   for (const { levels, name } of levelsByCollection) {
     for (const level of levels) {
@@ -63,7 +63,7 @@ export function continueTarget(levelsByCollection: { levels: Level[]; name: stri
       let stage = nextStage(lp);
       if (!stage) {
         target = levels[level.index + 1];
-        if (!target || !isLevelUnlocked(levels, target.index, progress)) continue;
+        if (!target || !isLevelUnlocked(levels, target.index, progress, paid)) continue;
         stage = nextStage(progress[target.key]) ?? 'learn';
       }
       if (!best || lp.lastPlayed > best.at) best = { level: target, stage, name, at: lp.lastPlayed };

@@ -4,19 +4,20 @@ import type { Word } from '../types';
 import { useStore } from '../store/useStore';
 import { navigate } from '../lib/router';
 import { useT } from '../lib/i18n';
+import { usePaid } from '../lib/premium';
 import { play as sfx } from '../lib/sfx';
 import confetti from 'canvas-confetti';
-import { ArrowLeft, ShareNetwork, SpeakerHigh, X } from '@phosphor-icons/react';
+import { ArrowLeft, ShareNetwork, Sparkle, SpeakerHigh, X } from '@phosphor-icons/react';
 import { GermanWord, gradeFor, StateBadge } from '../components/ui';
 import { BadgeIcon } from '../components/icons';
 import { Ring, Stamp, Tick } from '../components/marks';
 import { SessionRunner, type RunnerResult } from './SessionRunner';
 import { summarize, type AnswerRecord, type SessionSummary } from '../engine/session';
-import { buildLevels, checkMastery, evaluateBoss, PASS_ACCURACY, PASS_TYPING } from '../engine/levels';
+import { buildLevels, checkMastery, evaluateBoss, levelNeedsPremium, PASS_ACCURACY, PASS_TYPING } from '../engine/levels';
 import { memoryState } from '../engine/srs';
 import { fullMeaning } from '../engine/questions';
 import { challengePlay, ladderPlay, nextStage, stagePlay } from './configs';
-import { CHALLENGES } from '../engine/challenge';
+import { CHALLENGES, challengeNeedsPremium } from '../engine/challenge';
 import { speak } from './speak';
 import { useLook } from '../lib/look';
 
@@ -222,6 +223,7 @@ function Summary({ result, onReplay }: { result: SummaryResult; onReplay: () => 
   const collections = useStore((s) => s.collections);
   const settings = useStore((s) => s.settings);
   const startPlay = useStore((s) => s.startPlay);
+  const paid = usePaid();
   const { summary } = result;
   const pct = (x: number) => `${Math.round(x * 100)}%`;
 
@@ -234,6 +236,9 @@ function Summary({ result, onReplay }: { result: SummaryResult; onReplay: () => 
   const lp = config.levelKey ? levels[config.levelKey] : undefined;
   const mastery = level ? checkMastery(level, lp, progress) : null;
   const next = level ? nextStage(lp) : null;
+  const nextLevel = level ? buildLevels(level.collectionId, words[level.collectionId] ?? [])[level.index + 1] : undefined;
+  const nextLevelPremium = !!nextLevel && levelNeedsPremium(nextLevel.index, paid);
+  const nextChallengePremium = config.challenge !== undefined && challengeNeedsPremium(config.challenge + 1, paid);
   const boss = config.stage === 'boss' ? evaluateBoss(summary) : null;
   const ch = config.challenge;
   const isChallenge = ch !== undefined;
@@ -283,7 +288,7 @@ function Summary({ result, onReplay }: { result: SummaryResult; onReplay: () => 
           </div>
           {examPassed !== undefined && <Stamp tone={examPassed ? 'ok' : 'pen'}>{examPassed ? 'Bestanden!' : 'Nochmal!'}</Stamp>}
         </div>
-        {boss && <p className="mx-auto mt-5 max-w-md text-[15px] text-pencil">{boss.passed ? t('bossPassed') : t('bossFailed')}</p>}
+        {boss && <p className="mx-auto mt-5 max-w-md text-[15px] text-pencil">{boss.passed ? t(nextLevelPremium ? 'bossPassedPremium' : 'bossPassed') : t('bossFailed')}</p>}
         {isChallenge && (
           <p className="mx-auto mt-5 max-w-md text-[15px] text-pencil">
             {examPassed ? t('mutprobePassedText', { n: summary.correct, total: config.wordIds.length }) : t('mutprobeFailedText', { n: summary.answered, total: config.wordIds.length })}
@@ -342,8 +347,8 @@ function Summary({ result, onReplay }: { result: SummaryResult; onReplay: () => 
 
       <div className="mt-7 flex flex-col gap-2 sm:flex-row sm:flex-wrap">
         {isChallenge && examPassed && CHALLENGES[ch + 1] && (
-          <button className="btn flex-1 bg-pen text-sheet shadow-press hover:bg-pen/90" onClick={() => go(challengePlay(ch + 1))}>
-            Mutprobe {ch + 2}
+          <button className="btn flex-1 bg-pen text-sheet shadow-press hover:bg-pen/90" onClick={() => (nextChallengePremium ? navigate(`/mutprobe/${ch + 1}`) : go(challengePlay(ch + 1)))}>
+            {nextChallengePremium && <Sparkle size={18} weight="fill" aria-hidden />} Mutprobe {ch + 2}
           </button>
         )}
         {isChallenge && examPassed && (
@@ -351,14 +356,14 @@ function Summary({ result, onReplay }: { result: SummaryResult; onReplay: () => 
             <ShareNetwork size={18} weight="bold" aria-hidden /> {shared ? t('copied') : t('shareResult')}
           </button>
         )}
-        {boss?.passed && level && (() => {
-          const nextLevel = buildLevels(level.collectionId, words[level.collectionId] ?? [])[level.index + 1];
-          return nextLevel ? (
-            <button className="btn-primary flex-1" onClick={() => go(stagePlay(nextLevel, 'learn', collectionName, settings.uiLang))}>
-              {t('level')} {nextLevel.index + 1}: {t('stage_learn')}
-            </button>
-          ) : null;
-        })()}
+        {boss?.passed && nextLevel && (
+          <button
+            className="btn-primary flex-1"
+            onClick={() => (nextLevelPremium ? navigate(`/c/${encodeURIComponent(nextLevel.collectionId)}/l/${nextLevel.index}`) : go(stagePlay(nextLevel, 'learn', collectionName, settings.uiLang)))}
+          >
+            {nextLevelPremium ? <><Sparkle size={18} weight="fill" aria-hidden /> {t('level')} {nextLevel.index + 1}: {t('premium')}</> : <>{t('level')} {nextLevel.index + 1}: {t('stage_learn')}</>}
+          </button>
+        )}
         {next && level && config.stage !== 'boss' && (
           <button className="btn-primary flex-1" onClick={() => go(stagePlay(level, next, collectionName, settings.uiLang))}>
             {t('nextStage')}: {t(`stage_${next}`)}

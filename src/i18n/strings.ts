@@ -154,6 +154,7 @@ const en = {
   // summary
   sessionComplete: 'Session complete',
   bossPassed: 'Boss defeated! Next level unlocked.',
+  bossPassedPremium: 'Boss defeated! The next level is part of Premium.',
   bossFailed: 'Boss not defeated yet. You need 85% overall and 80% typing.',
   answered: 'Answered',
   typingAccuracy: 'Typing accuracy',
@@ -284,6 +285,11 @@ const en = {
   crashTitle: 'Something went wrong',
   crashBody: 'This page could not be shown. Your progress is safe on this device.',
   crashHome: 'Back to start',
+  premium: 'Premium',
+  premiumTitle: 'Part of Premium',
+  premiumLevels: 'Levels 1–5 of every list are free. Level 6 and up are part of WortSprint Premium.',
+  premiumChallenges: 'Mutprobe 1–5 are free. Mutprobe 6 and up are part of WortSprint Premium.',
+  premiumSoon: 'Premium is not on sale yet. It is coming soon.',
 };
 
 export type StringKey = keyof typeof en;
@@ -425,6 +431,12 @@ const bn: Partial<Record<StringKey, string>> = {
   score: 'স্কোর',
   sessionComplete: 'সেশন শেষ',
   bossPassed: 'বস হারিয়েছ! পরের লেভেল খুলে গেছে।',
+  bossPassedPremium: 'বস হারিয়েছ! পরের লেভেল Premium-এর অংশ।',
+  premium: 'Premium',
+  premiumTitle: 'Premium-এর অংশ',
+  premiumLevels: 'প্রতিটা list-এর লেভেল ১–৫ free। লেভেল ৬ থেকে WortSprint Premium।',
+  premiumChallenges: 'Mutprobe ১–৫ free। Mutprobe ৬ থেকে WortSprint Premium।',
+  premiumSoon: 'Premium এখনো বিক্রি শুরু হয়নি। শিগগিরই আসছে।',
   bossFailed: 'বস এখনও হারেনি। ৮৫% সামগ্রিক আর ৮০% টাইপিং লাগবে।',
   answered: 'উত্তর দেওয়া',
   typingAccuracy: 'টাইপিং নির্ভুলতা',

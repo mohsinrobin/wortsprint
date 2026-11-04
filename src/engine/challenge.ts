@@ -28,7 +28,13 @@ export function readiness(ids: string[], progress: Record<string, WordProgress>)
   return known / ids.length;
 }
 
-export function isChallengeUnlocked(index: number, results: Record<string, ChallengeResult>): boolean {
+/** Mutprobe 1–5 are free; 6 and up need premium. */
+export const FREE_CHALLENGES = 5;
+
+export const challengeNeedsPremium = (index: number, paid: boolean) => !paid && index >= FREE_CHALLENGES;
+
+export function isChallengeUnlocked(index: number, results: Record<string, ChallengeResult>, paid: boolean): boolean {
+  if (challengeNeedsPremium(index, paid)) return false;
   return index === 0 || !!results[index - 1]?.passed;
 }
 

@@ -1,11 +1,12 @@
-import { CheckSquare, Crown, Lock, MagnifyingGlass, Play, SealCheck, Square } from '@phosphor-icons/react';
+import { CheckSquare, Crown, Lock, MagnifyingGlass, Play, SealCheck, Sparkle, Square } from '@phosphor-icons/react';
 import { useMemo, useState } from 'react';
 import type { Word } from '../types';
 import { useStore, wordsOf } from '../store/useStore';
 import { navigate } from '../lib/router';
 import { useT } from '../lib/i18n';
+import { usePaid } from '../lib/premium';
 import { PageHeader, StateBadge, GermanWord, Empty } from '../components/ui';
-import { buildLevels, isLevelUnlocked, STAGES, checkMastery } from '../engine/levels';
+import { buildLevels, isLevelUnlocked, levelNeedsPremium, STAGES, checkMastery } from '../engine/levels';
 import { memoryState } from '../engine/srs';
 import { fullMeaning } from '../engine/questions';
 import { ladderPlay } from '../play/configs';
@@ -21,6 +22,7 @@ export function CollectionView({ collectionId }: { collectionId: string }) {
   const startPlay = useStore((s) => s.startPlay);
   const [tab, setTab] = useState<'levels' | 'words'>('levels');
   const [selecting, setSelecting] = useState(false);
+  const paid = usePaid();
 
   const levels = useMemo(() => buildLevels(collectionId, words ?? []), [collectionId, words]);
   if (!collection) {
@@ -40,7 +42,7 @@ export function CollectionView({ collectionId }: { collectionId: string }) {
     updateSettings({ selectedLevels: [...next] });
   };
   const practiceSelected = () => {
-    const ws = levels.filter((l) => selected.has(l.key)).flatMap((l) => l.words);
+    const ws = levels.filter((l) => selected.has(l.key) && !levelNeedsPremium(l.index, paid)).flatMap((l) => l.words);
     if (!ws.length) return;
     const pick = [...ws].sort((a, b) => (progress[a.id]?.strength ?? 0) - (progress[b.id]?.strength ?? 0)).slice(0, settings.reviewSize);
     startPlay(ladderPlay(`${collection.name}: ${t('practiceSelected')}`, pick, `/c/${encodeURIComponent(collectionId)}`));
@@ -81,7 +83,8 @@ export function CollectionView({ collectionId }: { collectionId: string }) {
           <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4">
             {levels.map((l) => {
               const lp = levelProgress[l.key];
-              const unlocked = isLevelUnlocked(levels, l.index, levelProgress);
+              const unlocked = isLevelUnlocked(levels, l.index, levelProgress, paid);
+              const premium = levelNeedsPremium(l.index, paid);
               const mastered = lp?.mastered || (lp?.bossPassed && checkMastery(l, lp, progress).mastered);
               const states = l.words.map((w) => memoryState(progress[w.id]));
               const strong = states.filter((s) => s === 'strong' || s === 'mastered').length;
@@ -89,12 +92,16 @@ export function CollectionView({ collectionId }: { collectionId: string }) {
               return (
                 <button
                   key={l.key}
-                  onClick={() => (selecting ? toggleSelected(l.key) : unlocked && navigate(`/c/${encodeURIComponent(collectionId)}/l/${l.index}`))}
-                  className={`card relative p-4 text-left transition ${unlocked || selecting ? 'hover:border-pencil' : 'cursor-not-allowed opacity-50'} ${isSel && selecting ? '!border-blue ring-1 ring-blue' : ''}`}
+                  onClick={() => (selecting ? !premium && toggleSelected(l.key) : (unlocked || premium) && navigate(`/c/${encodeURIComponent(collectionId)}/l/${l.index}`))}
+                  className={`card relative p-4 text-left transition ${premium ? 'opacity-60 hover:border-pencil' : unlocked || selecting ? 'hover:border-pencil' : 'cursor-not-allowed opacity-50'} ${isSel && selecting ? '!border-blue ring-1 ring-blue' : ''}`}
                 >
                   <div className="flex items-start justify-between">
                     <div className="text-sm font-medium text-pencil">{t('level')}</div>
-                    {selecting ? (
+                    {premium ? (
+                      <span className="flex items-center gap-1 text-sm font-semibold text-gold">
+                        <Sparkle size={16} weight="fill" aria-hidden /> {t('premium')}
+                      </span>
+                    ) : selecting ? (
                       <span className={isSel ? 'text-blue' : 'text-pencil'}>{isSel ? <CheckSquare size={20} weight="fill" /> : <Square size={20} weight="bold" />}</span>
                     ) : mastered ? (
                       <Crown size={20} weight="fill" className="text-gold" aria-label={t('levelMastered')} />

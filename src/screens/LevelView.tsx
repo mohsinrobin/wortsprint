@@ -2,8 +2,9 @@ import { useMemo } from 'react';
 import { useStore, wordsOf } from '../store/useStore';
 import { navigate } from '../lib/router';
 import { useT } from '../lib/i18n';
-import { PageHeader, StateBadge, GermanWord, Empty } from '../components/ui';
-import { buildLevels, checkMastery, isLevelUnlocked, isStageUnlocked, STAGES } from '../engine/levels';
+import { usePaid } from '../lib/premium';
+import { PageHeader, StateBadge, GermanWord, Empty, PremiumNotice } from '../components/ui';
+import { buildLevels, checkMastery, isLevelUnlocked, isStageUnlocked, levelNeedsPremium, STAGES } from '../engine/levels';
 import { memoryState } from '../engine/srs';
 import { fullMeaning } from '../engine/questions';
 import { ladderPlay, nextStage, speedPlay, stagePlay } from '../play/configs';
@@ -20,6 +21,7 @@ export function LevelView({ collectionId, index }: { collectionId: string; index
   const levelProgress = useStore((s) => s.levels);
   const settings = useStore((s) => s.settings);
   const startPlay = useStore((s) => s.startPlay);
+  const paid = usePaid();
 
   const levels = useMemo(() => buildLevels(collectionId, words ?? []), [collectionId, words]);
   const level = levels[index];
@@ -32,7 +34,15 @@ export function LevelView({ collectionId, index }: { collectionId: string; index
       </div>
     );
   }
-  if (!isLevelUnlocked(levels, index, levelProgress)) {
+  if (levelNeedsPremium(index, paid)) {
+    return (
+      <div>
+        <PageHeader title={`${t('level')} ${index + 1}`} subtitle={collection.name} back={back} />
+        <PremiumNotice body={t('premiumLevels')} />
+      </div>
+    );
+  }
+  if (!isLevelUnlocked(levels, index, levelProgress, paid)) {
     return (
       <div>
         <PageHeader title={`${t('level')} ${index + 1}`} back={back} />

@@ -56,7 +56,14 @@ export function emptyLevelProgress(key: string): LevelProgress {
   };
 }
 
-export function isLevelUnlocked(levels: Level[], index: number, progress: Record<string, LevelProgress>): boolean {
+/** Levels 1–5 of every list are free; level 6 and up need premium. */
+export const FREE_LEVELS = 5;
+
+export const levelNeedsPremium = (index: number, paid: boolean) => !paid && index >= FREE_LEVELS;
+
+/** Premium opens level 6+, but each level still needs the boss of the one before it. */
+export function isLevelUnlocked(levels: Level[], index: number, progress: Record<string, LevelProgress>, paid: boolean): boolean {
+  if (levelNeedsPremium(index, paid)) return false;
   if (index === 0) return true;
   const prev = levels[index - 1];
   return !!prev && !!progress[prev.key]?.bossPassed;

@@ -1,5 +1,5 @@
 import type { ReactNode } from 'react';
-import { ArrowLeft } from '@phosphor-icons/react';
+import { ArrowLeft, Sparkle } from '@phosphor-icons/react';
 import type { MemoryState } from '../types';
 import { useT } from '../lib/i18n';
 
@@ -87,6 +87,19 @@ export function Toggle({ checked, onChange, label }: { checked: boolean; onChang
 
 export function Empty({ children }: { children: ReactNode }) {
   return <div className="rounded-sheet border border-dashed border-pencil/40 bg-sheet/70 p-6 text-center text-[15px] text-pencil">{children}</div>;
+}
+
+/** Shown in place of a level or Mutprobe that needs premium. */
+export function PremiumNotice({ body }: { body: string }) {
+  const t = useT();
+  return (
+    <div className="card mx-auto max-w-md p-6 text-center">
+      <Sparkle size={32} weight="fill" className="mx-auto text-gold" aria-hidden />
+      <h2 className="mt-3 text-xl font-semibold">{t('premiumTitle')}</h2>
+      <p className="mt-2 text-[15px] text-pencil">{body}</p>
+      <p className="mt-3 text-[15px] text-pencil">{t('premiumSoon')}</p>
+    </div>
+  );
 }
 
 export function articleColor(article?: string): string {
