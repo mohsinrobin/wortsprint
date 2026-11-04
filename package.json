@@ -12,6 +12,9 @@
     "challenges": "node scripts/build-challenges.mjs"
   },
   "dependencies": {
+    "@fontsource/barlow-semi-condensed": "^5.3.0",
+    "@fontsource/caveat": "^5.3.0",
+    "@fontsource/jost": "^5.3.0",
     "@phosphor-icons/react": "^2.1.10",
     "canvas-confetti": "^1.9.4",
     "idb-keyval": "^6.2.1",

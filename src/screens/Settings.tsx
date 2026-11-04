@@ -6,6 +6,7 @@ import { useT } from '../lib/i18n';
 import { PageHeader, Segmented, Toggle } from '../components/ui';
 import { setThemePref, useTheme, type ThemePref } from '../lib/theme';
 import { LOOKS, LOOK_NAME, setLook, useLook, type Look } from '../lib/look';
+import { navigate } from '../lib/router';
 
 const KINDS: QuestionKind[] = ['meaning', 'reverse', 'typing', 'situation', 'speed'];
 
@@ -113,6 +114,12 @@ export function SettingsScreen() {
           </button>
         </div>
       </Section>
+
+      <p className="flex justify-center gap-5 pb-2 text-sm text-pencil">
+        <button onClick={() => navigate('/privacy')} className="underline underline-offset-2 hover:text-ink">
+          {t('privacy')}
+        </button>
+      </p>
     </div>
   );
 }

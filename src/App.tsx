@@ -12,6 +12,7 @@ import { CollectionView } from './screens/CollectionView';
 import { LevelView } from './screens/LevelView';
 import { MutprobeDetail, MutprobeList } from './screens/Mutprobe';
 import { SettingsScreen } from './screens/Settings';
+import { PrivacyPage } from './screens/Legal';
 import { Play } from './play/Play';
 import { currentStreak, levelFromXp } from './engine/stats';
 
@@ -58,6 +59,7 @@ export default function App() {
   let screen;
   if (section === 'library') screen = <Library />;
   else if (section === 'settings') screen = <SettingsScreen />;
+  else if (section === 'privacy') screen = <PrivacyPage />;
   else if (section === 'mutprobe' && id !== undefined) screen = <MutprobeDetail index={Number(id)} />;
   else if (section === 'mutprobe') screen = <MutprobeList />;
   else if (section === 'c' && id && sub === 'l' && levelIdx !== undefined) screen = <LevelView collectionId={id} index={Number(levelIdx)} />;
@@ -90,6 +92,13 @@ function Logo() {
   );
 }
 
+/** The nav tab a route belongs to: sub-pages light up their parent tab. */
+function navKey(section: string) {
+  if (section === 'c' || section === 'mutprobe') return 'library';
+  if (section === 'privacy') return 'settings';
+  return section;
+}
+
 const NAV = [
   { key: '', path: '/', label: 'navHome', Icon: House },
   { key: 'library', path: '/library', label: 'navLibrary', Icon: BookOpenText },
@@ -101,7 +110,7 @@ function TopBar({ active }: { active: string }) {
   const profile = useStore((s) => s.profile);
   const streak = currentStreak(profile.practiceDays, Date.now());
   const lvl = levelFromXp(profile.xp);
-  const current = active === 'c' || active === 'mutprobe' ? 'library' : active;
+  const current = navKey(active);
   return (
     <header className="sticky top-0 z-30 border-b border-line bg-paper/90 backdrop-blur-sm">
       <div className="mx-auto flex h-14 max-w-5xl items-center gap-4 px-4 sm:px-6">
@@ -145,7 +154,7 @@ function ThemeButton() {
 
 function BottomNav({ active }: { active: string }) {
   const t = useT();
-  const current = active === 'c' || active === 'mutprobe' ? 'library' : active;
+  const current = navKey(active);
   return (
     <nav className="fixed inset-x-0 bottom-0 z-30 flex border-t border-line bg-paper/95 pb-[env(safe-area-inset-bottom)] backdrop-blur-sm sm:hidden">
       {NAV.map(({ key, path, label, Icon }) => (

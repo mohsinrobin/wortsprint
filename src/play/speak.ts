@@ -7,7 +7,10 @@ export function speak(text: string) {
     const u = new SpeechSynthesisUtterance(text.replace(/\(.*?\)/g, '').split(',')[0]);
     u.lang = 'de-DE';
     u.rate = 0.9;
-    const voice = synth.getVoices().find((v) => v.lang.startsWith('de'));
+    // Prefer a voice that runs on the device: some browsers send the text
+    // to their maker's servers for online voices.
+    const german = synth.getVoices().filter((v) => v.lang.startsWith('de'));
+    const voice = german.find((v) => v.localService) ?? german[0];
     if (voice) u.voice = voice;
     synth.speak(u);
   } catch {
