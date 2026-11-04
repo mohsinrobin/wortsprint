@@ -2,17 +2,19 @@
 // records memory progress, and hands the history back when finished.
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import type { QuestionKind, Word } from '../types';
-import { useStore, timeLimitMs } from '../store/useStore';
+import { useStore, timeLimitMs, DIFFICULTY_TIMERS } from '../store/useStore';
 import { useT } from '../lib/i18n';
 import { play as sfx } from '../lib/sfx';
 import { Timer } from '../components/Timer';
 import { UmlautInput } from '../components/UmlautInput';
 import { GermanWord, ProgressBar } from '../components/ui';
 import { Cross, Struck, Tally, Tick } from '../components/marks';
-import { Lightbulb, Pause, SpeakerHigh, X } from '@phosphor-icons/react';
+import { Heart, Lightbulb, Pause, SpeakerHigh, X } from '@phosphor-icons/react';
 import { buildQuestion, fullMeaning, meaningText } from '../engine/questions';
 import { checkTyped, type Verdict } from '../engine/answer';
 import { createRng } from '../engine/rng';
+import { LIVES } from '../engine/challenge';
+import { letterClue, letterCount, needsClue } from '../engine/clue';
 import { nextKindFor, speedOf } from '../engine/srs';
 import { xpFor } from '../engine/stats';
 import { answerCurrent, createSession, currentItem, isFinished, sessionProgress, type AnswerRecord, type SessionMode } from '../engine/session';
@@ -83,17 +85,33 @@ export function SessionRunner({ mode, wordIds, extra, onDone, onQuit }: Props) {
 
   const item = currentItem(session);
   const word = item ? wordById(item.wordId) : undefined;
+  const isChallenge = mode.type === 'challenge';
   const isBoss = mode.type === 'boss';
-  const timed = mode.type === 'speed' || isBoss;
+  const exam = isBoss || isChallenge;
+  const timed = mode.type === 'speed' || exam;
   const canPause = !timed;
-  const limitMs = item ? timeLimitMs(settings, item.kind, isBoss) : 0;
+  // Mutprobe always runs on the Hard timers, whatever the settings say.
+  const limitMs = !item ? 0 : isChallenge ? DIFFICULTY_TIMERS.hard[item.kind] * 1000 : timeLimitMs(settings, item.kind, isBoss);
+  const [lives, setLives] = useState(LIVES);
   const pool = useMemo(() => (word ? wordsByCollection[word.collectionId] ?? [] : []), [word, wordsByCollection]);
+  // Answers are checked against every word, so another word that fits counts.
+  const allWords = useMemo(() => Object.values(wordsByCollection).flat(), [wordsByCollection]);
 
   const question = useMemo(() => {
     if (!item || !word) return null;
     const enc = useStore.getState().progress[word.id]?.encounters ?? 0;
     return buildQuestion(word, item.kind, pool, createRng(session.seed + session.step * 104729), settings, enc + item.attemptNo);
     // Rebuild only when we move to a new step.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [session.step, word?.id]);
+
+  // Letter clue when a word the learner knows (or sees in this session) also
+  // shares this meaning, so it is clear which word is wanted.
+  const clue = useMemo(() => {
+    if (!word || !item || (item.kind !== 'typing' && item.kind !== 'situation')) return null;
+    const progress = useStore.getState().progress;
+    const known = allWords.filter((w) => progress[w.id]?.encounters || session.wordIds.includes(w.id));
+    return needsClue(word, known) ? letterClue(word) : null;
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [session.step, word?.id]);
 
@@ -161,7 +179,7 @@ export function SessionRunner({ mode, wordIds, extra, onDone, onQuit }: Props) {
         fb = { ok: false, verdict: 'timeout', typed: question.typed ? input : undefined, xp: 0 };
       } else if (question.typed) {
         if (!input.trim()) return;
-        const r = checkTyped(input, word, { typo: settings.typo, difficulty: settings.difficulty, pool });
+        const r = checkTyped(input, word, isChallenge ? { typo: 'strict', difficulty: 'hard', pool: allWords } : { typo: settings.typo, difficulty: settings.difficulty, pool: allWords });
         fb = { ok: r.ok, verdict: r.verdict, typed: input, matched: r.matched, givenArticle: r.givenArticle, xp: 0 };
       } else {
         fb = { ok: choice === question.correctIndex, verdict: 'choice', chosen: choice, xp: 0 };
@@ -184,8 +202,11 @@ export function SessionRunner({ mode, wordIds, extra, onDone, onQuit }: Props) {
       fb.xp = xpFor(question.kind, fb.ok, fast, Math.min(mult, 2));
       setXp((x) => x + fb.xp);
 
-      // A synonym from the user's list is not a memory failure: no penalty.
-      if (fb.verdict !== 'synonym') {
+      // Another fitting word says nothing about this one; Mutprobe only
+      // updates words the learner has met before.
+      const recordable = isChallenge ? !!useStore.getState().progress[word.id]?.encounters : true;
+      if (!fb.ok && isChallenge) setLives((l) => Math.max(0, l - 1));
+      if (fb.verdict !== 'synonym' && recordable) {
         recordAnswer(word.id, {
           correct: fb.ok,
           kind: question.kind,
@@ -198,15 +219,19 @@ export function SessionRunner({ mode, wordIds, extra, onDone, onQuit }: Props) {
       sfx(fb.ok ? 'correct' : 'wrong', settings.sound);
       setFeedback(fb);
     },
-    [question, word, feedback, paused, limitMs, input, settings, pool, mode.type, combo, recordAnswer, hint],
+    [question, word, feedback, paused, limitMs, input, settings, allWords, mode.type, combo, recordAnswer, hint, isChallenge],
   );
 
   const advance = useCallback(() => {
     if (!feedback || !question) return;
     const ms = feedback.verdict === 'timeout' ? limitMs : Math.min(elapsedRef.current, limitMs);
-    setSession((s) => answerCurrent(s, { correct: feedback.ok, ms, limitMs, typed: question.typed }));
+    setSession((s) => {
+      const next = answerCurrent(s, { correct: feedback.ok, ms, limitMs, typed: question.typed });
+      // Out of lives: the run ends here.
+      return isChallenge && lives === 0 ? { ...next, queue: [] } : next;
+    });
     setFeedback(null);
-  }, [feedback, question, limitMs]);
+  }, [feedback, question, limitMs, isChallenge, lives]);
 
   // Auto-advance: quickly after correct answers; timed modes also after misses.
   useEffect(() => {
@@ -244,7 +269,7 @@ export function SessionRunner({ mode, wordIds, extra, onDone, onQuit }: Props) {
   if (!question || !word || !item) return null;
   const prog = sessionProgress(session);
   const meaning = fullMeaning(word, settings.meaningLang);
-  const showHintAlways = settings.showSituationHint;
+  const showHintAlways = settings.showSituationHint && !isChallenge;
   const mult = 1 + Math.min(6, Math.floor(combo / 3)) * 0.5;
   const pos = <div className="hand mt-1 text-xl text-pencil">{t(`pos_${word.pos}`)}</div>;
 
@@ -257,13 +282,20 @@ export function SessionRunner({ mode, wordIds, extra, onDone, onQuit }: Props) {
         </button>
         <div className="flex-1">
           <div className="mb-1.5 flex items-baseline justify-between text-sm font-semibold">
-            <span className={isBoss ? 'text-pen' : 'text-ink'}>{isBoss ? t('stage_boss') : t(KIND_LABEL[item.kind] as never)}</span>
+            <span className={exam ? 'text-pen' : 'text-ink'}>{isChallenge ? 'Mutprobe' : isBoss ? t('stage_boss') : t(KIND_LABEL[item.kind] as never)}</span>
             <span className="text-pencil">
               {prog.done}/{prog.total}
             </span>
           </div>
-          <ProgressBar value={prog.done / Math.max(1, prog.total)} color={isBoss ? 'bg-pen' : 'bg-blue'} />
+          <ProgressBar value={prog.done / Math.max(1, prog.total)} color={exam ? 'bg-pen' : 'bg-blue'} />
         </div>
+        {isChallenge && (
+          <span className="flex gap-0.5 text-pen" role="img" aria-label={t('livesLeft', { n: lives })}>
+            {Array.from({ length: LIVES }, (_, i) => (
+              <Heart key={i} size={18} weight={i < lives ? 'fill' : 'bold'} className={i < lives ? '' : 'opacity-30'} />
+            ))}
+          </span>
+        )}
         {canPause ? (
           <button onClick={() => setPaused(true)} className="btn-ghost h-10 w-10 !p-0" aria-label={t('pause')} title={t('pause')}>
             <Pause size={18} weight="bold" />
@@ -306,15 +338,17 @@ export function SessionRunner({ mode, wordIds, extra, onDone, onQuit }: Props) {
               <div className="mb-3 text-[15px] text-pencil">{word.article ? t('typeWithArticle') : t('typeGerman')}</div>
               <div className="text-[30px] font-bold leading-tight sm:text-[38px]">{meaningText(word, settings.meaningLang, 4)}</div>
               {pos}
+              {clue && !feedback && <Clue marks={clue} count={letterCount(word)} />}
             </>
           )}
           {item.kind === 'situation' && (
             <>
               <div className={`text-[15px] text-pencil ${compact ? 'mb-2' : 'mb-3'}`}>{t('situationQ')}</div>
               <div className={`card mx-auto max-w-xl -rotate-[0.6deg] text-left ${compact ? 'px-4 py-3 text-[17px] leading-snug' : 'px-6 py-5 text-[19px] leading-relaxed sm:text-xl'}`}>{question.situation}</div>
+              {clue && !feedback && <Clue marks={clue} count={letterCount(word)} />}
               <div className={`flex items-center justify-center gap-3 ${compact ? 'mt-2' : 'mt-4'}`}>
                 <span className="hand text-xl text-pencil">{t(`pos_${word.pos}`)}</span>
-                {showHintAlways || hint ? (
+                {isChallenge ? null : showHintAlways || hint ? (
                   <span className="rounded-[3px] bg-marker/60 px-1.5 text-[15px] font-semibold text-ink">{meaningText(word, settings.meaningLang, 4)}</span>
                 ) : (
                   !feedback && (
@@ -368,7 +402,7 @@ export function SessionRunner({ mode, wordIds, extra, onDone, onQuit }: Props) {
               )}
               {feedback.ok ? <Tick size={32} tone={feedback.verdict === 'correct' ? 'ok' : 'pen'} /> : <Cross size={28} />}
             </div>
-            {feedback.verdict !== 'correct' && (
+            {feedback.verdict !== 'correct' && feedback.verdict !== 'synonym' && (
               <div className="hand mt-2 -rotate-1 text-[30px] font-bold leading-tight text-pen">
                 <GermanWord de={word.de} article={word.article} className="[&>span]:!text-pen" />
               </div>
@@ -397,7 +431,7 @@ export function SessionRunner({ mode, wordIds, extra, onDone, onQuit }: Props) {
           {feedback.verdict === 'article' && <div className="mt-1 text-[15px]">{feedback.givenArticle ? t('articleWrong') : t('articleMissing')}</div>}
           {feedback.verdict === 'synonym' && (
             <div className="mt-1 text-[15px]">
-              {feedback.matched?.de} — {t('synonymNote')}
+              <b>{feedback.matched?.de}</b> {t('synonymNote')}
             </div>
           )}
           <div className="mt-2 flex flex-wrap items-center gap-x-2 gap-y-1 text-lg">
@@ -430,6 +464,27 @@ export function SessionRunner({ mode, wordIds, extra, onDone, onQuit }: Props) {
           </div>
         </div>
       )}
+    </div>
+  );
+}
+
+/** "G _ _ _ _ _ _ (7)": first letter and one line per letter. */
+function Clue({ marks, count }: { marks: (string | null)[]; count: number }) {
+  const t = useT();
+  return (
+    <div className="mt-3 flex flex-wrap items-end justify-center gap-1" role="note" aria-label={t('clueLabel', { letter: marks[0] ?? '', n: count })}>
+      {marks.map((m, i) =>
+        m === ' ' ? (
+          <span key={i} className="w-2.5" />
+        ) : m && i > 0 ? (
+          <span key={i} className="hand px-0.5 text-xl font-bold leading-none text-pencil">{m}</span>
+        ) : (
+          <span key={i} className={`hand grid h-7 w-4 place-items-end justify-center border-b-2 pb-0.5 text-[22px] font-bold leading-none ${m ? 'border-blue text-blue' : 'border-pencil/40'}`}>
+            {m ?? ''}
+          </span>
+        ),
+      )}
+      <span className="ml-1.5 text-sm text-pencil" aria-hidden>({count})</span>
     </div>
   );
 }

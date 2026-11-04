@@ -8,6 +8,7 @@ import { applyOutcome, emptyProgress, memoryState, type Outcome } from '../engin
 import { applySessionToLevel, buildLevels, checkMastery, emptyLevelProgress, evaluateBoss } from '../engine/levels';
 import type { SessionMode, SessionSummary } from '../engine/session';
 import { currentStreak, localDay, newBadges, overview } from '../engine/stats';
+import { challengePassed, type ChallengeResult } from '../engine/challenge';
 
 export const DEFAULT_SETTINGS: Settings = {
   uiLang: 'en',
@@ -42,6 +43,8 @@ export interface PlayConfig {
   levelKey?: string;
   stage?: StageId;
   extra?: string[];
+  /** Mutprobe number (0-based) for challenge runs. */
+  challenge?: number;
   /** Where "back" goes after the session. */
   returnTo: string;
 }
@@ -58,6 +61,7 @@ export interface FinishInput {
 export interface FinishResult {
   badges: string[];
   bossPassed?: boolean;
+  challengePassed?: boolean;
 }
 
 interface State {
@@ -66,6 +70,7 @@ interface State {
   words: Record<string, Word[]>;
   progress: Record<string, WordProgress>;
   levels: Record<string, LevelProgress>;
+  challenges: Record<string, ChallengeResult>;
   settings: Settings;
   profile: Profile;
   play: PlayConfig | null;
@@ -130,6 +135,7 @@ export const useStore = create<State>((set, get) => {
     words: (id: string) => debounce(`words:${id}`, () => db.saveWords(id, get().words[id] ?? [])),
     progress: () => debounce('progress', () => db.saveProgress(get().progress), 600),
     levels: () => debounce('levels', () => db.saveLevels(get().levels)),
+    challenges: () => debounce('challenges', () => db.saveChallenges(get().challenges)),
     settings: () => debounce('settings', () => db.saveSettings(get().settings)),
     profile: () => debounce('profile', () => db.saveProfile(get().profile)),
   };
@@ -145,6 +151,7 @@ export const useStore = create<State>((set, get) => {
     words: {},
     progress: {},
     levels: {},
+    challenges: {},
     settings: DEFAULT_SETTINGS,
     profile: EMPTY_PROFILE,
     play: null,
@@ -210,6 +217,7 @@ export const useStore = create<State>((set, get) => {
         words,
         progress: snap.progress ?? {},
         levels: snap.levels ?? {},
+        challenges: snap.challenges ?? {},
         settings,
         profile: { ...EMPTY_PROFILE, ...snap.profile },
       });
@@ -311,6 +319,8 @@ export const useStore = create<State>((set, get) => {
       const s = get();
       let levels = s.levels;
       let bossPassed: boolean | undefined;
+      let passedChallenge: boolean | undefined;
+      let challenges = s.challenges;
 
       if (config.levelKey && config.stage) {
         const prev = s.levels[config.levelKey] ?? emptyLevelProgress(config.levelKey);
@@ -326,6 +336,16 @@ export const useStore = create<State>((set, get) => {
         const level = buildLevels(cid, s.words[cid] ?? [])[Number(idx)];
         const lp = s.levels[config.levelKey];
         if (level && lp) levels = { ...levels, [config.levelKey]: { ...lp, mastered: checkMastery(level, lp, s.progress).mastered } };
+      }
+
+      if (config.challenge !== undefined) {
+        const key = String(config.challenge);
+        const prev = challenges[key];
+        passedChallenge = challengePassed(summary.answered, summary.correct, config.wordIds.length);
+        challenges = {
+          ...challenges,
+          [key]: { attempts: (prev?.attempts ?? 0) + 1, passed: !!prev?.passed || passedChallenge, best: Math.max(prev?.best ?? 0, summary.correct), lastPlayed: now },
+        };
       }
 
       const day = localDay(now);
@@ -348,10 +368,11 @@ export const useStore = create<State>((set, get) => {
         lastSession: { accuracy: summary.accuracy, answered: summary.answered, speedScore, maxCombo },
       });
       profile.badges = [...profile.badges, ...earned];
-      set({ levels, profile });
+      set({ levels, profile, challenges });
       persist.levels();
       persist.profile();
-      return { badges: earned, bossPassed };
+      if (challenges !== s.challenges) persist.challenges();
+      return { badges: earned, bossPassed, challengePassed: passedChallenge };
     },
 
     startPlay(config) {
@@ -399,8 +420,8 @@ export const useStore = create<State>((set, get) => {
     },
 
     async resetProgress() {
-      set({ progress: {}, levels: {}, profile: EMPTY_PROFILE });
-      await Promise.all([db.saveProgress({}), db.saveLevels({}), db.saveProfile(EMPTY_PROFILE)]);
+      set({ progress: {}, levels: {}, challenges: {}, profile: EMPTY_PROFILE });
+      await Promise.all([db.saveProgress({}), db.saveLevels({}), db.saveChallenges({}), db.saveProfile(EMPTY_PROFILE)]);
     },
   };
 });

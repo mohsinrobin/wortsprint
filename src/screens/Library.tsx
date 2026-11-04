@@ -1,4 +1,6 @@
 import { CollectionCard } from '../looks/CollectionCard';
+import { ChallengeCard } from '../looks/ChallengeCard';
+import { CHALLENGES } from '../engine/challenge';
 import { useStore } from '../store/useStore';
 import { navigate } from '../lib/router';
 import { useT } from '../lib/i18n';
@@ -11,6 +13,8 @@ export function Library() {
   const collections = useStore((s) => s.collections);
   const words = useStore((s) => s.words);
   const progress = useStore((s) => s.progress);
+  const challenges = useStore((s) => s.challenges);
+  const passed = CHALLENGES.filter((_, i) => challenges[i]?.passed).length;
 
   return (
     <div className="space-y-8">
@@ -31,6 +35,9 @@ export function Library() {
             />
           );
         })}
+      </section>
+      <section>
+        <ChallengeCard passed={passed} total={CHALLENGES.length} onOpen={() => navigate('/mutprobe')} />
       </section>
     </div>
   );

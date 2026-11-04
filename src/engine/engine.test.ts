@@ -80,9 +80,19 @@ describe('answer checking', () => {
     expect(checkTyped('vergesen', vergessen, { ...opts, difficulty: 'extreme' }).verdict).toBe('wrong');
   });
 
-  it('recognises synonyms from the collection', () => {
+  it('accepts another word with the same meaning', () => {
     const r = checkTyped('das Ticket', fahrkarte, { ...opts, pool: [fahrkarte, ticket] });
     expect(r.verdict).toBe('synonym');
+    expect(r.ok).toBe(true);
+  });
+
+  it('does not accept a shared meaning across parts of speech or for pronouns', () => {
+    const koennen = word('können', 'to be able to, can', 'verb', 40);
+    const kanne = word('Kanne, die', 'can, jug', 'noun', 41);
+    expect(checkTyped('die Kanne', koennen, { ...opts, pool: [koennen, kanne] }).ok).toBe(false);
+    const ihr = word('ihr', 'you (pl.), her', 'pronoun', 42);
+    const sie = word('sie', 'she, her, they', 'pronoun', 43);
+    expect(checkTyped('sie', ihr, { ...opts, pool: [ihr, sie] }).ok).toBe(false);
   });
 
   it('computes edit distance with transpositions', () => {
@@ -285,5 +295,40 @@ describe('stats', () => {
     const sel = selectReview([apfel, muede, strasse], progress, now, 5);
     expect(sel[0].id).toBe(muede.id);
     expect(sel.map((w) => w.id)).not.toContain(strasse.id);
+  });
+});
+
+describe('mutprobe', () => {
+  it('has 50 fixed challenges of 20 different words, getting harder', async () => {
+    const { CHALLENGES, challengeTiers } = await import('./challenge');
+    expect(CHALLENGES).toHaveLength(50);
+    expect(CHALLENGES.every((c) => c.length === 20)).toBe(true);
+    expect(new Set(CHALLENGES.flat()).size).toBe(1000);
+    expect(challengeTiers(CHALLENGES[0])).toEqual(['a1', 'a2']);
+    expect(challengeTiers(CHALLENGES[49])).toEqual(['a2', 'b1', 'extra']);
+  });
+
+  it('passes with all questions answered and fewer than three mistakes', async () => {
+    const { challengePassed } = await import('./challenge');
+    expect(challengePassed(20, 18, 20)).toBe(true);
+    expect(challengePassed(20, 17, 20)).toBe(false);
+    expect(challengePassed(12, 9, 20)).toBe(false);
+  });
+
+  it('asks each word once in mixed formats', () => {
+    const s = createSession({ mode: { type: 'challenge' }, wordIds: ['a', 'b', 'c', 'd', 'e'], seed: 3 });
+    expect(s.queue.map((q) => q.wordId).sort()).toEqual(['a', 'b', 'c', 'd', 'e']);
+    const next = answerCurrent(s, { correct: false, ms: 1000, limitMs: 9000, typed: true });
+    expect(next.queue).toHaveLength(4);
+  });
+});
+
+describe('letter clue', () => {
+  it('shows the first letter and one mark per letter, without the article', async () => {
+    const { letterClue, letterCount, needsClue } = await import('./clue');
+    expect(letterClue(fahrkarte)).toEqual(['F', null, null, null, null, null, null, null, null]);
+    expect(letterCount(fahrkarte)).toBe(9);
+    expect(needsClue(fahrkarte, [ticket])).toBe(true);
+    expect(needsClue(fahrkarte, [apfel])).toBe(false);
   });
 });

@@ -6,7 +6,7 @@ import { navigate } from '../lib/router';
 import { useT } from '../lib/i18n';
 import { play as sfx } from '../lib/sfx';
 import confetti from 'canvas-confetti';
-import { ArrowLeft, SpeakerHigh, X } from '@phosphor-icons/react';
+import { ArrowLeft, ShareNetwork, SpeakerHigh, X } from '@phosphor-icons/react';
 import { GermanWord, gradeFor, StateBadge } from '../components/ui';
 import { BadgeIcon } from '../components/icons';
 import { Ring, Stamp, Tick } from '../components/marks';
@@ -15,7 +15,8 @@ import { summarize, type AnswerRecord, type SessionSummary } from '../engine/ses
 import { buildLevels, checkMastery, evaluateBoss, PASS_ACCURACY, PASS_TYPING } from '../engine/levels';
 import { memoryState } from '../engine/srs';
 import { fullMeaning } from '../engine/questions';
-import { ladderPlay, nextStage, stagePlay } from './configs';
+import { challengePlay, ladderPlay, nextStage, stagePlay } from './configs';
+import { CHALLENGES } from '../engine/challenge';
 import { speak } from './speak';
 import { useLook } from '../lib/look';
 
@@ -56,7 +57,7 @@ function PlayInner({ onReplay }: { onReplay: () => void }) {
   const [cardIdx, setCardIdx] = useState(0);
   const historyRef = useRef<AnswerRecord[]>([]);
   const totals = useRef({ xp: 0, score: 0, maxCombo: 0 });
-  const [result, setResult] = useState<{ summary: SessionSummary; badges: string[]; bossPassed?: boolean; xp: number; score: number; maxCombo: number } | null>(null);
+  const [result, setResult] = useState<SummaryResult | null>(null);
 
   const quit = () => {
     if (historyRef.current.length === 0 || window.confirm(t('quitConfirm'))) navigate(config.returnTo);
@@ -201,7 +202,17 @@ function LearnCard({ word, index, total, last, onNext, onBack, onQuit }: { word?
   );
 }
 
-function Summary({ result, onReplay }: { result: { summary: SessionSummary; badges: string[]; bossPassed?: boolean; xp: number; score: number; maxCombo: number }; onReplay: () => void }) {
+interface SummaryResult {
+  summary: SessionSummary;
+  badges: string[];
+  bossPassed?: boolean;
+  challengePassed?: boolean;
+  xp: number;
+  score: number;
+  maxCombo: number;
+}
+
+function Summary({ result, onReplay }: { result: SummaryResult; onReplay: () => void }) {
   const t = useT();
   const config = useStore((s) => s.play)!;
   const wordById = useStore((s) => s.wordById);
@@ -224,6 +235,22 @@ function Summary({ result, onReplay }: { result: { summary: SessionSummary; badg
   const mastery = level ? checkMastery(level, lp, progress) : null;
   const next = level ? nextStage(lp) : null;
   const boss = config.stage === 'boss' ? evaluateBoss(summary) : null;
+  const ch = config.challenge;
+  const isChallenge = ch !== undefined;
+  const examPassed = boss ? boss.passed : isChallenge ? !!result.challengePassed : undefined;
+  const [shared, setShared] = useState(false);
+  const share = async () => {
+    const text = `${t('shareText', { n: (ch ?? 0) + 1, c: summary.correct, total: config.wordIds.length })} ${location.origin}${location.pathname}`;
+    try {
+      if (navigator.share) await navigator.share({ text });
+      else {
+        await navigator.clipboard.writeText(text);
+        setShared(true);
+      }
+    } catch {
+      // Share sheet dismissed.
+    }
+  };
 
   const practice = summary.needsPractice.map((id) => wordById(id)).filter((w): w is Word => !!w);
 
@@ -233,7 +260,7 @@ function Summary({ result, onReplay }: { result: { summary: SessionSummary; badg
   };
 
   const grade = gradeFor(summary.accuracy);
-  const celebrate = boss?.passed || (summary.answered >= 5 && grade.grade === 1);
+  const celebrate = examPassed || (summary.answered >= 5 && grade.grade === 1);
   useEffect(() => {
     if (!celebrate || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
     const id = setTimeout(() => {
@@ -254,9 +281,14 @@ function Summary({ result, onReplay }: { result: { summary: SessionSummary; badg
             </Ring>
             <div className="hand text-xl text-pen">{grade.word}</div>
           </div>
-          {boss && <Stamp tone={boss.passed ? 'ok' : 'pen'}>{boss.passed ? 'Bestanden!' : 'Nochmal!'}</Stamp>}
+          {examPassed !== undefined && <Stamp tone={examPassed ? 'ok' : 'pen'}>{examPassed ? 'Bestanden!' : 'Nochmal!'}</Stamp>}
         </div>
         {boss && <p className="mx-auto mt-5 max-w-md text-[15px] text-pencil">{boss.passed ? t('bossPassed') : t('bossFailed')}</p>}
+        {isChallenge && (
+          <p className="mx-auto mt-5 max-w-md text-[15px] text-pencil">
+            {examPassed ? t('mutprobePassedText', { n: summary.correct, total: config.wordIds.length }) : t('mutprobeFailedText', { n: summary.answered, total: config.wordIds.length })}
+          </p>
+        )}
       </div>
 
       <dl className="card grid grid-cols-2 divide-x divide-y divide-line overflow-hidden sm:grid-cols-4 sm:divide-y-0">
@@ -309,6 +341,16 @@ function Summary({ result, onReplay }: { result: { summary: SessionSummary; badg
       </div>
 
       <div className="mt-7 flex flex-col gap-2 sm:flex-row sm:flex-wrap">
+        {isChallenge && examPassed && CHALLENGES[ch + 1] && (
+          <button className="btn flex-1 bg-pen text-sheet shadow-press hover:bg-pen/90" onClick={() => go(challengePlay(ch + 1))}>
+            Mutprobe {ch + 2}
+          </button>
+        )}
+        {isChallenge && examPassed && (
+          <button className="btn-ghost flex-1" onClick={share}>
+            <ShareNetwork size={18} weight="bold" aria-hidden /> {shared ? t('copied') : t('shareResult')}
+          </button>
+        )}
         {boss?.passed && level && (() => {
           const nextLevel = buildLevels(level.collectionId, words[level.collectionId] ?? [])[level.index + 1];
           return nextLevel ? (
@@ -331,7 +373,7 @@ function Summary({ result, onReplay }: { result: { summary: SessionSummary; badg
           {t('playAgain')}
         </button>
         <button className="btn-ghost flex-1" onClick={() => navigate(config.returnTo)}>
-          {level ? t('backToLevel') : t('home')}
+          {isChallenge ? t('backToMutprobe') : level ? t('backToLevel') : t('home')}
         </button>
       </div>
     </div>

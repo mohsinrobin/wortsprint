@@ -5,6 +5,7 @@ import { STAGES, isLevelUnlocked, isStageUnlocked } from '../engine/levels';
 import { reviewPriority } from '../engine/srs';
 import type { PlayConfig } from '../store/useStore';
 import { translate } from '../i18n/strings';
+import { CHALLENGES } from '../engine/challenge';
 
 type Lang = 'en' | 'bn';
 
@@ -71,4 +72,8 @@ export function continueTarget(levelsByCollection: { levels: Level[]; name: stri
   if (best) return best;
   const first = levelsByCollection.find((c) => c.levels.length);
   return first ? { level: first.levels[0], stage: 'learn', name: first.name } : null;
+}
+
+export function challengePlay(index: number): PlayConfig {
+  return { title: `Mutprobe ${index + 1}`, mode: { type: 'challenge' }, wordIds: CHALLENGES[index] ?? [], challenge: index, returnTo: '/mutprobe' };
 }

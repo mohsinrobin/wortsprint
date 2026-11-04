@@ -82,10 +82,33 @@ export function sharesMeaning(a: Word, b: Word): boolean {
   return senses(b.en).some((s) => sa.has(s));
 }
 
+const MAIN_SENSES = 2;
+
+/**
+ * Can `other` be accepted in place of `word`? Same part of speech and a shared
+ * main meaning (one of the first two listed for both words): "Ticket" for
+ * "Fahrkarte" yes, "Anruf" for "Forderung" (both can mean "call") no.
+ * Pronouns overlap by grammar ("her" = ihr / sie), not by meaning.
+ */
+export function canStandIn(other: Word, word: Word): boolean {
+  if (!comparable(other, word)) return false;
+  const main = new Set(senses(word.en).slice(0, MAIN_SENSES));
+  return senses(other.en).slice(0, MAIN_SENSES).some((s) => main.has(s));
+}
+
+/** Looser: any shared meaning, so a learner could reasonably think of `other`. */
+export function mightConfuse(other: Word, word: Word): boolean {
+  return comparable(other, word) && sharesMeaning(other, word);
+}
+
+function comparable(other: Word, word: Word): boolean {
+  return other.id !== word.id && other.pos === word.pos && word.pos !== 'pronoun' && word.pos !== 'other' && normalize(other.lemma) !== normalize(word.lemma);
+}
+
 export interface CheckOptions {
   typo: TypoTolerance;
   difficulty: Difficulty;
-  /** Other words of the collection, for synonym detection and typo safety. */
+  /** Other known words (ideally all of them), for synonym detection and typo safety. */
   pool?: Word[];
 }
 
@@ -104,13 +127,11 @@ export function checkTyped(rawInput: string, word: Word, opts: CheckOptions): Ch
     return { verdict: 'article', ok: false, expected, givenArticle: input.article };
   }
 
-  const others = (opts.pool ?? []).filter((w) => w.id !== word.id);
-  const typedOther = others.find((w) => exactMatch(w.article ? input : asTyped, w));
-  if (typedOther) {
-    return sharesMeaning(typedOther, word)
-      ? { verdict: 'synonym', ok: false, expected, matched: typedOther }
-      : { verdict: 'wrong', ok: false, expected, matched: typedOther };
-  }
+  // Another real word that also fits counts as right; any other real word is wrong.
+  const typedOthers = (opts.pool ?? []).filter((w) => w.id !== word.id && exactMatch(w.article ? input : asTyped, w));
+  const standIn = typedOthers.find((w) => canStandIn(w, word));
+  if (standIn) return { verdict: 'synonym', ok: true, expected, matched: standIn };
+  if (typedOthers.length) return { verdict: 'wrong', ok: false, expected, matched: typedOthers[0] };
 
   // Typo tolerance: compare without article, require same first letter and
   // the right article for nouns.

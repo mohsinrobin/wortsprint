@@ -47,3 +47,9 @@ Correcting a typed answer: the learner's ink gets a red line struck through it, 
 ## Sound and touch
 
 Sounds are soft mallet tones for right answers and a pen scratch for corrections. Learn cards make a paper flip, and the timer ticks like wood (`src/lib/sfx.ts`). Phones that support it give a light vibration on right and wrong answers.
+
+## Mutprobe
+
+The challenge section ("test of courage"): 50 fixed hard-mode tests of 20 words, mixed from A1 up to Extra as the numbers rise (`npm run challenges` rebuilds `src/data/challenges.json`). No learning step, no hints, Hard timers, three lives. A "Ready" meter shows how many of the words the learner knows; below 60% it warns but never locks. In Schulheft it is an exam sheet in red ink; in Fahrplan an express line on the departure board.
+
+Typed answers are checked against every word: another word with the same main meaning and part of speech counts as right ("billig" for "günstig"). When a word the learner knows shares a meaning, a letter clue ("g _ _ _ _ _ _ (7)") shows which word is wanted.

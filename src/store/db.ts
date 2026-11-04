@@ -2,6 +2,7 @@
 // collection; learning state is stored separately.
 import { createStore, get, set, del, keys } from 'idb-keyval';
 import type { Collection, LevelProgress, Profile, Settings, Word, WordProgress } from '../types';
+import type { ChallengeResult } from '../engine/challenge';
 
 // "?profile=name" keeps a separate database (e.g. for a second learner or testing).
 const profileName = typeof location !== 'undefined' ? new URLSearchParams(location.search).get('profile') : null;
@@ -15,20 +16,22 @@ export interface Snapshot {
   settings: Partial<Settings> | undefined;
   profile: Profile | undefined;
   bundleVersions: Record<string, string> | undefined;
+  challenges: Record<string, ChallengeResult> | undefined;
 }
 
 export async function loadSnapshot(): Promise<Snapshot> {
-  const [collections, progress, levels, settings, profile, bundleVersions] = await Promise.all([
+  const [collections, progress, levels, settings, profile, bundleVersions, challenges] = await Promise.all([
     get<Collection[]>('collections', store),
     get<Record<string, WordProgress>>('progress', store),
     get<Record<string, LevelProgress>>('levels', store),
     get<Partial<Settings>>('settings', store),
     get<Profile>('profile', store),
     get<Record<string, string>>('bundleVersions', store),
+    get<Record<string, ChallengeResult>>('challenges', store),
   ]);
   const words: Record<string, Word[]> = {};
   for (const c of collections ?? []) words[c.id] = (await get<Word[]>(`words:${c.id}`, store)) ?? [];
-  return { collections, words, progress, levels, settings, profile, bundleVersions };
+  return { collections, words, progress, levels, settings, profile, bundleVersions, challenges };
 }
 
 export const saveCollections = (c: Collection[]) => set('collections', c, store);
@@ -38,6 +41,7 @@ export const saveProgress = (p: Record<string, WordProgress>) => set('progress',
 export const saveLevels = (l: Record<string, LevelProgress>) => set('levels', l, store);
 export const saveSettings = (s: Settings) => set('settings', s, store);
 export const saveProfile = (p: Profile) => set('profile', p, store);
+export const saveChallenges = (c: Record<string, ChallengeResult>) => set('challenges', c, store);
 export const saveBundleVersions = (v: Record<string, string>) => set('bundleVersions', v, store);
 
 export async function clearAll(): Promise<void> {

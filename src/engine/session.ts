@@ -14,7 +14,9 @@ export type SessionMode =
   /** Final memory boss: mixed formats, each word once, no second chances. */
   | { type: 'boss' }
   /** Speed challenge: fixed list, no repeats. */
-  | { type: 'speed' };
+  | { type: 'speed' }
+  /** Mutprobe: like the boss (mixed formats, each word once), with lives. */
+  | { type: 'challenge' };
 
 export interface SessionItem {
   wordId: string;
@@ -80,7 +82,8 @@ export function createSession(o: CreateOptions): SessionState {
     case 'ladder':
       queue = order.map((wordId) => ({ wordId, kind: o.kindFor ? o.kindFor(wordId, rng()) : 'meaning', attemptNo: 0 }));
       break;
-    case 'boss': {
+    case 'boss':
+    case 'challenge': {
       const kinds = shuffle(order.map((_, i) => BOSS_KINDS[i % BOSS_KINDS.length]), rng);
       queue = order.map((wordId, i) => ({ wordId, kind: kinds[i], attemptNo: 0 }));
       break;
@@ -179,7 +182,7 @@ export interface SessionProgress {
 }
 
 export function sessionProgress(s: SessionState): SessionProgress {
-  if (s.mode.type === 'boss' || s.mode.type === 'speed') {
+  if (s.mode.type === 'boss' || s.mode.type === 'speed' || s.mode.type === 'challenge') {
     return { done: s.history.length, total: s.history.length + s.queue.length };
   }
   const pending = new Set(s.queue.map((q) => q.wordId));
