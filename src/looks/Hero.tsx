@@ -56,7 +56,7 @@ function HeftHero({ target, done, progress, lang, onPlay }: HeroProps) {
             ))}
           </ol>
           <span className="text-sm text-pencil">
-            <span className="font-semibold text-ink">{t('stageOf', { n: stageNo, total: STAGES.length })}</span> · {t(`stage_${target.stage}`)}
+            <span className="font-semibold text-ink">{t('stageOf', { n: stageNo, total: STAGES.length })}</span>
             <span className="sr-only">. {t('stagesDone', { n: done.size })}</span>
           </span>
         </div>
@@ -97,7 +97,7 @@ function BahnHero({ target, done, onPlay }: HeroProps) {
   const time = new Date().toLocaleTimeString('de-DE', { hour: '2-digit', minute: '2-digit' });
   const via = target.level.words.slice(0, 4).map((w) => w.lemma).join(', ');
   return (
-    <section className="overflow-hidden rounded-sheet bg-board text-boardink shadow-lift">
+    <section className="board-glow overflow-hidden rounded-sheet bg-board text-boardink shadow-lift">
       <div className="flex items-center justify-between border-b border-boardink/15 px-5 py-2.5 text-[15px] font-semibold">
         <span className="text-signal">Abfahrt</span>
         <span className="tabular-nums text-boardink/80">{time}</span>

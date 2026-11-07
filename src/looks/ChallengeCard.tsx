@@ -11,7 +11,7 @@ export function ChallengeCard({ passed, total, onOpen }: { passed: number; total
   if (look === 'bahn') {
     // An express train on the departure board: red line badge, signal yellow.
     return (
-      <button onClick={onOpen} className="flex w-full items-center gap-4 rounded-sheet bg-board p-4 text-left text-boardink shadow-lift transition-transform active:scale-[0.99]">
+      <button onClick={onOpen} className="board-glow flex w-full items-center gap-4 rounded-sheet bg-board p-4 text-left text-boardink shadow-lift transition-transform active:scale-[0.99]">
         <span className="grid h-12 w-14 shrink-0 place-items-center rounded-[6px] bg-pen text-sheet">
           <Lightning size={26} weight="fill" />
         </span>

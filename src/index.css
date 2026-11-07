@@ -159,7 +159,7 @@
   --page-bg-size: 100% 100%;
 }
 /* The board glows a little, the way a lit display does at night. */
-:root[data-look='bahn'][data-theme='dark'] .bg-board {
+:root[data-look='bahn'][data-theme='dark'] .board-glow {
   box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.08), 0 0 0 1px rgb(90 140 255 / 0.18), 0 18px 40px -18px rgb(40 90 220 / 0.55);
 }
 
