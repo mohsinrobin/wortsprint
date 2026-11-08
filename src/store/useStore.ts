@@ -164,9 +164,10 @@ export const useStore = create<State>((set, get) => {
       const bundles = await db.fetchBundleIndex().catch(() => []);
 
       if (!snap.collections) {
-        // First run: install the bundled lists.
-        for (const b of bundles) {
-          words[b.id] = await db.fetchBundle(b.id);
+        // First run: install the bundled lists, downloaded side by side so a phone waits for one round trip, not four.
+        const lists = await Promise.all(bundles.map((b) => db.fetchBundle(b.id)));
+        for (const [i, b] of bundles.entries()) {
+          words[b.id] = lists[i];
           versions[b.id] = b.version;
           collections.push({ id: b.id, name: b.name, description: b.description, createdAt: Date.now(), bundled: true });
           await db.saveWords(b.id, words[b.id]);
